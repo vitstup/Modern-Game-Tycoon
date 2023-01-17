@@ -1,0 +1,7 @@
+Key,English,Russian,French,German,Spanish,Italian
+Menu.con,Continue,Продолжить,Continuer,Weitermachen,Continuar,Continua
+Menu.new,New game,Новая игра,Nouveau jeu,Neues Spiel,Nuevo juego,Nuovo gioco
+RowsTest,"hello, my friend","Привет, мой друг","Буэнос чачас, адильо","Zig Heil, Untermench","Chumba, changa","Cicelo, amigos"
+RowsTest1,"""hello, my friend""","""Привет, мой друг""","""Буэнос чачас, адильо""","""Zig Heil, Untermench""","""Chumba, changa""","""Cicelo, amigos"""
+RowsTest2,"hello, my friend'","Привет, мой друг'","Буэнос чачас, адильо'","Zig Heil, Untermench'","Chumba, changa'","Cicelo, amigos'"
+nTest,"Hello, puebla \n Hi Denis","Hello, puebla \n Hi Denis","Hello, puebla \n Hi Denis","Hello, puebla \n Hi Denis","Hello, puebla \n Hi Denis","Hello, puebla \n Hi Denis"
