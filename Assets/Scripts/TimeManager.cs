@@ -17,14 +17,12 @@ public class TimeManager : MonoBehaviour
 
     private int[] daysinmonth = new int[] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-    private TimeSpeed timeSpeed;
-    [HideInInspector]public RunStatus runStatus { get; private set; }
+    [HideInInspector] public TimeSpeed timeSpeed { get; private set; } = TimeSpeed.X1;
+    [HideInInspector] public RunStatus runStatus { get; private set; }
 
     public KeyCode pauseButton;
 
     private float seconds;
-
-    [SerializeField] private GameObject BackPanel;
 
     private void Awake()
     {
@@ -37,30 +35,38 @@ public class TimeManager : MonoBehaviour
         this.day = day;
         this.month = month;
         this.year = year;
+        MainUI.instance.UpdateTimePanel();
     }
 
     private void Update()
     {
         if (runStatus != RunStatus.standart) return;
         seconds += Time.deltaTime;
-        if(seconds > 0.5f)
+        if (seconds > 0.5f)
         {
             seconds = 0;
             day++;
             DayUpdateEvent?.Invoke();
         }
-        if(day >= daysinmonth[month])
+        if (day >= daysinmonth[month])
         {
             day = 0;
             month++;
             MonthUpdateEvent?.Invoke();
         }
-        if(month >= 12)
+        if (month >= 12)
         {
             month = 0;
             year++;
             YearUpdateEvent?.Invoke();
         }
+        if (Input.GetKeyDown(pauseButton) && runStatus == RunStatus.standart)
+        {
+            Debug.Log(timeSpeed);
+            if (timeSpeed != TimeSpeed.Pause) ChangeSpeed(0); 
+            else ChangeSpeed(1); 
+        }
+        MainUI.instance.UpdateDate();
     }
 
     public void ChangeSpeed(int speed)
@@ -69,12 +75,12 @@ public class TimeManager : MonoBehaviour
         if (timeSpeed == TimeSpeed.X1) Time.timeScale = 1;
         else if (timeSpeed == TimeSpeed.X2) Time.timeScale = 2;
         else Time.timeScale = 0;
+        MainUI.instance.UpdateSpeedBtns();
     }
 
     public void ChangeRunStatus(RunStatus status)
     {
         runStatus = status;
-        if(status == RunStatus.stoped) BackPanel.SetActive(true);
-        else BackPanel.SetActive(false);
+        MainUI.instance.UpdateSpeedBtns();
     }
 }

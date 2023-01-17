@@ -8,7 +8,7 @@ public static class Localization
     public static string Localize(string key)
     {
         if(dictionary.Count == 0) Read();
-        if (!dictionary.ContainsKey(key)) Debug.LogError("There is no such key");
+        if (!dictionary.ContainsKey(key)) Debug.LogError("There is no such key " + key);
         return dictionary[key][0]; // change zero to language id
     }
 
