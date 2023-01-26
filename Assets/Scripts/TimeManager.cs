@@ -15,8 +15,6 @@ public class TimeManager : MonoBehaviour
     public int month { get; private set; }
     public int year { get; private set; }
 
-    private int[] daysinmonth = new int[] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-
     [HideInInspector] public TimeSpeed timeSpeed { get; private set; } = TimeSpeed.X1;
     [HideInInspector] public RunStatus runStatus { get; private set; }
 
@@ -48,7 +46,7 @@ public class TimeManager : MonoBehaviour
             day++;
             DayUpdateEvent?.Invoke();
         }
-        if (day >= daysinmonth[month])
+        if (day >= Constans.DaysInMonth[month])
         {
             day = 0;
             month++;

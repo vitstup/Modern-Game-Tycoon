@@ -23,6 +23,8 @@ public static class Localization
                 var value = ReadLine(line);
                 string key = value[0];
                 value.RemoveAt(0);
+                if (string.IsNullOrEmpty(key)) continue;
+                if (dictionary.ContainsKey(key)) { Debug.LogWarning("Already have this key " + key); continue; }
                 dictionary.Add(key, value.ToArray());
             }
         }
