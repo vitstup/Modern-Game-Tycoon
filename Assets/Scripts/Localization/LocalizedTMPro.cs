@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[RequireComponent(typeof(TextMeshProUGUI))]
 public class LocalizedTMPro : MonoBehaviour
 {
     // add listening to language change event
-    private TextMeshProUGUI text;
-    [SerializeField]private string Key;
+    protected TextMeshProUGUI text;
+    [SerializeField] protected string Key;
 
     private void Start()
     {
@@ -15,7 +16,7 @@ public class LocalizedTMPro : MonoBehaviour
         Localize();
     }
 
-    private void Localize()
+    protected virtual void Localize()
     {
         text.text = Localization.Localize(Key);
     }

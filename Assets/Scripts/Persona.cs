@@ -14,14 +14,14 @@ public class Persona
 
     [field: SerializeField] public int modelId { get; private set; }
 
-
-    // maybe id
+    [field: SerializeField] public int id { get; private set; }
 
     // table, to which is assigned
-    
-    public Persona(int minSkill, int minSalary)
+
+    public Persona(int id)
     {
-        RandomPersona(minSkill, minSalary);
+        this.id = id;
+        RandomPersona(Constans.minSkill, Constans.minSalary);
     }
 
     public Persona(string personaName, Skills skills, int salary, int modelId)
@@ -42,8 +42,6 @@ public class Persona
 
         salary = CalculateSalary(1.02f, minSalary);
 
-
-        // id
         // model
     }
 

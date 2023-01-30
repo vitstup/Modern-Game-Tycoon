@@ -19,6 +19,20 @@ public class Skills
         return programming + gameDesign + artDesign + soundDesign + screenwriting;
     }
 
+    public int GetSkill(int num)
+    {
+        if (num == 0) return programming;
+        else if (num == 1) return gameDesign;
+        else if (num == 2) return artDesign;
+        else if (num == 3) return soundDesign;
+        else if (num == 4) return screenwriting;
+        else
+        {
+            Debug.LogError("Theare no such skill");
+            return 0;
+        }
+    }
+
 
     public Skills(int minSkill)
     {

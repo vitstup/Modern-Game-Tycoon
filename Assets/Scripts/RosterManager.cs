@@ -6,8 +6,10 @@ public class RosterManager : MonoBehaviour
 {
     public static RosterManager instance;
 
-    public List<Persona> availableWorkers = new List<Persona>();
-    public List<Persona> hiredWorkers = new List<Persona>();
+    private int currentId = 0;
+
+    [field: SerializeField] public List<Persona> availableWorkers { get; private set; } = new List<Persona>();
+    [field: SerializeField] public List<Persona> hiredWorkers { get; private set; } = new List<Persona>();
 
     private void Awake()
     {
@@ -23,7 +25,29 @@ public class RosterManager : MonoBehaviour
         }
         if (Random.Range(0, 1f) <= Constans.AvailableAppearChance)
         {
-            if (availableWorkers.Count < Constans.maxAvailableWorkers) availableWorkers.Add(new Persona(5, 1000));
+            if (availableWorkers.Count < Constans.maxAvailableWorkers) availableWorkers.Add(Worker());
         } 
+    }
+
+    private Persona Worker()
+    {
+        currentId++;
+        return new Persona(currentId);
+    }
+
+    public void HireWorker(Persona persona)
+    {
+        hiredWorkers.Add(persona);
+        availableWorkers.Remove(persona);
+    }
+
+    public void FireWorker(Persona persona)
+    {
+        hiredWorkers.Remove(persona);
+    }
+
+    public void AssignWorker(Persona persona)
+    {
+
     }
 }

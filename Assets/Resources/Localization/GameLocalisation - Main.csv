@@ -308,3 +308,20 @@ month.9,September,Сентябрь,septembre,September,septiembre,settembre
 month.10,October,Октябрь,octobre,Oktober,octubre,ottobre
 month.11,November,Ноябрь,novembre,November,noviembre,novembre
 month.12,December,Декабрь,décembre,Dezember,diciembre,dicembre
+proffesion,Profession,Профессия,Métier,Beruf,Profesión,Professione
+proffesion.0,Programmer,Программист,Programmeur,Programmierer,Programador,Programmatore
+proffesion.1,Game designer,Гейм дизайнер,Designer de jeu,Spieledesigner,Diseñador de juegos,Designer di giochi
+proffesion.2,Art designer,Художник,Concepteur d'art,Kunstdesigner,Diseñador de arte,Designer d'arte
+proffesion.3,Sound designer,Звуковой дизайнер,Sonneur,Sounddesigner,Diseñador de sonido,Sound Designer
+proffesion.4,Screenwriter,Сценарист,Scénariste,Drehbuchautor,Guionista,Sceneggiatore
+skill.0,Programming,Программирование,La programmation,Programmierung,Programación,Programmazione
+skill.1,Game design,Игровой дизайн,Le design du jeu,Spieldesign,Diseño de juego,Design del gioco
+skill.2,Art design,Арт дизайн,Conception d'art,Kunstdesign,Diseño artístico,Design artistico
+skill.3,Sound design,Звуковой дизайн,Conception sonore,Audiogestaltung,Diseño de sonido,Design del suono
+skill.4,Screenwriting,Сценарий,Scénarisation,Drehbuch,Escritura de guiones,Sceneggiatura
+salary,Salary,Зарплата,Un salaire,Gehalt,Sueldo,Stipendio
+personaTab.0,Employees by profession,Сотрудники по профессии,Employés par profession,Mitarbeiter nach Beruf,Empleados por profesión,Dipendenti di professione
+personaTab.1,Average skills,Средние навыки,Compétences moyennes,Durchschnittliche Fähigkeiten,Habilidades promedio,Abilità medie
+personaTab.2,Total skills,Общие навыки,Compétences totales,Gesamtfähigkeiten,Habilidades totales,Abilità totali
+all,All,Все,Tous,Alle,Todas,Tutti
+applications,Applications,Заявления,Applications,Anwendungen,Aplicaciones,Applicazioni

@@ -81,4 +81,9 @@ public class TimeManager : MonoBehaviour
         runStatus = status;
         MainUI.instance.UpdateSpeedBtns();
     }
+
+    public void NecessaryPause(bool pause)
+    {
+        ChangeRunStatus(pause ? RunStatus.stoped : RunStatus.standart);
+    }
 }

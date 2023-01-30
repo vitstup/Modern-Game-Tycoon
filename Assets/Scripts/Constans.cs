@@ -15,6 +15,8 @@ public static class Constans
     public const int maxAvailableWorkers = 30;
     public const float AvailableFindWorkChance = 0.015f;
     public const float AvailableAppearChance = 0.5f;
+    public const int minSkill = 5;
+    public const int minSalary = 1000;
 
     public static readonly Color GrayBgInactive = new Color(0.44f, 0.44f, 0.44f);
     public static readonly Color GrayBgActive = new Color(0.49f, 0.49f, 0.49f);
