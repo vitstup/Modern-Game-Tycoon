@@ -7,22 +7,22 @@ public class Building : MonoBehaviour
     private MeshRenderer[] renderers;
 
     private bool isBuilded = false;
+    private bool isMoving = false;
 
     private List<Collider> obstacles = new List<Collider>();
     private List<Collider> floor = new List<Collider>();
 
-    [field: SerializeField] public int price { get; private set; }
+    [SerializeField] private int price;
 
     [field: SerializeField] public float happiness { get; private set; }
 
-    private void Start()
+    private void Awake()
     {
         renderers = GetComponentsInChildren<MeshRenderer>();
     }
 
     public void Colorize(Color color)
     {
-        if (renderers == null) return;
         for (int i = 0; i < renderers.Length; i++)
         {
             for (int m = 0; m < renderers[i].materials.Length; m++)
@@ -36,6 +36,25 @@ public class Building : MonoBehaviour
     public void Put()
     {
         Colorize(Color.white);
+        isBuilded = true;
+        isMoving = false;
+    }
+
+    public void Rotate(bool Right)
+    {
+        if (Right) transform.Rotate(0, 45, 0);
+        else transform.Rotate(0, -45, 0);
+    }
+
+    public virtual void Delete()
+    {
+        // if builded, return some money
+        Destroy(gameObject);
+    }
+
+    public virtual int GetPrice()
+    {
+        return price;
     }
 
     public bool isAvailable()
@@ -57,6 +76,17 @@ public class Building : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Clicked");
+        if (isBuilded && !isMoving)
+        {
+            StartCoroutine(TryToMove());
+            Debug.Log("Cliked");
+        }
+    }
+
+    private IEnumerator TryToMove()
+    {
+        yield return new WaitForFixedUpdate();
+        isMoving = true;
+        BuildingManager.instance.Move(this);
     }
 }

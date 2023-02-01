@@ -15,7 +15,7 @@ public class TimeManager : MonoBehaviour
     public int month { get; private set; }
     public int year { get; private set; }
 
-    [HideInInspector] public TimeSpeed timeSpeed { get; private set; } = TimeSpeed.X1;
+    [HideInInspector] public TimeSpeed timeSpeed { get; private set; }
     [HideInInspector] public RunStatus runStatus { get; private set; }
 
     public KeyCode pauseButton;
@@ -26,6 +26,7 @@ public class TimeManager : MonoBehaviour
     {
         instance = this;
         SetDate(0,0,2000);
+        ChangeSpeed(1);
     }
 
     private void SetDate(int day, int month, int year)
