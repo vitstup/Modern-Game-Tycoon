@@ -15,12 +15,14 @@ public class MainUI : MonoBehaviour
     [SerializeField] private Image X1Btn;
     [SerializeField] private Image X2Btn;
 
-    [SerializeField] private Sprite PauseInactive;    [SerializeField] private Sprite PauseActive;
+    [SerializeField] private Sprite PauseInactive;    
+    [SerializeField] private Sprite PauseActive;
 
     [SerializeField] private Sprite PlayActive;
     [SerializeField] private Sprite PlayInactive;
 
     [SerializeField] private GameObject BackPanel;
+    [SerializeField] private GameObject BuildingBackPanel;
 
     private void Awake()
     {
@@ -59,8 +61,21 @@ public class MainUI : MonoBehaviour
             X2Btn.sprite = PlayActive;
         }
 
-        if (TimeManager.instance.runStatus == RunStatus.stoped) BackPanel.SetActive(true);
-        else BackPanel.SetActive(false);
+        if (TimeManager.instance.runStatus == RunStatus.stoped)
+        {
+            BackPanel.SetActive(true);
+            BuildingBackPanel.SetActive(false);
+        }
+        else if (TimeManager.instance.runStatus == RunStatus.building)
+        {
+            BackPanel.SetActive(false);
+            BuildingBackPanel.SetActive(true);
+        }
+        else
+        {
+            BackPanel.SetActive(false);
+            BuildingBackPanel.SetActive(false);
+        }
     }
 
     public void UpdateTimePanel()

@@ -54,31 +54,6 @@ racing,Racing,Гонка,Courses,Rennen,Carreras,Da corsa
 casual,Casual,Казуальная,Décontractée,Beiläufig,Casual,Casuale
 adventure,Adventure,Приключение,Aventure,Abenteuer,Aventuras,Avventura
 horror,Horror,Хорор,Horreur,Grusel,Horror,Orrore
-shp.1,Working space,Рабочее место,Espace de travail,Arbeitsplatz,Espacio de trabajo,Spazio di lavoro
-shp.2,Working space 2,Рабочее место 2,Espace de travail 2,Arbeitsraum 2,Espacio de trabajo 2,Spazio di lavoro 2
-shp.3,Working space 3,Рабочее место 3,Espace de travail 3,Arbeitsraum 3,Espacio de trabajo 3,Spazio di lavoro 3
-shp.4,Pro. working space,Про. рабочее место,Pro. Espace de travail,Profi. Arbeitsplatz,Pro. espacio de trabajo,pro. spazio di lavoro
-shp.5,Wooden pro. working space,Деревянное про. рабочее место,Pro du bois. Espace de travail,Profi aus Holz. Arbeitsplatz,Pro de madera. espacio de trabajo,Pro di legno. spazio di lavoro
-shp.6,Arcade machine,Игровой автомат,Machine d'arcade,Arcade-Maschine,Máquina de arcade,Macchina da sala giochi
-shp.7,Vending machine,Автомат с едой,Distributeur automatique,Verkaufsautomat,Máquina expendedora,Distributore automatico
-shp.8,Boiler,Бойлер,Chaudière,Kessel,Caldera,Caldaia
-shp.9,Printer,Принтер,Imprimante,Drucker,Impresora,Stampante
-shp.10,Old server,Старый сервер,Ancien serveur,Alter Server,Servidor antiguo,Vecchio server
-shp.11,Server,Сервер,Serveur,Server,Servidor,server
-shp.12,Cupboard,Шкаф из металла,Armoire,Schrank,Alacena,Credenza
-shp.13,Metal cupboard,Шкаф из металла,Armoire en métal,Metallschrank,Armario de metal,Armadio in metallo
-shp.14,Black armchair,Черное кресло,Fauteuil noir,Schwarzer Sessel,Sillón negro,Poltrona nera
-shp.15,Big black armchair,Большое черное кресло,Grand fauteuil noir,Großer schwarzer Sessel,Sillón grande negro,Grande poltrona nera
-shp.16,armchair,кресло,fauteuil,Sessel,Sillón,poltrona
-shp.17,Big armchair,Большое кресло,Grand fauteuil,Großer Sessel,Sillón grande,Grande poltrona
-shp.18,Sofa,Диван,Sofa,Sofa,Sofá,Divano
-shp.19,Bag armchair 1,Кресло мешок,Sac fauteuil 1,Taschensessel 1,Sillón Bag 1,Borsa poltrona 1
-shp.20,Bag armchair 2,Кресло мешок 2,Sac fauteuil 2,Taschensessel 2,Sillón Bag 2,Borsa poltrona 2
-shp.21,Big bag armchair 1,Большое кресло мешок 1,Fauteuil big bag 1,Big-Bag-Sessel 1,Sillón big bag 1,Poltrona big bag 1
-shp.22,Big bag armchair 2,Большое кресло мешок 2,Fauteuil big bag 2,Big-Bag-Sessel 2,Sillón big bag 2,Poltrona big bag 2
-shp.23,Bin,Мусорка,Poubelle,Behälter,Compartimiento,Bidone
-shp.24,Plant,Растение,Plante,Anlage,Planta,Pianta
-shp.25,Big plant,Большое растение,Grande plante,Große Pflanze,Planta grande,Grande pianta
 autofunish,Auto funish,Авто закупка,Amusant automatique,Auto funish,Auto divertido,Autofunzione
 nogames.text,You have no released video games,У вас нет выпущенных видеоигр,Vous n'avez aucun jeu vidéo sorti,Du hast keine veröffentlichten Videospiele,No tienes videojuegos lanzados,Non hai videogiochi rilasciati
 officename.1,Small room,Маленькая комната,Petite chambre,Kleiner Raum,Habitación pequeña,Stanza piccola
@@ -325,3 +300,32 @@ personaTab.1,Average skills,Средние навыки,Compétences moyennes,Du
 personaTab.2,Total skills,Общие навыки,Compétences totales,Gesamtfähigkeiten,Habilidades totales,Abilità totali
 all,All,Все,Tous,Alle,Todas,Tutti
 applications,Applications,Заявления,Applications,Anwendungen,Aplicaciones,Applicazioni
+shp.0,Aquarium,Аквариум,Aquarium,Aquarium,Acuario,Acquario
+shp.1,Arcade machine,Аркадная машина,Arcade,Arcade-Maschine,Máquina arcade,Macchina arcade
+shp.2,Billiards,Бильярд,Billard,Billard,Billar,Biliardo
+shp.3,Bin,Корзина,Poubelle,Behälter,Compartimiento,Bidone
+shp.4,Black armchair,Черное кресло,Fauteuil noir,Schwarzer Sessel,Sillón negro,Poltrona nera
+shp.5,Black couch,Черный диван,Canapé noir,Schwarze Couch,Sofá negro,Divano nero
+shp.6,White armchair,Белое кресло,Fauteuil blanc,Weißer Sessel,Sillón blanco,Poltrona bianca
+shp.7,White couch,Белый диван,Canapé blanc,Weiße Couch,Sofá blanco,Divano bianco
+shp.8,Big couch,Большой диван,Grand canapé,Große Couch,Gran sofá,Grande divano
+shp.9,Cupboard,Шкаф,Placard métallique,Schrank,Armario,Armadio
+shp.10,Metal cupboard,Металлический шкаф,Placard métallique,Metallschrank,Armario de metal,Armadio di metallo
+shp.11,Mini football,Мини футбол,Mini football,Mini -Fußball,Mini fútbol,Mini calcio
+shp.12,Fridge,Холодильник,Réfrigérateur,Kühlschrank,Nevera,Frigorifero
+shp.13,Minigolf,Мини гольф,Mini golf,Minigolf,Mini golf,Mini golf
+shp.14,Small plant,Небольшое растение,Petite plante,Kleine Pflanze,Planta pequeña,Pianta piccola
+shp.15,Big plant,Большое растение,Grande plante,Große Pflanze,Gran planta,Grande pianta
+shp.16,Mini garden,Мини посадки,Mini jardin,Mini -Garten,Mini jardín,Mini giardino
+shp.17,Green pouf,Зеленый пуфик,Pouf vert,Grüner Pouf,Pouf verde,Pouf verde
+shp.18,Blue pouf,Синий пуфик,Pouf bleu,Blauer Pouf,Pouf,Blue Pouf
+shp.19,Big yellow pouf,Желтый пуфик,Big Pouf jaune,Big Yellow Pouf,Pouf amarillo grande,Grande pouf giallo
+shp.20,Big red pouf,Красный пуфик,Big Pouf rouge,Big Red Pouf,Pouf rojo grande,Big Red Pouf
+shp.21,Vending machine,Торговый автомат,Distributeur automatique,Verkaufsautomat,Máquina expendedora,Distributore automatico
+shp.22,Boiler,Бойлер,Chaudière,Kessel,Caldera,Caldaia
+shp.23,Desktop,Рабочий стол,Bureau,Desktop,Escritorio,Desktop
+shp.24,Wooden desktop,Рабочий стол 2,Bureau en bois,Holzdesktop,Escritorio de madera,Desktop in legno
+shp.25,Metal desktop,Рабочий стол 3,Bureau en métal,Metalldesktop,Escritorio de metal,Desktop metallico
+shp.26,Big desktop,Рабочий стол 4,Grand bureau,Großer Desktop,Escritorio grande,Grande desktop
+shp.27,Proffesional desktop,Рабочий стол 5,Bureau de profession,Profemsionaler Desktop,Escritorio profesional,Desktop Profsionale
+shp.28,Xerox,Ксерокс,Photocopier,Xerox,fotocopia,Xerox

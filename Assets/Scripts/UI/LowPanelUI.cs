@@ -21,13 +21,11 @@ public class LowPanelUI : MonoBehaviour , IPointerEnterHandler, IPointerExitHand
     {
         text.fontSize = 26;
         text.fontStyle = FontStyles.Bold;
-        Debug.Log("Inside");
     }
 
     private void mouseOutside()
     {
         text.fontSize = 20;
         text.fontStyle = FontStyles.Normal;
-        Debug.Log("Outside");
     }
 }

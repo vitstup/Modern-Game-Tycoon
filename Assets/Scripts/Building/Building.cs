@@ -7,7 +7,6 @@ public class Building : MonoBehaviour
     private MeshRenderer[] renderers;
 
     private bool isBuilded = false;
-    private bool isMoving = false;
 
     private List<Collider> obstacles = new List<Collider>();
     private List<Collider> floor = new List<Collider>();
@@ -16,7 +15,7 @@ public class Building : MonoBehaviour
 
     [field: SerializeField] public float happiness { get; private set; }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         renderers = GetComponentsInChildren<MeshRenderer>();
     }
@@ -33,14 +32,16 @@ public class Building : MonoBehaviour
 
     }
 
-    public void Put()
+    public virtual void Put()
     {
+        BuildingManager.instance.interactedThisUpdate = true;
         Colorize(Color.white);
+        if (!isBuilded) OpenShopPanel();
+        else TimeManager.instance.ChangeRunStatus(RunStatus.standart);
         isBuilded = true;
-        isMoving = false;
     }
 
-    public void Rotate(bool Right)
+    public virtual void Rotate(bool Right)
     {
         if (Right) transform.Rotate(0, 45, 0);
         else transform.Rotate(0, -45, 0);
@@ -59,6 +60,7 @@ public class Building : MonoBehaviour
 
     public bool isAvailable()
     {
+        //obstacles.RemoveAll(Collider => Collider == null);   // uncoment this if have problem, that builded obj during moving can't be builded
         return (obstacles.Count == 0 && floor.Count > 0)? true : false;
     }
 
@@ -76,17 +78,21 @@ public class Building : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (isBuilded && !isMoving)
+        if (isBuilded)
         {
-            StartCoroutine(TryToMove());
-            Debug.Log("Cliked");
+            if (BuildingManager.instance.currentBuilding == null && !BuildingManager.instance.interactedThisUpdate) Move();
         }
     }
 
-    private IEnumerator TryToMove()
+    protected virtual void Move()
     {
-        yield return new WaitForFixedUpdate();
-        isMoving = true;
+        obstacles.RemoveAll(Collider => Collider == null);
         BuildingManager.instance.Move(this);
     }
+
+    private void OpenShopPanel()
+    {
+        ShopUI.instance.OpenShopPanel();
+    }
+
 }

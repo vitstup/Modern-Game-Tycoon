@@ -8,7 +8,9 @@ public class BuildingManager : MonoBehaviour
 
     private Camera mainCamera;
 
-    private Building currentBuilding;
+    [HideInInspector] public Building currentBuilding { get; private set; }
+
+    [HideInInspector] public bool interactedThisUpdate = false;
 
     private void Awake()
     {
@@ -47,31 +49,26 @@ public class BuildingManager : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Q)) currentBuilding.Rotate(false);
                 if (Input.GetKeyDown(KeyCode.R)) currentBuilding.Rotate(true);
 
-                if (Input.GetKeyDown(KeyCode.Delete)) currentBuilding.Delete();
+                if (Input.GetKeyDown(KeyCode.Delete))
+                {
+                    currentBuilding.Delete();
+                    TimeManager.instance.ChangeRunStatus(RunStatus.standart);
+                }
 
-                if (available && Input.GetMouseButtonDown(0))
+                if (available && Input.GetMouseButtonDown(0) && !interactedThisUpdate)
                 {
                     currentBuilding.Put();
                     currentBuilding = null;
                 }
             }
         }
+        interactedThisUpdate = false;
     }
 
     public void Move(Building building)
     {
-        if (currentBuilding == null) currentBuilding = building;
-    }
-
-    private void ChangeBuildingStatus(bool building)
-    {
-        if (building)
-        {
-            TimeManager.instance.ChangeRunStatus(RunStatus.building);
-        }
-        else
-        {
-            TimeManager.instance.ChangeRunStatus(RunStatus.standart);
-        }
+        interactedThisUpdate = true;
+        currentBuilding = building;
+        TimeManager.instance.ChangeRunStatus(RunStatus.building);
     }
 }

@@ -22,6 +22,6 @@ public static class Constans
     public static readonly Color GrayBgActive = new Color(0.49f, 0.49f, 0.49f);
     public static readonly Color WhiteTextInactive = new Color(0.83f, 0.83f, 0.83f);
     public static readonly Color WhiteTextActive = new Color(1, 1, 1);
-    public static readonly Color BlackTextInactive = new Color();
-    public static readonly Color BlackTextActive = new Color();
+    public static readonly Color BlackTextInactive = new Color(0.2f, 0.2f, 0.2f);
+    public static readonly Color BlackTextActive = new Color(0, 0 ,0);
 }

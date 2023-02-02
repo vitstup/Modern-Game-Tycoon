@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9941f99b39a1ded4e80d0c05c8c369fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <price>k__BackingField: 0
+  price: 0
   <happiness>k__BackingField: 0
 --- !u!65 &1387456496754319538
 BoxCollider:
@@ -1025,7 +1025,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64375808577611094, guid: 42f49538d10d0c34d985182fb749398b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 42f49538d10d0c34d985182fb749398b, type: 3}
 --- !u!4 &284794971561151553 stripped
 Transform:
@@ -2121,25 +2122,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4404892687013680, guid: 69a63a128d896934ab76197576ef5440, type: 3}
   m_PrefabInstance: {fileID: 7771971147508473750}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7773030143549728682 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1353704124758076, guid: 69a63a128d896934ab76197576ef5440, type: 3}
-  m_PrefabInstance: {fileID: 7771971147508473750}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &8414994110124283169
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7773030143549728682}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 780914ab5fb45a44db45995e3a30edc3, type: 3}
 --- !u!1001 &7844818114202221968
 PrefabInstance:
   m_ObjectHideFlags: 0
