@@ -12,6 +12,8 @@ public class ScreenShotsScript : MonoBehaviour
 
     private GameObject currentObj;
 
+    private int HandleScreenshotDone = 0;
+
     private void Start()
     {
         Debug.Log(Application.persistentDataPath);
@@ -21,6 +23,7 @@ public class ScreenShotsScript : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.D)) StartCoroutine(TakeAndSaveScreenshot());
+        if (Input.GetKeyDown(KeyCode.S)) StartCoroutine(HandleShot());
     }
 
     IEnumerator TakeAndSaveScreenshot()
@@ -47,10 +50,34 @@ public class ScreenShotsScript : MonoBehaviour
         screenImage.Apply();
         //Convert to png
         byte[] imageBytes = screenImage.EncodeToPNG();
-        File.WriteAllBytes(Application.dataPath + "/Sprites/Buildings/ShopImg" + i + ".png", imageBytes);
+        File.WriteAllBytes(Application.dataPath + "/Sprites/Offices/Office" + i + ".png", imageBytes);
 
 
        Debug.Log("Screenhot " + i + " Done");
+
+        currentObj.SetActive(false);
+    }
+
+    private IEnumerator HandleShot()
+    {
+        currentObj = Instantiate(objects[0]);
+        currentObj.transform.position = new Vector3(0, 0, 0);
+        currentObj.transform.rotation = Quaternion.identity;
+
+        yield return new WaitForEndOfFrame();
+
+        Texture2D screenImage = new Texture2D(Screen.width, Screen.height);
+        //Get Image from screen
+        screenImage.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
+        screenImage.Apply();
+        //Convert to png
+        byte[] imageBytes = screenImage.EncodeToPNG();
+        File.WriteAllBytes(Application.dataPath + "/Sprites/Offices/Office" + HandleScreenshotDone + ".png", imageBytes);
+
+
+        Debug.Log("Screenhot Done");
+
+        HandleScreenshotDone++;
 
         currentObj.SetActive(false);
     }

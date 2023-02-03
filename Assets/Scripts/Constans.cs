@@ -18,6 +18,7 @@ public static class Constans
     public const int minSkill = 5;
     public const int minSalary = 1000;
 
+    public static readonly Color GreenColor = new Color(0.58f, 0.86f, 0.58f);
     public static readonly Color GrayBgInactive = new Color(0.44f, 0.44f, 0.44f);
     public static readonly Color GrayBgActive = new Color(0.49f, 0.49f, 0.49f);
     public static readonly Color WhiteTextInactive = new Color(0.83f, 0.83f, 0.83f);

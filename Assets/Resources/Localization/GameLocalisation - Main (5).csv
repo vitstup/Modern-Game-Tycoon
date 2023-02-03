@@ -56,18 +56,6 @@ adventure,Adventure,Приключение,Aventure,Abenteuer,Aventuras,Avventur
 horror,Horror,Хорор,Horreur,Grusel,Horror,Orrore
 autofunish,Auto funish,Авто закупка,Amusant automatique,Auto funish,Auto divertido,Autofunzione
 nogames.text,You have no released video games,У вас нет выпущенных видеоигр,Vous n'avez aucun jeu vidéo sorti,Du hast keine veröffentlichten Videospiele,No tienes videojuegos lanzados,Non hai videogiochi rilasciati
-officename.1,Small room,Маленькая комната,Petite chambre,Kleiner Raum,Habitación pequeña,Stanza piccola
-officename.2,Big room,Большая комната,Grande chambre,Großer Raum,Habitación grande,Grande stanza
-officename.3,Basement,Подвал,Sous-sol,Untergeschoss,Sótano,Seminterrato
-officename.4,Old office,Старый офис,Ancien bureau,Altes Büro,Antigua oficina,Vecchio ufficio
-officename.5,Small office,Малый офис,Petit bureau,Kleines Büro,Pequeña oficina,Piccolo ufficio
-officename.6,City office,Городской офис,Bureau de la ville,Stadtbüro,Oficina de la ciudad,Ufficio comunale
-officename.7,Big old office,Большой старый офис,Grand vieux bureau,Großes altes Büro,Oficina grande y antigua,Grande vecchio ufficio
-officename.8,Big office,Большой офис,Grand bureau,Großes Büro,Oficina grande,Grande ufficio
-officename.9,Modern office,Современный офис,Bureau moderne,Modernes Büro,Oficina moderna,Ufficio moderno
-sqr,Square,Площадь,Carré,Quadrat,Cuadrado,Quadrato
-purchase,Purcase price,Стоимость покупки,Prix ​​d'achat,Kaufpreis,Precio de compra,Prezzo d'acquisto
-rental,Rental price,Стоимость аренды,Prix ​​de location,Mietpreis,Precio del alquiler,Prezzo del noleggio
 theme.1,Anime,Аниме,Anime,Anime,Anime,anime
 theme.2,Interactive cinema,Интерактивное кино,Cinéma interactif,Interaktives Kino,Cine interactivo,Cinema interattivo
 theme.3,Western,Вестерн,Occidental,Western,occidental,Occidentale
@@ -216,8 +204,6 @@ st.2,Design stage,Стадия дизайна,Étape de conception,Designphase,E
 st.3,Polishing stage,Стадия полировки,Étape de polissage,Polierstufe,Etapa de pulido,Fase di lucidatura
 from,from,От,de,von,de,a partire dal
 to,to,К,à,zu,para,a
-buy,Buy,Купить,Acheter,Besorgen,Comprar,Acquistare
-select,Select,Выбрать,Sélectionner,Auswählen,Seleccione,Selezionare
 multiplayer,Multiplayer,Мультиплеер,Multijoueur,Mehrspieler,Multijugador,Multigiocatore
 findanother,Find another,Найти другой,Trouve un autre,Einen anderern finden,Encontrar otro,Trova un altro
 income-,Income - ,Доход -,Revenu -,Einkommen -,Ingreso -,Reddito -
@@ -236,13 +222,11 @@ desdiff,Design Difficulty,Сложность дизайна,Difficulté de conce
 poldiff,Polishing Difficulty,Сложность полировки,Difficulté de polissage,Schwierigkeiten beim Polieren,Dificultad de pulido,Difficoltà di lucidatura
 resume,Resume,Продолжить,Reprendre,Lebenslauf,Reanudar,Riprendere
 deadline,Deadline -,Крайний срок -,Date limite -,Termin -,Fecha límite -,Scadenza -
-allfurnituresold,All your furniture will be sold.,Вся ваша мебель будет продана.,Tous vos meubles seront vendus.,Alle Ihre Möbel werden verkauft.,Se venderán todos tus muebles.,Tutti i tuoi mobili saranno venduti.
 color.1,Grey,Серый,Gris,Grau,Gris,Grigio
 color.2,Pink,Розовый,Rose,Rosa,Rosado,Rosa
 color.3,Blue,Синий,Bleu,Blau,Azul,Blu
 color.4,Mint,Мятный,menthe,Minze,menta,menta
 color.5,Yellow,Жёлтый,Jaune,Gelb,Amarillo,Giallo
-sell,Sell,Продать,Vendre,Verkaufen,Vender,Vendere
 loan,Take a loan,Взять кредит,Prendre un prêt,Einen Kredit aufnehmen,Tomar un préstamo,Prendi un prestito
 cancel,Cancel,Отмена,Annuler,Abbrechen,Cancelar,Annulla
 mainmenu,Main menu,Главное меню,Menu principal,Hauptmenü,Menú principal,Menu principale
@@ -329,3 +313,26 @@ shp.25,Metal desktop,Рабочий стол 3,Bureau en métal,Metalldesktop,Es
 shp.26,Big desktop,Рабочий стол 4,Grand bureau,Großer Desktop,Escritorio grande,Grande desktop
 shp.27,Proffesional desktop,Рабочий стол 5,Bureau de profession,Profemsionaler Desktop,Escritorio profesional,Desktop Profsionale
 shp.28,Xerox,Ксерокс,Photocopier,Xerox,fotocopia,Xerox
+buy,Buy,Купить,Acheter,Kaufen,Comprar,Acquistare
+bought,Bought,Куплено,Acheté,Gekauft,Compró,Comprato
+sell,Sell,Продать,Vendre,Verkaufen,Vender,Vendere
+rent,Rent,Арендовать,Location,Miete,Renta,Affitto
+rented,Rented,Арендован,Loué,Gemietet,Alquilado,Affittato
+select,Select,Выбрать,Sélectionner,Wählen,Seleccione,Selezionare
+selected,Selected,Выбрано,Choisi,Ausgewählt,Seleccionado,Selezionato
+autofurnish,Auto furnish,Авто мебель,Fourniture automatique,Automatische Einrichtung,Auto Mobiliario,Arredamento automatico
+upgradeallpcs,Upgrade all pc's,Обновить все пк,Mettre à niveau tous les PC,Aktualisieren Sie alle PCs,Actualizar todas las PC,Aggiorna tutti i PC
+soldfurniture,All your furniture will be sold.,Вся ваша мебель будет продана.,Tous vos meubles seront vendus.,Alle Ihre Möbel werden verkauft.,Todos sus muebles se venderán.,Tutti i tuoi mobili saranno venduti.
+expenses,Expenses,Расходы,Dépenses,Kosten,Gastos,Spese
+square,Square,Площадь,Carré,Quadrat,Cuadrado,Piazza
+purchprice,Purchase price,Цена покупки,Prix ​​d'achat,Kaufpreis,Precio de compra,Prezzo d'acquisto
+rentprice,Rent price,Цена аренды,Prix ​​de loyer,Mietpreis,Precio de alquiler,Prezzo di affitto
+office.0,Small room,Маленькая комната,Petite chambre,Kleiner Raum,Habitación pequeña,Stanza piccola
+office.1,Garage,Гараж,Garage,Garage,Garaje,Box auto
+office.2,Studio,Студия,Studio,Studio,Estudio,Studio
+office.3,Apartments,Аппартаменты,Appartements,Wohnungen,Apartamentos,Appartamenti
+office.4,Basement,Подвал,Sous-sol,Untergeschoss,Sótano,Seminterrato
+office.5,Old office,Старый офис,Vieux bureau,Altes Büro,Oficina antigua,Vecchio ufficio
+office.6,Industrial office,Промышленное офис,Bureau industriel,Industriebüro,Oficina industrial,Ufficio industriale
+office.7,City office,Городской офис,Bureau de la ville,Stadtbüro,Oficina municipal,Ufficio della città
+office.8,Modern office,Современный офис,Bureau moderne,Modernes Büro,Oficina moderna,Ufficio moderno

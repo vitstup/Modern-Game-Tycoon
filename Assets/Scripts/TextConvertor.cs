@@ -39,4 +39,14 @@ public static class TextConvertor
 
         return sb.ToString();
     }
+
+    public static string ChangeColor(string text, Color color)
+    {
+        return string.Format("<color={0}>", "#" + ColorUtility.ToHtmlStringRGB(color)) + text; 
+    }
+
+    public static string ChangeColorAndSize(string text, Color color, int size)
+    {
+        return string.Format("<size={0}>", size) + ChangeColor(text, color);
+    }
 }
