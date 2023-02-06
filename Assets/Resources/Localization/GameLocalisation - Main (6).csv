@@ -121,7 +121,6 @@ buildinfo.4,Press  <b><i>R</i></b> or  <b><i>Q</i></b> to rotate the item,Наж
 buildinfo.5,Press  <b><i>Delete</i></b> to sell or remove item,Нажмите  <b><i>Delete</i></b> что бы продать или удалить предмет,Appuyez sur  <b><i>Delete</i></b> pour vendre ou supprimer l'article,"Drücken Sie  <b><i>Delete</i></b>, um Artikel zu verkaufen oder zu entfernen",Presiona  <b><i> Delete</i></b> para vender o eliminar el artículo.,Premi  <b><i>Delete</i></b> per vendere o rimuovere l'oggetto
 save,Save,Сохранить,Sauvegarder,Speichern,Ahorrar,Salva
 logo,Logo,Логотип,Logo,Logo,Logo,Logo
-assign,Assign,Назначить,Attribuer,Zuordnen,Asignar,Assegnare
 gamepaused,Game paused,Пауза,Jeu en pause,Spiel pausiert,Juego pausado,Gioco in pausa
 f.1,2D,2D,2D,2D,2D,2D
 f.2,3D,3D,3D,3D,3D,3D
@@ -267,7 +266,7 @@ month.9,September,Сентябрь,septembre,September,septiembre,settembre
 month.10,October,Октябрь,octobre,Oktober,octubre,ottobre
 month.11,November,Ноябрь,novembre,November,noviembre,novembre
 month.12,December,Декабрь,décembre,Dezember,diciembre,dicembre
-proffesion,Profession,Профессия,Métier,Beruf,Profesión,Professione
+proffesion,Profession,Профессия,Profession,Beruf,Profesión,Professione
 proffesion.0,Programmer,Программист,Programmeur,Programmierer,Programador,Programmatore
 proffesion.1,Game designer,Гейм дизайнер,Designer de jeu,Spieledesigner,Diseñador de juegos,Designer di giochi
 proffesion.2,Art designer,Художник,Concepteur d'art,Kunstdesigner,Diseñador de arte,Designer d'arte
@@ -278,11 +277,11 @@ skill.1,Game design,Игровой дизайн,Le design du jeu,Spieldesign,Dis
 skill.2,Art design,Арт дизайн,Conception d'art,Kunstdesign,Diseño artístico,Design artistico
 skill.3,Sound design,Звуковой дизайн,Conception sonore,Audiogestaltung,Diseño de sonido,Design del suono
 skill.4,Screenwriting,Сценарий,Scénarisation,Drehbuch,Escritura de guiones,Sceneggiatura
-salary,Salary,Зарплата,Un salaire,Gehalt,Sueldo,Stipendio
+salary,Salary,Зарплата,Salaire,Gehalt,Salario,Stipendio
 personaTab.0,Employees by profession,Сотрудники по профессии,Employés par profession,Mitarbeiter nach Beruf,Empleados por profesión,Dipendenti di professione
 personaTab.1,Average skills,Средние навыки,Compétences moyennes,Durchschnittliche Fähigkeiten,Habilidades promedio,Abilità medie
 personaTab.2,Total skills,Общие навыки,Compétences totales,Gesamtfähigkeiten,Habilidades totales,Abilità totali
-all,All,Все,Tous,Alle,Todas,Tutti
+all,All,Все,Tous,Alle,Todo,Tutto
 applications,Applications,Заявления,Applications,Anwendungen,Aplicaciones,Applicazioni
 shp.0,Aquarium,Аквариум,Aquarium,Aquarium,Acuario,Acquario
 shp.1,Arcade machine,Аркадная машина,Arcade,Arcade-Maschine,Máquina arcade,Macchina arcade
@@ -296,7 +295,7 @@ shp.8,Big couch,Большой диван,Grand canapé,Große Couch,Gran sofá,
 shp.9,Cupboard,Шкаф,Placard métallique,Schrank,Armario,Armadio
 shp.10,Metal cupboard,Металлический шкаф,Placard métallique,Metallschrank,Armario de metal,Armadio di metallo
 shp.11,Mini football,Мини футбол,Mini football,Mini -Fußball,Mini fútbol,Mini calcio
-shp.12,Fridge,Холодильник,Réfrigérateur,Kühlschrank,Nevera,Frigorifero
+shp.12,Fridge,Холодильник,Réfrigérateur,Kühlschrank,Refrigerador,Frigo
 shp.13,Minigolf,Мини гольф,Mini golf,Minigolf,Mini golf,Mini golf
 shp.14,Small plant,Небольшое растение,Petite plante,Kleine Pflanze,Planta pequeña,Pianta piccola
 shp.15,Big plant,Большое растение,Grande plante,Große Pflanze,Gran planta,Grande pianta
@@ -313,26 +312,28 @@ shp.25,Metal desktop,Рабочий стол 3,Bureau en métal,Metalldesktop,Es
 shp.26,Big desktop,Рабочий стол 4,Grand bureau,Großer Desktop,Escritorio grande,Grande desktop
 shp.27,Proffesional desktop,Рабочий стол 5,Bureau de profession,Profemsionaler Desktop,Escritorio profesional,Desktop Profsionale
 shp.28,Xerox,Ксерокс,Photocopier,Xerox,fotocopia,Xerox
-buy,Buy,Купить,Acheter,Kaufen,Comprar,Acquistare
+buy,Buy,Купить,Acheter,Besorgen,Comprar,Acquistare
 bought,Bought,Куплено,Acheté,Gekauft,Compró,Comprato
 sell,Sell,Продать,Vendre,Verkaufen,Vender,Vendere
-rent,Rent,Арендовать,Location,Miete,Renta,Affitto
+rent,Rent,Арендовать,Louer,Mieten,Alquilar,Affitto
 rented,Rented,Арендован,Loué,Gemietet,Alquilado,Affittato
-select,Select,Выбрать,Sélectionner,Wählen,Seleccione,Selezionare
+select,Select,Выбрать,Sélectionner,Wählen,Seleccionar,Selezionare
 selected,Selected,Выбрано,Choisi,Ausgewählt,Seleccionado,Selezionato
 autofurnish,Auto furnish,Авто мебель,Fourniture automatique,Automatische Einrichtung,Auto Mobiliario,Arredamento automatico
 upgradeallpcs,Upgrade all pc's,Обновить все пк,Mettre à niveau tous les PC,Aktualisieren Sie alle PCs,Actualizar todas las PC,Aggiorna tutti i PC
 soldfurniture,All your furniture will be sold.,Вся ваша мебель будет продана.,Tous vos meubles seront vendus.,Alle Ihre Möbel werden verkauft.,Todos sus muebles se venderán.,Tutti i tuoi mobili saranno venduti.
-expenses,Expenses,Расходы,Dépenses,Kosten,Gastos,Spese
-square,Square,Площадь,Carré,Quadrat,Cuadrado,Piazza
-purchprice,Purchase price,Цена покупки,Prix ​​d'achat,Kaufpreis,Precio de compra,Prezzo d'acquisto
+expenses,Expenses,Затраты,Dépenses,Kosten,Gastos,Spese
+square,Square,Квадрат,Carré,Quadrat,Cuadrado,Piazza
+purchprice,Purchase price,Цена,Prix ​​d'achat,Kaufpreis,Precio de compra,Prezzo d'acquisto
 rentprice,Rent price,Цена аренды,Prix ​​de loyer,Mietpreis,Precio de alquiler,Prezzo di affitto
 office.0,Small room,Маленькая комната,Petite chambre,Kleiner Raum,Habitación pequeña,Stanza piccola
-office.1,Garage,Гараж,Garage,Garage,Garaje,Box auto
+office.1,Garage,Гараж,Garage,Garage,Cochera,Box auto
 office.2,Studio,Студия,Studio,Studio,Estudio,Studio
 office.3,Apartments,Аппартаменты,Appartements,Wohnungen,Apartamentos,Appartamenti
-office.4,Basement,Подвал,Sous-sol,Untergeschoss,Sótano,Seminterrato
+office.4,Basement,Подвал,Sous-sol,Keller,Sótano,Seminterrato
 office.5,Old office,Старый офис,Vieux bureau,Altes Büro,Oficina antigua,Vecchio ufficio
 office.6,Industrial office,Промышленное офис,Bureau industriel,Industriebüro,Oficina industrial,Ufficio industriale
 office.7,City office,Городской офис,Bureau de la ville,Stadtbüro,Oficina municipal,Ufficio della città
 office.8,Modern office,Современный офис,Bureau moderne,Modernes Büro,Oficina moderna,Ufficio moderno
+assign,Assign,Назначать,Attribuer,Zuordnen,Asignar,Assegnare
+assigned,Assigned,Назначен,Attribué,Zugewiesen,Asignado,Assegnato

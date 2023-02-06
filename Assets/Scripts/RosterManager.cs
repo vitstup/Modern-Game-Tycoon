@@ -11,6 +11,8 @@ public class RosterManager : MonoBehaviour
     [field: SerializeField] public List<Persona> availableWorkers { get; private set; } = new List<Persona>();
     [field: SerializeField] public List<Persona> hiredWorkers { get; private set; } = new List<Persona>();
 
+    [HideInInspector] public Table selectedTable;
+
     private void Awake()
     {
         TimeManager.DayUpdateEvent.AddListener(availablesUpdate);
@@ -43,11 +45,28 @@ public class RosterManager : MonoBehaviour
 
     public void FireWorker(Persona persona)
     {
+        persona.table.DeAssignedWorker();
         hiredWorkers.Remove(persona);
     }
 
     public void AssignWorker(Persona persona)
     {
+        if (persona.table != null) persona.table.DeAssignedWorker();
+        DeasignFromSelecyedTable();
+        persona.table = selectedTable;
+        persona.table.AssignedWorker(persona);
 
+        RosterUI.instance.CloseRoster();
+    }
+
+    private void DeasignFromSelecyedTable()
+    {
+        for (int i = 0; i < hiredWorkers.Count; i++)
+        {
+            if (hiredWorkers[i].table == selectedTable)
+            {
+                hiredWorkers[i].table = null;
+            }
+        }
     }
 }

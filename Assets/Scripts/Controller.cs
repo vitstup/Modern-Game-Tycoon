@@ -5,23 +5,77 @@ using UnityEngine.EventSystems;
 
 public class Controller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Camera mainCamera;
+    [SerializeField] private Camera uiCamera;
+
+    [SerializeField] private float minZoom;
+    [SerializeField] private float maxZoom;
+    [SerializeField] private float zoomSpeed;
+
+    [SerializeField] private float wasdSpeed;
+    [SerializeField] private float mouseSpeed;
+
+    private Vector3 newPosition; // Camera will move to this point
+    private Vector3 startPosition; // Used For Mouse Move
+    private Vector3 mouseChange; // Used For Mouse Move
+
+    private void Awake()
     {
-        
+        newPosition = transform.localPosition;
+        mainCamera = Camera.main;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        //if (isOverUi()) return;
+
+        if (TimeManager.instance.runStatus == RunStatus.stoped)
+        {
+            newPosition = transform.localPosition;
+            return;
+        }
+
+        Zoom(Input.GetAxis("Mouse ScrollWheel") * zoomSpeed);
+
+        if (Input.GetKey(KeyCode.S)) newPosition -= Vector3.up * wasdSpeed;
+        if (Input.GetKey(KeyCode.W)) newPosition += Vector3.up * wasdSpeed;
+        if (Input.GetKey(KeyCode.A)) newPosition -= Vector3.right * wasdSpeed;
+        if (Input.GetKey(KeyCode.D)) newPosition += Vector3.right * wasdSpeed;
+
+        MouseHandler();
+
+        Move();
     }
 
-    private bool isOverUi()
+    private bool IsOverUi()
     {
         var _eventDataCurPos = new PointerEventData(EventSystem.current) { position = Input.mousePosition };
         var _results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(_eventDataCurPos, _results);
         return _results.Count > 0;
+    }
+
+    private void Zoom(float increment)
+    {
+        mainCamera.orthographicSize = Mathf.Clamp(mainCamera.orthographicSize - increment, minZoom, maxZoom);
+        uiCamera.orthographicSize = mainCamera.orthographicSize;
+    }
+
+    private void Move()
+    {
+        transform.localPosition = Vector3.Lerp(transform.localPosition, newPosition, Time.deltaTime * 5);
+    }
+
+    private void MouseHandler()
+    {
+        if (Input.GetMouseButtonDown(1)) startPosition = Input.mousePosition;
+        if (Input.GetMouseButton(1)) mouseChange = Input.mousePosition;
+
+        float x = startPosition.x - mouseChange.x;
+        float y = startPosition.y - mouseChange.y;
+
+        startPosition = mouseChange;
+
+        newPosition += new Vector3(x * mouseSpeed, y * mouseSpeed, 0);
     }
 }

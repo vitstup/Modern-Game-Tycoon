@@ -8,6 +8,9 @@ public static class Constans
     public const int femaleNamesLength = 196;
     public const int surnamesLength = 154;
 
+    public const int maleModels = 14;
+    public const int femaleModels = 12;
+
     public const int basePayPerPoint = 15;
 
     public static readonly int[] DaysInMonth =  { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };

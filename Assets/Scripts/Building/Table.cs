@@ -1,15 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Table : Building
 {
     private Canvas canvas;
+    [SerializeField] private Button assignBtn;
+    [SerializeField] private Button pcBtn;
+    private TextMeshProUGUI assignText;
+
+    private PersonaModel model;
 
     protected override void Awake()
     {
         base.Awake();
         canvas = GetComponentInChildren<Canvas>();
+        assignText = assignBtn.gameObject.GetComponentInChildren<TextMeshProUGUI>();
+        model = GetComponentInChildren<PersonaModel>();
     }
 
     public override void Rotate(bool Right)
@@ -29,5 +38,23 @@ public class Table : Building
     {
         base.Put();
         canvas.gameObject.SetActive(true);
+    }
+
+    public void OpenRoster()
+    {
+        RosterManager.instance.selectedTable = this;
+        RosterUI.instance.OpenAssign();
+    }
+
+    public void AssignedWorker(Persona persona)
+    {
+        assignText.text = persona.personaName;
+        model.SetModel(persona.modelId);
+    }
+
+    public void DeAssignedWorker()
+    {
+        assignText.text = Localization.Localize("assign");
+        model.HideModel();
     }
 }

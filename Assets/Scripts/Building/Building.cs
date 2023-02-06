@@ -80,6 +80,7 @@ public class Building : MonoBehaviour
     {
         if (isBuilded)
         {
+            if (TimeManager.instance.runStatus != RunStatus.standart) return;
             if (BuildingManager.instance.currentBuilding == null && !BuildingManager.instance.interactedThisUpdate) Move();
         }
     }

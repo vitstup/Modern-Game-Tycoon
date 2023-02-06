@@ -16,7 +16,7 @@ public class Persona
 
     [field: SerializeField] public int id { get; private set; }
 
-    // table, to which is assigned
+    public Table table;
 
     public Persona(int id)
     {
@@ -42,7 +42,8 @@ public class Persona
 
         salary = CalculateSalary(1.02f, minSalary);
 
-        // model
+        if (isMale) modelId = Random.Range(0, Constans.maleModels);
+        else modelId = Random.Range(Constans.maleModels, Constans.maleModels + Constans.femaleModels);
     }
 
     private int CalculateSalary(float coef, int minSalary)

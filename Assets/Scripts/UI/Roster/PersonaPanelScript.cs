@@ -17,6 +17,8 @@ public class PersonaPanelScript : MonoBehaviour
 
     [SerializeField] private Toggle toggle;
 
+    [SerializeField] private TextMeshProUGUI assignedText;
+
     public Persona lastSelected { get; private set; }
 
     private void Start() => background = GetComponent<Image>();
@@ -48,7 +50,18 @@ public class PersonaPanelScript : MonoBehaviour
 
         lastSelected = persona;
 
-        toggle.isOn = false;
+        if (RosterUI.instance.state == RosterUI.State.Assign)
+        {
+            if (persona.table != null) assignedText.gameObject.SetActive(true);
+            else assignedText.gameObject.SetActive(false);
+            toggle.gameObject.SetActive(false);
+        }
+        else
+        {
+            assignedText.gameObject.SetActive(false);
+            toggle.gameObject.SetActive(true);
+            toggle.isOn = false;
+        }
     }
 
     public void Open()

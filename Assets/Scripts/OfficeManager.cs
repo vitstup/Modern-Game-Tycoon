@@ -14,9 +14,9 @@ public class OfficeManager : MonoBehaviour
     {
         instance = this;
         SetOfficeObj();
-        OfficesUI.instance.SetOfficePanels(offices);
     }
 
+    private void Start() => OfficesUI.instance.SetOfficePanels(offices);
 
     public Office GetCurrentOffice()
     {

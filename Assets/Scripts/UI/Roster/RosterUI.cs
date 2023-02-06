@@ -18,6 +18,8 @@ public class RosterUI : MonoBehaviour
 
     public State state { get; private set; }
 
+    private State previosState; // return to this state after assign state
+
     public SortStatus sortStatus { get; private set; }
 
     [SerializeField] private GameObject RosterCanvas;
@@ -38,6 +40,9 @@ public class RosterUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI selectedSalary;
 
     private List<PersonaPanelScript> selectedPanels = new List<PersonaPanelScript>();
+
+    [SerializeField] private RectTransform LeftPanel;
+    [SerializeField] private Transform PanelsTransform;
 
 
     private void Awake() => instance = this;
@@ -66,6 +71,26 @@ public class RosterUI : MonoBehaviour
         UpdateUI();
     }
 
+    public void OpenAssign()
+    {
+        if (state != State.Assign) previosState = state;
+        state = State.Assign;
+        RosterCanvas.SetActive(true);
+        TimeManager.instance.ChangeRunStatus(RunStatus.stoped);
+        UpdateUI();
+    }
+
+    public void CloseRoster()
+    {
+        RosterCanvas.SetActive(false);
+        TimeManager.instance.ChangeRunStatus(RunStatus.standart);
+    }
+
+    public void ResetAfterAssignStage()
+    {
+        if (state == State.Assign) { state = previosState; Debug.Log("Changed"); }
+    }
+
     public void UpdateUI()
     {
         var personaList = (state == State.hirePersonal) ? RosterManager.instance.availableWorkers : RosterManager.instance.hiredWorkers;
@@ -77,19 +102,30 @@ public class RosterUI : MonoBehaviour
 
          applicationsText.text = personaList.Count.ToString() + " " + Localization.Localize("applications");
 
-        if (state == State.hirePersonal)
+        if(state == State.Assign)
         {
-            TotalSkillTable.gameObject.SetActive(false);
-            interactionText.text = Localization.Localize("hire");
-        }
-        else if(state == State.Personal)
-        {
+            LeftPanel.gameObject.SetActive(false);
+            selectToggle.gameObject.SetActive(false);
+            interactionBtn.gameObject.SetActive(false);
             TotalSkillTable.gameObject.SetActive(true);
-            interactionText.text = Localization.Localize("fire");
+            PanelsTransform.localPosition = new Vector3(LeftPanel.sizeDelta.x / -2, 0);
         }
-        else if(state == State.Assign)
+        else
         {
-            interactionText.text = Localization.Localize("assign");
+            LeftPanel.gameObject.SetActive(true);
+            selectToggle.gameObject.SetActive(true);
+            interactionBtn.gameObject.SetActive(true);
+            PanelsTransform.localPosition = new Vector3(0, 0);
+            if (state == State.hirePersonal)
+            {
+                TotalSkillTable.gameObject.SetActive(false);
+                interactionText.text = Localization.Localize("hire");
+            }
+            else if (state == State.Personal)
+            {
+                TotalSkillTable.gameObject.SetActive(true);
+                interactionText.text = Localization.Localize("fire");
+            }
         }
 
         UpdatePanels(Sort(personaList));
@@ -173,7 +209,6 @@ public class RosterUI : MonoBehaviour
         {
             if (state == State.hirePersonal) RosterManager.instance.HireWorker(selectedPanels[i].lastSelected);
             else if (state == State.Personal) RosterManager.instance.FireWorker(selectedPanels[i].lastSelected);
-            //else if (state == State.Assign) RosterManager.instance.FireWorker(selectedPanels[i].lastSelected);
         }
         selectToggle.isOn = false;
         UpdateUI();
