@@ -19,6 +19,9 @@ public class Controller : MonoBehaviour
     private Vector3 startPosition; // Used For Mouse Move
     private Vector3 mouseChange; // Used For Mouse Move
 
+    private double PreviosUpdatesTime;
+    private float ThisUpdateRealTime;
+
     private void Awake()
     {
         newPosition = transform.localPosition;
@@ -27,6 +30,10 @@ public class Controller : MonoBehaviour
 
     private void Update()
     {
+        ThisUpdateRealTime = (float)(Time.realtimeSinceStartup - PreviosUpdatesTime);
+        PreviosUpdatesTime = Time.realtimeSinceStartup;
+
+
         //if (isOverUi()) return;
 
         if (TimeManager.instance.runStatus == RunStatus.stoped)
@@ -47,14 +54,6 @@ public class Controller : MonoBehaviour
         Move();
     }
 
-    private bool IsOverUi()
-    {
-        var _eventDataCurPos = new PointerEventData(EventSystem.current) { position = Input.mousePosition };
-        var _results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(_eventDataCurPos, _results);
-        return _results.Count > 0;
-    }
-
     private void Zoom(float increment)
     {
         mainCamera.orthographicSize = Mathf.Clamp(mainCamera.orthographicSize - increment, minZoom, maxZoom);
@@ -63,7 +62,7 @@ public class Controller : MonoBehaviour
 
     private void Move()
     {
-        transform.localPosition = Vector3.Lerp(transform.localPosition, newPosition, Time.deltaTime * 5);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, newPosition, ThisUpdateRealTime * 5);
     }
 
     private void MouseHandler()

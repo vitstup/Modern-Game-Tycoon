@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -13,12 +14,19 @@ public class Table : Building
 
     private PersonaModel model;
 
+    [SerializeField] private GameObject[] pcModels;
+
+    [HideInInspector] public int currentPc { get; private set; }
+
     protected override void Awake()
     {
         base.Awake();
-        canvas = GetComponentInChildren<Canvas>();
-        assignText = assignBtn.gameObject.GetComponentInChildren<TextMeshProUGUI>();
+        BuildingManager.buildingSomething.AddListener(ShowCanvas);
+        canvas = GetComponentInChildren<Canvas>(true);
+        assignText = assignBtn.gameObject.GetComponentInChildren<TextMeshProUGUI>(true);
         model = GetComponentInChildren<PersonaModel>();
+
+        if (pcModels.Length != ComputerManager.instance.computers.Length) Debug.LogError("Something wrong with pc models");
     }
 
     public override void Rotate(bool Right)
@@ -28,16 +36,23 @@ public class Table : Building
         else canvas.transform.Rotate(0, 45, 0, Space.World);
     }
 
-    protected override void Move()
+    public override int GetPrice()
     {
-        base.Move();
-        canvas.gameObject.SetActive(false);
+        return price + ComputerManager.instance.computers[currentPc].price;
     }
 
-    public override void Put()
+    public void SetModernPc() // Use this method in shopitem prices update
     {
-        base.Put();
-        canvas.gameObject.SetActive(true);
+        if (!isBuilded)
+        {
+            currentPc = ComputerManager.instance.GetModernPcId();
+            UpdatePcModel();
+        }
+    }
+
+    private void ShowCanvas(bool show)
+    {
+        canvas.gameObject.SetActive(!show);
     }
 
     public void OpenRoster()
@@ -56,5 +71,32 @@ public class Table : Building
     {
         assignText.text = Localization.Localize("assign");
         model.HideModel();
+    }
+
+    public void UpgradePc()
+    {
+        int newPcId = ComputerManager.instance.GetModernPcId();
+        if (newPcId > currentPc)
+        {
+            Main.instance.MinusMoney(ComputerManager.instance.computers[newPcId].price);
+            currentPc = newPcId;
+            UpdatePcModel();
+            SetPcBtn(false);
+        }
+        else Debug.LogWarning("Trying to update pc, witch is already modern");
+    }
+
+    private void UpdatePcModel()
+    {
+        for (int i = 0; i < pcModels.Length; i++)
+        {
+            if (i == currentPc) { pcModels[i].SetActive(true); continue; }
+            pcModels[i].SetActive(false);
+        }
+    }
+
+    public void SetPcBtn(bool show)
+    {
+        pcBtn.gameObject.SetActive(show);
     }
 }

@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BuildingManager : MonoBehaviour
 {
+    public class boolEvent : UnityEvent<bool> { }
+    public static boolEvent buildingSomething = new boolEvent();
+
     public static BuildingManager instance;
 
     private Camera mainCamera;
@@ -12,16 +16,22 @@ public class BuildingManager : MonoBehaviour
 
     [HideInInspector] public bool interactedThisUpdate = false;
 
+    [field: SerializeField] public Transform itemsParent { get; private set; }
+
+    [HideInInspector] public float happiness = 1f;
+    [HideInInspector] public List<Building> buildings { get; private set; } = new List<Building>();
+
     private void Awake()
     {
         instance = this;
         mainCamera = Camera.main;
+        TimeManager.DayUpdateEvent.AddListener(CalculateHappiness);
     }
 
     public void Build(Building building)
     {
-        // maybe delete previos
-        currentBuilding = Instantiate(building);
+        currentBuilding = Instantiate(building, itemsParent);
+        buildingSomething?.Invoke(true);
     }
 
     private void Update()
@@ -51,14 +61,17 @@ public class BuildingManager : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.Delete))
                 {
-                    currentBuilding.Delete();
+                    Destroy(currentBuilding.gameObject);
                     TimeManager.instance.ChangeRunStatus(RunStatus.standart);
+                    buildingSomething?.Invoke(false);
                 }
 
                 if (available && Input.GetMouseButtonDown(0) && !interactedThisUpdate)
                 {
+                    buildings.Add(currentBuilding);
                     currentBuilding.Put();
                     currentBuilding = null;
+                    buildingSomething?.Invoke(false);
                 }
             }
         }
@@ -70,5 +83,23 @@ public class BuildingManager : MonoBehaviour
         interactedThisUpdate = true;
         currentBuilding = building;
         TimeManager.instance.ChangeRunStatus(RunStatus.building);
+        TimeManager.instance.ChangeSpeed(1);
+        buildingSomething?.Invoke(true);
     }
+
+    public void CalculateHappiness()
+    {
+        happiness = 1;
+        for (int i = 0; i < buildings.Count; i++)
+        {
+            if (buildings[i] != null) happiness += buildings[i].happiness;
+        }
+    }
+
+    public void AutoFurniture()
+    {
+        var furniture = OfficeManager.instance.GetCurrentOffice().autoFurniture;
+
+    }
+
 }

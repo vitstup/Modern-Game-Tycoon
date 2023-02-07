@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4ee738787933741811d6b94f9bdae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 0
-  <happiness>k__BackingField: 0
+  price: 2500
+  <happiness>k__BackingField: 0.1
 --- !u!65 &6364441096851580552
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -408,7 +408,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64501820267827146, guid: 3e50ad8d5b8ed4143ad2f6882db1dcb3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3e50ad8d5b8ed4143ad2f6882db1dcb3, type: 3}
 --- !u!4 &4335174867478691613 stripped
 Transform:

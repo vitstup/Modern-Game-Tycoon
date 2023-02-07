@@ -11,9 +11,9 @@ public class TimeManager : MonoBehaviour
     public static UnityEvent MonthUpdateEvent = new UnityEvent();
     public static UnityEvent YearUpdateEvent = new UnityEvent();
 
-    public int day { get; private set; }
-    public int month { get; private set; }
-    public int year { get; private set; }
+    [field: SerializeField] public int day { get; private set; }
+    [field: SerializeField] public int month { get; private set; }
+    [field: SerializeField] public int year { get; private set; }
 
     [HideInInspector] public TimeSpeed timeSpeed { get; private set; }
     [HideInInspector] public RunStatus runStatus { get; private set; }

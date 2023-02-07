@@ -6,12 +6,12 @@ public class Building : MonoBehaviour
 {
     private MeshRenderer[] renderers;
 
-    private bool isBuilded = false;
+    protected bool isBuilded = false;
 
     private List<Collider> obstacles = new List<Collider>();
     private List<Collider> floor = new List<Collider>();
 
-    [SerializeField] private int price;
+    [SerializeField] protected int price;
 
     [field: SerializeField] public float happiness { get; private set; }
 
@@ -32,13 +32,17 @@ public class Building : MonoBehaviour
 
     }
 
-    public virtual void Put()
+    public void Put()
     {
         BuildingManager.instance.interactedThisUpdate = true;
         Colorize(Color.white);
-        if (!isBuilded) OpenShopPanel();
+        if (!isBuilded)
+        {
+            OpenShopPanel();
+        }
         else TimeManager.instance.ChangeRunStatus(RunStatus.standart);
         isBuilded = true;
+        Main.instance.MinusMoney(GetPrice());
     }
 
     public virtual void Rotate(bool Right)
@@ -47,10 +51,9 @@ public class Building : MonoBehaviour
         else transform.Rotate(0, -45, 0);
     }
 
-    public virtual void Delete()
+    public void OnDestroy()
     {
-        // if builded, return some money
-        Destroy(gameObject);
+        if (isBuilded) Main.instance.AddMoney(GetPrice() / 2);
     }
 
     public virtual int GetPrice()
@@ -80,12 +83,12 @@ public class Building : MonoBehaviour
     {
         if (isBuilded)
         {
-            if (TimeManager.instance.runStatus != RunStatus.standart) return;
+            if (TimeManager.instance.runStatus != RunStatus.standart || Helpers.IsOverUi()) return;
             if (BuildingManager.instance.currentBuilding == null && !BuildingManager.instance.interactedThisUpdate) Move();
         }
     }
 
-    protected virtual void Move()
+    protected void Move()
     {
         obstacles.RemoveAll(Collider => Collider == null);
         BuildingManager.instance.Move(this);

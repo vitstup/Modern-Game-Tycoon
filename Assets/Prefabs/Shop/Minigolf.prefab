@@ -81,8 +81,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4ee738787933741811d6b94f9bdae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <price>k__BackingField: 0
-  <happiness>k__BackingField: 0
+  price: 1500
+  <happiness>k__BackingField: 0.1
 --- !u!65 &3739723285683245147
 BoxCollider:
   m_ObjectHideFlags: 0

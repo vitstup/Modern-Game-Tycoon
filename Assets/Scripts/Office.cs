@@ -15,5 +15,7 @@ public class Office
 
     [field: SerializeField] public int rentPrice { get; private set; }
 
+    [field: SerializeField] public GameObject autoFurniture { get; private set; }
+
     public OfficeState state;
 }

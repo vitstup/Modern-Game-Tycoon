@@ -2667,6 +2667,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 51c07c41f6071a245b06f6764b1715d9, type: 3}
   - {fileID: 21300000, guid: bf6d374d6ead30c428801982872bb195, type: 3}
   ShopPanel: {fileID: 11149806}
+  happinessText: {fileID: 98351431}
+  officeName: {fileID: 591699612}
+  expenses: {fileID: 711283829}
 --- !u!114 &183792808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3098,6 +3101,7 @@ GameObject:
   - component: {fileID: 201432029}
   - component: {fileID: 201432031}
   - component: {fileID: 201432030}
+  - component: {fileID: 201432032}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3222,6 +3226,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201432028}
   m_CullTransparentMesh: 1
+--- !u!114 &201432032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201432028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c1780e8c33ee64a849a1c6db0ffb85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: Menu.con
 --- !u!1 &217032834
 GameObject:
   m_ObjectHideFlags: 0
@@ -6558,6 +6575,7 @@ GameObject:
   - component: {fileID: 597376591}
   - component: {fileID: 597376593}
   - component: {fileID: 597376592}
+  - component: {fileID: 597376594}
   m_Layer: 5
   m_Name: YourFurntireSoldText
   m_TagString: Untagged
@@ -6682,6 +6700,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597376590}
   m_CullTransparentMesh: 1
+--- !u!114 &597376594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597376590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c1780e8c33ee64a849a1c6db0ffb85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: soldfurniture
 --- !u!1 &599148521
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,7 +6796,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 599148524}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 628616372}
+        m_TargetAssemblyTypeName: BuildingManager, Assembly-CSharp
+        m_MethodName: AutoFurniture
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &599148524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7361,6 +7404,7 @@ GameObject:
   - component: {fileID: 628616372}
   - component: {fileID: 628616373}
   - component: {fileID: 628616374}
+  - component: {fileID: 628616375}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -7380,6 +7424,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deafb818f8fa08848b6bfbf1deab650d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <day>k__BackingField: 0
+  <month>k__BackingField: 0
+  <year>k__BackingField: 0
   pauseButton: 32
 --- !u!4 &628616370
 Transform:
@@ -7424,6 +7471,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactedThisUpdate: 0
+  <itemsParent>k__BackingField: {fileID: 1520104571}
+  happiness: 0
 --- !u!114 &628616373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7442,54 +7491,63 @@ MonoBehaviour:
     <square>k__BackingField: 25
     <price>k__BackingField: 50000
     <rentPrice>k__BackingField: 750
+    <autoFurniture>k__BackingField: {fileID: 4045416604794749187, guid: e800ef22a881bd041bf24a9b5fda11b7, type: 3}
     state: 1
   - <officeObj>k__BackingField: {fileID: 99329542}
     <sprite>k__BackingField: {fileID: 21300000, guid: 2d605957cc0567a43be228d0d2532889, type: 3}
     <square>k__BackingField: 50
     <price>k__BackingField: 65000
     <rentPrice>k__BackingField: 900
+    <autoFurniture>k__BackingField: {fileID: 8837480863277768013, guid: e1d85be6405db6c4ab02473f6683372c, type: 3}
     state: 0
   - <officeObj>k__BackingField: {fileID: 1754029817}
     <sprite>k__BackingField: {fileID: 21300000, guid: d871e81d11b54804497d0bd346b7d213, type: 3}
     <square>k__BackingField: 56
     <price>k__BackingField: 100000
     <rentPrice>k__BackingField: 1750
+    <autoFurniture>k__BackingField: {fileID: 3447935589324705113, guid: 48d5ff21ce593ce43950c902677f9e2c, type: 3}
     state: 0
   - <officeObj>k__BackingField: {fileID: 1380266254}
     <sprite>k__BackingField: {fileID: 21300000, guid: 0a39250c85d13ab46a1e66d159f24606, type: 3}
     <square>k__BackingField: 100
     <price>k__BackingField: 200000
     <rentPrice>k__BackingField: 3500
+    <autoFurniture>k__BackingField: {fileID: 3955703353694132037, guid: 67c8e607512b5514ea93de2e5404bfab, type: 3}
     state: 0
   - <officeObj>k__BackingField: {fileID: 1268880916}
     <sprite>k__BackingField: {fileID: 21300000, guid: 632f98393971698459b31f087cc006d0, type: 3}
     <square>k__BackingField: 100
     <price>k__BackingField: 175000
     <rentPrice>k__BackingField: 3000
+    <autoFurniture>k__BackingField: {fileID: 3955703353694132037, guid: 67c8e607512b5514ea93de2e5404bfab, type: 3}
     state: 0
   - <officeObj>k__BackingField: {fileID: 1028248825}
     <sprite>k__BackingField: {fileID: 21300000, guid: ef854faa9f98c2e43893228a8c52aa62, type: 3}
     <square>k__BackingField: 150
     <price>k__BackingField: 275000
     <rentPrice>k__BackingField: 5750
+    <autoFurniture>k__BackingField: {fileID: 1384969500666800742, guid: 821afe69a91c3c44a9776ac272419a40, type: 3}
     state: 0
   - <officeObj>k__BackingField: {fileID: 1832454551}
     <sprite>k__BackingField: {fileID: 21300000, guid: e221531f86b7ff647a0edc336abffa03, type: 3}
     <square>k__BackingField: 225
     <price>k__BackingField: 550000
     <rentPrice>k__BackingField: 9000
+    <autoFurniture>k__BackingField: {fileID: 4843388090995507118, guid: 5f890bc6a5ec4754299cba075cf8add4, type: 3}
     state: 0
   - <officeObj>k__BackingField: {fileID: 1498249136}
     <sprite>k__BackingField: {fileID: 21300000, guid: 3ba9b2ad91ec25c4bb8e596e6ad5e015, type: 3}
     <square>k__BackingField: 300
     <price>k__BackingField: 1000000
     <rentPrice>k__BackingField: 15550
+    <autoFurniture>k__BackingField: {fileID: 8484920031988250261, guid: fe6f1ddb52100a640be9b95b6426759b, type: 3}
     state: 0
   - <officeObj>k__BackingField: {fileID: 433386494}
     <sprite>k__BackingField: {fileID: 21300000, guid: 3f379ad9cbbf7db4eb9fc9397c4a77d1, type: 3}
     <square>k__BackingField: 400
     <price>k__BackingField: 2000000
     <rentPrice>k__BackingField: 30000
+    <autoFurniture>k__BackingField: {fileID: 5350132054320108978, guid: 256235780b8dcad4195032081b1aa2f2, type: 3}
     state: 0
 --- !u!114 &628616374
 MonoBehaviour:
@@ -7504,6 +7562,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <money>k__BackingField: 150000
+--- !u!114 &628616375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628616368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577deb2c191f046428208630c42edeff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <computers>k__BackingField:
+  - <price>k__BackingField: 800
+    <productionBonus>k__BackingField: 1
+    <unlockYear>k__BackingField: 1990
+  - <price>k__BackingField: 1200
+    <productionBonus>k__BackingField: 1.25
+    <unlockYear>k__BackingField: 2005
+  - <price>k__BackingField: 2000
+    <productionBonus>k__BackingField: 1.5
+    <unlockYear>k__BackingField: 2009
+  - <price>k__BackingField: 2500
+    <productionBonus>k__BackingField: 1.75
+    <unlockYear>k__BackingField: 2012
+  - <price>k__BackingField: 3000
+    <productionBonus>k__BackingField: 2
+    <unlockYear>k__BackingField: 2015
+  - <price>k__BackingField: 4000
+    <productionBonus>k__BackingField: 2.25
+    <unlockYear>k__BackingField: 2018
 --- !u!1 &648981220
 GameObject:
   m_ObjectHideFlags: 0
@@ -8793,8 +8882,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281545523
-  m_fontColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8811,8 +8900,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15823,6 +15912,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9d063934b8c46f4eb92cd7087522191, type: 3}
+--- !u!1 &1520104570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520104571}
+  m_Layer: 0
+  m_Name: ShopItems
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1520104571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520104570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1521960900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16709,8 +16829,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 246196164}
   m_HandleRect: {fileID: 246196163}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.60273963
+  m_Value: 1.0000002
+  m_Size: 0.60273975
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17414,7 +17534,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1736845987}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 628616375}
+        m_TargetAssemblyTypeName: ComputerManager, Assembly-CSharp
+        m_MethodName: UpgradeAllPcs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11149806}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 628616369}
+        m_TargetAssemblyTypeName: TimeManager, Assembly-CSharp
+        m_MethodName: NecessaryPause
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1736845987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20971,7 +21127,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2110053475}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 853285908}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 183792807}
+        m_TargetAssemblyTypeName: ShopUI, Assembly-CSharp
+        m_MethodName: UpdateAutoFurnishInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2110053475
 MonoBehaviour:
   m_ObjectHideFlags: 0

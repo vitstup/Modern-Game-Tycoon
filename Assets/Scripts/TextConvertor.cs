@@ -40,6 +40,12 @@ public static class TextConvertor
         return sb.ToString();
     }
 
+    public static string percentText(float num)
+    {
+        num *= 100f;
+        return num.ToString() + " %";
+    }
+
     public static string ChangeColor(string text, Color color)
     {
         return string.Format("<color={0}>", "#" + ColorUtility.ToHtmlStringRGB(color)) + text; 

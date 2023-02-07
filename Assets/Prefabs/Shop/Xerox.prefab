@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4ee738787933741811d6b94f9bdae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <price>k__BackingField: 0
-  <happiness>k__BackingField: 0
+  price: 1750
+  <happiness>k__BackingField: 0.035
 --- !u!65 &645792840067249725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -149,7 +149,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64582458243450868, guid: 5805ea9f4f3be384fbcc157d4d9f35f3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5805ea9f4f3be384fbcc157d4d9f35f3, type: 3}
 --- !u!4 &1322670913448843736 stripped
 Transform:

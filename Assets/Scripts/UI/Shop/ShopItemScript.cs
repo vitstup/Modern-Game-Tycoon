@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
-using Unity.VisualScripting;
 
 public class ShopItemScript : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
 {
@@ -31,12 +30,13 @@ public class ShopItemScript : MonoBehaviour , IPointerEnterHandler, IPointerExit
         this.building = building;
         itemName.text = Localization.Localize("shp." + itemId);
         price.text = TextConvertor.moneyText(building.GetPrice());
-        happinesValue.text = building.happiness.ToString();
+        happinesValue.text = TextConvertor.percentText(building.happiness);
         itemImage.sprite = sprite;
     }
 
     public void UpdatePrice()
     {
+        if (building is Table) (building as Table).SetModernPc();
         price.text = TextConvertor.moneyText(building.GetPrice());
     }
 

@@ -16,13 +16,19 @@ public class ShopUI : MonoBehaviour
 
     [SerializeField] private GameObject ShopPanel;
 
+    [SerializeField] private TextMeshProUGUI happinessText;
+
+    [SerializeField] private TextMeshProUGUI officeName;
+    [SerializeField] private TextMeshProUGUI expenses;
+
     private ShopItemScript[] shopItems;
 
     private void Awake()
     {
         instance = this;
-        SetShopPanels();
     }
+
+    private void Start() => SetShopPanels();
 
     private void SetShopPanels()
     {
@@ -39,6 +45,7 @@ public class ShopUI : MonoBehaviour
     {
         ShopPanel.SetActive(false);
         TimeManager.instance.ChangeRunStatus(RunStatus.building);
+        TimeManager.instance.ChangeSpeed(1);
         BuildingManager.instance.Build(building);
     }
 
@@ -46,14 +53,40 @@ public class ShopUI : MonoBehaviour
     {
         ShopPanel.SetActive(true);
         TimeManager.instance.ChangeRunStatus(RunStatus.stoped);
+        UpdateInfo();
     }
 
     public void UpdateInfo()
     {
-        // update happines
+        BuildingManager.instance.CalculateHappiness();
+        happinessText.text = Localization.Localize("happiness") + ": " + TextConvertor.percentText(BuildingManager.instance.happiness);
         for (int i = 0; i < shopItems.Length; i++)
         {
             shopItems[i].UpdatePrice();
         }
+    }
+
+    public void UpdateAutoFurnishInfo()
+    {
+        officeName.text = Localization.Localize("office." + OfficeManager.instance.currentOffice);
+        expenses.text = Localization.Localize("expenses") + ": " + TextConvertor.moneyText(GetAutoFurnitureExpenses());
+    }
+
+    public int GetAutoFurnitureExpenses()
+    {
+        int expenses = 0;
+        var furniture = OfficeManager.instance.GetCurrentOffice().autoFurniture; /// getting future furniture price
+        var buildings = furniture.GetComponentsInChildren<Building>();
+        foreach (Building building in buildings)
+        {
+            // maybe update pc's
+            expenses += building.GetPrice();
+        }
+        buildings = BuildingManager.instance.itemsParent.GetComponentsInChildren<Building>(); /// getting current furniture price
+        foreach (Building building in buildings)
+        {
+            expenses -= building.GetPrice() / 2;
+        }
+        return expenses;
     }
 }

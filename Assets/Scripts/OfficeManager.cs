@@ -30,6 +30,7 @@ public class OfficeManager : MonoBehaviour
             if (i == currentOffice) { offices[i].officeObj.SetActive(true); continue; }
             offices[i].officeObj.SetActive(false);
         }
+        Helpers.DeleteChilds(BuildingManager.instance.itemsParent);
     }
 
     public void ChangeCurrentOffice(Office office)
