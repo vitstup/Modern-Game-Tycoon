@@ -41,13 +41,21 @@ public class Table : Building
         return price + ComputerManager.instance.computers[currentPc].price;
     }
 
-    public void SetModernPc() // Use this method in shopitem prices update
+    public override void SetBuilding(bool takeMoney)
+    {
+        base.SetBuilding(takeMoney);
+        canvas.transform.rotation = Quaternion.Euler(30f, transform.rotation.y + 45f, 0f);
+        ShowCanvas(false);
+    }
+
+    public void SetModernPc() // Use this method only for unspawned prefabs (in shopitem prices update, and before autofurniture)
     {
         if (!isBuilded)
         {
             currentPc = ComputerManager.instance.GetModernPcId();
             UpdatePcModel();
         }
+        else Debug.LogError("Trying to set most modern pc, not in prefab");
     }
 
     private void ShowCanvas(bool show)

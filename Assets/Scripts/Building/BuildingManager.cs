@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -96,10 +97,17 @@ public class BuildingManager : MonoBehaviour
         }
     }
 
-    public void AutoFurniture()
+    public void AutoFurniture(bool takeMoney)
     {
+        Helpers.DeleteChilds(itemsParent);
         var furniture = OfficeManager.instance.GetCurrentOffice().autoFurniture;
-
+        var buildings = furniture.GetComponentsInChildren<Building>();
+        foreach (Building prefab in buildings)
+        {
+            var building = Instantiate(prefab, itemsParent);
+            building.SetBuilding(takeMoney);
+            this.buildings.Add(building);
+        }
     }
 
 }

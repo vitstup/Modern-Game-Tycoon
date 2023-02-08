@@ -61,6 +61,12 @@ public class Building : MonoBehaviour
         return price;
     }
 
+    public virtual void SetBuilding(bool takeMoney) // use this mehod for spawn not by byilding system
+    {
+        isBuilded = true;
+        if (takeMoney) Main.instance.MinusMoney(GetPrice());
+    }
+
     public bool isAvailable()
     {
         //obstacles.RemoveAll(Collider => Collider == null);   // uncoment this if have problem, that builded obj during moving can't be builded

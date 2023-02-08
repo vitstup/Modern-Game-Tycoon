@@ -18,6 +18,7 @@ public class ShopUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI happinessText;
 
+    [SerializeField] private GameObject autoFurniturePanel;
     [SerializeField] private TextMeshProUGUI officeName;
     [SerializeField] private TextMeshProUGUI expenses;
 
@@ -44,6 +45,7 @@ public class ShopUI : MonoBehaviour
     public void Build(Building building)
     {
         ShopPanel.SetActive(false);
+        autoFurniturePanel.SetActive(false);
         TimeManager.instance.ChangeRunStatus(RunStatus.building);
         TimeManager.instance.ChangeSpeed(1);
         BuildingManager.instance.Build(building);
@@ -79,7 +81,7 @@ public class ShopUI : MonoBehaviour
         var buildings = furniture.GetComponentsInChildren<Building>();
         foreach (Building building in buildings)
         {
-            // maybe update pc's
+            if (building is Table) (building as Table).SetModernPc();
             expenses += building.GetPrice();
         }
         buildings = BuildingManager.instance.itemsParent.GetComponentsInChildren<Building>(); /// getting current furniture price
