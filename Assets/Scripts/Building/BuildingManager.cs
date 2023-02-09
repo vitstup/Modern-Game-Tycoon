@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -69,7 +68,6 @@ public class BuildingManager : MonoBehaviour
 
                 if (available && Input.GetMouseButtonDown(0) && !interactedThisUpdate)
                 {
-                    buildings.Add(currentBuilding);
                     currentBuilding.Put();
                     currentBuilding = null;
                     buildingSomething?.Invoke(false);
@@ -106,7 +104,6 @@ public class BuildingManager : MonoBehaviour
         {
             var building = Instantiate(prefab, itemsParent);
             building.SetBuilding(takeMoney);
-            this.buildings.Add(building);
         }
     }
 

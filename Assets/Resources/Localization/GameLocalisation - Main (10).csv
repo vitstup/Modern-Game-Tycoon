@@ -1,0 +1,133 @@
+personal,Personal,Персонал,Personnel,persönlich,Personal,Personale
+hirepersonal,Hire personal,Нанять работников,Embaucher personnel,Personal einstellen,Contratar personal,Noleggio personale
+project,New project,Новый проект,Nouveau projet,Neues Projekt,Nuevo proyecto,Nuovo progetto
+shop,Shop,Магазин,Boutique,Einkaufen,Tienda,Negozio
+statistics,Statistics,Статистика,Statistiques,Statistiken,Estadísticas,Statistiche
+offices,Offices,Офисы,Des bureaux,Büros,Oficinas,Uffici
+mail,Mail,Почта,Courrier,Mail,Correo,posta
+sort.name,Name,Имя,Nom,Name,Nombre,Nome
+month.1,January,Январь,janvier,Januar,enero,gennaio
+month.2,February,Февраль,février,Februar,febrero,febbraio
+month.3,March,Март,Mars,März,marcha,marzo
+month.4,April,Апрель,avril,April,abril,aprile
+month.5,May,Май,Le Mai,Mai,Mayo,Maggio
+month.6,June,Июнь,juin,Juni,junio,giugno
+month.7,July,Июль,juillet,Juli,julio,luglio
+month.8,August,Август,août,August,agosto,agosto
+month.9,September,Сентябрь,septembre,September,septiembre,settembre
+month.10,October,Октябрь,octobre,Oktober,octubre,ottobre
+month.11,November,Ноябрь,novembre,November,noviembre,novembre
+month.12,December,Декабрь,décembre,Dezember,diciembre,dicembre
+proffesion,Profession,Профессия,Profession,Beruf,Profesión,Professione
+proffesion.0,Programmer,Программист,Programmeur,Programmierer,Programador,Programmatore
+proffesion.1,Game designer,Гейм дизайнер,Designer de jeu,Spieledesigner,Diseñador de juegos,Designer di giochi
+proffesion.2,Art designer,Художник,Concepteur d'art,Kunstdesigner,Diseñador de arte,Designer d'arte
+proffesion.3,Sound designer,Звуковой дизайнер,Sonneur,Sounddesigner,Diseñador de sonido,Sound Designer
+proffesion.4,Screenwriter,Сценарист,Scénariste,Drehbuchautor,Guionista,Sceneggiatore
+skill.0,Programming,Программирование,La programmation,Programmierung,Programación,Programmazione
+skill.1,Game design,Игровой дизайн,Le design du jeu,Spieldesign,Diseño de juego,Design del gioco
+skill.2,Art design,Арт дизайн,Conception d'art,Kunstdesign,Diseño artístico,Design artistico
+skill.3,Sound design,Звуковой дизайн,Conception sonore,Audiogestaltung,Diseño de sonido,Design del suono
+skill.4,Screenwriting,Сценарий,Scénarisation,Drehbuch,Escritura de guiones,Sceneggiatura
+salary,Salary,Зарплата,Salaire,Gehalt,Salario,Stipendio
+personaTab.0,Employees by profession,Сотрудники по профессии,Employés par profession,Mitarbeiter nach Beruf,Empleados por profesión,Dipendenti di professione
+personaTab.1,Average skills,Средние навыки,Compétences moyennes,Durchschnittliche Fähigkeiten,Habilidades promedio,Abilità medie
+personaTab.2,Total skills,Общие навыки,Compétences totales,Gesamtfähigkeiten,Habilidades totales,Abilità totali
+all,All,Все,Tous,Alle,Todo,Tutto
+applications,Applications,Заявления,Applications,Anwendungen,Aplicaciones,Applicazioni
+shp.0,Aquarium,Аквариум,Aquarium,Aquarium,Acuario,Acquario
+shp.1,Arcade machine,Аркадная машина,Arcade,Arcade-Maschine,Máquina arcade,Macchina arcade
+shp.2,Billiards,Бильярд,Billard,Billard,Billar,Biliardo
+shp.3,Bin,Корзина,Poubelle,Behälter,Compartimiento,Bidone
+shp.4,Black armchair,Черное кресло,Fauteuil noir,Schwarzer Sessel,Sillón negro,Poltrona nera
+shp.5,Black couch,Черный диван,Canapé noir,Schwarze Couch,Sofá negro,Divano nero
+shp.6,White armchair,Белое кресло,Fauteuil blanc,Weißer Sessel,Sillón blanco,Poltrona bianca
+shp.7,White couch,Белый диван,Canapé blanc,Weiße Couch,Sofá blanco,Divano bianco
+shp.8,Big couch,Большой диван,Grand canapé,Große Couch,Gran sofá,Grande divano
+shp.9,Cupboard,Шкаф,Placard métallique,Schrank,Armario,Armadio
+shp.10,Metal cupboard,Металлический шкаф,Placard métallique,Metallschrank,Armario de metal,Armadio di metallo
+shp.11,Mini football,Мини футбол,Mini football,Mini -Fußball,Mini fútbol,Mini calcio
+shp.12,Fridge,Холодильник,Réfrigérateur,Kühlschrank,Refrigerador,Frigo
+shp.13,Minigolf,Мини гольф,Mini golf,Minigolf,Mini golf,Mini golf
+shp.14,Small plant,Небольшое растение,Petite plante,Kleine Pflanze,Planta pequeña,Pianta piccola
+shp.15,Big plant,Большое растение,Grande plante,Große Pflanze,Gran planta,Grande pianta
+shp.16,Mini garden,Мини посадки,Mini jardin,Mini -Garten,Mini jardín,Mini giardino
+shp.17,Green pouf,Зеленый пуфик,Pouf vert,Grüner Pouf,Pouf verde,Pouf verde
+shp.18,Blue pouf,Синий пуфик,Pouf bleu,Blauer Pouf,Pouf,Blue Pouf
+shp.19,Big yellow pouf,Желтый пуфик,Big Pouf jaune,Big Yellow Pouf,Pouf amarillo grande,Grande pouf giallo
+shp.20,Big red pouf,Красный пуфик,Big Pouf rouge,Big Red Pouf,Pouf rojo grande,Big Red Pouf
+shp.21,Vending machine,Торговый автомат,Distributeur automatique,Verkaufsautomat,Máquina expendedora,Distributore automatico
+shp.22,Boiler,Бойлер,Chaudière,Kessel,Caldera,Caldaia
+shp.23,Desktop,Рабочий стол,Bureau,Desktop,Escritorio,Desktop
+shp.24,Wooden desktop,Рабочий стол 2,Bureau en bois,Holzdesktop,Escritorio de madera,Desktop in legno
+shp.25,Metal desktop,Рабочий стол 3,Bureau en métal,Metalldesktop,Escritorio de metal,Desktop metallico
+shp.26,Big desktop,Рабочий стол 4,Grand bureau,Großer Desktop,Escritorio grande,Grande desktop
+shp.27,Proffesional desktop,Рабочий стол 5,Bureau de profession,Profemsionaler Desktop,Escritorio profesional,Desktop Profsionale
+shp.28,Xerox,Ксерокс,Photocopier,Xerox,fotocopia,Xerox
+buy,Buy,Купить,Acheter,Besorgen,Comprar,Acquistare
+bought,Bought,Куплено,Acheté,Gekauft,Compró,Comprato
+sell,Sell,Продать,Vendre,Verkaufen,Vender,Vendere
+rent,Rent,Арендовать,Louer,Mieten,Alquilar,Affitto
+rented,Rented,Арендован,Loué,Gemietet,Alquilado,Affittato
+select,Select,Выбрать,Sélectionner,Wählen,Seleccionar,Selezionare
+selected,Selected,Выбрано,Choisi,Ausgewählt,Seleccionado,Selezionato
+autofurnish,Auto furnish,Авто мебель,Fourniture automatique,Automatische Einrichtung,Auto Mobiliario,Arredamento automatico
+upgradeallpcs,Upgrade all pc's,Обновить все пк,Mettre à niveau tous les PC,Aktualisieren Sie alle PCs,Actualizar todas las PC,Aggiorna tutti i PC
+soldfurniture,All your furniture will be sold.,Вся ваша мебель будет продана.,Tous vos meubles seront vendus.,Alle Ihre Möbel werden verkauft.,Todos sus muebles se venderán.,Tutti i tuoi mobili saranno venduti.
+expenses,Expenses,Затраты,Dépenses,Kosten,Gastos,Spese
+square,Square,Квадрат,Carré,Quadrat,Cuadrado,Piazza
+purchprice,Purchase price,Цена,Prix ​​d'achat,Kaufpreis,Precio de compra,Prezzo d'acquisto
+rentprice,Rent price,Цена аренды,Prix ​​de loyer,Mietpreis,Precio de alquiler,Prezzo di affitto
+office.0,Small room,Маленькая комната,Petite chambre,Kleiner Raum,Habitación pequeña,Stanza piccola
+office.1,Garage,Гараж,Garage,Garage,Cochera,Box auto
+office.2,Studio,Студия,Studio,Studio,Estudio,Studio
+office.3,Apartments,Аппартаменты,Appartements,Wohnungen,Apartamentos,Appartamenti
+office.4,Basement,Подвал,Sous-sol,Keller,Sótano,Seminterrato
+office.5,Old office,Старый офис,Vieux bureau,Altes Büro,Oficina antigua,Vecchio ufficio
+office.6,Industrial office,Промышленное офис,Bureau industriel,Industriebüro,Oficina industrial,Ufficio industriale
+office.7,City office,Городской офис,Bureau de la ville,Stadtbüro,Oficina municipal,Ufficio della città
+office.8,Modern office,Современный офис,Bureau moderne,Modernes Büro,Oficina moderna,Ufficio moderno
+hire,Hire,Нанять,Louer,Mieten,Contratar,Assumere
+fire,Fire,Уволить,Feu,Feuer,Fuego,Fuoco
+assign,Assign,Назначать,Attribuer,Zuordnen,Asignar,Assegnare
+assigned,Assigned,Назначен,Attribué,Zugewiesen,Asignado,Assegnato
+happiness,Happiness,Счастье,Bonheur,Glück,Felicidad,Felicità
+name,Name,Имя,Nom,Name,Nombre,Nome
+newGame,New game,Новая игра,Nouveau jeu,Neues Spiel,Nuevo juego,Nuovo gioco
+contract,Contract,Контракт,Contracter,Vertrag,Contrato,Contrarre
+freelance,Freelance,Фриланс,Free-lance,Freiberuflich,Lanza libre,Libero professionista
+update,Update,Обновление,Mise à jour,Aktualisieren,Actualizar,Aggiornamento
+sequel,Sequel,Продолжение,Suite,Folge,Continuación,Continuazione
+size,Size,Размер,Taille,Größe,Tamaño,Misurare
+engine,Engine,Движок,Engine,Engine,Engine,Engine
+genre,Genre,Жанр,Genre,Genre,Género,Genere
+theme,Theme,Тема,Thème,Thema,Tema,Tema
+mainplatform,Main platform,Основная платформа,Plate-forme principale,Hauptplattform,Plataforma principal,Piattaforma principale
+platform,Platform,Платформа,Plateforme,Plattform,Plataforma,piattaforma
+none,None,Остутсвует,Aucun,Keiner,Ninguno,Nessuno
+start,Start,Начать,Commencer,Start,Comenzar,Inizio
+continue,Continue,Продолжить,Continuer,Weitermachen,Continuar,Continua
+cancel,Cancel,Отмена,Annuler,Abbrechen,Cancelar,Annulla
+licenseprice,License price,Цена лицензии,Prix ​​de licence,Lizenzpreis,Precio de licencia,Prezzo di licenza
+releasedate,Release date,Дата выпуска,Date de sortie,Veröffentlichungsdatum,Fecha de lanzamiento,Data di rilascio
+computing,Computing,Вычисление,L'informatique,Computer,Informática,Calcolo
+graphics,Graphics,Графика,Graphique,Grafik,Gráficos,Grafica
+marketshare,Market share,Доля рынка,Part de marché,Marktanteil,Cuota de mercado,Quota di mercato
+commision,Commision,Комиссия,Commission,Kommission,Comisión,Commissione
+features,Features,Функции,Caractéristiques,Merkmale,Características,Caratteristiche
+maingenre,Main genre,Главный жанр,Genre principal,Hauptgenre,Género principal,Genere principale
+developmentspeed,Development speed,Скорость разработки,Vitesse de développement,Entwicklungsgeschwindigkeit,Velocidad de desarrollo,Velocità di sviluppo
+findanother,Find another,Найти другой,Trouve un autre,Einen anderern finden,Encontrar otro,Trova un altro
+payment,Payment,Оплата,Paiement,Zahlung,Pago,Pagamento
+bonus,Bonus,Бонус,Prime,Bonus,Prima,Bonus
+minuserscore,Min user score,Мин пользовательский счет,Min Score utilisateur,Min Benutzerbewertung,Min puntuación de usuario,Min Punteggio utente
+term,Term,Срок,Terme,Begriff,Término,Termine
+points,Points,Точки,Points,Punkte,Puntos,Punti
+lpoints,points,точки,points,Punkte,puntos,punti
+taskdifficulty,Task difficulty,Сложность задачи,Difficulté de tâche,Aufgabenschwierigkeit,Dificultad de tarea,Difficoltà del compito
+easy,Easy,Лёгкая,Facile,Einfach,Fácil,Facile
+normal,Normal,Средняя,Normal,Normal,Normal,Normale
+hard,Hard,Трудная,Dur,Hart,Duro,Difficile
+penalty,Penalty,Штраф,Peine,Strafe,Multa,Pena
+game,Game,Игра,Jeu,Spiel,Juego,Gioco
+updatesize,Update size,Размер обновления,Mettre à jour la taille,Aktualisierung der Größe,Tamaño de actualización,Dimensione dell'aggiornamento

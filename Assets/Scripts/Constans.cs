@@ -13,6 +13,8 @@ public static class Constans
 
     public const int basePayPerPoint = 15;
 
+    public const int maxWorkers = 50;
+
     public static readonly int[] DaysInMonth =  { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
     public const int maxAvailableWorkers = 30;
@@ -28,4 +30,7 @@ public static class Constans
     public static readonly Color WhiteTextActive = new Color(1, 1, 1);
     public static readonly Color BlackTextInactive = new Color(0.2f, 0.2f, 0.2f);
     public static readonly Color BlackTextActive = new Color(0, 0 ,0);
+
+    public static readonly string[] gameSizes = { "Indie", "C", "B", "A", "AA", "AAA"};
+    public static readonly int[] sizesScale = { 1, 5, 10, 20, 50, 100};
 }

@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Contract 
+public class Contract : GameProject
 {
-    // same as game, but without sales and hype params
     
     // payment
     // bonys

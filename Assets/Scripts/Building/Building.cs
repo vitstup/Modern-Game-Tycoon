@@ -39,6 +39,7 @@ public class Building : MonoBehaviour
         if (!isBuilded)
         {
             OpenShopPanel();
+            BuildingManager.instance.buildings.Add(this);
         }
         else TimeManager.instance.ChangeRunStatus(RunStatus.standart);
         isBuilded = true;
@@ -54,6 +55,7 @@ public class Building : MonoBehaviour
     public void OnDestroy()
     {
         if (isBuilded) Main.instance.AddMoney(GetPrice() / 2);
+        BuildingManager.instance.buildings.Remove(this);
     }
 
     public virtual int GetPrice()
@@ -64,6 +66,7 @@ public class Building : MonoBehaviour
     public virtual void SetBuilding(bool takeMoney) // use this mehod for spawn not by byilding system
     {
         isBuilded = true;
+        BuildingManager.instance.buildings.Add(this);
         if (takeMoney) Main.instance.MinusMoney(GetPrice());
     }
 
