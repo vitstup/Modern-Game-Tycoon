@@ -65,6 +65,7 @@ crashlytics-build.properties
 # Added by me
 *.fbx
 *.png
-*.asset
+#*.asset
 *.jpg
 *.meta
+*[Aa]ssets/[Ss]yntyStudio

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f194fb6bf00dfbe4aa934acf6b299381, type: 3}
+  m_Name: Gsp
+  m_EditorClassIdentifier: 
+  _company: {fileID: 11400000, guid: 837721c7831498743b71aec3e99c4a08, type: 2}
+  _licensePrice: 750
+  _commision: 0.3
+  _computeCapabilities: 4
+  _graphicCapabilities: 5
+  _release:
+    month: 2
+    year: 2005
+  _end:
+    month: 0
+    year: 2013
+  _popularity: 0.65
+  _sprite: {fileID: 21300000, guid: 02eb4be67fc3bfb46ab4ba0d02bc08c2, type: 3}

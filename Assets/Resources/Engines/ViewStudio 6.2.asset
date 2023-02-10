@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 797805561ba019548b71a0f1c9cbe022, type: 3}
+  m_Name: ViewStudio 6.2
+  m_EditorClassIdentifier: 
+  _company: {fileID: 11400000, guid: 0af717de6759763409deafe48f59b648, type: 2}
+  _licensePrice: 0
+  _commision: 0
+  _developmentSpeed: 0.35
+  _genre: {fileID: 11400000, guid: 980b187f57084454194ec417683b158b, type: 2}
+  _release:
+    month: 4
+    year: 1998
+  _end:
+    month: 2
+    year: 2012
+  _features:
+  - {fileID: 11400000, guid: 87e8f222540d4a04190e308a0bab4458, type: 2}
+  - {fileID: 11400000, guid: 1735266d036a61e4c95952924f69ba45, type: 2}
+  - {fileID: 11400000, guid: 63b9b34487bcb3e43ba0ed00dde63ef5, type: 2}
+  - {fileID: 11400000, guid: 09ebe4f4ea8f4ec49afc8eeba2ae5d50, type: 2}
+  - {fileID: 11400000, guid: a6fee85e7dd1b204f9bcfd2bcc7a6249, type: 2}
+  - {fileID: 11400000, guid: 12bde22a8d457694d987a9f37a70ff34, type: 2}
+  - {fileID: 11400000, guid: e4e95b2462da1924183016a45170af6e, type: 2}
+  - {fileID: 11400000, guid: d708b8d2dfe3ea64cb108168c30f5547, type: 2}
+  _sprite: {fileID: 21300000, guid: 368760775ac03274eb3f04dfb493da76, type: 3}

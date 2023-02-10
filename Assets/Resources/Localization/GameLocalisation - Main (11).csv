@@ -131,3 +131,93 @@ hard,Hard,Трудная,Dur,Hart,Duro,Difficile
 penalty,Penalty,Штраф,Peine,Strafe,Multa,Pena
 game,Game,Игра,Jeu,Spiel,Juego,Gioco
 updatesize,Update size,Размер обновления,Mettre à jour la taille,Aktualisierung der Größe,Tamaño de actualización,Dimensione dell'aggiornamento
+feature.0,2D,2D,2D,2D,2D,2D
+feature.1,3D,3D,3D,3D,3D,3D
+feature.2,Simple plot,Простой сюжет,Terrain simple,Einfache Handlung,Trama simple,Trama semplice
+feature.3,Elaborated plot,Проработанный сюжет,Complot élaboré,Ausgearbeitete Handlung,Trama elaborado,Trama elaborata
+feature.4,Non linear plot,Не линейный сюжет,Tracé non linéaire,Nicht linearer Diagramm,Trama no lineal,Trama non lineare
+feature.5,Simple dialogs,Простые диалоги,Boîtes de dialogue simples,Einfache Dialoge,Diálogo simples,Dialoging semplici
+feature.6,Elaborated dialogs,Проработанные диалоги,Dialogue élaboré,Ausgearbeitete Dialoge,Diálogos elaborados,Dialoghi elaborati
+feature.7,Interactive dialogs,Интерактивные диалоги,Dialogues interactives,Interaktive Dialoge,Diálogo interactivos,Dialoghi interattivi
+feature.8,Neural networks usage,Использование нейронных сетей,Utilisation des réseaux neuronaux,Nutzungsnetznutzung,Uso de redes neuronales,Utilizzo delle reti neurali
+feature.9,Procedural world,Процедурный мир,Monde procédural,Verfahrenswelt,Mundo procesal,Mondo procedurale
+feature.10,Open world,Открытый мир,Monde ouvert,Offene Welt,Mundo abierto,Mondo aperto
+feature.11,Few characters,Несколько персонажей,Peu de personnages,Wenige Charaktere,Pocos personajes,Pochi personaggi
+feature.12,Character editor,Редактор персонажей,Éditeur de personnage,Charakter Editor,Editor de personajes,Editor del personaggio
+feature.13,Simple AI,Простой ИИ,AI simple,Einfache Ai,AI simple,Semplice ai
+feature.14,Complex AI,Сложный ИИ,AI complexe,Komplexe AI,AI complejo,AI complesso
+feature.15,Self Learning AI,Самообучаемый ИИ,AI-ADRENTION AI,Selbstlernen KI,Aprendizaje de AI,Ai Learning Ai
+feature.16,Simple economics,Простая экономика,Économie simple,Einfache Wirtschaft,Economía simple,Economia semplice
+feature.17,Complex economics,Комплексная экономика,Économie complexe,Komplexe Ökonomie,Economía compleja,Economia complessa
+feature.18,Simple physics,Простая физика,Physique simple,Einfache Physik,Física simple,Fisica semplice
+feature.19,Realistic physics,Реалистичная физика,Physique réaliste,Realistische Physik,Física realista,Fisica realistica
+feature.20,Side missions,Сайд миссии,Missions latérales,Seitenmissionen,Misiones laterales,Missioni secondarie
+feature.21,Elaborated side missions,Проработанный сайд миссии,Missions secondaires élaborées,Ausgearbeitete Seitenmissionen,Misiones laterales elaboradas,Missioni secondarie elaborate
+feature.22,Mods support,Поддержка модов,Support des mods,Mods Support,Soporte de mods,Supporto MODS
+feature.23,Global mods support,Поддержка глобальных модов,Support mondial des mods,Globale Mods -Unterstützung,Soporte de modificaciones globales,Supporto MOD globali
+feature.24,Cartoony,Мультяшнность,Cartoony,Cartoony,Dibujos animados,Cartone animato
+feature.25,Photorealism,Фотореализм,Photoréalisme,Fotorealismus,Fotorrealismo,Fotorealismo
+feature.26,Midi,Миди звук,Midi,Midi,Midi,Midi
+feature.27,Simple music,Простая музыка,Musique simple,Einfache Musik,Música simple,Musica semplice
+feature.28,Cult music,Культовая музыка,Musique culte,Kultmusik,Música de culto,Musica cult
+feature.29,Simple animations,Простые анимации,Animations simples,Einfache Animationen,Animaciones simples,Animazioni semplici
+feature.30,Dynamic animations,Динамическая анимация,Animations dynamiques,Dynamische Animationen,Animaciones dinámicas,Animazioni dinamiche
+feature.31,Motion capture,Захват движения,Capture de mouvement,Bewegungsaufnahme,Captura de movimiento,Moto cattura
+feature.32,Game cutscenes,Сделанные в игре кат сцены,Cinémas de jeu,Game Cutscenes,Escenas de juego,Scene di gioco
+feature.33,Filmed cutscenes,Снятые кат сцены,Cinématiques filmées,Gefilmte Zwischensequenzen,Escenas filmadas,Filmati filmati
+feature.34,Tutorial,Туториал,Didacticiel,Lernprogramm,Tutorial,Tutorial
+feature.35,Interactive tutorial,Интерактивный туториал,Tutoriel interactif,Interaktives Tutorial,Tutorial interactivo,Tutorial interattivo
+fg.0,Graphics,Графика,Graphique,Grafik,Gráficos,Grafica
+fg.1,Plot,Сюжет,Parcelle,Parzelle,Trama,Complotto
+fg.2,Dialogs,Диалоги,Dialogue,Dialoge,Diálogo,Dialoghi
+fg.3,World,Мир,Monde,Welt,Mundo,Mondo
+fg.4,Character,Персонаж,Personnage,Charakter,Personaje,Carattere
+fg.5,AI,ИИ,AI,AI,AI,AI
+fg.6,Economics,Экономика,Économie,Wirtschaft,Ciencias económicas,Economia
+fg.7,Physics,Физика,La physique,Physik,Física,Fisica
+fg.8,Side missions,Сайд миссии,Missions latérales,Seitenmissionen,Misiones laterales,Missioni secondarie
+fg.9,Mods,Моды,Mods,Modifikationen,Modos,Mod
+fg.10,Style,Стиль,Style,Stil,Estilo,Stile
+fg.11,Sound,Звук,Son,Klang,Sonido,Suono
+fg.12,Animations,Анимация,Animations,Animationen,Animaciones,Animazioni
+fg.13,Cutscenes,Кат сцены,Cinémas,Zwischensequenzen,Escenas,Scene
+fg.14,Tutorial,Туториал,Didacticiel,Lernprogramm,Tutorial,Tutorial
+noneGraphics,Text,Текстовая,Texte,Text,Texto,Testo
+noneWorld,corridor,Коридорный,couloir,Gang,corredor,corridoio
+noneCharacter,One character,Один персонаж,Un personnage,Ein Charakter,Un personaje,Un personaggio
+noneMods,Not supported,Не поддерживается,Non supporté,Nicht unterstützt,No soportado,Non supportato
+noneStyle,Primitivism,Примитивизм,Primitivisme,Primitivismus,Primitivismo,Primitivismo
+theme.0,Anime,Аниме,Anime,Anime,Anime,anime
+theme.1,Interactive cinema,Интерактивное кино,Cinéma interactif,Interaktives Kino,Cine interactivo,Cinema interattivo
+theme.2,Western,Вестерн,Occidental,Western,occidental,Occidentale
+theme.3,Vampires,Вампиры,Vampires,Vampire,Vampiros,vampiri
+theme.4,Aliens,Инопланетяне,Extraterrestres,Außerirdische,Extraterrestres,alieni
+theme.5,Animals,Животные,Animaux,Tiere,Animales,Animali
+theme.6,Ancient,Древность,Ancien,Alt,Antiguo,Antica
+theme.7,Civilization,Цивилизация,Civilisation,Zivilisation,Civilización,Civiltà
+theme.8,Dungeon,Подземелье,Donjon,Verlies,Calabozo,Dungeon
+theme.9,Economy,Экономика,Économie,Wirtschaft,Economía,Economia
+theme.10,Fantasy,Фантастика,Fantaisie,Fantasie,Fantasía,Fantasia
+theme.11,Farming,Сельское хозяйство,Agriculture,Landwirtschaft,Agricultura,agricoltura
+theme.12,History,История,Histoire,Geschichte,Historia,Storia
+theme.13,Magic,Магия,la magie,Magie,magia,Magia
+theme.14,Medieval,Средневековье,Médiéval,Mittelalterlich,Medieval,Medievale
+theme.15,Apocalypse,Апокалипсис,apocalypse,Apokalypse,Apocalipsis,Apocalisse
+theme.16,War,Война,Guerre,Krieg,Guerra,Guerra
+theme.17,Zombies,Зомби,Des morts-vivants,Zombies,Zombis,zombi
+theme.18,Steampunk,Стимпанк,Steampunk,Steampunk,Steampunk,Steampunk
+theme.19,Politics,Политика,Politique,Politik,Política,Politica
+theme.20,Game develop,Разработка игр,Jeu développer,Spiel entwickeln,Desarrollo del juego,Sviluppo del gioco
+theme.21,Ghosts,Призраки,Des fantômes,Geister,Fantasmas,fantasmi
+theme.22,Super Hero,Супергерой,Super-héros,Superheld,Superhéroe,Supereroe
+theme.23,Pirates,Пираты,pirates,Piraten,Piratas,pirati
+theme.24,Mafia,Мафия,Mafia,Mafia,Mafia,Mafia
+theme.25,Cooking,Готовка,Cuisson,Kochen,Cocinando,cucinando
+theme.26,Science fiction,Научная фантастика,Science fiction,Science-Fiction,Ciencia ficción,Fantascienza
+theme.27,Music,Музыка,Musique,Musik,Música,Musica
+theme.28,Medicine,Медицина,Médicament,Medizin,Medicamento,Medicinale
+theme.29,Erotic,Эротика,Érotique,Erotisch,Erótico,Erotico
+theme.30,City,Город,Ville,Stadt,Ciudad,Città
+theme.31,Dragons,Драконы,Dragons,Drachen,Dragones,draghi
+theme.32,Cyberpunk,Киберпанк,Cyberpunk,Cyberpunk,Cyberpunk,Cyberpunk
+theme.33,Time Traveling,Путешествие во времени,Voyage dans le temps,Zeitreisen,Viaje en el tiempo,Viaggio nel tempo

@@ -8,10 +8,10 @@ public class FeatureInfo : ScriptableObject
     [SerializeField] private string _localizationKey;
     [SerializeField] private int _computeUsage;
     [SerializeField] private int _graphicUsage;
-    // points
-    // maybe features group enum
+    [SerializeField] private int _workload;
 
     public string localizationKey => _localizationKey;
     public int computeUsage => _computeUsage;
     public int graphicUsage => _graphicUsage;
+    public int workload => _workload;
 }

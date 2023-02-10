@@ -11201,6 +11201,117 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <platforms>k__BackingField: []
   <engines>k__BackingField: []
+  <features>k__BackingField:
+  - <stage>k__BackingField: 0
+    <localizationKey>k__BackingField: fg.0
+    <nonValueKey>k__BackingField: noneGraphics
+    <features>k__BackingField: []
+    filesPath: Graphics
+  - <stage>k__BackingField: 0
+    <localizationKey>k__BackingField: fg.1
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: Plot
+  - <stage>k__BackingField: 0
+    <localizationKey>k__BackingField: fg.2
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: Dialogs
+  - <stage>k__BackingField: 0
+    <localizationKey>k__BackingField: fg.3
+    <nonValueKey>k__BackingField: noneWorld
+    <features>k__BackingField: []
+    filesPath: World
+  - <stage>k__BackingField: 0
+    <localizationKey>k__BackingField: fg.4
+    <nonValueKey>k__BackingField: noneCharacter
+    <features>k__BackingField: []
+    filesPath: Character
+  - <stage>k__BackingField: 1
+    <localizationKey>k__BackingField: fg.5
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: AI
+  - <stage>k__BackingField: 1
+    <localizationKey>k__BackingField: fg.6
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: Economy
+  - <stage>k__BackingField: 1
+    <localizationKey>k__BackingField: fg.7
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: Physics
+  - <stage>k__BackingField: 1
+    <localizationKey>k__BackingField: fg.8
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: Side missions
+  - <stage>k__BackingField: 1
+    <localizationKey>k__BackingField: fg.9
+    <nonValueKey>k__BackingField: noneMods
+    <features>k__BackingField: []
+    filesPath: Mods
+  - <stage>k__BackingField: 2
+    <localizationKey>k__BackingField: fg.10
+    <nonValueKey>k__BackingField: noneStyle
+    <features>k__BackingField: []
+    filesPath: Style
+  - <stage>k__BackingField: 2
+    <localizationKey>k__BackingField: fg.11
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: Soundtrack
+  - <stage>k__BackingField: 2
+    <localizationKey>k__BackingField: fg.12
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: Animations
+  - <stage>k__BackingField: 2
+    <localizationKey>k__BackingField: fg.13
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: CutScenes
+  - <stage>k__BackingField: 2
+    <localizationKey>k__BackingField: fg.14
+    <nonValueKey>k__BackingField: none
+    <features>k__BackingField: []
+    filesPath: Tutorial
+  themeSprites:
+  - {fileID: 21300000, guid: 1f8b554d867893c499b824d124b8ea14, type: 3}
+  - {fileID: 21300000, guid: 6ec9c4e59a7a9b24f8be97db6d346dfc, type: 3}
+  - {fileID: 21300000, guid: a76d193ea8d07594da91b508b7b6255c, type: 3}
+  - {fileID: 21300000, guid: 6c45262d4c71cbb4b88fde79bfbbe693, type: 3}
+  - {fileID: 21300000, guid: 4f3f88126a5e47445a9aaf4a0f751b8e, type: 3}
+  - {fileID: 21300000, guid: 5817535ad788ea84eb8d707cb5976aa1, type: 3}
+  - {fileID: 21300000, guid: 055dd97782dde904e8c828256f11251f, type: 3}
+  - {fileID: 21300000, guid: f9d536a727fb1c842afb5eb5916d1b75, type: 3}
+  - {fileID: 21300000, guid: 2d8aea913c2f4ef42996bd4b260efb7a, type: 3}
+  - {fileID: 21300000, guid: 294274e06c12e494eb54102ec43227cc, type: 3}
+  - {fileID: 21300000, guid: 07739a053d34d9448b21948a1da90e3a, type: 3}
+  - {fileID: 21300000, guid: f5743f93e5f68554f9638754ced3dbdf, type: 3}
+  - {fileID: 21300000, guid: c4e4fef497f6bad4cb616b55223d5288, type: 3}
+  - {fileID: 21300000, guid: e92719867b7a6304983f13a59d284da1, type: 3}
+  - {fileID: 21300000, guid: f2795ef9a62d1fb479fef255c54944ab, type: 3}
+  - {fileID: 21300000, guid: 18b451e37ea91ab47a12cea6219ec60e, type: 3}
+  - {fileID: 21300000, guid: ac2dac625b5a0314c89dcffd8bf6f0ef, type: 3}
+  - {fileID: 21300000, guid: 92c28bb9fcc84384ebe6977aa0a30dc8, type: 3}
+  - {fileID: 21300000, guid: 26dca2eaeb09fef4ca43aba7ffff412a, type: 3}
+  - {fileID: 21300000, guid: 3fbd9a07e047f694abc376f5a152a7e7, type: 3}
+  - {fileID: 21300000, guid: e66670909bd8dec42b6b9dba220aaeae, type: 3}
+  - {fileID: 21300000, guid: e8ca5c7305bd04c4b9f1ed5c83ca35cd, type: 3}
+  - {fileID: 21300000, guid: 255a0e8610ac2c747b18f6a220b230d6, type: 3}
+  - {fileID: 21300000, guid: 5ac9480f1619cb3479f85fd80b4ac769, type: 3}
+  - {fileID: 21300000, guid: e5ed43054ce762d4d8fe2d7014adb7ba, type: 3}
+  - {fileID: 21300000, guid: 84fd4c69793be5441886304f7df7d701, type: 3}
+  - {fileID: 21300000, guid: 62e85438f32cd294485c9e7755a63b22, type: 3}
+  - {fileID: 21300000, guid: c7e385898e32c29468b3c70fb7aa7018, type: 3}
+  - {fileID: 21300000, guid: 2e11ed2bc69d779469f148896f451d8a, type: 3}
+  - {fileID: 21300000, guid: a8465b53fcbb1d4499155ea10fd01e62, type: 3}
+  - {fileID: 21300000, guid: f2a8f4d1b3912714a9a88907d194a157, type: 3}
+  - {fileID: 21300000, guid: ec490f910797f684bbe2a818f2ea3c4c, type: 3}
+  - {fileID: 21300000, guid: c23f374d73a127c4ca76027cdba31b6d, type: 3}
+  - {fileID: 21300000, guid: c1889ec7287d4da4db2603f8509b30e4, type: 3}
 --- !u!114 &628616377
 MonoBehaviour:
   m_ObjectHideFlags: 0

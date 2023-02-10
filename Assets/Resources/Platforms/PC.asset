@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f04874482fd005469dea75bbe9a2e7b, type: 3}
+  m_Name: PC
+  m_EditorClassIdentifier: 
+  _company: {fileID: 11400000, guid: 0af717de6759763409deafe48f59b648, type: 2}
+  _licensePrice: 0
+  _commision: 0.1
+  _computeCapabilities: 8
+  _graphicCapabilities: 8
+  _release:
+    month: 0
+    year: 1984
+  _end:
+    month: 0
+    year: 0
+  _popularity: 0.7
+  _sprite: {fileID: 21300000, guid: df9f8258b45fa384dbb5ea02695bfbf3, type: 3}
+  _platformUodates:
+  - date:
+      month: 0
+      year: 2007
+    _computeCapabilities: 12
+    _graphicCapabilities: 10
+    _sprite: {fileID: 21300000, guid: 5332ed695931f9447ba9f3579f01df8f, type: 3}
+  - date:
+      month: 0
+      year: 2014
+    _computeCapabilities: 17
+    _graphicCapabilities: 16
+    _sprite: {fileID: 21300000, guid: b57afe04acc106c499990936ed56f732, type: 3}

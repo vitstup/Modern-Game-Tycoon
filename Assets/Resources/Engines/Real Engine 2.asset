@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 797805561ba019548b71a0f1c9cbe022, type: 3}
+  m_Name: Real Engine 2
+  m_EditorClassIdentifier: 
+  _company: {fileID: 11400000, guid: 29b4f2d858c8bb24ebe644771dcfc74d, type: 2}
+  _licensePrice: 5000
+  _commision: 0.05
+  _developmentSpeed: 0.9
+  _genre: {fileID: 11400000, guid: af23df08d7b23d44fb88ea3671e73c7f, type: 2}
+  _release:
+    month: 0
+    year: 2002
+  _end:
+    month: 0
+    year: 2005
+  _features:
+  - {fileID: 11400000, guid: 87e8f222540d4a04190e308a0bab4458, type: 2}
+  - {fileID: 11400000, guid: c36c6e9a3388f864393550e2b7853c20, type: 2}
+  - {fileID: 11400000, guid: 1735266d036a61e4c95952924f69ba45, type: 2}
+  - {fileID: 11400000, guid: 13b8da56b5fc60245b31cbb4fdd764ca, type: 2}
+  - {fileID: 11400000, guid: 63b9b34487bcb3e43ba0ed00dde63ef5, type: 2}
+  - {fileID: 11400000, guid: 80032e2714591584fafe17286ae60ac3, type: 2}
+  - {fileID: 11400000, guid: 1951071277e7e3945a36f3e0287e20bc, type: 2}
+  - {fileID: 11400000, guid: a6fee85e7dd1b204f9bcfd2bcc7a6249, type: 2}
+  - {fileID: 11400000, guid: 12bde22a8d457694d987a9f37a70ff34, type: 2}
+  - {fileID: 11400000, guid: e4e95b2462da1924183016a45170af6e, type: 2}
+  - {fileID: 11400000, guid: d708b8d2dfe3ea64cb108168c30f5547, type: 2}
+  - {fileID: 11400000, guid: 9b4eb04e4716b514396a9fbb310a7492, type: 2}
+  - {fileID: 11400000, guid: 2e40671dc327d9c43b2b8a0b7caecaf8, type: 2}
+  - {fileID: 11400000, guid: aeb945b4fb24bda45a2cd3bd236f6d57, type: 2}
+  - {fileID: 11400000, guid: 828b5e66b26fb104c8cc6034974358b6, type: 2}
+  - {fileID: 11400000, guid: ebaaac07dd4469c4493431083d6d80f6, type: 2}
+  - {fileID: 11400000, guid: 4083d978785d58842ba34eee1648b01d, type: 2}
+  _sprite: {fileID: 21300000, guid: 4fbdec4bc5f1fc443bd2e83cdb4679f1, type: 3}

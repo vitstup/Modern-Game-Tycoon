@@ -8,12 +8,16 @@ public class AttributesManager : MonoBehaviour
 
     [field: SerializeField] public Platform[] platforms { get; private set; }
     [field: SerializeField] public Engine[] engines { get; private set; }
+    [field: SerializeField] public FeaturesGroup[] features { get; private set; }
+
+    public Sprite[] themeSprites; // can delete this
 
     private void Awake()
     {
         instance = this;
         SetPlatforms();
         SetEngines();
+        SetFeatures();
     }
 
     private void SetPlatforms()
@@ -34,5 +38,15 @@ public class AttributesManager : MonoBehaviour
         {
             engines[i] = new Engine(info[i]);
         }
+
     }
+
+    private void SetFeatures()
+    {
+        for (int i = 0; i < features.Length; i++)
+        {
+            features[i].SetFeatures();
+        }
+    }
+
 }

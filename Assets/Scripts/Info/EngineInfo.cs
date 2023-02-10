@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "engine", menuName = "Engine")]
 public class EngineInfo : ScriptableObject
 {
+    [SerializeField] private Company _company;
     [SerializeField] private int _licensePrice;
     [SerializeField] private float _commision;
     [SerializeField] private float _developmentSpeed;
@@ -16,6 +17,7 @@ public class EngineInfo : ScriptableObject
 
     [SerializeField] private Sprite _sprite;
 
+    public Company company => _company;
     public int licensePrice => _licensePrice;
     public float commision => _commision;
     public float developmentSpeed => _developmentSpeed;
