@@ -14,6 +14,7 @@ public class OfficeManager : MonoBehaviour
     {
         instance = this;
         SetOfficeObj();
+        TimeManager.MonthUpdateEvent.AddListener(TakeRent);
     }
 
     private void Start() => OfficesUI.instance.SetOfficePanels(offices);
@@ -42,5 +43,13 @@ public class OfficeManager : MonoBehaviour
         }
         if(!changed) Debug.LogError("Wrong selected office");
         else SetOfficeObj();
+    }
+
+    private void TakeRent()
+    {
+        for (int i = 0; i < offices.Length; i++)
+        {
+            if (offices[i].state == OfficeState.rented) Main.instance.MinusMoney(offices[i].rentPrice);
+        }
     }
 }

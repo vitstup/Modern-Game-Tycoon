@@ -23,4 +23,9 @@ public class LocalizedTMProDropdown : MonoBehaviour
         }
     }
 
+    public void SetKeys(string[] Keys)
+    {
+        this.Keys = Keys;
+        Localize();
+    }
 }

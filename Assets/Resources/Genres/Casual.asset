@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51638fc23c9dece48b863f5084d81e6c, type: 3}
   m_Name: Casual
   m_EditorClassIdentifier: 
-  _favoriteThemes: []
-  _unfavoriteThemes: []
+  _localizationKey: genre.5
+  _themeBonuses: []

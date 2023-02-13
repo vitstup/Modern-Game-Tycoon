@@ -221,3 +221,13 @@ theme.30,City,Город,Ville,Stadt,Ciudad,Città
 theme.31,Dragons,Драконы,Dragons,Drachen,Dragones,draghi
 theme.32,Cyberpunk,Киберпанк,Cyberpunk,Cyberpunk,Cyberpunk,Cyberpunk
 theme.33,Time Traveling,Путешествие во времени,Voyage dans le temps,Zeitreisen,Viaje en el tiempo,Viaggio nel tempo
+genre.0,Action,Экшен,Action,Aktion,Acción,Azione
+genre.1,Rpg,Rpg,RPG,Rollenspiel,Rol,RPG
+genre.2,Simulator,Симулятор,Simulateur,Simulator,Simulador,Simulatore
+genre.3,Strategy,Стратегия,Stratégie,Strategie,Estrategia,Strategia
+genre.4,Racing,Гонки,Courses,Rennen,Carreras,Da corsa
+genre.5,Casual,Казуал,Occasionnel,Lässig,Casual,Casuale
+genre.6,Adventure,Приключение,Aventure,Abenteuer,Aventura,Avventura
+genre.7,Visual novel,Визуальная новелла,Roman visuel,Visual Novel,Novela visual,Racconto illustrato
+genre.8,Interactive movie,Интерактивный фильм,Film interactif,Interaktiver Film,Película interactiva,Film interattivo
+genre.9,Horror,Ужастик,Horreur,Grusel,Horror,Orrore

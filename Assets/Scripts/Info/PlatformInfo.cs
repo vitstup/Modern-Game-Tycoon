@@ -25,10 +25,10 @@ public class PlatformInfo : ScriptableObject
     public Company company => _company;
     public int licensePrice => _licensePrice;
     public float commision => _commision;
-    public int computeCapabilities => _computeCapabilities;
-    public int graphicCapabilities => _graphicCapabilities;
+    public virtual int computeCapabilities => _computeCapabilities;
+    public virtual int graphicCapabilities => _graphicCapabilities;
     public Date release => _release;
     public Date end => _end;
     public float popularity => _popularity;
-    public Sprite sprite => _sprite;
+    public virtual Sprite sprite => _sprite;
 }

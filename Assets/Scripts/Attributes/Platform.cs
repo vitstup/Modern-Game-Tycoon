@@ -7,7 +7,7 @@ public class Platform
 {
     [field: SerializeField] public PlatformInfo info { get; private set; }
     [field: SerializeField] public bool boughted { get; private set; }
-    [field: SerializeField] public float marketShare { get; private set; }
+    public float marketShare;
 
     public Platform(PlatformInfo info)
     {
