@@ -29,6 +29,6 @@ MonoBehaviour:
   - date:
       month: 0
       year: 2017
-    _computeCapabilities: 7
-    _graphicCapabilities: 6
-    _sprite: {fileID: 21300000, guid: 513151734ad7df044ad37fd1bef7d7cc, type: 3}
+    <_computeCapabilities>k__BackingField: 6
+    <_graphicCapabilities>k__BackingField: 7
+    <_sprite>k__BackingField: {fileID: 21300000, guid: 513151734ad7df044ad37fd1bef7d7cc, type: 3}

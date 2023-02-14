@@ -24,6 +24,14 @@ public class MainUI : MonoBehaviour
     [SerializeField] private GameObject BackPanel;
     [SerializeField] private GameObject BuildingBackPanel;
 
+    [SerializeField] private GameObject ProjectCanvas;
+
+    [SerializeField] private TextMeshProUGUI moneyText;
+    [SerializeField] private Image moneyTriangle;
+    [SerializeField] private Sprite plusMoney;
+    [SerializeField] private Sprite minusMoney;
+
+
     private void Awake()
     {
         instance = this;
@@ -82,5 +90,29 @@ public class MainUI : MonoBehaviour
     {
         UpdateDate();
         UpdateSpeedBtns();
+    }
+
+    public void OpenProjectCanvas(bool open)
+    {
+        TimeManager.instance.NecessaryPause(open);
+        ProjectCanvas.SetActive(open);
+    }
+
+    public void TryToOpenProjectCanvas()
+    {
+        if (ProjectManager.instance.project == null) OpenProjectCanvas(true);
+    }
+
+    public void ChangeMoneyText()
+    {
+        moneyText.text = TextConvertor.moneyText(Main.instance.money);
+        if (Main.instance.money > 0) moneyText.color = Constans.GreenColor;
+        else moneyText.color = Color.red;
+    }
+
+    public void ChangeMoneyTriangle(bool positive)
+    {
+        if (positive) moneyTriangle.sprite = plusMoney;
+        else moneyTriangle.sprite = minusMoney;
     }
 }

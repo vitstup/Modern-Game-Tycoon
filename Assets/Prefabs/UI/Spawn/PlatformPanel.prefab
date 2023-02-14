@@ -2072,6 +2072,7 @@ MonoBehaviour:
   commision: {fileID: 3023267913958929428}
   image: {fileID: 3023267914438786811}
   interactionBtn: {fileID: 3023267914025213807}
+  interactionText: {fileID: 3023267913782465934}
 --- !u!1 &3023267914438786809
 GameObject:
   m_ObjectHideFlags: 0

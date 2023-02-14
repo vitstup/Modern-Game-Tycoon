@@ -8,7 +8,7 @@ public abstract class GameProject : Project
     public Engine engine;
     public GenreInfo genre;
     public ThemeInfo theme;
-    public Platform[] platforms;
+    public Platform[] platforms = new Platform[4];
 
     public Stage prototyping;
     public Stage developing;

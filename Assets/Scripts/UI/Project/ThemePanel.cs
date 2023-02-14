@@ -4,9 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class ThemePanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    public class themeEvent : UnityEvent<ThemeInfo> { }
+    public static themeEvent SelectedTheme = new themeEvent();
+
     private Image Bg;
     [SerializeField] private Image icon;
     [SerializeField] private TextMeshProUGUI themeName;
@@ -43,7 +47,7 @@ public class ThemePanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void Select()
     {
         UnSelected();
-        // do something
+        SelectedTheme?.Invoke(theme);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

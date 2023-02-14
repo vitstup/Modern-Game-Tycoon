@@ -19,6 +19,7 @@ public class AttributesManager : MonoBehaviour
         SetEngines();
         SetFeatures();
         SetGenres();
+        SetThemes();
 
         TimeManager.DayUpdateEvent.AddListener(UpdateMarketShare);
     }
@@ -51,6 +52,11 @@ public class AttributesManager : MonoBehaviour
         }
     }
 
+    private void SetThemes()
+    {
+        themes = Resources.LoadAll<ThemeInfo>("Themes");
+    }
+
     private void SetGenres()
     {
         genres = Resources.LoadAll<GenreInfo>("Genres");
@@ -81,7 +87,7 @@ public class AttributesManager : MonoBehaviour
         return avaialable.ToArray();
     }
 
-    public Platform[] availablePlatform()
+    public Platform[] availablePlatforms()
     {
         List<Platform> avaialable = new List<Platform>();
         for (int i = 0; i < platforms.Length; i++)

@@ -9,9 +9,9 @@ public class UpgPlatformInfo : PlatformInfo
     public class PlatformUodate
     {
         [SerializeField] private Date date;
-        [SerializeField] public int _computeCapabilities { get; private set; }
-        [SerializeField] public int _graphicCapabilities { get; private set; }
-        [SerializeField] public Sprite _sprite { get; private set; }
+        [field: SerializeField] public int _computeCapabilities { get; private set; }
+        [field: SerializeField] public int _graphicCapabilities { get; private set; }
+        [field: SerializeField] public Sprite _sprite { get; private set; }
 
         public bool updated()
         {
@@ -30,7 +30,7 @@ public class UpgPlatformInfo : PlatformInfo
 
     private int GetCompute()
     {
-        for (int i = _platformUodates.Length - 1; i >= 0 ; i++)
+        for (int i = _platformUodates.Length - 1; i >= 0 ; i--)
         {
             if (_platformUodates[i].updated()) return _platformUodates[i]._computeCapabilities;
         }
@@ -38,7 +38,7 @@ public class UpgPlatformInfo : PlatformInfo
     }
     private int GetGraphics()
     {
-        for (int i = _platformUodates.Length - 1; i >= 0; i++)
+        for (int i = _platformUodates.Length - 1; i >= 0; i--)
         {
             if (_platformUodates[i].updated()) return _platformUodates[i]._graphicCapabilities;
         }
@@ -46,7 +46,7 @@ public class UpgPlatformInfo : PlatformInfo
     }
     private Sprite GetSprite()
     {
-        for (int i = _platformUodates.Length - 1; i >= 0; i++)
+        for (int i = _platformUodates.Length - 1; i >= 0; i--)
         {
             if (_platformUodates[i].updated()) return _platformUodates[i]._sprite;
         }

@@ -231,3 +231,9 @@ genre.6,Adventure,Приключение,Aventure,Abenteuer,Aventura,Avventura
 genre.7,Visual novel,Визуальная новелла,Roman visuel,Visual Novel,Novela visual,Racconto illustrato
 genre.8,Interactive movie,Интерактивный фильм,Film interactif,Interaktiver Film,Película interactiva,Film interattivo
 genre.9,Horror,Ужастик,Horreur,Grusel,Horror,Orrore
+indie,Indie,Инди,Indie,Indie,Indie,Indie
+startError.0,Enter game name,Введите название игры,Entrez le nom de jeu,Geben Sie den Spielnamen ein,Ingrese el nombre del juego,Immettere il nome del gioco
+startError.1,Choose engine,Выберите движок,Choisir le moteur,Wählen Sie den Motor,Elija el motor,Scegli il motore
+startError.2,Choose theme,Выберите тему,Choisir le thème,Thema wählen,Escoge un tema,Scegli il tema
+startError.3,Choose platform,Выберите платформу,Choisir la plate-forme,Wählen Sie Plattform,Elija plataforma,Scegli la piattaforma
+days,Days,Дней,Jours,Tage,Días,Giorni

@@ -9,9 +9,13 @@ public class LocalizedTMProDropdown : MonoBehaviour
     private TMP_Dropdown dropdown;
     [SerializeField] private string[] Keys;
 
-    private void Start()
+    private void Awake()
     {
         dropdown = GetComponent<TMP_Dropdown>();
+    }
+
+    private void Start()
+    {
         Localize();
     }
 
@@ -26,6 +30,7 @@ public class LocalizedTMProDropdown : MonoBehaviour
     public void SetKeys(string[] Keys)
     {
         this.Keys = Keys;
+        if (dropdown == null) Awake();
         Localize();
     }
 }

@@ -1,9 +1,13 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class EnginePanel : MonoBehaviour
 {
+    public class engineEvent : UnityEvent<Engine> { }
+    public static engineEvent SelectedEngine = new engineEvent();
+
     [SerializeField] private TextMeshProUGUI engineName;
     [SerializeField] private TextMeshProUGUI licensePrice;
     [SerializeField] private TextMeshProUGUI releaseDate;
@@ -16,6 +20,7 @@ public class EnginePanel : MonoBehaviour
 
 
     [SerializeField] private Button interactionBtn;
+    [SerializeField] private TextMeshProUGUI interactionText;
 
     private Engine engine;
 
@@ -33,11 +38,24 @@ public class EnginePanel : MonoBehaviour
         image.sprite = engine.info.sprite;
 
         this.engine = engine;
+
+        UpdateBtn();
+    }
+
+    private void UpdateBtn()
+    {
+        if (engine.boughted) interactionText.text = Localization.Localize("select");
+        else interactionText.text = Localization.Localize("buy");
     }
 
     public void Interacte()
     {
-
+        if (engine.boughted)
+        {
+            SelectedEngine?.Invoke(engine);
+        } 
+        else engine.Buy();
+        UpdateBtn();
     }
 
 }

@@ -8,9 +8,9 @@ public class AttributesUI : MonoBehaviour
 {
     public static AttributesUI instance;
 
-    [SerializeField] private GameObject EnginePanel;
-    [SerializeField] private GameObject PlatformPanel;
-    [SerializeField] private GameObject ThemePanel;
+    [SerializeField] private GameObject EnginesPanel;
+    [SerializeField] private GameObject PlatformsPanel;
+    [SerializeField] private GameObject ThemesPanel;
 
     [SerializeField] private Transform engineContent;
     [SerializeField] private Transform platformContent;
@@ -24,7 +24,13 @@ public class AttributesUI : MonoBehaviour
     private PlatformPanel[] platforms;
     private ThemePanel[] themes;
 
-    private void Awake() => instance = this;
+    private void Awake()
+    {
+        instance = this;
+        EnginePanel.SelectedEngine.AddListener(EngineSelected);
+        PlatformPanel.SelectedPlatform.AddListener(PlatformSelected);
+        ThemePanel.SelectedTheme.AddListener(ThemeSelected);
+    }
 
     private void Start()
     {
@@ -60,35 +66,75 @@ public class AttributesUI : MonoBehaviour
         }
     }
 
-    public void UpdateEngines()
+    private void UpdateEngines(Engine selected)
     {
         var available = AttributesManager.instance.availableEngines();
         if (available.Length > engines.Length) Debug.LogError("Small amout of engine panels");
         for (int i = 0; i < engines.Length; i++)
         {
-            if (i >= available.Length) { engines[i].gameObject.SetActive(false); continue; }
+            if (i >= available.Length || available[i] == selected) { engines[i].gameObject.SetActive(false); continue; }
             engines[i].gameObject.SetActive(true);
             engines[i].SetInfo(available[i]);
         }
     }
 
-    public void UpdatePlatforms()
+    private void UpdatePlatforms(Platform[] selected)
     {
-        var available = AttributesManager.instance.availablePlatform();
+        var available = AttributesManager.instance.availablePlatforms();
         if (available.Length > platforms.Length) Debug.LogError("Small amout of platform panels");
         for (int i = 0; i < platforms.Length; i++)
         {
             if (i >= available.Length) { platforms[i].gameObject.SetActive(false); continue; }
+            if (selected != null)
+            {
+                for (int s = 0; s < selected.Length; s++)
+                {
+                    if (available[i] == selected[s]) { platforms[i].gameObject.SetActive(false); continue; }
+                }
+            }
             platforms[i].gameObject.SetActive(true);
             platforms[i].SetInfo(available[i]);
         }
     }
 
-    public void UpdateThemes()
+    private void UpdateThemes()
     {
         for (int i = 0; i < themes.Length; i++)
         {
             themes[i].SetTheme(AttributesManager.instance.themes[i]);
         }
+    }
+
+    public void OpenEngines(Engine engine)
+    {
+        EnginesPanel.SetActive(true);
+        UpdateEngines(engine);
+    }
+
+    public void OpenPlatforms(Platform[] platforms)
+    {
+        PlatformsPanel.SetActive(true);
+        UpdatePlatforms(platforms);
+    }
+
+    public void OpenThemes()
+    {
+        ThemesPanel.SetActive(true);
+        UpdateThemes();
+    }
+
+    private void EngineSelected(Engine engine)
+    {
+        EnginesPanel.SetActive(false);
+    }
+
+    private void PlatformSelected(Platform platform)
+    {
+        PlatformsPanel.SetActive(false);
+    }
+
+    private void ThemeSelected(ThemeInfo theme)
+    {
+        ThemesPanel.SetActive(false);
     }
 }

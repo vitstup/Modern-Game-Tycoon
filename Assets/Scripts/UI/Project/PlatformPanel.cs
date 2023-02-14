@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class PlatformPanel : MonoBehaviour
 {
+    public class platformEvent : UnityEvent<Platform> { }
+    public static platformEvent SelectedPlatform = new platformEvent();
+
     [SerializeField] private TextMeshProUGUI platformName;
     [SerializeField] private TextMeshProUGUI licensePrice;
     [SerializeField] private TextMeshProUGUI releaseDate;
@@ -17,6 +21,7 @@ public class PlatformPanel : MonoBehaviour
     [SerializeField] private Image image;
 
     [SerializeField] private Button interactionBtn;
+    [SerializeField] private TextMeshProUGUI interactionText;
 
     private Platform platform;
 
@@ -34,10 +39,24 @@ public class PlatformPanel : MonoBehaviour
         image.sprite = platform.info.sprite;
 
         this.platform = platform;
+
+        UpdateBtn();
     }
+
+    private void UpdateBtn()
+    {
+        if (platform.boughted) interactionText.text = Localization.Localize("select");
+        else interactionText.text = Localization.Localize("buy");
+    }
+
     public void Interacte()
     {
-
+        if (platform.boughted)
+        {
+            SelectedPlatform?.Invoke(platform);
+        }
+        else platform.Buy();
+        UpdateBtn();
     }
 
 }
