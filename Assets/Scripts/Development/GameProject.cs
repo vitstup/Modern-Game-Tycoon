@@ -10,10 +10,11 @@ public abstract class GameProject : Project
     public ThemeInfo theme;
     public Platform[] platforms = new Platform[4];
 
-    public Stage prototyping;
-    public Stage developing;
-    public Stage design;
-    // current stage progress
+    private Stage prototyping = new Stage(new PrototypingSliders());
+    private Stage developing = new Stage(new DevelopingSliders());
+    private Stage design = new Stage(new DesignSliders());
+
+    public Stage currentStage;
 
     public int bugs;
 

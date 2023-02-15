@@ -13,11 +13,21 @@ public class GenreInfo : ScriptableObject
 
     }
 
+    [System.Serializable]
+    private class FeatureBonus
+    {
+        [field: SerializeField] public FeatureInfo feature { get; private set; }
+        [field: SerializeField] public float bonus { get; private set; }
+    }
+
     [SerializeField] private string _localizationKey;
     [SerializeField] private ThemeBonus[] _themeBonuses;
+    [SerializeField] private FeatureBonus[] _featuresBonuses;
 
-    // stage sliders
-    // maybe bonuses from features
+
+    [SerializeField] private PrototypingSliders _prototypingSliders;
+    [SerializeField] private DevelopingSliders _developingSliders;
+    [SerializeField] private DesignSliders _designSliders;
 
     public string localizationKey => _localizationKey;
 

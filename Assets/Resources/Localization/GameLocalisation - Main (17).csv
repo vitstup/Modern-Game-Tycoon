@@ -237,3 +237,32 @@ startError.1,Choose engine,Выберите движок,Choisir le moteur,Wähl
 startError.2,Choose theme,Выберите тему,Choisir le thème,Thema wählen,Escoge un tema,Scegli il tema
 startError.3,Choose platform,Выберите платформу,Choisir la plate-forme,Wählen Sie Plattform,Elija plataforma,Scegli la piattaforma
 days,Days,Дней,Jours,Tage,Días,Giorni
+gamesize,Game size,Размер игры,Taille du jeu,Spielgröße,Tamaño del juego,Dimensione del gioco
+gamegenre,Game genre,Жанр ишгры,Genre de jeu,Spielgenre,Género de juego,Genere di gioco
+gametheme,Game theme,Тема игры,Thème du jeu,Spielthema,Tema del juego,Tema del gioco
+plot,Plot,Сюжет,Parcelle,Parzelle,Trama,Complotto
+gamedesign,Game design,Игровой дизайн,Le design du jeu,Spieldesign,Diseño de juego,Design del gioco
+gameplay,Gameplay,Геймплей,Gameplay,Spielweise,Como se Juega,Gameplay
+sound,Sound,Звук,Son,Klang,Sonido,Suono
+bugs,Bugs,Баги,Insectes,Käfer,Insectos,Bug
+workload,Workload,Объем,Charge de travail,Arbeitsbelastung,Carga de trabajo,Carico di lavoro
+prototyping,Prototyping,Прототипирование,Prototypage,Prototyp entwickeln,Prototipos,Prototipazione
+developing,Developing,Разработка,Développement,Entwicklung,Desarrollando,Sviluppando
+design,Design,Дизайн,Conception,Design,Diseño,Progetto
+stageslider.0,Casual / Hardcore,Казуал / Хардкор,Décontracté / hardcore,Casual / Hardcore,Informal / hardcore,Casual / hardcore
+stageslider.1,Kindness / Cruelty,Доброта / Жестокость,Gentillesse / cruauté,Freundlichkeit / Grausamkeit,Bondad / crueldad,Gentilezza / crudeltà
+stageslider.2,Game length / elaboration,Длина игры / Проработка,Longueur / élaboration du jeu,Spiellänge / Ausarbeitung,Longitud del juego / elaboración,Lunghezza / elaborazione del gioco
+stageslider.3,Emphasis on story / gameplay,Акцент на сюжет / геймплей,L'accent mis sur l'histoire / le gameplay,Betonung auf Geschichte / Gameplay,Énfasis en la historia / juego,Enfasi sulla storia / gameplay
+stageslider.4,Convenience / Functionality,Удобство / Функциональность,Commodité / fonctionnalité,Bequemlichkeit / Funktionalität,Conveniencia / funcionalidad,Comodità / funzionalità
+stageslider.5,Familiarity / Innovationess,Освоенность / Инновационость,Familiarité / innovationuse,Vertrautheit / Innovation und,Familiaridad / innovación,Familiarità / innovazione
+stageslider.6,Gameplay passivity / intensivity,Пассивность / Интенсивность Геймплея,Passivité / intensivité de gameplay,Gameplay -Passivität / Intensivität,Passividad / intensividad del juego,Gameplay passività / intensività
+stageslider.7,Gameplay simplicity / depth,Простота / Глубина геймплея,Gameplay Simplicité / Profondeur,Gameplay -Einfachheit / Tiefe,Simplicidad / profundidad del juego,Semplicità / profondità del gameplay
+stageslider.8,Atmospherity / Sightness,Атмосфера / Зрелищность,Atmosphère / vue,Atmosphäre / Sicht,Atmósfera / espectáculo,Atmosferia / vista
+stageslider.9,Sound abundance / background,Фоновость / Обилие звука,Abondance sonore / arrière-plan,Tonhäufigkeit / Hintergrund,Abundancia de sonido / fondo,Sound Abbondanza / Background
+stageslider.10,Design character / world,Дизайн мира / персонажей,Personnage de conception / monde,Designcharakter / Welt,Personaje de diseño / mundo,Carattere / mondo del design
+stageslider.11,Graphics optimization / beauty,Оптимизация / Красота Графики,Optimisation / beauté graphiques,Grafikoptimierung / Schönheit,Optimización gráfica / belleza,Ottimizzazione grafica / bellezza
+buildinfo.1,Press <sprite=0> to build the item,Нажмите <sprite=0> чтобы построить предмет.,Appuyez sur <sprite=0> pour construire l'élément,"Drücken Sie <sprite=0>, um das Objekt zu bauen",Presiona <sprite=0> para construir el artículo,Premi <sprite=0> per costruire l'oggetto
+buildinfo.2,Hold <sprite=1> to move the camera,Удерживайте <sprite=1> чтобы переместить камеру.,Maintenez <sprite=1> pour déplacer la caméra,"Halten Sie <sprite=1> gedrückt, um die Kamera zu bewegen",Mantén pulsado <sprite=1> para mover la cámara,Tieni premuto <sprite=1> per spostare la telecamera
+buildinfo.3,Scroll  <sprite=2> to zoom in or out,Прокрутите <sprite=2> чтобы увеличить или уменьшить масштаб.,Faites défiler <sprite=2> pour effectuer un zoom avant ou arrière,"Scrollen Sie <Sprite=2>, um hinein- oder herauszuzoomen",Desplácese <sprite=2> para acercar o alejar,Scorri <sprite=2> per ingrandire o ridurre
+buildinfo.4,Press  <b><i>R</i></b> or  <b><i>Q</i></b> to rotate the item,Нажмите  <b><i>R</i></b> или  <b><i>Q</i></b> для поворота предмета,Appuyez sur  <b><i>R</i></b> ou  <b><i>Q</i></b> pour faire pivoter l'élément,"Drücke  <b><i>R</i></b> oder  <b><i>Q</i></b>, um das Element zu drehen",Presione  <b><i> R </i></b> o  <b><i>Q</i></b> para rotar el elemento.,Premi  <b><i>R</i></b> o  <b><i>Q</i></b> per ruotare l'elemento
+buildinfo.5,Press  <b><i>Delete</i></b> to sell or remove item,Нажмите  <b><i>Delete</i></b> что бы продать или удалить предмет,Appuyez sur  <b><i>Delete</i></b> pour vendre ou supprimer l'article,"Drücken Sie  <b><i>Delete</i></b>, um Artikel zu verkaufen oder zu entfernen",Presiona  <b><i> Delete</i></b> para vender o eliminar el artículo.,Premi  <b><i>Delete</i></b> per vendere o rimuovere l'oggetto

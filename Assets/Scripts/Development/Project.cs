@@ -12,7 +12,12 @@ public abstract class Project
     [field: SerializeField] public int graphics { get; private set; }
     [field: SerializeField] public int sound { get; private set; }
 
-    public void Develop()
+    public void Develop() // dont know, is i really need this void 
+    {
+
+    }
+
+    public void Cancel() // do it abstact
     {
 
     }

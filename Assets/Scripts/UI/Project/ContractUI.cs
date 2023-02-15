@@ -42,8 +42,7 @@ public class ContractUI : MonoBehaviour
         int maxSize = Random.Range(0, ProjectManager.instance.maxSizeGameCreated);
         contract = new Contract(maxSize);
         contractName.text = contract.projectName;
-        size.text = Constans.gameSizes[contract.size];
-        if (contract.size == 0) size.text = Localization.Localize("indie");
+        size.text = TextConvertor.GameSizeText(contract.size);
         genre.text = Localization.Localize(contract.genre.localizationKey);
         engine.text = Localization.Localize("none");
         theme.text = Localization.Localize("none");

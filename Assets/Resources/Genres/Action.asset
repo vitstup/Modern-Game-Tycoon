@@ -14,3 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _localizationKey: genre.0
   _themeBonuses: []
+  _featuresBonuses: []
+  _prototypingSliders:
+    casual_hardcore: 1
+    kindness_cruelty: 1
+    length_elaboration: 1
+    plot_gameplaySignificance: 1
+  _developingSliders:
+    convenience_functionality: 1
+    familiarity_innovationess: 1
+    length_elaborationGameplay: 1
+    simplicity_depthGameplay: 1
+  _designSliders:
+    atmospherity_sightness: 1
+    abundance_backgroundSound: 1
+    character_worldDesign: 1
+    optimization_beautyGraphics: 1

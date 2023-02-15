@@ -55,4 +55,10 @@ public static class TextConvertor
     {
         return string.Format("<size={0}>", size) + ChangeColor(text, color);
     }
+
+    public static string GameSizeText(int size)
+    {
+        if (size == 0) return Localization.Localize("indie");
+        else return Constans.gameSizes[size];
+    }
 }
