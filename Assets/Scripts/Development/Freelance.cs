@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Freelance 
+public class Freelance : Project
 {
     // needed points
 

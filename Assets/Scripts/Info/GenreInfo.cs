@@ -30,6 +30,9 @@ public class GenreInfo : ScriptableObject
     [SerializeField] private DesignSliders _designSliders;
 
     public string localizationKey => _localizationKey;
+    public PrototypingSliders prototypingSliders => _prototypingSliders;
+    public DevelopingSliders developingSliders => _developingSliders;
+    public DesignSliders designSliders => _designSliders;
 
     public float GetThemeBonus(ThemeInfo theme)
     {
@@ -38,5 +41,18 @@ public class GenreInfo : ScriptableObject
             if (theme == _themeBonuses[i].theme) return _themeBonuses[i].bonus;
         }
         return 0f;
+    }
+
+    public float GetFeaturesBonus(FeatureInfo[] features)
+    {
+        float bonus = 0;
+        for (int f = 0; f < features.Length; f++)
+        {
+            for (int b = 0; b < _featuresBonuses.Length; b++)
+            {
+                if (features[f] == _featuresBonuses[b].feature ) { bonus += _featuresBonuses[b].bonus; break; }
+            }
+        }
+        return bonus;
     }
 }

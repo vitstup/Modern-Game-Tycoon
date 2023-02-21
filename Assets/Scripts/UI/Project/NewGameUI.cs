@@ -75,6 +75,8 @@ public class NewGameUI : MonoBehaviour
         gameName.text = "";
         size.value = 0;
         genre.value = 0;
+        SetSize(size.value);
+        SetGenre(genre.value);
         SetEngine(null);
         SetTheme(null);
         for (int i = 0; i < platforms.Length; i++)
@@ -98,7 +100,6 @@ public class NewGameUI : MonoBehaviour
     public void SetName(string value)
     {
         game.projectName = value;
-        Debug.Log(game.projectName);
     }
 
     public void RandomGameName()
@@ -185,9 +186,9 @@ public class NewGameUI : MonoBehaviour
         else if (game.platforms[0] == null) StartCoroutine(ShowError(3));
         else
         {
-            ProjectManager.instance.project = game;
+            ProjectUI.instance.OpenProjectCanvas(false);
+            ProjectManager.instance.DevelopmentStarted(game);
             ResetInfo();
-            MainUI.instance.OpenProjectCanvas(false);
         }
     }
 

@@ -3,10 +3,10 @@ using UnityEngine;
 [System.Serializable]
 public class DesignSliders : StageSlider
 {
-    [SerializeField] private int atmospherity_sightness;
-    [SerializeField] private int abundance_backgroundSound;
-    [SerializeField] private int character_worldDesign;
-    [SerializeField] private int optimization_beautyGraphics;
+    [Range(0, 10)] [SerializeField] private int atmospherity_sightness;
+    [Range(0, 10)] [SerializeField] private int abundance_backgroundSound;
+    [Range(0, 10)] [SerializeField] private int character_worldDesign;
+    [Range(0, 10)] [SerializeField] private int optimization_beautyGraphics;
 
     public override string[] GetLocalizationKeys()
     {

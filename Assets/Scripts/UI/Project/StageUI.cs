@@ -45,11 +45,11 @@ public class StageUI : MonoBehaviour
     {
         leftPanel.SetInfo(game);
 
-        if (game.currentStage.sliders is PrototypingSliders) SetStageImg(0);
-        else if (game.currentStage.sliders is DevelopingSliders) SetStageImg(1);
-        else if (game.currentStage.sliders is DesignSliders) SetStageImg(3);
+        if (game.currentStage is PrototypingStage) SetStageImg(0);
+        else if (game.currentStage is DevelopingStage) SetStageImg(1);
+        else if (game.currentStage is DesignStage) SetStageImg(2);
 
-        var slidersLocalization = game.currentStage.sliders.GetLocalizationKeys();
+        var slidersLocalization = game.currentStage.SlidersLocalization();
         slider1.SetText(slidersLocalization[0]);
         slider2.SetText(slidersLocalization[1]);
         slider3.SetText(slidersLocalization[2]);
@@ -80,9 +80,10 @@ public class StageUI : MonoBehaviour
     {
         int currentPanel = 0;
         int currentGroup = 0;
-        int stage = 0;
-        if (game.currentStage.sliders is DevelopingSliders) stage = 1;
-        if (game.currentStage.sliders is DesignSliders) stage = 2;
+        int stage = -1;
+        if (game.currentStage is PrototypingStage) stage = 0;
+        else if (game.currentStage is DevelopingStage) stage = 1;
+        else if (game.currentStage is DesignStage) stage = 2;
         for (int i = 0; i < AttributesManager.instance.features.Length; i++)
         {
             if (AttributesManager.instance.features[i].stage != (FeaturesGroup.Stage)stage) continue; 
@@ -122,9 +123,9 @@ public class StageUI : MonoBehaviour
         ProjectManager.instance.project.Cancel();
     }
 
-    public void Continue() // not sure, that i need this void 
+    public void Continue()
     {
-        //
+        game.SetEfficiency();
     }
 
     /*

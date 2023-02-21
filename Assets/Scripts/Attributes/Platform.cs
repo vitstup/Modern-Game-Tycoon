@@ -24,4 +24,12 @@ public class Platform
         }
         else Debug.LogWarning("Trying to buy already boughted platform");
     }
+
+    public float GetPointsPenalty(int computeUsage, int graphicsUsage)
+    {
+        float computeEff = info.computeCapabilities < computeUsage? info.computeCapabilities / computeUsage: 1;
+        float graphicsEff = info.graphicCapabilities < graphicsUsage ? info.graphicCapabilities / graphicsUsage: 1;
+
+        return (computeEff + graphicsEff) / 2;
+    }
 }

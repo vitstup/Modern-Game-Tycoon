@@ -18,7 +18,7 @@ public class StageSliderUI : MonoBehaviour
     public void SliderValueChanged(float value)
     {
         var game = ProjectManager.instance.project as GameProject;
-        game.currentStage.sliders.SetSlider(id, (int)value);
+        game.currentStage.SetSlider(id, (int)value);
     }
 
     public void ChangeValue(int value)

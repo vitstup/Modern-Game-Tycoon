@@ -13,4 +13,74 @@ MonoBehaviour:
   m_Name: Simulator
   m_EditorClassIdentifier: 
   _localizationKey: genre.2
-  _themeBonuses: []
+  _themeBonuses:
+  - <theme>k__BackingField: {fileID: 11400000, guid: cfcf1c101cfe71e45aada1d3d0af199a, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 0e215e3088d9d8343a908e43da9ba319, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 3e4e5574991e122409aa0a1c8440256d, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 6312b3ac9e9f9bd4099a419ba286ced0, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 764006d4adfcb3145b4dbdb72cb2daf3, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 3cfe8570dda141d49a4955bae25c902e, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: fb4937e3ada6bde4fb263814dcd698f5, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: f4ec00bb576eb034ab2eb27f79355c41, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 916acf7f285e65e48b992fcbe6c8dfc8, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: d69a9c0f4763db249b94ae4075b3df39, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: a9b5207fcedbb8a41ad308f7270cd496, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 838d6414e687a454086ad711699f32d4, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: bf8ac721bc173b943a8cc4f16148fb40, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 87ba9dfedeec4b84ab0b253902f183b5, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 709c667fbd9aeb3459192e8619911d3e, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 76c5c37e2920f7e439b43e56054a636e, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 415c3b1036dcaf8409f7eacdab471e4e, type: 2}
+    <bonus>k__BackingField: 0.2
+  _featuresBonuses:
+  - <feature>k__BackingField: {fileID: 11400000, guid: 6ee64a2f93336b44d8869fd77d9fd6a2, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: 12bde22a8d457694d987a9f37a70ff34, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: e4e95b2462da1924183016a45170af6e, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: 9b4eb04e4716b514396a9fbb310a7492, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: 6015cdf05ffefd94e9588ceaf1bd5062, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <feature>k__BackingField: {fileID: 11400000, guid: ebaaac07dd4469c4493431083d6d80f6, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: 7e4f3672d1523d340bdd5f51e75af8bd, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: 4083d978785d58842ba34eee1648b01d, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: 4e55bfb1a59236341b48a9a1712de8b0, type: 2}
+    <bonus>k__BackingField: 0.075
+  - <feature>k__BackingField: {fileID: 11400000, guid: 2978fbb1a35984240a183c7d2ee56a01, type: 2}
+    <bonus>k__BackingField: 0.1
+  _prototypingSliders:
+    casual_hardcore: 5
+    kindness_cruelty: 5
+    length_elaboration: 8
+    plot_gameplaySignificance: 9
+  _developingSliders:
+    convenience_functionality: 5
+    familiarity_innovationess: 10
+    passivity_intensivityGameplay: 5
+    simplicity_depthGameplay: 6
+  _designSliders:
+    atmospherity_sightness: 4
+    abundance_backgroundSound: 5
+    character_worldDesign: 3
+    optimization_beautyGraphics: 3

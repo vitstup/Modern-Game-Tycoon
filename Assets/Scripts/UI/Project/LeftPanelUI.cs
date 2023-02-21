@@ -24,15 +24,16 @@ public class LeftPanelUI : MonoBehaviour
     {
         gameName.text = game.projectName;
         gameSize.text = TextConvertor.GameSizeText(game.size);
+        if (game.genre == null) Debug.Log("null");
         gameGenre.text = Localization.Localize(game.genre.localizationKey);
         gameTheme.text = Localization.Localize(game.theme.localizationKey);
-        //gameExpenses.text = ;
+        gameExpenses.text = TextConvertor.moneyText(ProjectManager.instance.GetDevelopingExpenses());
 
         plot.text = game.plot.ToString();
         gamedesign.text = game.gameDesign.ToString();
         gameplay.text = game.gameplay.ToString();
         graphics.text = game.graphics.ToString();
         sound.text = game.sound.ToString();
-        //bugs.text = game.bugs.ToString();
+        bugs.text = TextConvertor.BugsText(game.bugs);
     }
 }

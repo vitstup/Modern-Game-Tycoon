@@ -86,4 +86,14 @@ public class Persona
         sb.Append(surname.Remove(0, 1));
         return sb.ToString();
     }
+
+    public float[] Develop(float baseSpeed)
+    {
+        baseSpeed += ComputerManager.instance.computers[table.currentPc].productionBonus;
+
+        var values = skills.RandomSkillWithBugs();
+        values[0] *= baseSpeed;
+
+        return values;
+    }
 }

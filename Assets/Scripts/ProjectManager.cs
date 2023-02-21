@@ -1,17 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ProjectManager : MonoBehaviour
 {
+    public class developmentEvent : UnityEvent<bool> { }
+    public static developmentEvent DevelopmentEvent = new developmentEvent();
+
     public static ProjectManager instance;
 
-    public Project project;
+    [field: SerializeField] public Project project { get; private set; }
 
     public int maxSizeGameCreated; // use this to generate contracts 
 
     private void Awake()
     {
         instance = this;
+        TimeManager.DayUpdateEvent.AddListener(DayUpdate);
+    }
+
+    private void DayUpdate()
+    {
+        if (project != null)
+        {
+            //project.Develop(new float[] {2, 5, 3, 5, 4, 1});
+            var points = RosterManager.instance.Develop(project.BaseDevelopmentSpeed());
+            project.Develop(points);
+            
+            if (project is GameProject) CreationUI.instance.UpdateInfo(project as GameProject);
+            else if (project is Freelance) CreationUI.instance.UpdateInfo(project as Freelance);
+            else if (project is GameUpdate) CreationUI.instance.UpdateInfo(project as GameUpdate);
+        }
+    }
+
+    public void DevelopmentStarted(Project project)
+    {
+        this.project = project;
+        if (project is GameProject) (project as GameProject).CheckStage();
+        DevelopmentEvent?.Invoke(true);
+        // typing sound if have assign workers
+    }
+
+    public void DevelopmentStoped()
+    {
+        DevelopmentEvent?.Invoke(false);
+        // no typing sound if have assign workers
+    }
+
+    public int GetDevelopingExpenses()
+    {
+        // calculate expenses
+        return 0;
     }
 }

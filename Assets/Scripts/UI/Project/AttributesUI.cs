@@ -87,10 +87,12 @@ public class AttributesUI : MonoBehaviour
             if (i >= available.Length) { platforms[i].gameObject.SetActive(false); continue; }
             if (selected != null)
             {
+                bool close = false;
                 for (int s = 0; s < selected.Length; s++)
                 {
-                    if (available[i] == selected[s]) { platforms[i].gameObject.SetActive(false); continue; }
+                    if (available[i] == selected[s]) { close = true; break; }
                 }
+                if (close) { platforms[i].gameObject.SetActive(false); continue; }
             }
             platforms[i].gameObject.SetActive(true);
             platforms[i].SetInfo(available[i]);

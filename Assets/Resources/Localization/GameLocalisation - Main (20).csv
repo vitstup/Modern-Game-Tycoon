@@ -249,6 +249,7 @@ workload,Workload,Объем,Charge de travail,Arbeitsbelastung,Carga de trabajo
 prototyping,Prototyping,Прототипирование,Prototypage,Prototyp entwickeln,Prototipos,Prototipazione
 developing,Developing,Разработка,Développement,Entwicklung,Desarrollando,Sviluppando
 design,Design,Дизайн,Conception,Design,Diseño,Progetto
+polishing,Polishing,Полировка,Polissage,Polieren,Pulido,Lucidatura
 stageslider.0,Casual / Hardcore,Казуал / Хардкор,Décontracté / hardcore,Casual / Hardcore,Informal / hardcore,Casual / hardcore
 stageslider.1,Kindness / Cruelty,Доброта / Жестокость,Gentillesse / cruauté,Freundlichkeit / Grausamkeit,Bondad / crueldad,Gentilezza / crudeltà
 stageslider.2,Game length / elaboration,Длина игры / Проработка,Longueur / élaboration du jeu,Spiellänge / Ausarbeitung,Longitud del juego / elaboración,Lunghezza / elaborazione del gioco
@@ -258,7 +259,7 @@ stageslider.5,Familiarity / Innovationess,Освоенность / Иннова�
 stageslider.6,Gameplay passivity / intensivity,Пассивность / Интенсивность Геймплея,Passivité / intensivité de gameplay,Gameplay -Passivität / Intensivität,Passividad / intensividad del juego,Gameplay passività / intensività
 stageslider.7,Gameplay simplicity / depth,Простота / Глубина геймплея,Gameplay Simplicité / Profondeur,Gameplay -Einfachheit / Tiefe,Simplicidad / profundidad del juego,Semplicità / profondità del gameplay
 stageslider.8,Atmospherity / Sightness,Атмосфера / Зрелищность,Atmosphère / vue,Atmosphäre / Sicht,Atmósfera / espectáculo,Atmosferia / vista
-stageslider.9,Sound abundance / background,Фоновость / Обилие звука,Abondance sonore / arrière-plan,Tonhäufigkeit / Hintergrund,Abundancia de sonido / fondo,Sound Abbondanza / Background
+stageslider.9,Sound abundance / background,Обилие / Фоновость звука,Abondance sonore / arrière-plan,Tonhäufigkeit / Hintergrund,Abundancia de sonido / fondo,Sound Abbondanza / Background
 stageslider.10,Design character / world,Дизайн мира / персонажей,Personnage de conception / monde,Designcharakter / Welt,Personaje de diseño / mundo,Carattere / mondo del design
 stageslider.11,Graphics optimization / beauty,Оптимизация / Красота Графики,Optimisation / beauté graphiques,Grafikoptimierung / Schönheit,Optimización gráfica / belleza,Ottimizzazione grafica / bellezza
 buildinfo.1,Press <sprite=0> to build the item,Нажмите <sprite=0> чтобы построить предмет.,Appuyez sur <sprite=0> pour construire l'élément,"Drücken Sie <sprite=0>, um das Objekt zu bauen",Presiona <sprite=0> para construir el artículo,Premi <sprite=0> per costruire l'oggetto
@@ -266,3 +267,22 @@ buildinfo.2,Hold <sprite=1> to move the camera,Удерживайте <sprite=1>
 buildinfo.3,Scroll  <sprite=2> to zoom in or out,Прокрутите <sprite=2> чтобы увеличить или уменьшить масштаб.,Faites défiler <sprite=2> pour effectuer un zoom avant ou arrière,"Scrollen Sie <Sprite=2>, um hinein- oder herauszuzoomen",Desplácese <sprite=2> para acercar o alejar,Scorri <sprite=2> per ingrandire o ridurre
 buildinfo.4,Press  <b><i>R</i></b> or  <b><i>Q</i></b> to rotate the item,Нажмите  <b><i>R</i></b> или  <b><i>Q</i></b> для поворота предмета,Appuyez sur  <b><i>R</i></b> ou  <b><i>Q</i></b> pour faire pivoter l'élément,"Drücke  <b><i>R</i></b> oder  <b><i>Q</i></b>, um das Element zu drehen",Presione  <b><i> R </i></b> o  <b><i>Q</i></b> para rotar el elemento.,Premi  <b><i>R</i></b> o  <b><i>Q</i></b> per ruotare l'elemento
 buildinfo.5,Press  <b><i>Delete</i></b> to sell or remove item,Нажмите  <b><i>Delete</i></b> что бы продать или удалить предмет,Appuyez sur  <b><i>Delete</i></b> pour vendre ou supprimer l'article,"Drücken Sie  <b><i>Delete</i></b>, um Artikel zu verkaufen oder zu entfernen",Presiona  <b><i> Delete</i></b> para vender o eliminar el artículo.,Premi  <b><i>Delete</i></b> per vendere o rimuovere l'oggetto
+unknown,Unknown,Неизвестно,Inconnu,Unbekannt,Desconocido,Sconosciuto
+release,Release,Выпустить,Libérer,Freigeben,Liberar,Pubblicazione
+cancelproject,Cancel project,Отменить проект,Annuler le projet,Projekt abbrechen,Cancelar proyecto,Annulla il progetto
+areyousurecancelprj,"Are you sure, that you want to cancel project ?","Вы уверены, что хотите отменить проект ?",Êtes-vous sûr que vous souhaitez annuler le projet?,"Sind Sie sicher, dass Sie das Projekt stornieren möchten?",¿Estás seguro de que quieres cancelar el proyecto?,"Sei sicuro, che vuoi annullare il progetto?"
+forfeit,Forfeit,Неустойка,Déclarer forfait,Verlieren,Perder,Forfeit
+sure,Sure,Конечно,Bien sûr,Sicher,Seguro,Sicuro
+no,No,Нет,Non,NEIN,No,NO
+gameisdone,Game is done,Игра сделана,Le jeu est fait,Spiel ist fertig,El juego está hecho,Il gioco è finito
+gameisdonetext,"The game is done. If you want, you can polish the game, fix some bugs and improve it. But point generation will be much slower. You can publish the game by yourself or find a publisher.","Игра сделана. Если хотите, вы можете отполировать игру, исправить некоторые ошибки и улучшить ее. Но точечное поколение будет намного медленнее. Вы можете опубликовать игру самостоятельно или найти издателя.","Le jeu est terminé. Si vous le souhaitez, vous pouvez polir le jeu, corriger certains bogues et l'améliorer. Mais la génération de points sera beaucoup plus lente. Vous pouvez publier le jeu par vous-même ou trouver un éditeur.","Das Spiel ist fertig. Wenn Sie möchten, können Sie das Spiel polieren, einige Fehler beheben und verbessern. Aber die Point -Generation wird viel langsamer sein. Sie können das Spiel selbst veröffentlichen oder einen Verlag finden.","El juego está hecho. Si lo desea, puede pulir el juego, solucionar algunos errores y mejorarlo. Pero la generación de puntos será mucho más lenta. Puedes publicar el juego tú mismo o encontrar un editor.","Il gioco è finito. Se vuoi, puoi lucidare il gioco, correggere alcuni bug e migliorarlo. Ma la generazione di punti sarà molto più lenta. Puoi pubblicare il gioco da solo o trovare un editore."
+estuserrating,Estimated user rating:,Ожидаемый рейтинг:,Évaluation des utilisateurs estimés:,Geschätzte Benutzerbewertung:,Calificación estimada del usuario:,Valutazione utente stimata:
+polish,Polish,Доработка,polonais,Polieren,Polaco,Polacco
+findpublisher,Find publisher,Найти издателя,Trouver l'éditeur,Finden Sie Verlag,Encontrar editor,Trova l'editore
+release,Release,Выпустить,Libérer,Freigeben,Liberar,Pubblicazione
+pointseff,Points efficiency:,Эффективность очков:,Efficacité des points:,Punkteffizienz:,Eficiencia de puntos:,Efficienza dei punti:
+income,Income,Доход,Revenu,Einkommen,Ingreso,Reddito
+intpublishers,Interested publishers,Заинтересованные издатели,Éditeurs intéressés,Interessierte Verlage,Editores interesados,Editori interessati
+audience,Audience,Аудитория,Public,Publikum,Audiencia,Pubblico
+gameprice,Game price,Цена игры,Prix ​​du jeu,Spielpreis,Precio del juego,Prezzo del gioco
+corofpricing,The correctness of the pricing:,Правильность цены:,L'exactitude du prix:,Die Richtigkeit der Preisgestaltung:,La exactitud del precio:,La correttezza dei prezzi:

@@ -30,6 +30,8 @@ public class FeatureToggle : MonoBehaviour
         graphics.text = feature.graphicUsage.ToString();
 
         this.feature = feature;
+
+        toggle.isOn = false;
     }
 
     private void ToggleAnimation(bool value)

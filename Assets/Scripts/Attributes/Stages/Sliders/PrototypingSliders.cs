@@ -3,10 +3,10 @@ using UnityEngine;
 [System.Serializable]
 public class PrototypingSliders : StageSlider
 {
-    [SerializeField] private int casual_hardcore;
-    [SerializeField] private int kindness_cruelty;
-    [SerializeField] private int length_elaboration;
-    [SerializeField] private int plot_gameplaySignificance;
+    [Range(0, 10)] [SerializeField] private int casual_hardcore;
+    [Range(0, 10)] [SerializeField] private int kindness_cruelty;
+    [Range(0, 10)] [SerializeField] private int length_elaboration;
+    [Range(0, 10)] [SerializeField] private int plot_gameplaySignificance;
 
     public override string[] GetLocalizationKeys()
     {

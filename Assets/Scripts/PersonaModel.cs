@@ -11,12 +11,12 @@ public class PersonaModel : MonoBehaviour
     private void Awake()
     {
         animators = GetComponentsInChildren<Animator>();
+        ProjectManager.DevelopmentEvent.AddListener(SetAnimation);
     }
-    
-    void Update()
+
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.H)) SetAnimation(false);
-        if (Input.GetKeyDown(KeyCode.N)) SetAnimation(true);
+        if (ProjectManager.instance.project != null) SetAnimation(true);
     }
 
     public void SetAnimation(bool isWorking)
@@ -43,4 +43,15 @@ public class PersonaModel : MonoBehaviour
             models[i].SetActive(false);
         }
     }
+
+
+    // for animations test
+
+    /*
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.H)) SetAnimation(false);
+        if (Input.GetKeyDown(KeyCode.N)) SetAnimation(true);
+    }
+    */
 }

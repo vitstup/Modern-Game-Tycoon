@@ -61,4 +61,15 @@ public static class TextConvertor
         if (size == 0) return Localization.Localize("indie");
         else return Constans.gameSizes[size];
     }
+
+    public static string BugsText(float bugs)
+    {
+        if (bugs >= 1000) return "> 1000";
+        else if (bugs >= 500) return "> 500";
+        else if (bugs >= 250) return "> 250";
+        else if (bugs >= 100) return "> 100";
+        else if (bugs >= 50) return "> 50";
+        else if (bugs >= 10) return "> 10";
+        else return Localization.Localize("unknown");
+    }
 }

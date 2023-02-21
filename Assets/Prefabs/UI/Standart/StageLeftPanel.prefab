@@ -1404,7 +1404,7 @@ GameObject:
   - component: {fileID: 2208934574232412103}
   - component: {fileID: 2898459393950775435}
   m_Layer: 5
-  m_Name: LeftPanel 1
+  m_Name: StageLeftPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

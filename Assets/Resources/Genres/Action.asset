@@ -13,20 +13,84 @@ MonoBehaviour:
   m_Name: Action
   m_EditorClassIdentifier: 
   _localizationKey: genre.0
-  _themeBonuses: []
-  _featuresBonuses: []
+  _themeBonuses:
+  - <theme>k__BackingField: {fileID: 11400000, guid: 415c3b1036dcaf8409f7eacdab471e4e, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: d3181ec1bc3e4ca44a2235124e5d7888, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: 8d45954fa1e8798448ecf77445e73eec, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: e86cb73ecd586834f8d7f67565c7c153, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: fb4937e3ada6bde4fb263814dcd698f5, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: bd6b8fb04f59b3d44b6f9a894df990e5, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: cfcf1c101cfe71e45aada1d3d0af199a, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: 916acf7f285e65e48b992fcbe6c8dfc8, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: a9b5207fcedbb8a41ad308f7270cd496, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: 76c5c37e2920f7e439b43e56054a636e, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <theme>k__BackingField: {fileID: 11400000, guid: 76c5c37e2920f7e439b43e56054a636e, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <theme>k__BackingField: {fileID: 11400000, guid: 8a0058db0167634418ca85bb5f468fc9, type: 2}
+    <bonus>k__BackingField: -0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: a35049c9e15ad1c49a52a0f6423328b7, type: 2}
+    <bonus>k__BackingField: -0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: b6e4fa9b1ff068a47bacf2213e1713e3, type: 2}
+    <bonus>k__BackingField: -0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: d7af65b5e5b059e4db285db7c1bb0348, type: 2}
+    <bonus>k__BackingField: -0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 3bab674224fb53047a6c74aefb494f9f, type: 2}
+    <bonus>k__BackingField: -0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: d69a9c0f4763db249b94ae4075b3df39, type: 2}
+    <bonus>k__BackingField: -0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: 838d6414e687a454086ad711699f32d4, type: 2}
+    <bonus>k__BackingField: -0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: a5f7589f00aac5c4e8ada0a1614bfc92, type: 2}
+    <bonus>k__BackingField: -0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: 5a70186e345304c4bb000946c5368b87, type: 2}
+    <bonus>k__BackingField: -0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: 3e4e5574991e122409aa0a1c8440256d, type: 2}
+    <bonus>k__BackingField: -0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 764006d4adfcb3145b4dbdb72cb2daf3, type: 2}
+    <bonus>k__BackingField: -0.2
+  _featuresBonuses:
+  - <feature>k__BackingField: {fileID: 11400000, guid: c36c6e9a3388f864393550e2b7853c20, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: 1951071277e7e3945a36f3e0287e20bc, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: d10e74791574db546b53b48ddb475f72, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: 828b5e66b26fb104c8cc6034974358b6, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: ffffc6f9ef5c2c14fa33f7e61709f179, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: 9b4eb04e4716b514396a9fbb310a7492, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: e85aa10314fe55148a0dae2b44703596, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: 4083d978785d58842ba34eee1648b01d, type: 2}
+    <bonus>k__BackingField: 0.03
+  - <feature>k__BackingField: {fileID: 11400000, guid: 4e55bfb1a59236341b48a9a1712de8b0, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: 2978fbb1a35984240a183c7d2ee56a01, type: 2}
+    <bonus>k__BackingField: 0.1
   _prototypingSliders:
-    casual_hardcore: 1
-    kindness_cruelty: 1
-    length_elaboration: 1
-    plot_gameplaySignificance: 1
+    casual_hardcore: 4
+    kindness_cruelty: 7
+    length_elaboration: 5
+    plot_gameplaySignificance: 8
   _developingSliders:
-    convenience_functionality: 1
-    familiarity_innovationess: 1
-    length_elaborationGameplay: 1
-    simplicity_depthGameplay: 1
+    convenience_functionality: 3
+    familiarity_innovationess: 5
+    passivity_intensivityGameplay: 8
+    simplicity_depthGameplay: 4
   _designSliders:
-    atmospherity_sightness: 1
-    abundance_backgroundSound: 1
-    character_worldDesign: 1
-    optimization_beautyGraphics: 1
+    atmospherity_sightness: 8
+    abundance_backgroundSound: 5
+    character_worldDesign: 3
+    optimization_beautyGraphics: 4

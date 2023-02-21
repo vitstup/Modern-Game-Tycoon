@@ -94,9 +94,9 @@ public class ContractUI : MonoBehaviour
         else if (contract.theme == null) StartCoroutine(ShowError(2));
         else
         {
-            ProjectManager.instance.project = contract;
+            ProjectUI.instance.OpenProjectCanvas(false);
+            ProjectManager.instance.DevelopmentStarted(contract);
             NewContract();
-            MainUI.instance.OpenProjectCanvas(false);
         }
     }
 

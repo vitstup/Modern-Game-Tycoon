@@ -24,8 +24,6 @@ public class MainUI : MonoBehaviour
     [SerializeField] private GameObject BackPanel;
     [SerializeField] private GameObject BuildingBackPanel;
 
-    [SerializeField] private GameObject ProjectCanvas;
-
     [SerializeField] private TextMeshProUGUI moneyText;
     [SerializeField] private Image moneyTriangle;
     [SerializeField] private Sprite plusMoney;
@@ -90,17 +88,6 @@ public class MainUI : MonoBehaviour
     {
         UpdateDate();
         UpdateSpeedBtns();
-    }
-
-    public void OpenProjectCanvas(bool open)
-    {
-        TimeManager.instance.NecessaryPause(open);
-        ProjectCanvas.SetActive(open);
-    }
-
-    public void TryToOpenProjectCanvas()
-    {
-        if (ProjectManager.instance.project == null) OpenProjectCanvas(true);
     }
 
     public void ChangeMoneyText()

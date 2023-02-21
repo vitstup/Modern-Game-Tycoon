@@ -3,10 +3,10 @@ using UnityEngine;
 [System.Serializable]
 public class DevelopingSliders : StageSlider
 {
-    [SerializeField] private int convenience_functionality;
-    [SerializeField] private int familiarity_innovationess;
-    [SerializeField] private int passivity_intensivityGameplay;
-    [SerializeField] private int simplicity_depthGameplay;
+    [Range(0, 10)] [SerializeField] private int convenience_functionality;
+    [Range(0, 10)] [SerializeField] private int familiarity_innovationess;
+    [Range(0, 10)] [SerializeField] private int passivity_intensivityGameplay;
+    [Range(0, 10)] [SerializeField] private int simplicity_depthGameplay;
 
     public override string[] GetLocalizationKeys()
     {

@@ -13,4 +13,76 @@ MonoBehaviour:
   m_Name: Racing
   m_EditorClassIdentifier: 
   _localizationKey: genre.4
-  _themeBonuses: []
+  _themeBonuses:
+  - <theme>k__BackingField: {fileID: 11400000, guid: 4b827958ab1f1a14da152d0720373129, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: bd6b8fb04f59b3d44b6f9a894df990e5, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: bf8ac721bc173b943a8cc4f16148fb40, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 8d45954fa1e8798448ecf77445e73eec, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: e86cb73ecd586834f8d7f67565c7c153, type: 2}
+    <bonus>k__BackingField: 0.2
+  - <theme>k__BackingField: {fileID: 11400000, guid: 6312b3ac9e9f9bd4099a419ba286ced0, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: 0e215e3088d9d8343a908e43da9ba319, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: 28bfe3c015976fe4da426c6870d1c922, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: a9b5207fcedbb8a41ad308f7270cd496, type: 2}
+    <bonus>k__BackingField: 0.15
+  - <theme>k__BackingField: {fileID: 11400000, guid: 764006d4adfcb3145b4dbdb72cb2daf3, type: 2}
+    <bonus>k__BackingField: -0.3
+  - <theme>k__BackingField: {fileID: 11400000, guid: 8a0058db0167634418ca85bb5f468fc9, type: 2}
+    <bonus>k__BackingField: -0.3
+  - <theme>k__BackingField: {fileID: 11400000, guid: 151b10ef3ad37554c89b5f1818c17589, type: 2}
+    <bonus>k__BackingField: -0.3
+  - <theme>k__BackingField: {fileID: 11400000, guid: a5f7589f00aac5c4e8ada0a1614bfc92, type: 2}
+    <bonus>k__BackingField: -0.3
+  - <theme>k__BackingField: {fileID: 11400000, guid: 3e4e5574991e122409aa0a1c8440256d, type: 2}
+    <bonus>k__BackingField: -0.3
+  - <theme>k__BackingField: {fileID: 11400000, guid: d7af65b5e5b059e4db285db7c1bb0348, type: 2}
+    <bonus>k__BackingField: -0.3
+  - <theme>k__BackingField: {fileID: 11400000, guid: 3bab674224fb53047a6c74aefb494f9f, type: 2}
+    <bonus>k__BackingField: -0.3
+  - <theme>k__BackingField: {fileID: 11400000, guid: 838d6414e687a454086ad711699f32d4, type: 2}
+    <bonus>k__BackingField: -0.3
+  _featuresBonuses:
+  - <feature>k__BackingField: {fileID: 11400000, guid: c36c6e9a3388f864393550e2b7853c20, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: 09ebe4f4ea8f4ec49afc8eeba2ae5d50, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: 1951071277e7e3945a36f3e0287e20bc, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: d10e74791574db546b53b48ddb475f72, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: 489a69b041a2c744ea01113061a8953f, type: 2}
+    <bonus>k__BackingField: -0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: 828b5e66b26fb104c8cc6034974358b6, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: ffffc6f9ef5c2c14fa33f7e61709f179, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: 9b4eb04e4716b514396a9fbb310a7492, type: 2}
+    <bonus>k__BackingField: 0.05
+  - <feature>k__BackingField: {fileID: 11400000, guid: 6015cdf05ffefd94e9588ceaf1bd5062, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: e85aa10314fe55148a0dae2b44703596, type: 2}
+    <bonus>k__BackingField: 0.1
+  - <feature>k__BackingField: {fileID: 11400000, guid: aeb945b4fb24bda45a2cd3bd236f6d57, type: 2}
+    <bonus>k__BackingField: 0.05
+  _prototypingSliders:
+    casual_hardcore: 3
+    kindness_cruelty: 4
+    length_elaboration: 1
+    plot_gameplaySignificance: 8
+  _developingSliders:
+    convenience_functionality: 2
+    familiarity_innovationess: 4
+    passivity_intensivityGameplay: 6
+    simplicity_depthGameplay: 3
+  _designSliders:
+    atmospherity_sightness: 8
+    abundance_backgroundSound: 3
+    character_worldDesign: 6
+    optimization_beautyGraphics: 7
