@@ -87,13 +87,11 @@ public class Persona
         return sb.ToString();
     }
 
-    public float[] Develop(float baseSpeed)
+    public float DevelopmentSpeed(float baseSpeed)
     {
         baseSpeed += ComputerManager.instance.computers[table.currentPc].productionBonus;
-
-        var values = skills.RandomSkillWithBugs();
-        values[0] *= baseSpeed;
-
-        return values;
+        float happines = BuildingManager.instance.happiness;
+        baseSpeed += happines > 1? (happines - 1f) / 2f: happines;
+        return baseSpeed;
     }
 }

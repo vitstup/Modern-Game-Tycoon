@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public abstract class GameProject : Project
 {
@@ -30,17 +31,34 @@ public abstract class GameProject : Project
         return engine.info.developmentSpeed;
     }
 
-    public override void Develop(float[] points)
+    public override void Develop()
     {
         CheckStage();
-        base.Develop(points);
-        bugs += points[5];
 
-        currentStage.workloadDone += points[0];
-        currentStage.workloadDone += points[1];
-        currentStage.workloadDone += points[2];
-        currentStage.workloadDone += points[3];
-        currentStage.workloadDone += points[4];
+        bool isPolishing = currentStage is PolishingStage;
+
+        var workers = RosterManager.instance.GetAssignWorkers();
+
+        float[] workValues = new float[6];
+
+        for (int i = 0; i < workers.Length; i++)
+        {
+            var work = workers[i].skills.GenerateRandom(isPolishing);
+            work.value *= workers[i].DevelopmentSpeed(BaseDevelopmentSpeed());
+            workValues[work.skillId] += work.value;
+
+            if(work.skillId != 5) PointsManager.instance.ShowPoint(workers[i].table.transform, work.skillId);
+            else PointsManager.instance.ShowPoint(workers[i].table.transform, work.value > 0? 5: 6);
+        }
+
+        currentStage.workloadDone += workValues.Sum();
+
+        AddPoints(workValues, currentEfficiency);
+        bugs += workValues[5];
+        if (bugs < 0) bugs = 0;
+
+
+        Debug.Log(currentEfficiency + " eff, " + bugs + " bugs, " + workValues[5] + " today bugs");
     }
 
     public void CheckStage()
@@ -71,7 +89,7 @@ public abstract class GameProject : Project
 
     private float DevelopmentEfficiency() // can use this method instead "currentEfficiency", but it will be less optimized
     {
-        if (currentStage is PolishingStage) return 1;
+        if (currentStage is PolishingStage) return 0.2f;
         else
         {
             float efficiency = 1;

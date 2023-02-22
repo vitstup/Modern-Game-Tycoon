@@ -24,9 +24,7 @@ public class ProjectManager : MonoBehaviour
     {
         if (project != null)
         {
-            //project.Develop(new float[] {2, 5, 3, 5, 4, 1});
-            var points = RosterManager.instance.Develop(project.BaseDevelopmentSpeed());
-            project.Develop(points);
+            project.Develop();
             
             if (project is GameProject) CreationUI.instance.UpdateInfo(project as GameProject);
             else if (project is Freelance) CreationUI.instance.UpdateInfo(project as Freelance);

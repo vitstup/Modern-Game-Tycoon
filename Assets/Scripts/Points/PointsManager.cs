@@ -11,7 +11,8 @@ public class PointsManager : MonoBehaviour
 
     [SerializeField] private Transform pointsTarget;
 
-    private PointScript[] points;
+    private List<PointScript> points = new List<PointScript>();
+    private List<PointScript> activePoints = new List<PointScript>();
 
     private void Awake()
     {
@@ -21,17 +22,24 @@ public class PointsManager : MonoBehaviour
 
     private void InitializePoints()
     {
-        points = new PointScript[100];
-        for (int i = 0; i < points.Length; i++)
+        for (int i = 0; i < Constans.PointsPool; i++)
         {
-            points[i] = Instantiate(prefab, pointsParent);
+            points.Add(Instantiate(prefab, pointsParent));
             points[i].gameObject.SetActive(false);
         }
     }
 
-    public void ShowPoint(Transform table)
+    public void ShowPoint(Transform table, int sprite)
     {
-        var point = Instantiate(prefab, pointsParent);
-        point.Show(table.position, pointsTarget.position);
+        var point = points.Count > 0? points[0] : activePoints[0];
+        points.Remove(point);
+        activePoints.Add(point);
+        point.Show(table.position, pointsTarget.position, sprite);
+    }
+
+    public void AddToPool(PointScript point)
+    {
+        points.Add(point);
+        activePoints.Remove(point);
     }
 }

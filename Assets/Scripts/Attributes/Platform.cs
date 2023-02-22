@@ -27,8 +27,8 @@ public class Platform
 
     public float GetPointsPenalty(int computeUsage, int graphicsUsage)
     {
-        float computeEff = info.computeCapabilities < computeUsage? info.computeCapabilities / computeUsage: 1;
-        float graphicsEff = info.graphicCapabilities < graphicsUsage ? info.graphicCapabilities / graphicsUsage: 1;
+        float computeEff = info.computeCapabilities < computeUsage? (float)info.computeCapabilities / computeUsage: 1;
+        float graphicsEff = info.graphicCapabilities < graphicsUsage ? (float)info.graphicCapabilities / graphicsUsage: 1;
 
         return (computeEff + graphicsEff) / 2;
     }

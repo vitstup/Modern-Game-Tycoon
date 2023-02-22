@@ -107,8 +107,8 @@ public class StageUI : MonoBehaviour
     {
         workloadText.text = game.currentStage.CalculateWorkload(game).ToString();
 
-        int cpuUsage = game.currentStage.GetComputeUsage();
-        int gpuUsage = game.currentStage.GetGraphicsUsage();
+        int cpuUsage = game.GetComputingUsage();
+        int gpuUsage = game.GetGraphicsUsage();
         int cpuAvailable = game.platforms[0].info.computeCapabilities;
         int gpuAvailable = game.platforms[0].info.graphicCapabilities;
 

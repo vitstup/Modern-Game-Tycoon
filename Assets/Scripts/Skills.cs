@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Unity.VisualScripting;
+using Newtonsoft.Json.Linq;
 
 [System.Serializable]
 public class Skills 
@@ -70,51 +72,74 @@ public class Skills
 
     private float GeneratePoint(int skill)
     {
-        return Random.Range(skill / 3, skill) / 100f;
+        float value = Random.Range(skill / 3, skill) / 20f;
+        return value > 1f? value : 1f;
     }
 
-    private int GenerateBug(int skill)
+    private float GenerateBug(float skillValue)
     {
-        if (Random.Range(skill, 105) < Random.Range(0, 105)) return 1;
+        float bug = Random.Range(0, 5);
+        float fix = Random.Range(0, skillValue);
+
+        return bug - fix;
+    }
+
+    public DevValue GenerateDefinite(int[] definits)
+    {
+        int skill = 0;
+        while (true)
+        {
+            bool rightSkill = false;
+            skill = RandomSkill();
+            for (int i = 0; i < definits.Length; i++)
+            {
+                if (skill == definits[i]) { rightSkill = true; break; }
+            }
+            if (rightSkill) break;
+        }
+        float value = GetSkillPointValue(skill);
+
+        return new DevValue(value, skill);
+    }
+
+    public DevValue GenerateRandom(bool onlyAntiBug)
+    {
+        int skill = RandomSkill();
+        float value = GetSkillPointValue(skill);
+
+        if (Random.Range(0, 100) > 85)
+        {
+            float bug = GenerateBug(value);
+            if (!onlyAntiBug || bug < 0) return new DevValue(bug, 5);
+        }
+
+        return new DevValue(value, skill);
+    }
+
+    private int RandomSkill() // use to choose random skill based on its value
+    {
+        int summ = GetSumm();
+        int rnd = Random.Range(0, summ);
+
+        if (rnd < programming) return 0;
+        else if (rnd < programming + gameDesign) return 1;
+        else if (rnd < programming + gameDesign + artDesign) return 2;
+        else if (rnd < programming + gameDesign + artDesign + soundDesign) return 3;
+        else return 4;
+    }
+
+    private float GetSkillPointValue(int skill) // use to generate value by skill id 
+    {
+        switch (skill)
+        {
+            case 0: return GeneratePoint(programming);
+            case 1: return GeneratePoint(gameDesign);
+            case 2: return GeneratePoint(artDesign);
+            case 3: return GeneratePoint(soundDesign);
+            case 4: return GeneratePoint(screenwriting);
+
+        }
+        Debug.LogWarning("wrong skill");
         return 0;
-    }
-
-    public float[] RandomSkill()
-    {
-        float[] values = new float[5];
-        values[0] = GeneratePoint(programming);
-        values[1] = GeneratePoint(gameDesign);
-        values[2] = GeneratePoint(artDesign);
-        values[3] = GeneratePoint(soundDesign);
-        values[4] = GeneratePoint(screenwriting);
-
-        float summ = values.Sum();
-
-        float random = Random.Range(0, summ);
-
-        int skillType = 0;
-
-        if (random < values[0]) skillType = 0;
-        else if (random < values[0] + values[1]) skillType = 1;
-        else if (random < values[0] + values[1] + values[2]) skillType = 2;
-        else if (random < values[0] + values[1] + values[2] + values[3]) skillType = 3;
-        else skillType = 4;
-
-        return new float[] { values[skillType], skillType };
-    }
-
-    public float[] RandomSkillWithBugs()
-    {
-        var skill = RandomSkill();
-        int type = (int)skill[1];
-        int bug = 0;
-
-        if (type == 0) bug = GenerateBug(programming);
-        else if (type == 1) bug = GenerateBug(gameDesign);
-        else if (type == 2) bug = GenerateBug(artDesign);
-        else if (type == 3) bug = GenerateBug(soundDesign);
-        else bug = GenerateBug(screenwriting);
-
-        return new float[] { skill[0], type, bug };
     }
 }

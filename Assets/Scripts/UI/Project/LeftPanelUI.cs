@@ -29,11 +29,11 @@ public class LeftPanelUI : MonoBehaviour
         gameTheme.text = Localization.Localize(game.theme.localizationKey);
         gameExpenses.text = TextConvertor.moneyText(ProjectManager.instance.GetDevelopingExpenses());
 
-        plot.text = game.plot.ToString();
-        gamedesign.text = game.gameDesign.ToString();
-        gameplay.text = game.gameplay.ToString();
-        graphics.text = game.graphics.ToString();
-        sound.text = game.sound.ToString();
+        plot.text = ((int)game.plot).ToString();
+        gamedesign.text = ((int)game.gameDesign).ToString();
+        gameplay.text = ((int)game.gameplay).ToString();
+        graphics.text = ((int)game.graphics).ToString();
+        sound.text = ((int)game.sound).ToString();
         bugs.text = TextConvertor.BugsText(game.bugs);
     }
 }

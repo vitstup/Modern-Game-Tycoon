@@ -70,20 +70,13 @@ public class RosterManager : MonoBehaviour
         }
     }
 
-    public float[] Develop(float baseSpeed)
+    public Persona[] GetAssignWorkers()
     {
-        float[] points = new float[6];
+        List<Persona> assignWorkers = new List<Persona>();
         for (int i = 0; i < hiredWorkers.Count; i++)
         {
-            if (hiredWorkers[i].table != null)
-            {
-                var values = hiredWorkers[i].Develop(baseSpeed);
-                points[(int)values[1]] += values[0];
-                points[5] = values[2];
-
-                PointsManager.instance.ShowPoint(hiredWorkers[i].table.transform);
-            }
+            if (hiredWorkers[i].table != null) assignWorkers.Add(hiredWorkers[i]);
         }
-        return points;
+        return assignWorkers.ToArray();
     }
 }

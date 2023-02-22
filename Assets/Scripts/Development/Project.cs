@@ -13,21 +13,26 @@ public abstract class Project
     [field: SerializeField] public float graphics { get; private set; }
     [field: SerializeField] public float sound { get; private set; }
 
+    protected void AddPoints(float[] points, float efficiency)
+    {
+        gameplay += points[0] * efficiency;
+        gameDesign += points[1] * efficiency;
+        graphics += points[2] * efficiency;
+        sound += points[3] * efficiency;
+        plot += points[4] * efficiency;
+    }
+
     public virtual float BaseDevelopmentSpeed()
     {
         return 1f;
     }
 
-    public virtual void Develop(float[] points) 
+    public virtual void Develop() 
     {
-        plot += points[0];
-        gameDesign += points[1];
-        gameplay += points[2];
-        graphics += points[3];
-        sound += points[4];
+        
     }
 
-    public void Cancel() // do it abstact
+    public virtual void Cancel() // do it abstact
     {
 
     }

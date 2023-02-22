@@ -39,7 +39,7 @@ public class GameReadyUI : MonoBehaviour
 
     public void Polish()
     {
-
+        (ProjectManager.instance.project as GameProject).SetEfficiency();
     }
 
     public void FindPublisher()

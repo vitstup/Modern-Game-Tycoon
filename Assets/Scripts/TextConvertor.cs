@@ -11,29 +11,39 @@ public static class TextConvertor
         StringBuilder sb = new StringBuilder();
         long module = Math.Abs(num);
 
-        
-
-        if (module > 100000000)
+        if (module > 1000000000)
         {
-            sb.Append((module - module % 1000000000) / 1000000000);
-            sb.Append(",");
-            sb.Append((module % 1000000000 / 1000000).ToString("000"));
-            sb.Append(" B");
+            sb.Append(module / 1000000000);
+            if (module % 1000000000 != 0)
+            {
+                sb.Append(".");
+                sb.Append(module % 1000000000 / 100000000);
+            }
+            sb.Append("B");
         }
         else if (module > 1000000)
         {
-            sb.Append((module - module % 1000000) / 1000000);
-            sb.Append(",");
-            sb.Append((module % 1000000 / 1000).ToString("000"));
-            sb.Append(" M");
+            sb.Append(module / 1000000);
+            if (module % 1000000 != 0)
+            {
+                sb.Append(".");
+                sb.Append(module % 1000000 / 100000);
+            }
+            sb.Append("M");
+
         }
         else if (module > 1000)
         {
-            sb.Append((module - module % 1000) / 1000);
-            sb.Append(".");
-            sb.Append((module % 1000).ToString("000"));
+            sb.Append(module / 1000);
+            if (module % 1000 != 0)
+            {
+                sb.Append(".");
+                sb.Append(module % 1000);
+            }
+            else sb.Append(".000");
+
         }
-        else if (module < 1000) sb.Append(module);
+        else sb.Append(module);
 
         sb.Append(" $");
 
@@ -43,7 +53,7 @@ public static class TextConvertor
     public static string percentText(float num)
     {
         num *= 100f;
-        return num.ToString() + " %";
+        return Math.Round(num, 1).ToString() + " %";
     }
 
     public static string ChangeColor(string text, Color color)
