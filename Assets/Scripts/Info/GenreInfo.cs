@@ -20,6 +20,16 @@ public class GenreInfo : ScriptableObject
         [field: SerializeField] public float bonus { get; private set; }
     }
 
+    [System.Serializable]
+    public class PointsDistribution
+    {
+        [field: SerializeField] public float plot { get; private set; }
+        [field: SerializeField] public float gameDesign { get; private set; }
+        [field: SerializeField] public float gameplay { get; private set; }
+        [field: SerializeField] public float graphics { get; private set; }
+        [field: SerializeField] public float sound { get; private set; }
+    }
+
     [SerializeField] private string _localizationKey;
     [SerializeField] private ThemeBonus[] _themeBonuses;
     [SerializeField] private FeatureBonus[] _featuresBonuses;
@@ -28,11 +38,13 @@ public class GenreInfo : ScriptableObject
     [SerializeField] private PrototypingSliders _prototypingSliders;
     [SerializeField] private DevelopingSliders _developingSliders;
     [SerializeField] private DesignSliders _designSliders;
+    [SerializeField] private PointsDistribution _pointsDistribution;
 
     public string localizationKey => _localizationKey;
     public PrototypingSliders prototypingSliders => _prototypingSliders;
     public DevelopingSliders developingSliders => _developingSliders;
     public DesignSliders designSliders => _designSliders;
+    public PointsDistribution pointsDistribution => _pointsDistribution;
 
     public float GetThemeBonus(ThemeInfo theme)
     {

@@ -29,12 +29,12 @@ public class PointsManager : MonoBehaviour
         }
     }
 
-    public void ShowPoint(Transform table, int sprite)
+    public void ShowPoint(Transform table, int sprite, float value)
     {
         var point = points.Count > 0? points[0] : activePoints[0];
         points.Remove(point);
         activePoints.Add(point);
-        point.Show(table.position, pointsTarget.position, sprite);
+        point.Show(table.position, pointsTarget.position, sprite, value);
     }
 
     public void AddToPool(PointScript point)

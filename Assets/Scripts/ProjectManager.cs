@@ -51,4 +51,18 @@ public class ProjectManager : MonoBehaviour
         // calculate expenses
         return 0;
     }
+
+    public void CancelProject()
+    {
+        project.Cancel();
+        project = null;
+        DevelopmentStoped();
+    }
+
+    public void DoneDevelopment()
+    {
+        project.Done();
+        project = null;
+        DevelopmentStoped();
+    }
 }

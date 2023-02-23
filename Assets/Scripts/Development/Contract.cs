@@ -43,4 +43,9 @@ public class Contract : GameProject
         payment = (int)(Constans.contractPaymentPerScore * minScore * Constans.sizesScale[size] * Random.Range(0.2f, 0.3f));
         term = (int)(minScore * 365 * Random.Range(0.75f, 1.25f));
     }
+
+    public override int GetForefit()
+    {
+        return payment;
+    }
 }

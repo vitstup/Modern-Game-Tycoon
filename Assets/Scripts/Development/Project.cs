@@ -22,6 +22,11 @@ public abstract class Project
         plot += points[4] * efficiency;
     }
 
+    public virtual int GetForefit()
+    {
+        return 0;
+    }
+
     public virtual float BaseDevelopmentSpeed()
     {
         return 1f;
@@ -35,5 +40,10 @@ public abstract class Project
     public virtual void Cancel() // do it abstact
     {
 
+    }
+
+    public virtual void Done()
+    {
+        
     }
 }

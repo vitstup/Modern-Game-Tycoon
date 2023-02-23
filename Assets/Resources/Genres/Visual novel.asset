@@ -96,3 +96,9 @@ MonoBehaviour:
     abundance_backgroundSound: 4
     character_worldDesign: 5
     optimization_beautyGraphics: 9
+  _pointsDistribution:
+    <plot>k__BackingField: 0.4
+    <gameDesign>k__BackingField: 0.1
+    <gameplay>k__BackingField: 0.1
+    <graphics>k__BackingField: 0.2
+    <sound>k__BackingField: 0.2

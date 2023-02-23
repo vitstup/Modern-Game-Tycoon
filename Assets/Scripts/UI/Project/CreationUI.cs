@@ -78,12 +78,9 @@ public class CreationUI : MonoBehaviour
     public void OpenCancelPanel()
     {
         cancelPanel.SetActive(true);
-        // forefit text
-    }
-
-    public void CancelProject()
-    {
-        ProjectManager.instance.project.Cancel();
+        int forefit = ProjectManager.instance.project.GetForefit();
+        forefitText.gameObject.SetActive(forefit > 0);
+        forefitText.text = Localization.Localize("forfeit") + ": " + TextConvertor.ChangeColor(TextConvertor.moneyText(forefit), Color.red);
     }
 
     public void Release()

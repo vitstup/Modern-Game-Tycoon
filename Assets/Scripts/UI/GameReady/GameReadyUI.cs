@@ -18,7 +18,16 @@ public class GameReadyUI : MonoBehaviour
 
     [SerializeField] private RightPanelUI rightPanel;
 
+    [SerializeField] private GameObject gameBtns;
+    [SerializeField] private GameObject contractBtns;
+
     private void Awake() => instance = this;
+
+    public void CloseCanvas()
+    {
+        gameReadyCanvas.SetActive(false);
+        TimeManager.instance.NecessaryPause(false);
+    }
 
     public void OpenGameReady(GameProject game)
     {
@@ -29,12 +38,17 @@ public class GameReadyUI : MonoBehaviour
 
     private void SetInfo(GameProject game)
     {
-        // img
-        // userrating
+        gameImg.sprite = game.sprite;
+        string userScore = TextConvertor.ReviewChanceText(ReviewChance.PositiveReviewChance(game)[0]);
+        estUserRating.text = Localization.Localize("estuserrating") + " " + TextConvertor.ChangeColor(userScore, Constans.GreenColor);
 
         leftPanel.SetInfo(game);
 
         rightPanel.SetInfo(game);
+
+        if (game is Game) { gameBtns.SetActive(true); contractBtns.SetActive(false); }
+        else if (game is Contract) { gameBtns.SetActive(false); contractBtns.SetActive(true); }
+        else Debug.LogError("Not game or contract");
     }
 
     public void Polish()
@@ -44,11 +58,17 @@ public class GameReadyUI : MonoBehaviour
 
     public void FindPublisher()
     {
+        PublishersUI.instance.OpenPublishersPanel(ProjectManager.instance.project as Game);
+    }
 
+    public void OpenRelease()
+    {
+        PricingUI.instance.OpenPricing();
     }
 
     public void Release()
     {
-
+        CloseCanvas();
+        ProjectManager.instance.DoneDevelopment();
     }
 }

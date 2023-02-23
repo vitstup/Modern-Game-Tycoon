@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PointScript : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite[] sprites;
+
+    [SerializeField] private TextMeshPro text;
 
     private Vector3 startPos;
 
@@ -15,7 +18,7 @@ public class PointScript : MonoBehaviour
 
     private float progress;
 
-    public void Show(Vector3 pos, Vector3 endPos, int sprite)
+    public void Show(Vector3 pos, Vector3 endPos, int sprite, float value)
     {
         gameObject.SetActive(true);
         startPos = new Vector3(pos.x, pos.y + 1.5f, pos.z);
@@ -24,6 +27,8 @@ public class PointScript : MonoBehaviour
         this.endPos = endPos;
 
         spriteRenderer.sprite = sprites[sprite];
+
+        text.text = System.Math.Round(value, 1).ToString();
     }
 
 

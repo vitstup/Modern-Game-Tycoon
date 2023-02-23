@@ -6,48 +6,38 @@ using UnityEngine;
 
 public static class TextConvertor 
 {
+
+    private static string GetFirstLetter(int num)
+    {
+        return num.ToString()[0].ToString();
+    }
+
+    public static string numText(long summ)
+    {
+        long module = Math.Abs(summ);
+
+        int billiards = (int)(module / 1000000000);
+        int millions = (int)((module - billiards) / 1000000);
+        int thousands = (int)((module - billiards - millions) / 1000);
+        int units = (int)(module % 1000);
+
+        if (billiards > 0) return billiards + "." + GetFirstLetter(millions) + "B";
+        else if (millions > 0) return millions + "." + GetFirstLetter(thousands) + "M";
+        else if (thousands > 0)
+        {
+            string unitsString = units.ToString();
+            if (units == 0) unitsString = "000";
+            else if (units < 10) unitsString = "00" + unitsString;
+            else if (units < 100) unitsString = "0" + unitsString;
+
+            return thousands + "." + unitsString;
+        }
+        else return units.ToString();
+    }
+
     public static string moneyText(long num)
     {
-        StringBuilder sb = new StringBuilder();
-        long module = Math.Abs(num);
-
-        if (module > 1000000000)
-        {
-            sb.Append(module / 1000000000);
-            if (module % 1000000000 != 0)
-            {
-                sb.Append(".");
-                sb.Append(module % 1000000000 / 100000000);
-            }
-            sb.Append("B");
-        }
-        else if (module > 1000000)
-        {
-            sb.Append(module / 1000000);
-            if (module % 1000000 != 0)
-            {
-                sb.Append(".");
-                sb.Append(module % 1000000 / 100000);
-            }
-            sb.Append("M");
-
-        }
-        else if (module > 1000)
-        {
-            sb.Append(module / 1000);
-            if (module % 1000 != 0)
-            {
-                sb.Append(".");
-                sb.Append(module % 1000);
-            }
-            else sb.Append(".000");
-
-        }
-        else sb.Append(module);
-
-        sb.Append(" $");
-
-        return sb.ToString();
+        return moneyText(num) + " $";
     }
 
     public static string percentText(float num)
@@ -81,5 +71,24 @@ public static class TextConvertor
         else if (bugs >= 50) return "> 50";
         else if (bugs >= 10) return "> 10";
         else return Localization.Localize("unknown");
+    }
+
+    public static string ReviewChanceText(float chance)
+    {
+        float minChance = (float) Math.Round((chance - 0.15f) / 0.1f) * 0.1f;
+        float maxChance = (float) Math.Round((chance + 0.15f) / 0.1f) * 0.1f;
+        if (minChance < 0) minChance = 0;
+        if (maxChance > 1) maxChance = 1;
+
+        return (int)(minChance * 100) + " - " + (int)(maxChance * 100) + " %";
+    }
+
+    public static string corrOfPricText(Game game)
+    {
+        int idealPay = Constans.sizesPrices[game.size];
+        float diif = Math.Abs(game.price - idealPay) / idealPay;
+        if (diif > 0.7f) return ReviewChanceText(0.15f);
+        else if (diif > 0.4f) return ReviewChanceText(0.55f);
+        else return ReviewChanceText(0.85f);
     }
 }

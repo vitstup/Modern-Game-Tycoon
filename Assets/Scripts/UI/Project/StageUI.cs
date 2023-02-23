@@ -118,11 +118,6 @@ public class StageUI : MonoBehaviour
         gpuText.color = gpuUsage > gpuAvailable ? Color.red : Color.black;
     }
 
-    public void CancelProject()
-    {
-        ProjectManager.instance.project.Cancel();
-    }
-
     public void Continue()
     {
         game.SetEfficiency();

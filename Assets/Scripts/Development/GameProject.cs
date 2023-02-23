@@ -47,8 +47,8 @@ public abstract class GameProject : Project
             work.value *= workers[i].DevelopmentSpeed(BaseDevelopmentSpeed());
             workValues[work.skillId] += work.value;
 
-            if(work.skillId != 5) PointsManager.instance.ShowPoint(workers[i].table.transform, work.skillId);
-            else PointsManager.instance.ShowPoint(workers[i].table.transform, work.value > 0? 5: 6);
+            if(work.skillId != 5) PointsManager.instance.ShowPoint(workers[i].table.transform, work.skillId, work.value * currentEfficiency);
+            else PointsManager.instance.ShowPoint(workers[i].table.transform, work.value > 0? 5: 6, work.value);
         }
 
         currentStage.workloadDone += workValues.Sum();
@@ -59,6 +59,7 @@ public abstract class GameProject : Project
 
 
         Debug.Log(currentEfficiency + " eff, " + bugs + " bugs, " + workValues[5] + " today bugs");
+        ReviewChance.PositiveReviewChance(this);
     }
 
     public void CheckStage()
