@@ -24,10 +24,9 @@ public class LeftPanelUI : MonoBehaviour
     {
         gameName.text = game.projectName;
         gameSize.text = TextConvertor.GameSizeText(game.size);
-        if (game.genre == null) Debug.Log("null");
         gameGenre.text = Localization.Localize(game.genre.localizationKey);
         gameTheme.text = Localization.Localize(game.theme.localizationKey);
-        gameExpenses.text = TextConvertor.moneyText(ProjectManager.instance.GetDevelopingExpenses());
+        gameExpenses.text = TextConvertor.moneyText(game.expenses);
 
         plot.text = ((int)game.plot).ToString();
         gamedesign.text = ((int)game.gameDesign).ToString();

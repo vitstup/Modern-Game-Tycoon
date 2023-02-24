@@ -80,7 +80,7 @@ public class AttributesUI : MonoBehaviour
 
     private void UpdatePlatforms(Platform[] selected)
     {
-        var available = AttributesManager.instance.availablePlatforms();
+        var available = PlatformsManager.instance.availablePlatforms();
         if (available.Length > platforms.Length) Debug.LogError("Small amout of platform panels");
         for (int i = 0; i < platforms.Length; i++)
         {

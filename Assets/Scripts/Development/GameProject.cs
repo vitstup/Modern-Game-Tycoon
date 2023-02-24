@@ -20,7 +20,9 @@ public abstract class GameProject : Project
 
     [field: SerializeField] public float bugs { get; private set; }
 
-    // reviews and user score
+    public int expenses;
+
+    public Reviews reviews;
 
     public Sprite sprite;
 

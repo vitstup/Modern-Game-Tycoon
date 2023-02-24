@@ -87,4 +87,14 @@ public class TimeManager : MonoBehaviour
     {
         ChangeRunStatus(pause ? RunStatus.stoped : RunStatus.standart);
     }
+
+    public int GetMonthsFromStart()
+    {
+        return (year - 2000) * 12 + month;
+    }
+
+    public int GetEndDateMonths()
+    {
+        return (Constans.EndYear - 2000) * 12;
+    }
 }

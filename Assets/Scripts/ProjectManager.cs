@@ -46,12 +46,6 @@ public class ProjectManager : MonoBehaviour
         // no typing sound if have assign workers
     }
 
-    public int GetDevelopingExpenses()
-    {
-        // calculate expenses
-        return 0;
-    }
-
     public void CancelProject()
     {
         project.Cancel();

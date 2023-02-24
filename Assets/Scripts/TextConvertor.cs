@@ -37,7 +37,7 @@ public static class TextConvertor
 
     public static string moneyText(long num)
     {
-        return moneyText(num) + " $";
+        return numText(num) + " $";
     }
 
     public static string percentText(float num)

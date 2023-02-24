@@ -6,7 +6,6 @@ public class AttributesManager : MonoBehaviour
 {
     public static AttributesManager instance;
 
-    [field: SerializeField] public Platform[] platforms { get; private set; }
     [field: SerializeField] public Engine[] engines { get; private set; }
     [field: SerializeField] public FeaturesGroup[] features { get; private set; }
     [field: SerializeField] public ThemeInfo[] themes { get; private set; }
@@ -15,25 +14,12 @@ public class AttributesManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        SetPlatforms();
         SetEngines();
         SetFeatures();
         SetGenres();
         SetThemes();
-
-        TimeManager.DayUpdateEvent.AddListener(UpdateMarketShare);
     }
-
-    private void SetPlatforms()
-    {
-        var info = Resources.LoadAll<PlatformInfo>("Platforms");
-        platforms = new Platform[info.Length];
-        for (int i = 0; i < platforms.Length; i++)
-        {
-            platforms[i] = new Platform(info[i]);
-        }
-    }
-
+    
     private void SetEngines()
     {
         var info = Resources.LoadAll<EngineInfo>("Engines");
@@ -62,20 +48,7 @@ public class AttributesManager : MonoBehaviour
         genres = Resources.LoadAll<GenreInfo>("Genres");
     }
 
-    private void UpdateMarketShare()
-    {
-        float summary = 0;
-        for (int i = 0; i < platforms.Length; i++)
-        {
-            if (!Date.Enabled(platforms[i].info.release, platforms[i].info.end)) continue;
-            summary += platforms[i].info.popularity;
-        }
-        for (int i = 0; i < platforms.Length; i++)
-        {
-            if (!Date.Enabled(platforms[i].info.release, platforms[i].info.end)) { platforms[i].marketShare = 0; continue; }
-            platforms[i].marketShare = platforms[i].info.popularity / summary;
-        }
-    }
+    
 
     public Engine[] availableEngines()
     {
@@ -87,13 +60,4 @@ public class AttributesManager : MonoBehaviour
         return avaialable.ToArray();
     }
 
-    public Platform[] availablePlatforms()
-    {
-        List<Platform> avaialable = new List<Platform>();
-        for (int i = 0; i < platforms.Length; i++)
-        {
-            if (Date.Enabled(platforms[i].info.release, platforms[i].info.end)) avaialable.Add(platforms[i]);
-        }
-        return avaialable.ToArray();
-    }
 }

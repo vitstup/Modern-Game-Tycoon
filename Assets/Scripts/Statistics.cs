@@ -10,5 +10,15 @@ public class Statistics : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        TimeManager.DayUpdateEvent.AddListener(DayUpdate);
+    }
+
+    private void DayUpdate()
+    {
+        for (int i = 0; i < games.Count; i++)
+        {
+            Sales.Sale(games[i]);
+        }
+        SalesUI.instance.TryToUpdatePanels();
     }
 }

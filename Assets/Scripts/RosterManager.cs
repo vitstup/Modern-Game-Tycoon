@@ -16,6 +16,7 @@ public class RosterManager : MonoBehaviour
     private void Awake()
     {
         TimeManager.DayUpdateEvent.AddListener(availablesUpdate);
+        TimeManager.MonthUpdateEvent.AddListener(MonthUpdate);
         instance = this;
     }
 
@@ -78,5 +79,16 @@ public class RosterManager : MonoBehaviour
             if (hiredWorkers[i].table != null) assignWorkers.Add(hiredWorkers[i]);
         }
         return assignWorkers.ToArray();
+    }
+
+    private void MonthUpdate()
+    {
+        int expenses = 0;
+        for (int i = 0; i < hiredWorkers.Count; i++)
+        {
+            expenses += hiredWorkers[i].salary;
+        }
+        Main.instance.MinusMoney(expenses);
+        if (ProjectManager.instance.project != null && ProjectManager.instance.project is GameProject) (ProjectManager.instance.project as GameProject).expenses += expenses;
     }
 }

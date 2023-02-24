@@ -16,7 +16,7 @@ public class Contract : GameProject
         genre = AttributesManager.instance.genres[Random.Range(0, AttributesManager.instance.genres.Length)];
         // platforms
 
-        var platfs = AttributesManager.instance.availablePlatforms();
+        var platfs = PlatformsManager.instance.availablePlatforms();
         int usingPlatforms = Random.Range(1, platfs.Length >= 4 ? 5 : platfs.Length + 1);
         int[] usedPlatforms = new int[usingPlatforms];
         for (int i = 0; i < usedPlatforms.Length; i++)

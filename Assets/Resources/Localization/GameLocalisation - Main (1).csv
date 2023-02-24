@@ -71,7 +71,7 @@ rent,Rent,Арендовать,Louer,Mieten,Alquilar,Affitto
 rented,Rented,Арендован,Loué,Gemietet,Alquilado,Affittato
 select,Select,Выбрать,Sélectionner,Wählen,Seleccionar,Selezionare
 selected,Selected,Выбрано,Choisi,Ausgewählt,Seleccionado,Selezionato
-autofurnish,Auto furnish,Авто мебель,Fourniture automatique,Automatische Einrichtung,Auto Mobiliario,Arredamento automatico
+autofurnish,Auto furnish,Авто мебель,Fourniture automatique,Autoeinrichtung,Auto Mobiliario,Arredamento automatico
 upgradeallpcs,Upgrade all pc's,Обновить все пк,Mettre à niveau tous les PC,Aktualisieren Sie alle PCs,Actualizar todas las PC,Aggiorna tutti i PC
 soldfurniture,All your furniture will be sold.,Вся ваша мебель будет продана.,Tous vos meubles seront vendus.,Alle Ihre Möbel werden verkauft.,Todos sus muebles se venderán.,Tutti i tuoi mobili saranno venduti.
 expenses,Expenses,Затраты,Dépenses,Kosten,Gastos,Spese
@@ -139,7 +139,7 @@ feature.4,Non linear plot,Не линейный сюжет,Tracé non linéaire,
 feature.5,Simple dialogs,Простые диалоги,Boîtes de dialogue simples,Einfache Dialoge,Diálogo simples,Dialoging semplici
 feature.6,Elaborated dialogs,Проработанные диалоги,Dialogue élaboré,Ausgearbeitete Dialoge,Diálogos elaborados,Dialoghi elaborati
 feature.7,Interactive dialogs,Интерактивные диалоги,Dialogues interactives,Interaktive Dialoge,Diálogo interactivos,Dialoghi interattivi
-feature.8,Neural networks usage,Использование нейронных сетей,Utilisation des réseaux neuronaux,Nutzungsnetznutzung,Uso de redes neuronales,Utilizzo delle reti neurali
+feature.8,Neural networks usage,Использование нейронных сетей,Utilisation des réseaux neuronaux,Nutzung der neuronalen Netze,Uso de redes neuronales,Utilizzo delle reti neurali
 feature.9,Procedural world,Процедурный мир,Monde procédural,Verfahrenswelt,Mundo procesal,Mondo procedurale
 feature.10,Open world,Открытый мир,Monde ouvert,Offene Welt,Mundo abierto,Mondo aperto
 feature.11,Few characters,Несколько персонажей,Peu de personnages,Wenige Charaktere,Pocos personajes,Pochi personaggi
@@ -257,9 +257,9 @@ stageslider.3,Emphasis on story / gameplay,Акцент на сюжет / гей
 stageslider.4,Convenience / Functionality,Удобство / Функциональность,Commodité / fonctionnalité,Bequemlichkeit / Funktionalität,Conveniencia / funcionalidad,Comodità / funzionalità
 stageslider.5,Familiarity / Innovationess,Освоенность / Инновационость,Familiarité / innovationuse,Vertrautheit / Innovation und,Familiaridad / innovación,Familiarità / innovazione
 stageslider.6,Gameplay passivity / intensivity,Пассивность / Интенсивность Геймплея,Passivité / intensivité de gameplay,Gameplay -Passivität / Intensivität,Passividad / intensividad del juego,Gameplay passività / intensività
-stageslider.7,Gameplay simplicity / depth,Простота / Глубина геймплея,Gameplay Simplicité / Profondeur,Gameplay -Einfachheit / Tiefe,Simplicidad / profundidad del juego,Semplicità / profondità del gameplay
+stageslider.7,Gameplay simplicity / depth,Простота / Глубина геймплея,Gameplay Simplicité / Profondeur,Einfachheit / Tiefe der Gameplay,Simplicidad / profundidad del juego,Semplicità / profondità del gameplay
 stageslider.8,Atmospherity / Sightness,Атмосфера / Зрелищность,Atmosphère / vue,Atmosphäre / Sicht,Atmósfera / espectáculo,Atmosferia / vista
-stageslider.9,Sound abundance / background,Обилие / Фоновость звука,Abondance sonore / arrière-plan,Tonhäufigkeit / Hintergrund,Abundancia de sonido / fondo,Sound Abbondanza / Background
+stageslider.9,Sound abundance / background,Обилие / Фоновость звука,Abondance sonore / arrière-plan,Klanghäufigkeit / Hintergrund,Abundancia de sonido / fondo,Sound Abbondanza / Background
 stageslider.10,Design character / world,Дизайн мира / персонажей,Personnage de conception / monde,Designcharakter / Welt,Personaje de diseño / mundo,Carattere / mondo del design
 stageslider.11,Graphics optimization / beauty,Оптимизация / Красота Графики,Optimisation / beauté graphiques,Grafikoptimierung / Schönheit,Optimización gráfica / belleza,Ottimizzazione grafica / bellezza
 buildinfo.1,Press <sprite=0> to build the item,Нажмите <sprite=0> чтобы построить предмет.,Appuyez sur <sprite=0> pour construire l'élément,"Drücken Sie <sprite=0>, um das Objekt zu bauen",Presiona <sprite=0> para construir el artículo,Premi <sprite=0> per costruire l'oggetto
@@ -279,10 +279,26 @@ gameisdonetext,"The game is done. If you want, you can polish the game, fix some
 estuserrating,Estimated user rating:,Ожидаемый рейтинг:,Évaluation des utilisateurs estimés:,Geschätzte Benutzerbewertung:,Calificación estimada del usuario:,Valutazione utente stimata:
 polish,Polish,Доработка,polonais,Polieren,Polaco,Polacco
 findpublisher,Find publisher,Найти издателя,Trouver l'éditeur,Finden Sie Verlag,Encontrar editor,Trova l'editore
-release,Release,Выпустить,Libérer,Freigeben,Liberar,Pubblicazione
 pointseff,Points efficiency:,Эффективность очков:,Efficacité des points:,Punkteffizienz:,Eficiencia de puntos:,Efficienza dei punti:
 income,Income,Доход,Revenu,Einkommen,Ingreso,Reddito
 intpublishers,Interested publishers,Заинтересованные издатели,Éditeurs intéressés,Interessierte Verlage,Editores interesados,Editori interessati
 audience,Audience,Аудитория,Public,Publikum,Audiencia,Pubblico
 gameprice,Game price,Цена игры,Prix ​​du jeu,Spielpreis,Precio del juego,Prezzo del gioco
 corofpricing,The correctness of the pricing:,Правильность цены:,L'exactitude du prix:,Die Richtigkeit der Preisgestaltung:,La exactitud del precio:,La correttezza dei prezzi:
+few,Few,Мало,Peu,Wenig,Pocos,Pochi
+todaysales,Today sales,Продажи сегодня,Ventes aujourd'hui,Heute Umsatz,Ventas de hoy,Oggi vendite
+todayprofit,Today profit,Прибыль сегодня,Aujourd'hui bénéficie,Heute Gewinn,Hoy ganancia,Oggi profitto
+userrating,User rating,Пользовательская оценка,Note de l'utilisateur,Benutzer-Bewertung,Opiniones de los usuarios,Voto dell'utente
+hype,Hype,Ажиотаж,Battage publicitaire,Hype,Bombo publicitario,Montatura pubblicitaria
+netprofit,Net profit,Чистая прибыль,Bénéfice net,Reingewinn,Beneficio neto,Profitto netto
+allsales,All sales,Все продажи,Toutes les ventes,Alle Verkäufe,Todas las ventas,Tutte le vendite
+profit,Profit,Прибыль,Profit,Profitieren,Ganancia,Profitto
+reviews,Reviews,Отзывы,Commentaires,Bewertungen,Reseñas,Recensioni
+marketing,Marketing,Маркетинг,Commercialisation,Marketing,Marketing,Marketing
+marketingText,"Be careful, for each game you can run an advertising campaign only once every three months.","Будьте осторожны, для каждой игры вы можете проводить рекламную кампанию только раз в три месяца.","Soyez prudent, pour chaque jeu, vous ne pouvez mener une campagne publicitaire une seule fois tous les trois mois.","Seien Sie vorsichtig, für jedes Spiel können Sie eine Werbekampagne nur einmal alle drei Monate durchführen.","Tenga cuidado, para cada juego puede ejecutar una campaña publicitaria solo una vez cada tres meses.","Fai attenzione, per ogni gioco puoi eseguire una campagna pubblicitaria solo una volta ogni tre mesi."
+marketing.0,Forums,Форумы,Forums,Foren,Foros,Forum
+marketing.1,Mail,Почта,Poster,Post,Correo,Posta
+marketing.2,Social networks,Социальные сети,Réseaux sociaux,Soziale Netzwerke,Redes sociales,Social networks
+marketing.3,Influencer,Инфлюенсер,Influenceur,Influencer,Hombre de influencia,Influencer
+marketing.4,Internet,Интернет,l'Internet,Internet,Internet,Internet
+marketing.5,TV,TV,la télé,Fernseher,TELEVISOR,tv

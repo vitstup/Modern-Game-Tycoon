@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public static class ReviewChance 
 {
@@ -8,8 +9,8 @@ public static class ReviewChance
 
     private static float CurrentBestPoints()
     {
-        float months = (TimeManager.instance.year - 2000) * 12 + TimeManager.instance.month;
-        if (months > (Constans.EndYear - 2000) * 12) months = (Constans.EndYear - 2000) * 12;
+        float months = TimeManager.instance.GetMonthsFromStart();
+        if (months > TimeManager.instance.GetEndDateMonths()) months = TimeManager.instance.GetEndDateMonths();
 
         return BasePoints + months * 1.5f;
     }
@@ -45,5 +46,17 @@ public static class ReviewChance
         }
 
         return results;
+    }
+
+    public static void SetStartReviews(GameProject game)
+    {
+        float positive = PositiveReviewChance(game)[0];
+        float reviewCount = Constans.sizesScale[game.size] * 10;
+        game.reviews = new Reviews((int)(positive * reviewCount), (int)(( 1 - positive) * reviewCount));
+    }
+
+    public static Reviews Review(float positiveChance, int reviewCount)
+    {
+        return new Reviews((int)(positiveChance * reviewCount), (int)((1 - positiveChance) * reviewCount));
     }
 }
