@@ -71,5 +71,23 @@ public abstract class Stage
 
     public abstract string StageLocalizationKey();
 
+    public abstract FeaturesGroup.Stage StageType();
+
+    public string[,] GetGroupsLocalization()
+    {
+        int currentGroup = 0;
+        string[,] localizations = new string[5, 2];
+        var groups = AttributesManager.instance.features;
+        for (int i = 0; i < groups.Length; i++)
+        {
+            if (groups[i].stage == StageType())
+            {
+                localizations[currentGroup, 0] = groups[i].localizationKey;
+                localizations[currentGroup, 1] = groups[i].GetSelectedFeatureLocalization(features.ToArray());
+                currentGroup++;
+            }
+        }
+        return localizations;
+    }
 
 }

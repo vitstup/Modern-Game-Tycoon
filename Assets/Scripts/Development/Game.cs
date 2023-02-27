@@ -22,11 +22,11 @@ public class Game : GameProject
     public int[] recentProfits = new int[14];
     public PlatformSales[] sales = new PlatformSales[4];
 
-    public int firstDaySales;
+    public int firstDayProfit;
 
     public float hype;
 
-    //public int daysFromMarketingCompany;
+    public int daysTillMarketingCampaign;
 
     public override void Done()
     {

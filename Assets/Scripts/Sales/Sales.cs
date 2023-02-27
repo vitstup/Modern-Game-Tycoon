@@ -43,7 +43,7 @@ public static class Sales
 
             auditory /= AttributesManager.instance.genres.Length;
             auditory /= auditorySizeDebaff;
-            if (game.publisher != null) auditory += game.publisher.auditory;
+            if (game.publisher != null) auditory += game.publisher.auditory / 1000000f;
             else auditory *= priceBuff;
             auditory -= game.sales[i].sales / 1000000f;
             auditory *= interest;
@@ -66,7 +66,7 @@ public static class Sales
 
         game.AddRecentProfit();
 
-        if (game.firstDaySales == 0) game.firstDaySales = game.todaySales;
+        if (game.firstDayProfit == 0) game.firstDayProfit = game.todayProfit; 
 
         Main.instance.AddMoney(game.todayProfit);
     }

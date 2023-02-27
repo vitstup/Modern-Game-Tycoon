@@ -26,4 +26,9 @@ public class DevelopingStage : Stage
     {
         return "developing";
     }
+
+    public override FeaturesGroup.Stage StageType()
+    {
+        return FeaturesGroup.Stage.developing;
+    }
 }

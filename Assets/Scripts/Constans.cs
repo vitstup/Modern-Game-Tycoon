@@ -46,4 +46,6 @@ public static class Constans
     public const int publisherCount = 10;
     public const int minPublisherAuditory = 50000;
     public const int maxPublisherAuditory = 2500000;
+
+    public const float hypeDecrease = 0.0035f;
 }

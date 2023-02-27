@@ -90,6 +90,10 @@ public abstract class GameProject : Project
         return prototyping.GetGraphicsUsage() + developing.GetGraphicsUsage() + design.GetGraphicsUsage();
     }
 
+    public string[,] GetPrototypingFeaturesInfo() { return prototyping.GetGroupsLocalization(); }
+    public string[,] GetDevelopingFeaturesInfo() { return developing.GetGroupsLocalization(); }
+    public string[,] GetDesignFeaturesInfo() { return design.GetGroupsLocalization(); }
+
     private float DevelopmentEfficiency() // can use this method instead "currentEfficiency", but it will be less optimized
     {
         if (currentStage is PolishingStage) return 0.2f;

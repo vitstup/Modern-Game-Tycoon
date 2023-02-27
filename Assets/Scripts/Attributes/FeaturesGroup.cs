@@ -40,4 +40,16 @@ public class FeaturesGroup
         }
         return returnFeatures.ToArray();
     }
+
+    public string GetSelectedFeatureLocalization(FeatureInfo[] givenFeatures)
+    {
+        for (int i = 0; i < features.Length; i++)
+        {
+            for (int f = 0; f < givenFeatures.Length; f++)
+            {
+                if (givenFeatures[f] == features[i]) return features[i].localizationKey;
+            }
+        }
+        return nonValueKey;
+    }
 }

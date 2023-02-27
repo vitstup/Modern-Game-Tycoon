@@ -287,7 +287,7 @@ gameprice,Game price,Цена игры,Prix ​​du jeu,Spielpreis,Precio del j
 corofpricing,The correctness of the pricing:,Правильность цены:,L'exactitude du prix:,Die Richtigkeit der Preisgestaltung:,La exactitud del precio:,La correttezza dei prezzi:
 few,Few,Мало,Peu,Wenig,Pocos,Pochi
 todaysales,Today sales,Продажи сегодня,Ventes aujourd'hui,Heute Umsatz,Ventas de hoy,Oggi vendite
-todayprofit,Today profit,Прибыль сегодня,Aujourd'hui bénéficie,Heute Gewinn,Hoy ganancia,Oggi profitto
+todayprofit,Today profit,Прибыль сегодня,Aujourd'hui bénéficie,Heute Gewinn,Hoy ganancias,Oggi profitto
 userrating,User rating,Пользовательская оценка,Note de l'utilisateur,Benutzer-Bewertung,Opiniones de los usuarios,Voto dell'utente
 hype,Hype,Ажиотаж,Battage publicitaire,Hype,Bombo publicitario,Montatura pubblicitaria
 netprofit,Net profit,Чистая прибыль,Bénéfice net,Reingewinn,Beneficio neto,Profitto netto
@@ -302,3 +302,4 @@ marketing.2,Social networks,Социальные сети,Réseaux sociaux,Sozia
 marketing.3,Influencer,Инфлюенсер,Influenceur,Influencer,Hombre de influencia,Influencer
 marketing.4,Internet,Интернет,l'Internet,Internet,Internet,Internet
 marketing.5,TV,TV,la télé,Fernseher,TELEVISOR,tv
+max,Max,Макс,Max,Max,Máximo,Max

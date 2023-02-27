@@ -17,6 +17,7 @@ public class Statistics : MonoBehaviour
     {
         for (int i = 0; i < games.Count; i++)
         {
+            MarketingManager.instance.HypeDecrease(games[i]);
             Sales.Sale(games[i]);
         }
         SalesUI.instance.TryToUpdatePanels();

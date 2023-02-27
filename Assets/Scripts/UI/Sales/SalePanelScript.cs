@@ -44,13 +44,14 @@ public class SalePanelScript : MonoBehaviour
         if (SaleGraphs.Length != game.recentProfits.Length) Debug.LogError("Different amount of graphs and game.recentProfits");
         for (int i = 0; i < SaleGraphs.Length; i++)
         {
-            SaleGraphs[i].fillAmount = game.recentProfits[i] / (game.firstDaySales * 2f);
+            Debug.Log(game.recentProfits[i] / (game.firstDayProfit * 2f));
+            SaleGraphs[i].fillAmount = game.recentProfits[i] / (game.firstDayProfit * 2f);
         }
     }
 
 
     public void OpenMarketing()
     {
-
+        MarketingUI.instance.OpenMarketing(game);
     }
 }

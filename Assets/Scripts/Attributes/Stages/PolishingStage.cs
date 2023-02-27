@@ -24,4 +24,9 @@ public class PolishingStage : Stage
     {
         return "polishing";
     }
+
+    public override FeaturesGroup.Stage StageType()
+    {
+        throw new System.NotImplementedException();
+    }
 }
