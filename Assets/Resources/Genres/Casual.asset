@@ -88,3 +88,10 @@ MonoBehaviour:
     <gameplay>k__BackingField: 0.4
     <graphics>k__BackingField: 0.1
     <sound>k__BackingField: 0.15
+  _sprites:
+  - {fileID: -395573680, guid: 3315913f07c7d014d8b733eef5819024, type: 3}
+  - {fileID: 610660838, guid: 3315913f07c7d014d8b733eef5819024, type: 3}
+  - {fileID: -1766438081, guid: 3315913f07c7d014d8b733eef5819024, type: 3}
+  - {fileID: -1836960212, guid: 3315913f07c7d014d8b733eef5819024, type: 3}
+  - {fileID: -1418651397, guid: 3315913f07c7d014d8b733eef5819024, type: 3}
+  - {fileID: 19356545, guid: 3315913f07c7d014d8b733eef5819024, type: 3}

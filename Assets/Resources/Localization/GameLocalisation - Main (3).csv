@@ -120,7 +120,7 @@ developmentspeed,Development speed,Скорость разработки,Vitesse
 findanother,Find another,Найти другой,Trouve un autre,Einen anderern finden,Encontrar otro,Trova un altro
 payment,Payment,Оплата,Paiement,Zahlung,Pago,Pagamento
 bonus,Bonus,Бонус,Prime,Bonus,Prima,Bonus
-minuserscore,Min user score,Мин пользовательский счет,Min Score utilisateur,Min Benutzerbewertung,Min puntuación de usuario,Min Punteggio utente
+minuserscore,Min user rating,Мин пользовательский рейтинг,Note d'utilisateur min,Min Benutzerbewertung,Min calificación de usuario,Valutazione dell'utente min
 term,Term,Срок,Terme,Begriff,Término,Termine
 points,Points,Точки,Points,Punkte,Puntos,Punti
 lpoints,points,точки,points,Punkte,puntos,punti
@@ -303,3 +303,6 @@ marketing.3,Influencer,Инфлюенсер,Influenceur,Influencer,Hombre de inf
 marketing.4,Internet,Интернет,l'Internet,Internet,Internet,Internet
 marketing.5,TV,TV,la télé,Fernseher,TELEVISOR,tv
 max,Max,Макс,Max,Max,Máximo,Max
+devduration,Development duration,Продолжительность развития,Durée de développement,Entwicklungsdauer,Duración del desarrollo,Durata dello sviluppo
+requserrating,Required user rating,Необходимый рейтинг,Évaluation de l'utilisateur requise,Erforderliche Benutzerbewertung,Calificación de usuario requerida,Valutazione utente richiesta
+receivedbonus,Received bonus,Полученный бонус,Bonus reçu,Bonus erhalten,Recibió bono,Bonus ricevuto

@@ -7,7 +7,7 @@ public class Main : MonoBehaviour
     public static Main instance;
 
     [field: SerializeField] public long money { get; private set; }
-
+    
     private long monthBalance;
 
     private void Awake()

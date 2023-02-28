@@ -28,10 +28,14 @@ public class Game : GameProject
 
     public int daysTillMarketingCampaign;
 
+    public float interest = 1f; // decreasing every sale day
+
     public override void Done()
     {
+        base.Done();
         Statistics.instance.games.Add(this);
-        ReviewChance.SetStartReviews(this);
+        if (ProjectManager.instance.maxSizeGameCreated < size) ProjectManager.instance.maxSizeGameCreated = size;
+        SalesUI.instance.OpenSalesCanvas(true);
     }
 
     public void AddRecentProfit()

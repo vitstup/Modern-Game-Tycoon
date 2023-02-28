@@ -39,7 +39,7 @@ public class ContractUI : MonoBehaviour
 
     public void NewContract()
     {
-        int maxSize = Random.Range(0, ProjectManager.instance.maxSizeGameCreated);
+        int maxSize = Random.Range(0, ProjectManager.instance.maxSizeGameCreated + 1);
         contract = new Contract(maxSize);
         contractName.text = contract.projectName;
         size.text = TextConvertor.GameSizeText(contract.size);

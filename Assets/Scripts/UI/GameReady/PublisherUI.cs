@@ -25,7 +25,7 @@ public class PublisherUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
         publisherName.text = publisher.company;
 
-        auditoryText.text = Localization.Localize("audience") + ": " + TextConvertor.ChangeColor(TextConvertor.numText(publisher.auditory), Color.black);
+        auditoryText.text = Localization.Localize("audience") + ": " + TextConvertor.ChangeColor(TextConvertor.numText(publisher.GetAuditory(game.size)), Color.black);
 
         int payment = (int)publisher.GetPayment(game.size);
         paymentText.text = Localization.Localize("payment") + ": " + TextConvertor.ChangeColor(TextConvertor.moneyText(payment), Constans.GreenColor);

@@ -7,7 +7,9 @@ public class Contract : GameProject
     public int payment;
     public int bonus;
     public float minScore;
-    public int term;
+    public int term; // in days
+
+    public int developmentDuration; // in days
 
     public Contract(int size)
     {
@@ -38,14 +40,48 @@ public class Contract : GameProject
             platforms[i] = platfs[usedPlatforms[i]];
         }
 
-        minScore = Random.Range(0.25f, 1f);
-        bonus = (int)(Constans.contractPaymentPerScore * minScore * Constans.sizesScale[size] * Random.Range(0.75f, 1.25f));
-        payment = (int)(Constans.contractPaymentPerScore * minScore * Constans.sizesScale[size] * Random.Range(0.2f, 0.3f));
+        minScore = Random.Range(0.2f, 1f);
+        bonus = (int)(Constans.contractPaymentPerScore * minScore * minScore * Constans.sizesScale[size] * Random.Range(0.75f, 1.25f));
+        payment = (int)(Constans.contractPaymentPerScore * (minScore / 3f) * Constans.sizesScale[size] * Random.Range(0.2f, 0.3f));
         term = (int)(minScore * 365 * Random.Range(0.75f, 1.25f));
     }
 
     public override int GetForefit()
     {
         return payment;
+    }
+
+    public override void Develop()
+    {
+        base.Develop();
+        developmentDuration++;
+    }
+
+    public override void DevelopmentStarted()
+    {
+        base.DevelopmentStarted();
+        Main.instance.AddMoney(payment);
+    }
+
+    public override void Done()
+    {
+        base.Done();
+        ContractDoneUI.instance.OpenContractDoneUI(this);
+    }
+
+    public override void Cancel()
+    {
+        Main.instance.MinusMoney(GetForefit());
+    }
+
+    public int GetReceivedBonus()
+    {
+        if (reviews.UserScore() < minScore) return 0;
+        else
+        {
+            float timeDebaf = (float)term / developmentDuration;
+            if (timeDebaf > 1) timeDebaf = 1f;
+            return (int)(bonus * timeDebaf);
+        }
     }
 }

@@ -40,6 +40,11 @@ public static class TextConvertor
         return numText(num) + " $";
     }
 
+    public static string moneyTextWitMinus(long num)
+    {
+        return num < 0? "-" + moneyText(num) : moneyText(num);
+    }
+
     public static string percentText(float num)
     {
         num *= 100f;
@@ -64,13 +69,9 @@ public static class TextConvertor
 
     public static string BugsText(float bugs)
     {
-        if (bugs >= 1000) return "> 1000";
-        else if (bugs >= 500) return "> 500";
-        else if (bugs >= 250) return "> 250";
-        else if (bugs >= 100) return "> 100";
-        else if (bugs >= 50) return "> 50";
-        else if (bugs >= 10) return "> 10";
-        else return Localization.Localize("unknown");
+        if (bugs < 1f) return "0";
+        else if (bugs < 10f) return Localization.Localize("few");
+        else return "> " + ((int)(bugs - bugs % 10)).ToString(); 
     }
 
     public static string ReviewChanceText(float chance)

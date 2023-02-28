@@ -39,12 +39,14 @@ public class GenreInfo : ScriptableObject
     [SerializeField] private DevelopingSliders _developingSliders;
     [SerializeField] private DesignSliders _designSliders;
     [SerializeField] private PointsDistribution _pointsDistribution;
+    [SerializeField] private Sprite[] _sprites;
 
     public string localizationKey => _localizationKey;
     public PrototypingSliders prototypingSliders => _prototypingSliders;
     public DevelopingSliders developingSliders => _developingSliders;
     public DesignSliders designSliders => _designSliders;
     public PointsDistribution pointsDistribution => _pointsDistribution;
+    public Sprite[] sprites => _sprites;
 
     public float GetThemeBonus(ThemeInfo theme)
     {

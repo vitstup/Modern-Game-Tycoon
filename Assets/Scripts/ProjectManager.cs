@@ -35,7 +35,7 @@ public class ProjectManager : MonoBehaviour
     public void DevelopmentStarted(Project project)
     {
         this.project = project;
-        if (project is GameProject) (project as GameProject).CheckStage();
+        project.DevelopmentStarted();
         DevelopmentEvent?.Invoke(true);
         // typing sound if have assign workers
     }

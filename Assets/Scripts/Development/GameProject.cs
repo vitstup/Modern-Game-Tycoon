@@ -28,6 +28,17 @@ public abstract class GameProject : Project
 
     [field: SerializeField] public float currentEfficiency { get; private set; }
 
+    public override void Done()
+    {
+        ReviewChance.SetStartReviews(this);
+    }
+
+    public override void DevelopmentStarted()
+    {
+        CheckStage();
+        SetSprite();
+    }
+
     public override float BaseDevelopmentSpeed()
     {
         return engine.info.developmentSpeed;
@@ -109,5 +120,10 @@ public abstract class GameProject : Project
     public void SetEfficiency()
     {
         currentEfficiency = DevelopmentEfficiency();
+    }
+
+    private void SetSprite()
+    {
+        sprite = genre.sprites[Random.Range(0, genre.sprites.Length)];
     }
 }

@@ -92,7 +92,7 @@ public class MainUI : MonoBehaviour
 
     public void ChangeMoneyText()
     {
-        moneyText.text = TextConvertor.moneyText(Main.instance.money);
+        moneyText.text = TextConvertor.moneyTextWitMinus(Main.instance.money);
         if (Main.instance.money > 0) moneyText.color = Constans.GreenColor;
         else moneyText.color = Color.red;
     }

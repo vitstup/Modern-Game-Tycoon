@@ -46,4 +46,9 @@ public abstract class Project
     {
         
     }
+
+    public virtual void DevelopmentStarted()
+    {
+
+    }
 }

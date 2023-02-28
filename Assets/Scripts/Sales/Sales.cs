@@ -20,6 +20,11 @@ public static class Sales
         return priceBuff;
     }
 
+    private static float NumToMillions(float num)
+    {
+        return num / 1000000f;
+    }
+
     public static void Sale(Game game)
     {
         game.todayProfit = 0;
@@ -43,12 +48,14 @@ public static class Sales
 
             auditory /= AttributesManager.instance.genres.Length;
             auditory /= auditorySizeDebaff;
-            if (game.publisher != null) auditory += game.publisher.auditory / 1000000f;
+            if (game.publisher != null) auditory += NumToMillions(game.publisher.GetAuditory(game.size));
             else auditory *= priceBuff;
-            auditory -= game.sales[i].sales / 1000000f;
+            auditory -= NumToMillions(game.sales[i].sales);
             auditory *= interest;
 
-            float sales = auditory * 10000f * (1f + game.hype);
+            float sales = auditory * 10000f * (1f + game.hype) * game.interest;
+
+            sales *= Random.Range(0.9f, 1.1f);
 
             float price = game.publisher != null ? game.publisher.GetPayment(game.size) : game.price;
             float profit = sales * price * (1f - game.engine.info.commision) * (1f - game.platforms[i].info.commision);
@@ -63,6 +70,8 @@ public static class Sales
 
             Debug.Log("auditory " + auditory + ", sizeDebaff" + auditorySizeDebaff);
         }
+        game.interest -= (1f - game.reviews.UserScore()) * Constans.interestDecreaseSpeed * (1 + game.hype);
+        if (game.interest < 0.05f) game.interest = 0.05f;
 
         game.AddRecentProfit();
 

@@ -16,6 +16,11 @@ public class SalesUI : MonoBehaviour
         instance = this;
     }
 
+    public void OpenSalesCanvas(bool open)
+    {
+        SalesCanvas.SetActive(open);
+        TryToUpdatePanels();
+    }
 
     public void TryToUpdatePanels()
     {
