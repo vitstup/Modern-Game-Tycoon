@@ -1,9 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
-using Unity.VisualScripting;
-using Newtonsoft.Json.Linq;
 
 [System.Serializable]
 public class Skills 

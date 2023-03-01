@@ -8,7 +8,7 @@ public class Game : GameProject
     public Publisher publisher;
     public float price;
 
-    // sequel
+    public Game sequelOf;
 
     [System.Serializable]
     public struct PlatformSales

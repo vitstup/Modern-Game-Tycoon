@@ -29,11 +29,12 @@ public class SalesUI : MonoBehaviour
 
     public void UpdatePanels()
     {
+        var games = Statistics.instance.GetReverseGames();
         for (int i = 0; i < panels.Length; i++)
         {
-            if (i >= Statistics.instance.games.Count) { panels[i].gameObject.SetActive(false); continue; }
+            if (i >= games.Count) { panels[i].gameObject.SetActive(false); continue; }
 
-            panels[i].SetInfo(Statistics.instance.games[i]);
+            panels[i].SetInfo(games[i]);
             panels[i].gameObject.SetActive(true);
         }
     }

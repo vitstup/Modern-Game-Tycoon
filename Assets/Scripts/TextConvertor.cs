@@ -92,4 +92,9 @@ public static class TextConvertor
         else if (diif > 0.4f) return ReviewChanceText(0.55f);
         else return ReviewChanceText(0.85f);
     }
+
+    public static string ChangeWeight(string text, int weight)
+    {
+        return string.Format("<font-weight=\"{0}\">", weight) + text + "</font-weight>";
+    }
 }

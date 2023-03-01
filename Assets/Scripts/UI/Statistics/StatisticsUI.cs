@@ -39,7 +39,7 @@ public class StatisticsUI : MonoBehaviour
 
     private void Updatetatistics()
     {
-        UpdateInfo(Statistics.instance.games[currentGame]);
+        UpdateInfo(Statistics.instance.GetReverseGames()[currentGame]);
     }
 
     public void ChangeCurrentGame(bool positive)

@@ -22,4 +22,37 @@ public class Statistics : MonoBehaviour
         }
         SalesUI.instance.TryToUpdatePanels();
     }
+
+    public List<Game> GetReverseGames()
+    {
+        List<Game> result = new List<Game>();
+        for (int i = games.Count - 1; i >= 0; i--)
+        {
+            result.Add(games[i]); 
+        }
+        return result;
+    }
+
+    public Game[] GetGamesWithoutSequel()
+    {
+        List<Game> gamesWithSequel = new List<Game>();
+        List<Game> gamesWithoutSequel = new List<Game>();
+
+        for (int i = 0; i < games.Count; i++) // games with sequel
+        {
+            if (games[i].sequelOf != null) gamesWithSequel.Add(games[i].sequelOf);
+        }
+
+        for (int i = 0; i < games.Count; i++) // games without sequel
+        {
+            bool haveSequel = false;
+            for (int s = 0; s < gamesWithSequel.Count; s++)
+            {
+                if (games[i] == gamesWithSequel[s]) { haveSequel = true; break; }
+            }
+            if (!haveSequel) gamesWithoutSequel.Add(games[i]);
+        }
+
+        return gamesWithoutSequel.ToArray();
+    }
 }

@@ -17,7 +17,7 @@ public class NewGameUI : MonoBehaviour
     [SerializeField] private TMP_Dropdown size;
     [SerializeField] private TMP_Dropdown genre;
 
-    [SerializeField] private TMP_Dropdown sequel;
+    [SerializeField] private SequelDropdown sequel;
 
     [SerializeField] private PlatformSelector[] platforms;
 
@@ -73,6 +73,7 @@ public class NewGameUI : MonoBehaviour
     {
         game = new Game();
         gameName.text = "";
+        sequel.SetValue(0);
         size.value = 0;
         genre.value = 0;
         SetSize(size.value);
@@ -85,7 +86,11 @@ public class NewGameUI : MonoBehaviour
         }
     }
 
-    // maybe some sequel void 
+    public void SetSequel(int value)
+    {
+        game.sequelOf = sequel.GetCurrentValue();
+        if (game.sequelOf != null) SetSequelInfo();
+    }
 
     public void SetSize(int value)
     {
@@ -198,5 +203,25 @@ public class NewGameUI : MonoBehaviour
         errorText.gameObject.SetActive(true);
         yield return new WaitForSecondsRealtime(1); 
         errorText.gameObject.SetActive(false);
+    }
+
+    private void SetSequelInfo()
+    {
+        string newName = game.sequelOf.projectName;
+        char last_char = newName[newName.Length - 1];
+        int SequelNumber = 2;
+        if (last_char == '2') { newName = newName.Remove(newName.Length - 1); SequelNumber = 3; }
+        else if (last_char == '3') { newName = newName.Remove(newName.Length - 1); SequelNumber = 4; }
+        else if (last_char == '4') { newName = newName.Remove(newName.Length - 1); SequelNumber = 5; }
+        else if (last_char == '5') { newName = newName.Remove(newName.Length - 1); SequelNumber = 6; }
+        else if (last_char == '6') { newName = newName.Remove(newName.Length - 1); SequelNumber = 7; }
+        else if (last_char == '7') { newName = newName.Remove(newName.Length - 1); SequelNumber = 8; }
+        else if (last_char == '8') { newName = newName.Remove(newName.Length - 1); SequelNumber = 9; }
+        else if (last_char == '9') { newName = newName.Remove(newName.Length - 1); SequelNumber = 10; }
+        newName += " ";
+        newName += SequelNumber.ToString();
+        gameName.text = newName;
+
+        // maybe set genre and theme
     }
 }

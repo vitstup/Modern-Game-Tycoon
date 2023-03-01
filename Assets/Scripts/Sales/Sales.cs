@@ -56,6 +56,7 @@ public static class Sales
             float sales = auditory * 10000f * (1f + game.hype) * game.interest;
 
             sales *= Random.Range(0.9f, 1.1f);
+            if (sales < 1) sales = 1;
 
             float price = game.publisher != null ? game.publisher.GetPayment(game.size) : game.price;
             float profit = sales * price * (1f - game.engine.info.commision) * (1f - game.platforms[i].info.commision);

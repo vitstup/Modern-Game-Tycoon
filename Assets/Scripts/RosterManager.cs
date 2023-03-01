@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class RosterManager : MonoBehaviour
@@ -90,5 +91,30 @@ public class RosterManager : MonoBehaviour
         }
         Main.instance.MinusMoney(expenses);
         if (ProjectManager.instance.project != null && ProjectManager.instance.project is GameProject) (ProjectManager.instance.project as GameProject).expenses += expenses;
+    }
+
+    public int[] GetTotalSkills(Persona[] personas)
+    {
+        int[] skills = new int[5];
+        for (int i = 0; i < personas.Length; i++)
+        {
+            skills[0] += personas[i].skills.programming;
+            skills[1] += personas[i].skills.gameDesign;
+            skills[2] += personas[i].skills.artDesign;
+            skills[3] += personas[i].skills.soundDesign;
+            skills[4] += personas[i].skills.screenwriting;
+        }
+        return skills;
+    }
+
+    public int[] GetAverageSkills(Persona[] personas)
+    {
+        int[] skills = GetTotalSkills(personas);
+        if (personas.Length == 0) { return skills; }
+        for (int i = 0; i < skills.Length; i++)
+        {
+            skills[i] /= personas.Length;
+        }
+        return skills;
     }
 }

@@ -49,7 +49,7 @@ shp.10,Metal cupboard,Металлический шкаф,Placard métallique,Me
 shp.11,Mini football,Мини футбол,Mini football,Mini -Fußball,Mini fútbol,Mini calcio
 shp.12,Fridge,Холодильник,Réfrigérateur,Kühlschrank,Refrigerador,Frigo
 shp.13,Minigolf,Мини гольф,Mini golf,Minigolf,Mini golf,Mini golf
-shp.14,Small plant,Небольшое растение,Petite plante,Kleine Pflanze,Planta pequeña,Pianta piccola
+shp.14,Small plant,Небольшое растение,Petite plante,Kleine Pflanze,Planta pequeña,Piccola pianta
 shp.15,Big plant,Большое растение,Grande plante,Große Pflanze,Gran planta,Grande pianta
 shp.16,Mini garden,Мини посадки,Mini jardin,Mini -Garten,Mini jardín,Mini giardino
 shp.17,Green pouf,Зеленый пуфик,Pouf vert,Grüner Pouf,Pouf verde,Pouf verde
@@ -125,9 +125,9 @@ term,Term,Срок,Terme,Begriff,Término,Termine
 points,Points,Точки,Points,Punkte,Puntos,Punti
 lpoints,points,точки,points,Punkte,puntos,punti
 taskdifficulty,Task difficulty,Сложность задачи,Difficulté de tâche,Aufgabenschwierigkeit,Dificultad de tarea,Difficoltà del compito
-easy,Easy,Лёгкая,Facile,Einfach,Fácil,Facile
-normal,Normal,Средняя,Normal,Normal,Normal,Normale
-hard,Hard,Трудная,Dur,Hart,Duro,Difficile
+diff.0,Easy,Лёгкая,Facile,Einfach,Fácil,Facile
+diff.1,Normal,Средняя,Normal,Normal,Normal,Normale
+diff.2,Hard,Трудная,Dur,Hart,Duro,Difficile
 penalty,Penalty,Штраф,Peine,Strafe,Multa,Pena
 game,Game,Игра,Jeu,Spiel,Juego,Gioco
 updatesize,Update size,Размер обновления,Mettre à jour la taille,Aktualisierung der Größe,Tamaño de actualización,Dimensione dell'aggiornamento
@@ -135,18 +135,18 @@ feature.0,2D,2D,2D,2D,2D,2D
 feature.1,3D,3D,3D,3D,3D,3D
 feature.2,Simple plot,Простой сюжет,Terrain simple,Einfache Handlung,Trama simple,Trama semplice
 feature.3,Elaborated plot,Проработанный сюжет,Complot élaboré,Ausgearbeitete Handlung,Trama elaborado,Trama elaborata
-feature.4,Non linear plot,Не линейный сюжет,Tracé non linéaire,Nicht linearer Diagramm,Trama no lineal,Trama non lineare
+feature.4,Non linear plot,Не линейный сюжет,Terrain non linéaire,Nicht linearer Diagramm,Trama no lineal,Trama non lineare
 feature.5,Simple dialogs,Простые диалоги,Boîtes de dialogue simples,Einfache Dialoge,Diálogo simples,Dialoging semplici
-feature.6,Elaborated dialogs,Проработанные диалоги,Dialogue élaboré,Ausgearbeitete Dialoge,Diálogos elaborados,Dialoghi elaborati
+feature.6,Elaborated dialogs,Проработанные диалоги,Dialogues élaborées,Ausgearbeitete Dialoge,Diálogo elaborados,Dialoghe elaborate
 feature.7,Interactive dialogs,Интерактивные диалоги,Dialogues interactives,Interaktive Dialoge,Diálogo interactivos,Dialoghi interattivi
-feature.8,Neural networks usage,Использование нейронных сетей,Utilisation des réseaux neuronaux,Nutzung der neuronalen Netze,Uso de redes neuronales,Utilizzo delle reti neurali
+feature.8,Neural networks usage,Использование нейронных сетей,Utilisation des réseaux de neurones,Nutzung der neuronalen Netze,Uso de redes neuronales,Utilizzo delle reti neurali
 feature.9,Procedural world,Процедурный мир,Monde procédural,Verfahrenswelt,Mundo procesal,Mondo procedurale
 feature.10,Open world,Открытый мир,Monde ouvert,Offene Welt,Mundo abierto,Mondo aperto
 feature.11,Few characters,Несколько персонажей,Peu de personnages,Wenige Charaktere,Pocos personajes,Pochi personaggi
-feature.12,Character editor,Редактор персонажей,Éditeur de personnage,Charakter Editor,Editor de personajes,Editor del personaggio
-feature.13,Simple AI,Простой ИИ,AI simple,Einfache Ai,AI simple,Semplice ai
+feature.12,Character editor,Редактор персонажей,Éditeur de personnage,Charakter Editor,Editor de personajes,Editor dei personaggi
+feature.13,Simple AI,Простой ИИ,AI simple,Einfache Ai,AI simple,Semplice AI
 feature.14,Complex AI,Сложный ИИ,AI complexe,Komplexe AI,AI complejo,AI complesso
-feature.15,Self Learning AI,Самообучаемый ИИ,AI-ADRENTION AI,Selbstlernen KI,Aprendizaje de AI,Ai Learning Ai
+feature.15,Self Learning AI,Самообучаемый ИИ,AI-ADRENTION AI,Selbstlernen KI,Auto aprendizaje ai,Ai Learning Ai
 feature.16,Simple economics,Простая экономика,Économie simple,Einfache Wirtschaft,Economía simple,Economia semplice
 feature.17,Complex economics,Комплексная экономика,Économie complexe,Komplexe Ökonomie,Economía compleja,Economia complessa
 feature.18,Simple physics,Простая физика,Physique simple,Einfache Physik,Física simple,Fisica semplice
@@ -256,11 +256,11 @@ stageslider.2,Game length / elaboration,Длина игры / Проработк
 stageslider.3,Emphasis on story / gameplay,Акцент на сюжет / геймплей,L'accent mis sur l'histoire / le gameplay,Betonung auf Geschichte / Gameplay,Énfasis en la historia / juego,Enfasi sulla storia / gameplay
 stageslider.4,Convenience / Functionality,Удобство / Функциональность,Commodité / fonctionnalité,Bequemlichkeit / Funktionalität,Conveniencia / funcionalidad,Comodità / funzionalità
 stageslider.5,Familiarity / Innovationess,Освоенность / Инновационость,Familiarité / innovationuse,Vertrautheit / Innovation und,Familiaridad / innovación,Familiarità / innovazione
-stageslider.6,Gameplay passivity / intensivity,Пассивность / Интенсивность Геймплея,Passivité / intensivité de gameplay,Gameplay -Passivität / Intensivität,Passividad / intensividad del juego,Gameplay passività / intensività
-stageslider.7,Gameplay simplicity / depth,Простота / Глубина геймплея,Gameplay Simplicité / Profondeur,Einfachheit / Tiefe der Gameplay,Simplicidad / profundidad del juego,Semplicità / profondità del gameplay
+stageslider.6,Gameplay passivity / intensivity,Пассивность / Интенсивность Геймплея,Passivité / intensivité du gameplay,Gameplay -Passivität / Intensivität,Passividad / intensividad del juego,Gameplay passività / intensività
+stageslider.7,Gameplay simplicity / depth,Простота / Глубина геймплея,Gameplay Simplicité / Profondeur,Einfachheit / Tiefe der Gameplay,Simplicidad / profundidad del juego,Semplicità / profondità del gioco
 stageslider.8,Atmospherity / Sightness,Атмосфера / Зрелищность,Atmosphère / vue,Atmosphäre / Sicht,Atmósfera / espectáculo,Atmosferia / vista
 stageslider.9,Sound abundance / background,Обилие / Фоновость звука,Abondance sonore / arrière-plan,Klanghäufigkeit / Hintergrund,Abundancia de sonido / fondo,Sound Abbondanza / Background
-stageslider.10,Design character / world,Дизайн мира / персонажей,Personnage de conception / monde,Designcharakter / Welt,Personaje de diseño / mundo,Carattere / mondo del design
+stageslider.10,Design character / world,Дизайн мира / персонажей,Personnage / monde de conception,Designcharakter / Welt,Personaje de diseño / mundo,Carattere / mondo del design
 stageslider.11,Graphics optimization / beauty,Оптимизация / Красота Графики,Optimisation / beauté graphiques,Grafikoptimierung / Schönheit,Optimización gráfica / belleza,Ottimizzazione grafica / bellezza
 buildinfo.1,Press <sprite=0> to build the item,Нажмите <sprite=0> чтобы построить предмет.,Appuyez sur <sprite=0> pour construire l'élément,"Drücken Sie <sprite=0>, um das Objekt zu bauen",Presiona <sprite=0> para construir el artículo,Premi <sprite=0> per costruire l'oggetto
 buildinfo.2,Hold <sprite=1> to move the camera,Удерживайте <sprite=1> чтобы переместить камеру.,Maintenez <sprite=1> pour déplacer la caméra,"Halten Sie <sprite=1> gedrückt, um die Kamera zu bewegen",Mantén pulsado <sprite=1> para mover la cámara,Tieni premuto <sprite=1> per spostare la telecamera
@@ -271,12 +271,12 @@ unknown,Unknown,Неизвестно,Inconnu,Unbekannt,Desconocido,Sconosciuto
 release,Release,Выпустить,Libérer,Freigeben,Liberar,Pubblicazione
 cancelproject,Cancel project,Отменить проект,Annuler le projet,Projekt abbrechen,Cancelar proyecto,Annulla il progetto
 areyousurecancelprj,"Are you sure, that you want to cancel project ?","Вы уверены, что хотите отменить проект ?",Êtes-vous sûr que vous souhaitez annuler le projet?,"Sind Sie sicher, dass Sie das Projekt stornieren möchten?",¿Estás seguro de que quieres cancelar el proyecto?,"Sei sicuro, che vuoi annullare il progetto?"
-forfeit,Forfeit,Неустойка,Déclarer forfait,Verlieren,Perder,Forfeit
+forfeit,Forfeit,Неустойка,Déclarer forfait,Verlieren,Perder,Forfait
 sure,Sure,Конечно,Bien sûr,Sicher,Seguro,Sicuro
 no,No,Нет,Non,NEIN,No,NO
 gameisdone,Game is done,Игра сделана,Le jeu est fait,Spiel ist fertig,El juego está hecho,Il gioco è finito
-gameisdonetext,"The game is done. If you want, you can polish the game, fix some bugs and improve it. But point generation will be much slower. You can publish the game by yourself or find a publisher.","Игра сделана. Если хотите, вы можете отполировать игру, исправить некоторые ошибки и улучшить ее. Но точечное поколение будет намного медленнее. Вы можете опубликовать игру самостоятельно или найти издателя.","Le jeu est terminé. Si vous le souhaitez, vous pouvez polir le jeu, corriger certains bogues et l'améliorer. Mais la génération de points sera beaucoup plus lente. Vous pouvez publier le jeu par vous-même ou trouver un éditeur.","Das Spiel ist fertig. Wenn Sie möchten, können Sie das Spiel polieren, einige Fehler beheben und verbessern. Aber die Point -Generation wird viel langsamer sein. Sie können das Spiel selbst veröffentlichen oder einen Verlag finden.","El juego está hecho. Si lo desea, puede pulir el juego, solucionar algunos errores y mejorarlo. Pero la generación de puntos será mucho más lenta. Puedes publicar el juego tú mismo o encontrar un editor.","Il gioco è finito. Se vuoi, puoi lucidare il gioco, correggere alcuni bug e migliorarlo. Ma la generazione di punti sarà molto più lenta. Puoi pubblicare il gioco da solo o trovare un editore."
-estuserrating,Estimated user rating:,Ожидаемый рейтинг:,Évaluation des utilisateurs estimés:,Geschätzte Benutzerbewertung:,Calificación estimada del usuario:,Valutazione utente stimata:
+gameisdonetext,"The game is done. If you want, you can polish the game, fix some bugs and improve it. But point generation will be much slower. You can publish the game by yourself or find a publisher.","Игра сделана. Если хотите, вы можете отполировать игру, исправить некоторые ошибки и улучшить ее. Но точечное поколение будет намного медленнее. Вы можете опубликовать игру самостоятельно или найти издателя.","Le jeu est terminé. Si vous le souhaitez, vous pouvez polir le jeu, corriger certains bogues et l'améliorer. Mais la génération de points sera beaucoup plus lente. Vous pouvez publier le jeu par vous-même ou trouver un éditeur.","Das Spiel ist fertig. Wenn Sie möchten, können Sie das Spiel polieren, einige Fehler beheben und verbessern. Aber die Point -Generation wird viel langsamer sein. Sie können das Spiel selbst veröffentlichen oder einen Verlag finden.","El juego está hecho. Si lo desea, puede pulir el juego, arreglar algunos errores y mejorarlo. Pero la generación de puntos será mucho más lenta. Puedes publicar el juego tú mismo o encontrar un editor.","Il gioco è finito. Se vuoi, puoi lucidare il gioco, correggere alcuni bug e migliorarlo. Ma la generazione di punti sarà molto più lenta. Puoi pubblicare il gioco da solo o trovare un editore."
+estuserrating,Estimated user rating:,Ожидаемый рейтинг:,Évaluation de l'utilisateur estimé:,Geschätzte Benutzerbewertung:,Calificación estimada del usuario:,Valutazione utente stimata:
 polish,Polish,Доработка,polonais,Polieren,Polaco,Polacco
 findpublisher,Find publisher,Найти издателя,Trouver l'éditeur,Finden Sie Verlag,Encontrar editor,Trova l'editore
 pointseff,Points efficiency:,Эффективность очков:,Efficacité des points:,Punkteffizienz:,Eficiencia de puntos:,Efficienza dei punti:
@@ -284,9 +284,9 @@ income,Income,Доход,Revenu,Einkommen,Ingreso,Reddito
 intpublishers,Interested publishers,Заинтересованные издатели,Éditeurs intéressés,Interessierte Verlage,Editores interesados,Editori interessati
 audience,Audience,Аудитория,Public,Publikum,Audiencia,Pubblico
 gameprice,Game price,Цена игры,Prix ​​du jeu,Spielpreis,Precio del juego,Prezzo del gioco
-corofpricing,The correctness of the pricing:,Правильность цены:,L'exactitude du prix:,Die Richtigkeit der Preisgestaltung:,La exactitud del precio:,La correttezza dei prezzi:
+corofpricing,The correctness of the pricing:,Правильность цены:,L'exactitude du prix:,Die Richtigkeit der Preisgestaltung:,La corrección del precio:,La correttezza dei prezzi:
 few,Few,Мало,Peu,Wenig,Pocos,Pochi
-todaysales,Today sales,Продажи сегодня,Ventes aujourd'hui,Heute Umsatz,Ventas de hoy,Oggi vendite
+todaysales,Today sales,Продажи сегодня,Ventes d'aujourd'hui,Heute Umsatz,Ventas de hoy,Oggi vendite
 todayprofit,Today profit,Прибыль сегодня,Aujourd'hui bénéficie,Heute Gewinn,Hoy ganancias,Oggi profitto
 userrating,User rating,Пользовательская оценка,Note de l'utilisateur,Benutzer-Bewertung,Opiniones de los usuarios,Voto dell'utente
 hype,Hype,Ажиотаж,Battage publicitaire,Hype,Bombo publicitario,Montatura pubblicitaria
@@ -306,3 +306,7 @@ max,Max,Макс,Max,Max,Máximo,Max
 devduration,Development duration,Продолжительность развития,Durée de développement,Entwicklungsdauer,Duración del desarrollo,Durata dello sviluppo
 requserrating,Required user rating,Необходимый рейтинг,Évaluation de l'utilisateur requise,Erforderliche Benutzerbewertung,Calificación de usuario requerida,Valutazione utente richiesta
 receivedbonus,Received bonus,Полученный бонус,Bonus reçu,Bonus erhalten,Recibió bono,Bonus ricevuto
+receivedpayment,Received payment,Полученный платеж,Paiement reçu,Zahlung erhalten,Pago recibido,Pagamento ricevuto
+small,Small,Небольшое,Petit,Klein,Pequeño,Piccolo
+medium ,Medium,Среднее,Moyen,Mittel,Medio,medio
+big,Big,Большое,Grand,Groß,Grande,Grande

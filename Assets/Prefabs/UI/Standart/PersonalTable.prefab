@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: tester
-  state: 3
+  state: 2
 --- !u!1 &6023192963728044174
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: programmer
-  state: 1
+  state: 0
 --- !u!1 &6023192964196830483
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: programmer
-  state: 1
+  state: 0
 --- !u!1 &6023192964379801952
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: programmer
-  state: 1
+  state: 0
 --- !u!1 &6023192964798612363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: programmer
-  state: 1
+  state: 0
 --- !u!1 &6023192965050870120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,7 +1495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: programmer
-  state: 1
+  state: 0
 --- !u!1 &6023192965401959915
 GameObject:
   m_ObjectHideFlags: 0

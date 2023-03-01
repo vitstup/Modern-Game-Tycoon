@@ -54,7 +54,9 @@ public class CreationUI : MonoBehaviour
 
     public void UpdateInfo(Freelance freelance)
     {
-
+        projectName.text = freelance.projectName;
+        fillAmount.fillAmount = freelance.GetDevDonePercent();
+        fillStageText.text = Localization.Localize("developing");
     }
 
     public void UpdateInfo(GameUpdate update)
@@ -71,6 +73,13 @@ public class CreationUI : MonoBehaviour
             {
                 bugsPanel.SetActive(true);
                 UpdateInfo(ProjectManager.instance.project as GameProject);
+            }
+            else if (ProjectManager.instance.project is Freelance)
+            {
+                bugsPanel.SetActive(false);
+                realisePanel.SetActive(false);
+                fillPanel.SetActive(true);
+                UpdateInfo(ProjectManager.instance.project as Freelance);
             }
         }
     }

@@ -16,6 +16,34 @@ public class SequelDropdown : MonoBehaviour
 
     public void UpdateVariants()
     {
-        // do something
+        var games = Statistics.instance.GetGamesWithoutSequel();
+
+        dropdown.options.Clear();
+        dropdown.options.Add(new TMP_Dropdown.OptionData() { text = Localization.Localize("none") });
+
+        for (int i = 0; i < games.Length; i++)
+        {
+            dropdown.options.Add(new TMP_Dropdown.OptionData() { text = games[i].projectName });
+        }
+
+        possibleForSequels = games;
     }
+
+    public Game GetCurrentValue()
+    {
+        if (dropdown.value == 0) return null;
+        else return possibleForSequels[dropdown.value - 1];
+    }
+
+    public void SetValue(int value)
+    {
+        if (dropdown == null)
+        {
+            dropdown = GetComponent<TMP_Dropdown>();
+            UpdateVariants();
+        }
+        dropdown.value = value;
+    }
+
+    // dropdown.options.Add(new TMP_Dropdown.OptionData() { text = GA.features[features[i]].name });
 }
