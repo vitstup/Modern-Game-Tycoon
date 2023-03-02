@@ -67,4 +67,16 @@ public class Game : GameProject
         }
         return totalProfit;
     }
+
+    public void UpdateGame(float plot, float gameDesign, float gameplay, float graphics, float sound, float bugs, float interest, Platform[] platforms)
+    {
+        AddPoints(new float[] { plot, gameDesign, gameplay, graphics, sound }, 1f);
+        UpdateBugs(bugs);
+        this.interest += interest;
+        if (this.interest > 1f) this.interest = 1f;
+        for (int i = 0; i < platforms.Length; i++)
+        {
+            if (platforms[i] != null) this.platforms[i] = platforms[i];
+        }
+    }
 }

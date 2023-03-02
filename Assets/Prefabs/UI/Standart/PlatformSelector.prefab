@@ -491,6 +491,8 @@ MonoBehaviour:
   graphics: {fileID: 7614667212523703153}
   marketShare: {fileID: 7614667212023107101}
   image: {fileID: 7614667212649897763}
+  selectBtn: {fileID: 7614667212060799813}
+  unselectBtn: {fileID: 7614667212414679971}
 --- !u!1 &7614667212414679969
 GameObject:
   m_ObjectHideFlags: 0

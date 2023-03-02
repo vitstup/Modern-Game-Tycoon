@@ -91,7 +91,8 @@ public class Persona
     {
         baseSpeed += ComputerManager.instance.computers[table.currentPc].productionBonus;
         float happines = BuildingManager.instance.happiness;
-        baseSpeed += happines > 1? (happines - 1f) / 2f: happines;
+        baseSpeed += happines > 1? (happines - 1f) / 2f: (happines - 1f);
+        if (baseSpeed < 0.33f) baseSpeed = 0.33f;
         return baseSpeed;
     }
 }

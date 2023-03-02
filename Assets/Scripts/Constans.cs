@@ -59,4 +59,7 @@ public static class Constans
     public const int maxContractPoints = 200;
     public const int maxContractOtherPoints = 10;
     public const int contractPaymentPerPoint = 150;
+
+    public static readonly int[] updateSizesWorkloads = { 75 , 150 , 300 };
+    public static readonly float[] updateSizesInterestBuffs = { 0.1f , 0.25f , 0.5f};
 }

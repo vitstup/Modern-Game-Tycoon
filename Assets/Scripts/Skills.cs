@@ -95,7 +95,7 @@ public class Skills
             if (rightSkill) break;
         }
         float value = GetSkillPointValue(skill);
-
+        
         return new DevValue(value, skill);
     }
 

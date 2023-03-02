@@ -22,7 +22,7 @@ proffesion,Profession,Профессия,Profession,Beruf,Profesión,Professione
 proffesion.0,Programmer,Программист,Programmeur,Programmierer,Programador,Programmatore
 proffesion.1,Game designer,Гейм дизайнер,Designer de jeu,Spieledesigner,Diseñador de juegos,Designer di giochi
 proffesion.2,Art designer,Художник,Concepteur d'art,Kunstdesigner,Diseñador de arte,Designer d'arte
-proffesion.3,Sound designer,Звуковой дизайнер,Sonneur,Sounddesigner,Diseñador de sonido,Sound Designer
+proffesion.3,Sound designer,Звукорежиссер,Sonneur,Sounddesigner,Diseñador de sonido,Sound Designer
 proffesion.4,Screenwriter,Сценарист,Scénariste,Drehbuchautor,Guionista,Sceneggiatore
 skill.0,Programming,Программирование,La programmation,Programmierung,Programación,Programmazione
 skill.1,Game design,Игровой дизайн,Le design du jeu,Spieldesign,Diseño de juego,Design del gioco
@@ -32,7 +32,7 @@ skill.4,Screenwriting,Сценарий,Scénarisation,Drehbuch,Escritura de guio
 salary,Salary,Зарплата,Salaire,Gehalt,Salario,Stipendio
 personaTab.0,Employees by profession,Сотрудники по профессии,Employés par profession,Mitarbeiter nach Beruf,Empleados por profesión,Dipendenti di professione
 personaTab.1,Average skills,Средние навыки,Compétences moyennes,Durchschnittliche Fähigkeiten,Habilidades promedio,Abilità medie
-personaTab.2,Total skills,Общие навыки,Compétences totales,Gesamtfähigkeiten,Habilidades totales,Abilità totali
+personaTab.2,Total skills,Общие навыки,Compétences totales,Gesamtfähigkeiten,Total de habilidades,Abilità totali
 all,All,Все,Tous,Alle,Todo,Tutto
 applications,Applications,Заявления,Applications,Anwendungen,Aplicaciones,Applicazioni
 shp.0,Aquarium,Аквариум,Aquarium,Aquarium,Acuario,Acquario
@@ -43,7 +43,7 @@ shp.4,Black armchair,Черное кресло,Fauteuil noir,Schwarzer Sessel,Si
 shp.5,Black couch,Черный диван,Canapé noir,Schwarze Couch,Sofá negro,Divano nero
 shp.6,White armchair,Белое кресло,Fauteuil blanc,Weißer Sessel,Sillón blanco,Poltrona bianca
 shp.7,White couch,Белый диван,Canapé blanc,Weiße Couch,Sofá blanco,Divano bianco
-shp.8,Big couch,Большой диван,Grand canapé,Große Couch,Gran sofá,Grande divano
+shp.8,Big couch,Большой диван,Grand canapé,Große Couch,Sofá grande,Grande divano
 shp.9,Cupboard,Шкаф,Placard métallique,Schrank,Armario,Armadio
 shp.10,Metal cupboard,Металлический шкаф,Placard métallique,Metallschrank,Armario de metal,Armadio di metallo
 shp.11,Mini football,Мини футбол,Mini football,Mini -Fußball,Mini fútbol,Mini calcio
@@ -55,7 +55,7 @@ shp.16,Mini garden,Мини посадки,Mini jardin,Mini -Garten,Mini jardín
 shp.17,Green pouf,Зеленый пуфик,Pouf vert,Grüner Pouf,Pouf verde,Pouf verde
 shp.18,Blue pouf,Синий пуфик,Pouf bleu,Blauer Pouf,Pouf,Blue Pouf
 shp.19,Big yellow pouf,Желтый пуфик,Big Pouf jaune,Big Yellow Pouf,Pouf amarillo grande,Grande pouf giallo
-shp.20,Big red pouf,Красный пуфик,Big Pouf rouge,Big Red Pouf,Pouf rojo grande,Big Red Pouf
+shp.20,Big red pouf,Красный пуфик,Big Pouf rouge,Big Red Pouf,Big Red Pouf,Big Red Pouf
 shp.21,Vending machine,Торговый автомат,Distributeur automatique,Verkaufsautomat,Máquina expendedora,Distributore automatico
 shp.22,Boiler,Бойлер,Chaudière,Kessel,Caldera,Caldaia
 shp.23,Desktop,Рабочий стол,Bureau,Desktop,Escritorio,Desktop
@@ -71,7 +71,7 @@ rent,Rent,Арендовать,Louer,Mieten,Alquilar,Affitto
 rented,Rented,Арендован,Loué,Gemietet,Alquilado,Affittato
 select,Select,Выбрать,Sélectionner,Wählen,Seleccionar,Selezionare
 selected,Selected,Выбрано,Choisi,Ausgewählt,Seleccionado,Selezionato
-autofurnish,Auto furnish,Авто мебель,Fourniture automatique,Autoeinrichtung,Auto Mobiliario,Arredamento automatico
+autofurnish,Auto furnish,Авто мебель,Fourniture automatique,Autoeinrichtung,Muebles automáticos,Arredamento automatico
 upgradeallpcs,Upgrade all pc's,Обновить все пк,Mettre à niveau tous les PC,Aktualisieren Sie alle PCs,Actualizar todas las PC,Aggiorna tutti i PC
 soldfurniture,All your furniture will be sold.,Вся ваша мебель будет продана.,Tous vos meubles seront vendus.,Alle Ihre Möbel werden verkauft.,Todos sus muebles se venderán.,Tutti i tuoi mobili saranno venduti.
 expenses,Expenses,Затраты,Dépenses,Kosten,Gastos,Spese
@@ -136,24 +136,24 @@ feature.1,3D,3D,3D,3D,3D,3D
 feature.2,Simple plot,Простой сюжет,Terrain simple,Einfache Handlung,Trama simple,Trama semplice
 feature.3,Elaborated plot,Проработанный сюжет,Complot élaboré,Ausgearbeitete Handlung,Trama elaborado,Trama elaborata
 feature.4,Non linear plot,Не линейный сюжет,Terrain non linéaire,Nicht linearer Diagramm,Trama no lineal,Trama non lineare
-feature.5,Simple dialogs,Простые диалоги,Boîtes de dialogue simples,Einfache Dialoge,Diálogo simples,Dialoging semplici
+feature.5,Simple dialogs,Простые диалоги,Dialogues simples,Einfache Dialoge,Diálogo simples,Dialoging semplici
 feature.6,Elaborated dialogs,Проработанные диалоги,Dialogues élaborées,Ausgearbeitete Dialoge,Diálogo elaborados,Dialoghe elaborate
-feature.7,Interactive dialogs,Интерактивные диалоги,Dialogues interactives,Interaktive Dialoge,Diálogo interactivos,Dialoghi interattivi
+feature.7,Interactive dialogs,Интерактивные диалоги,Dialogues interactives,Interaktive Dialoge,Diálogo interactivo,Dialoghe interattive
 feature.8,Neural networks usage,Использование нейронных сетей,Utilisation des réseaux de neurones,Nutzung der neuronalen Netze,Uso de redes neuronales,Utilizzo delle reti neurali
 feature.9,Procedural world,Процедурный мир,Monde procédural,Verfahrenswelt,Mundo procesal,Mondo procedurale
 feature.10,Open world,Открытый мир,Monde ouvert,Offene Welt,Mundo abierto,Mondo aperto
 feature.11,Few characters,Несколько персонажей,Peu de personnages,Wenige Charaktere,Pocos personajes,Pochi personaggi
 feature.12,Character editor,Редактор персонажей,Éditeur de personnage,Charakter Editor,Editor de personajes,Editor dei personaggi
-feature.13,Simple AI,Простой ИИ,AI simple,Einfache Ai,AI simple,Semplice AI
+feature.13,Simple AI,Простой ИИ,AI simple,Einfache Ai,IA simple,Semplice AI
 feature.14,Complex AI,Сложный ИИ,AI complexe,Komplexe AI,AI complejo,AI complesso
-feature.15,Self Learning AI,Самообучаемый ИИ,AI-ADRENTION AI,Selbstlernen KI,Auto aprendizaje ai,Ai Learning Ai
+feature.15,Self Learning AI,Самообучаемый ИИ,AI-apprentissage AI,Selbstlernen KI,Auto aprendizaje ai,Ai di autoapprendimento AI
 feature.16,Simple economics,Простая экономика,Économie simple,Einfache Wirtschaft,Economía simple,Economia semplice
 feature.17,Complex economics,Комплексная экономика,Économie complexe,Komplexe Ökonomie,Economía compleja,Economia complessa
 feature.18,Simple physics,Простая физика,Physique simple,Einfache Physik,Física simple,Fisica semplice
 feature.19,Realistic physics,Реалистичная физика,Physique réaliste,Realistische Physik,Física realista,Fisica realistica
 feature.20,Side missions,Сайд миссии,Missions latérales,Seitenmissionen,Misiones laterales,Missioni secondarie
 feature.21,Elaborated side missions,Проработанный сайд миссии,Missions secondaires élaborées,Ausgearbeitete Seitenmissionen,Misiones laterales elaboradas,Missioni secondarie elaborate
-feature.22,Mods support,Поддержка модов,Support des mods,Mods Support,Soporte de mods,Supporto MODS
+feature.22,Mods support,Поддержка модов,Prise en charge des mods,Mods Support,Soporte de mods,Supporto MODS
 feature.23,Global mods support,Поддержка глобальных модов,Support mondial des mods,Globale Mods -Unterstützung,Soporte de modificaciones globales,Supporto MOD globali
 feature.24,Cartoony,Мультяшнность,Cartoony,Cartoony,Dibujos animados,Cartone animato
 feature.25,Photorealism,Фотореализм,Photoréalisme,Fotorealismus,Fotorrealismo,Fotorealismo
@@ -249,7 +249,7 @@ workload,Workload,Объем,Charge de travail,Arbeitsbelastung,Carga de trabajo
 prototyping,Prototyping,Прототипирование,Prototypage,Prototyp entwickeln,Prototipos,Prototipazione
 developing,Developing,Разработка,Développement,Entwicklung,Desarrollando,Sviluppando
 design,Design,Дизайн,Conception,Design,Diseño,Progetto
-polishing,Polishing,Полировка,Polissage,Polieren,Pulido,Lucidatura
+polishing,Polishing,Полировка,Polissage,Polieren,Pulido,Lucidare
 stageslider.0,Casual / Hardcore,Казуал / Хардкор,Décontracté / hardcore,Casual / Hardcore,Informal / hardcore,Casual / hardcore
 stageslider.1,Kindness / Cruelty,Доброта / Жестокость,Gentillesse / cruauté,Freundlichkeit / Grausamkeit,Bondad / crueldad,Gentilezza / crudeltà
 stageslider.2,Game length / elaboration,Длина игры / Проработка,Longueur / élaboration du jeu,Spiellänge / Ausarbeitung,Longitud del juego / elaboración,Lunghezza / elaborazione del gioco
@@ -258,7 +258,7 @@ stageslider.4,Convenience / Functionality,Удобство / Функциона�
 stageslider.5,Familiarity / Innovationess,Освоенность / Инновационость,Familiarité / innovationuse,Vertrautheit / Innovation und,Familiaridad / innovación,Familiarità / innovazione
 stageslider.6,Gameplay passivity / intensivity,Пассивность / Интенсивность Геймплея,Passivité / intensivité du gameplay,Gameplay -Passivität / Intensivität,Passividad / intensividad del juego,Gameplay passività / intensività
 stageslider.7,Gameplay simplicity / depth,Простота / Глубина геймплея,Gameplay Simplicité / Profondeur,Einfachheit / Tiefe der Gameplay,Simplicidad / profundidad del juego,Semplicità / profondità del gioco
-stageslider.8,Atmospherity / Sightness,Атмосфера / Зрелищность,Atmosphère / vue,Atmosphäre / Sicht,Atmósfera / espectáculo,Atmosferia / vista
+stageslider.8,Atmospherity / Sightness,Атмосфера / Зрелищность,Atmosphère / viseuse,Atmosphäre / Sicht,Atmósfera / espectáculo,Atmosferia / vista
 stageslider.9,Sound abundance / background,Обилие / Фоновость звука,Abondance sonore / arrière-plan,Klanghäufigkeit / Hintergrund,Abundancia de sonido / fondo,Sound Abbondanza / Background
 stageslider.10,Design character / world,Дизайн мира / персонажей,Personnage / monde de conception,Designcharakter / Welt,Personaje de diseño / mundo,Carattere / mondo del design
 stageslider.11,Graphics optimization / beauty,Оптимизация / Красота Графики,Optimisation / beauté graphiques,Grafikoptimierung / Schönheit,Optimización gráfica / belleza,Ottimizzazione grafica / bellezza
@@ -276,7 +276,7 @@ sure,Sure,Конечно,Bien sûr,Sicher,Seguro,Sicuro
 no,No,Нет,Non,NEIN,No,NO
 gameisdone,Game is done,Игра сделана,Le jeu est fait,Spiel ist fertig,El juego está hecho,Il gioco è finito
 gameisdonetext,"The game is done. If you want, you can polish the game, fix some bugs and improve it. But point generation will be much slower. You can publish the game by yourself or find a publisher.","Игра сделана. Если хотите, вы можете отполировать игру, исправить некоторые ошибки и улучшить ее. Но точечное поколение будет намного медленнее. Вы можете опубликовать игру самостоятельно или найти издателя.","Le jeu est terminé. Si vous le souhaitez, vous pouvez polir le jeu, corriger certains bogues et l'améliorer. Mais la génération de points sera beaucoup plus lente. Vous pouvez publier le jeu par vous-même ou trouver un éditeur.","Das Spiel ist fertig. Wenn Sie möchten, können Sie das Spiel polieren, einige Fehler beheben und verbessern. Aber die Point -Generation wird viel langsamer sein. Sie können das Spiel selbst veröffentlichen oder einen Verlag finden.","El juego está hecho. Si lo desea, puede pulir el juego, arreglar algunos errores y mejorarlo. Pero la generación de puntos será mucho más lenta. Puedes publicar el juego tú mismo o encontrar un editor.","Il gioco è finito. Se vuoi, puoi lucidare il gioco, correggere alcuni bug e migliorarlo. Ma la generazione di punti sarà molto più lenta. Puoi pubblicare il gioco da solo o trovare un editore."
-estuserrating,Estimated user rating:,Ожидаемый рейтинг:,Évaluation de l'utilisateur estimé:,Geschätzte Benutzerbewertung:,Calificación estimada del usuario:,Valutazione utente stimata:
+estuserrating,Estimated user rating:,Ожидаемый рейтинг:,Évaluation de l'utilisateur estimé:,Geschätzte Benutzerbewertung:,Calificación estimada del usuario:,Valutazione dell'utente stimata:
 polish,Polish,Доработка,polonais,Polieren,Polaco,Polacco
 findpublisher,Find publisher,Найти издателя,Trouver l'éditeur,Finden Sie Verlag,Encontrar editor,Trova l'editore
 pointseff,Points efficiency:,Эффективность очков:,Efficacité des points:,Punkteffizienz:,Eficiencia de puntos:,Efficienza dei punti:
@@ -310,3 +310,6 @@ receivedpayment,Received payment,Полученный платеж,Paiement reç
 small,Small,Небольшое,Petit,Klein,Pequeño,Piccolo
 medium ,Medium,Среднее,Moyen,Mittel,Medio,medio
 big,Big,Большое,Grand,Groß,Grande,Grande
+chooseGame,Choose game ,Выберите игру,Choisir le jeu,Wählen Sie Spiel,Elige el juego,Scegli il gioco
+updating,Updating,Обновление,Mise à jour,Aktualisierung,Actualización,In aggiornamento
+gamenotselected,Game not selected,Игра не выбрана,Jeu non sélectionné,Spiel nicht ausgewählt,Juego no seleccionado,Gioco non selezionato

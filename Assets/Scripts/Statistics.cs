@@ -35,24 +35,21 @@ public class Statistics : MonoBehaviour
 
     public Game[] GetGamesWithoutSequel()
     {
+        var reverse = GetReverseGames();
+
         List<Game> gamesWithSequel = new List<Game>();
-        List<Game> gamesWithoutSequel = new List<Game>();
+        List<Game> gamesWithoutSequel = new List<Game>(reverse);
 
-        for (int i = 0; i < games.Count; i++) // games with sequel
+        for (int i = 0; i < reverse.Count; i++)
         {
-            if (games[i].sequelOf != null) gamesWithSequel.Add(games[i].sequelOf);
+            if (reverse[i].sequelOf != null) gamesWithSequel.Add(reverse[i].sequelOf);
         }
-
-        for (int i = 0; i < games.Count; i++) // games without sequel
+        for (int i = 0; i < gamesWithSequel.Count; i++)
         {
-            bool haveSequel = false;
-            for (int s = 0; s < gamesWithSequel.Count; s++)
-            {
-                if (games[i] == gamesWithSequel[s]) { haveSequel = true; break; }
-            }
-            if (!haveSequel) gamesWithoutSequel.Add(games[i]);
+            gamesWithoutSequel.Remove(gamesWithSequel[i]);
         }
 
         return gamesWithoutSequel.ToArray();
     }
+
 }

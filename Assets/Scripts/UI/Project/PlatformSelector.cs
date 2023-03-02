@@ -18,7 +18,10 @@ public class PlatformSelector : MonoBehaviour
 
     [SerializeField] private Image image;
 
-    public void SetInfo(Platform platform)
+    [SerializeField] private Button selectBtn;
+    [SerializeField] private Button unselectBtn;
+
+    public void SetInfo(Platform platform, bool changebale = true)
     {
         if (platform == null) { SetNoInfo(); return; }
         platformInfoPanel.SetActive(true);
@@ -30,6 +33,8 @@ public class PlatformSelector : MonoBehaviour
 
         image.sprite = platform.info.sprite;
 
+        selectBtn.interactable = changebale;
+        unselectBtn.gameObject.SetActive(changebale);
     }
 
     private void SetNoInfo()
@@ -37,15 +42,7 @@ public class PlatformSelector : MonoBehaviour
         if (id == 0) platformName.text = Localization.Localize("mainplatform");
         else platformName.text = Localization.Localize("platform") + " " + (id + 1);
         platformInfoPanel.SetActive(false);
-    }
-
-    public void UndoPlatform()
-    {
-
-    }
-
-    public void Interacte()
-    {
-
+        selectBtn.interactable = true;
+        unselectBtn.gameObject.SetActive(true);
     }
 }

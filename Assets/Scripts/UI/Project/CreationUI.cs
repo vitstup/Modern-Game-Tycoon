@@ -61,7 +61,22 @@ public class CreationUI : MonoBehaviour
 
     public void UpdateInfo(GameUpdate update)
     {
+        projectName.text = update.updateGame.projectName;
+        bugsText.text = TextConvertor.BugsText(update.bugs);
 
+        if (update.isPolishing)
+        {
+            realiseStageText.text = Localization.Localize("polishing");
+            realisePanel.SetActive(true);
+            fillPanel.SetActive(false);
+        }
+        else
+        {
+            fillAmount.fillAmount = update.ReadyPercent();
+            fillStageText.text = Localization.Localize("updating");
+            realisePanel.SetActive(false);
+            fillPanel.SetActive(true);
+        }
     }
 
     private void SetPanel(bool show)
@@ -81,6 +96,11 @@ public class CreationUI : MonoBehaviour
                 fillPanel.SetActive(true);
                 UpdateInfo(ProjectManager.instance.project as Freelance);
             }
+            else if (ProjectManager.instance.project is GameUpdate)
+            {
+                bugsPanel.SetActive(true);
+                UpdateInfo(ProjectManager.instance.project as GameUpdate);
+            }
         }
     }
 
@@ -94,6 +114,7 @@ public class CreationUI : MonoBehaviour
 
     public void Release()
     {
-        GameReadyUI.instance.OpenGameReady(ProjectManager.instance.project as GameProject);
+        if (ProjectManager.instance.project is GameProject) GameReadyUI.instance.OpenGameReady(ProjectManager.instance.project as GameProject);
+        else if (ProjectManager.instance.project is GameUpdate) UpdateDoneUI.instance.OpenUpdateDone(ProjectManager.instance.project as GameUpdate);
     }
 }

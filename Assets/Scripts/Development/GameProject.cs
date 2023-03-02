@@ -71,8 +71,8 @@ public abstract class GameProject : Project
         if (bugs < 0) bugs = 0;
 
 
-        Debug.Log(currentEfficiency + " eff, " + bugs + " bugs, " + workValues[5] + " today bugs");
-        ReviewChance.PositiveReviewChance(this);
+        //Debug.Log(currentEfficiency + " eff, " + bugs + " bugs, " + workValues[5] + " today bugs");
+        //ReviewChance.PositiveReviewChance(this);
     }
 
     public void CheckStage()
@@ -125,5 +125,10 @@ public abstract class GameProject : Project
     private void SetSprite()
     {
         sprite = genre.sprites[Random.Range(0, genre.sprites.Length)];
+    }
+
+    protected void UpdateBugs(float bugs)
+    {
+        this.bugs = bugs;
     }
 }

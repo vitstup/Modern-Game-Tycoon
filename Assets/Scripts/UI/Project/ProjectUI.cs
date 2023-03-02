@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 public class ProjectUI : MonoBehaviour
 {
@@ -10,6 +6,9 @@ public class ProjectUI : MonoBehaviour
 
     [SerializeField] private GameObject ProjectCanvas;
     [SerializeField] private GameObject StageCanvas;
+
+    [SerializeField] private SequelDropdown sequelDropdown;
+    [SerializeField] private SequelDropdown updatesDropdown;
     private void Awake()
     {
         instance = this;
@@ -19,6 +18,10 @@ public class ProjectUI : MonoBehaviour
     {
         TimeManager.instance.NecessaryPause(open);
         ProjectCanvas.SetActive(open);
+
+        FreelanceUI.instance.UpdateDifficultyText();
+        sequelDropdown.UpdateVariants();
+        updatesDropdown.UpdateVariants();
     }
 
     public void TryToOpenProjectCanvas()
