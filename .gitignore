@@ -68,4 +68,7 @@ crashlytics-build.properties
 #*.asset
 *.jpg
 *.meta
+*.pdf
+*.wav
+*.mp3
 *[Aa]ssets/[Ss]yntyStudio

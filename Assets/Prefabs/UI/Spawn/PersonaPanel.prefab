@@ -1011,6 +1011,7 @@ GameObject:
   - component: {fileID: 486698520996704915}
   - component: {fileID: 486698520996704914}
   - component: {fileID: 1442441757278501509}
+  - component: {fileID: 8342359988800843355}
   m_Layer: 5
   m_Name: PersonaPanel
   m_TagString: Untagged
@@ -1159,6 +1160,18 @@ MonoBehaviour:
   bar: {fileID: 486698520099163831}
   toggle: {fileID: 486698521173552797}
   assignedText: {fileID: 2671482584138532025}
+--- !u!114 &8342359988800843355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486698520996704912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efb4bb1234a6874b942654b9c62c128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &486698521173552771
 GameObject:
   m_ObjectHideFlags: 0

@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 1253529248332481858}
   - component: {fileID: 1253529248332481859}
   - component: {fileID: 2464104748498433163}
+  - component: {fileID: 7844663142740515697}
   m_Layer: 5
   m_Name: ShopItemPanel
   m_TagString: Untagged
@@ -293,6 +294,18 @@ MonoBehaviour:
   happinesText: {fileID: 1253529248202018794}
   itemImage: {fileID: 1253529248890363804}
   happinesImage: {fileID: 1253529249299668721}
+--- !u!114 &7844663142740515697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253529248332481853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efb4bb1234a6874b942654b9c62c128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1253529248533593916
 GameObject:
   m_ObjectHideFlags: 0
