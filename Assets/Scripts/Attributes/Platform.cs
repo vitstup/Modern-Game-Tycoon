@@ -21,6 +21,7 @@ public class Platform
         {
             Main.instance.MinusMoney(info.licensePrice);
             boughted = true;
+            MailManager.instance.NewMail(new PlatformBoughtedMail(info.company.name, this));
         }
         else Debug.LogWarning("Trying to buy already boughted platform");
     }

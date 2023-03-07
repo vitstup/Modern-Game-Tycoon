@@ -38,7 +38,7 @@ applications,Applications,Заявления,Applications,Anwendungen,Aplicacion
 shp.0,Aquarium,Аквариум,Aquarium,Aquarium,Acuario,Acquario
 shp.1,Arcade machine,Аркадная машина,Arcade,Arcade-Maschine,Máquina arcade,Macchina arcade
 shp.2,Billiards,Бильярд,Billard,Billard,Billar,Biliardo
-shp.3,Bin,Корзина,Poubelle,Behälter,Compartimiento,Bidone
+shp.3,Bin,Корзина,Poubelle,Behälter,Papelera,Bidone
 shp.4,Black armchair,Черное кресло,Fauteuil noir,Schwarzer Sessel,Sillón negro,Poltrona nera
 shp.5,Black couch,Черный диван,Canapé noir,Schwarze Couch,Sofá negro,Divano nero
 shp.6,White armchair,Белое кресло,Fauteuil blanc,Weißer Sessel,Sillón blanco,Poltrona bianca
@@ -120,7 +120,7 @@ developmentspeed,Development speed,Скорость разработки,Vitesse
 findanother,Find another,Найти другой,Trouve un autre,Einen anderern finden,Encontrar otro,Trova un altro
 payment,Payment,Оплата,Paiement,Zahlung,Pago,Pagamento
 bonus,Bonus,Бонус,Prime,Bonus,Prima,Bonus
-minuserscore,Min user rating,Мин пользовательский рейтинг,Note d'utilisateur min,Min Benutzerbewertung,Min calificación de usuario,Valutazione dell'utente min
+minuserscore,Min user rating,Мин пользовательский рейтинг,Note de l'utilisateur Min,Min Benutzerbewertung,Min calificación de usuario,Valutazione dell'utente min
 term,Term,Срок,Terme,Begriff,Término,Termine
 points,Points,Точки,Points,Punkte,Puntos,Punti
 lpoints,points,точки,points,Punkte,puntos,punti
@@ -293,7 +293,7 @@ hype,Hype,Ажиотаж,Battage publicitaire,Hype,Bombo publicitario,Montatura 
 netprofit,Net profit,Чистая прибыль,Bénéfice net,Reingewinn,Beneficio neto,Profitto netto
 allsales,All sales,Все продажи,Toutes les ventes,Alle Verkäufe,Todas las ventas,Tutte le vendite
 profit,Profit,Прибыль,Profit,Profitieren,Ganancia,Profitto
-reviews,Reviews,Отзывы,Commentaires,Bewertungen,Reseñas,Recensioni
+reviews,Reviews,Обзоры,Commentaires,Bewertungen,Reseñas,Recensioni
 marketing,Marketing,Маркетинг,Commercialisation,Marketing,Marketing,Marketing
 marketingText,"Be careful, for each game you can run an advertising campaign only once every three months.","Будьте осторожны, для каждой игры вы можете проводить рекламную кампанию только раз в три месяца.","Soyez prudent, pour chaque jeu, vous ne pouvez mener une campagne publicitaire une seule fois tous les trois mois.","Seien Sie vorsichtig, für jedes Spiel können Sie eine Werbekampagne nur einmal alle drei Monate durchführen.","Tenga cuidado, para cada juego puede ejecutar una campaña publicitaria solo una vez cada tres meses.","Fai attenzione, per ogni gioco puoi eseguire una campagna pubblicitaria solo una volta ogni tre mesi."
 marketing.0,Forums,Форумы,Forums,Foren,Foros,Forum
@@ -313,3 +313,11 @@ big,Big,Большое,Grand,Groß,Grande,Grande
 chooseGame,Choose game ,Выберите игру,Choisir le jeu,Wählen Sie Spiel,Elige el juego,Scegli il gioco
 updating,Updating,Обновление,Mise à jour,Aktualisierung,Actualización,In aggiornamento
 gamenotselected,Game not selected,Игра не выбрана,Jeu non sélectionné,Spiel nicht ausgewählt,Juego no seleccionado,Gioco non selezionato
+from,From,От,Depuis,Aus,De,Da
+to,To,К,Pour,Zu,A,A
+mailTheme.0,Too many bugs in game,Слишком много ошибок в игре,Trop de bugs dans le jeu,Zu viele Fehler im Spiel,Demasiados errores en el juego,Troppi bug nel gioco
+mailTheme.1,Engine license bought,Лицензия на двигатель куплена,Licence moteur achetée,Motorlizenz gekauft,Licencia de motor comprada,Acquistata la patente del motore
+mailTheme.2,Platform license bought,Лицензия на платформу куплена,Licence de plate-forme achetée,Plattformlizenz gekauft,Licencia de plataforma comprada,Licenza della piattaforma acquistata
+mailTheme.3,Employee hired,Сотрудник нанят,Employé embauché,Mitarbeiter eingestellt,Empleado contratado,Dipendente assunto
+mailTheme.4,Employee fired,Сотрудник уволен,Employé licencié,Mitarbeiter entlassen,Empleado despedido,Dipendente licenziato
+mailTheme.5,Monthly budget report,Ежемесячный бюджетный отчет,Rapport de budget mensuel,Monatlicher Budgetbericht,Informe de presupuesto mensual,Rapporto di budget mensile

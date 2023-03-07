@@ -30,6 +30,8 @@ public class Game : GameProject
 
     public float interest = 1f; // decreasing every sale day
 
+    public bool bugMailSended;
+
     public override void Done()
     {
         base.Done();

@@ -8,7 +8,8 @@ public class Main : MonoBehaviour
 
     [field: SerializeField] public long money { get; private set; }
     
-    private long monthBalance;
+    private long monthInocme;
+    private long monthExpenses;
 
     private void Awake()
     {
@@ -24,20 +25,22 @@ public class Main : MonoBehaviour
     public void AddMoney(int money)
     {
         this.money += money;
-        monthBalance += money;
+        monthInocme += money;
         MainUI.instance.ChangeMoneyText();
     }
 
     public void MinusMoney(int money)
     {
         this.money -= money;
-        monthBalance -= money;
+        monthExpenses += money;
         MainUI.instance.ChangeMoneyText();
     }
 
     private void MonthPassed()
     {
-        MainUI.instance.ChangeMoneyTriangle(monthBalance >= 0);
-        monthBalance = 0;
+        MailManager.instance.NewMail(new MonthBalanceMail("OnAccService", monthInocme, monthExpenses));
+        MainUI.instance.ChangeMoneyTriangle(monthInocme >= monthExpenses);
+        monthInocme = 0;
+        monthExpenses = 0;
     }
 }

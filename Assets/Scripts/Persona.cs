@@ -14,13 +14,13 @@ public class Persona
 
     [field: SerializeField] public int modelId { get; private set; }
 
-    [field: SerializeField] public int id { get; private set; }
+    [field: SerializeField] public bool startWorker { get; private set; }
 
     public Table table;
 
-    public Persona(int id)
+    public Persona(bool startWorker)
     {
-        this.id = id;
+        this.startWorker = startWorker;
         RandomPersona(Constans.minSkill, Constans.minSalary);
     }
 

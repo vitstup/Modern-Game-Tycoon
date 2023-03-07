@@ -3,29 +3,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mail 
+[Serializable]
+public abstract class Mail 
 {
     [field: SerializeField] public string adress { get; private set; }
     [field: SerializeField] public string sender { get; private set; }
-    [field: SerializeField] public string theme { get; private set; }
 
 
-    [field: SerializeField] public int day { get; private set; }
-    [field: SerializeField] public int month { get; private set; }
-    [field: SerializeField] public int year { get; private set; }
+    [SerializeField] private int day;
+    [SerializeField] private int month;
+    [SerializeField] private int year;
+
+    public bool wasOpened; // was mail opened at least one time
+    public bool isFavourite;
 
 
-    public Mail(string sender, int day, int month, int year)
+    public Mail(string sender)
     {
         this.sender = sender;
 
-        this.day = day;
-        this.month = month;
-        this.year = year;
+        day = TimeManager.instance.day + 1;
+        month = TimeManager.instance.month + 1;
+        year = TimeManager.instance.year;
 
         adress = RandomString("qrstuvwxyzGhZHTDGSJ", UnityEngine.Random.Range(7, 10));
     }
-
 
     // adress
     private static System.Random ran = new System.Random();
@@ -40,8 +42,15 @@ public class Mail
     }
     // adress end
 
-    public virtual string GetMessage()
+    public abstract string GetMessage(int localization);
+
+    public abstract string GetTheme();
+
+    public string GetDate()
     {
-        return "";
+        string result = day >= 10 ? day + "." : "0" + day + ".";
+        result += month >= 10 ? month + "." : "0" + month + ".";
+        result += year.ToString();
+        return result;
     }
 }

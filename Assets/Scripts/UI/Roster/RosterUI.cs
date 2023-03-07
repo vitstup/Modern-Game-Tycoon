@@ -45,18 +45,24 @@ public class RosterUI : MonoBehaviour
     [SerializeField] private Transform PanelsTransform;
 
 
+    [SerializeField] private PersonaPanelScript personaPanelPrefab;
+    [SerializeField] private Transform content;
+
+
     private void Awake() => instance = this;
 
     private void Start()
     {
-        FindPersonaPanels();
+        InitializePersonaPanels();
     }
 
-    private void FindPersonaPanels()
+    private void InitializePersonaPanels()
     {
-        personaPanels = RosterCanvas.GetComponentsInChildren<PersonaPanelScript>();
-        if (personaPanels == null || personaPanels.Length == 0) Debug.LogError("Persona panels not found");
-        else if (personaPanels.Length < 50) Debug.LogWarning("Low amount of Persona panels, please add more");
+        personaPanels = new PersonaPanelScript[Constans.maxWorkers];
+        for (int i = 0; i < personaPanels.Length; i++)
+        {
+            personaPanels[i] = Instantiate(personaPanelPrefab, content);
+        }
     }
 
     public void OpenHirePersonal()

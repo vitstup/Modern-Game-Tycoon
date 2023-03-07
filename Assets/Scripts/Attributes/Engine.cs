@@ -20,6 +20,7 @@ public class Engine
         {
             Main.instance.MinusMoney(info.licensePrice);
             boughted = true;
+            MailManager.instance.NewMail(new EngineBoughtedMail(info.company.name, this));
         }
         else Debug.LogWarning("Trying to buy already boughted engine");
     }

@@ -56,7 +56,7 @@ public static class Sales
             float sales = auditory * 10000f * (1f + game.hype) * game.interest;
 
             sales *= Random.Range(0.9f, 1.1f);
-            if (sales < 1) sales = 1;
+            if (sales < 1 && game.interest > 0.5f) sales = 1;
 
             float price = game.publisher != null ? game.publisher.GetPayment(game.size) : game.price;
             float profit = sales * price * (1f - game.engine.info.commision) * (1f - game.platforms[i].info.commision);
@@ -79,5 +79,20 @@ public static class Sales
         if (game.firstDayProfit == 0) game.firstDayProfit = game.todayProfit; 
 
         Main.instance.AddMoney(game.todayProfit);
+
+        if (!game.bugMailSended) TryToSendBugsMail(game);
+    }
+
+    private static void TryToSendBugsMail(Game game)
+    {
+        float bugs = game.bugs / Constans.sizesScale[game.size];
+        if (bugs > 50)
+        {
+            if (Random.Range(0, 100) < bugs - 50)
+            {
+                string sender = Localization.Localize("maleName.") + Random.Range(0, Constans.maleNamesLength);
+                MailManager.instance.NewMail(new BugsMail(sender, game));
+            }
+        }
     }
 }

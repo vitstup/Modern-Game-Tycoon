@@ -1,13 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class RosterManager : MonoBehaviour
 {
     public static RosterManager instance;
-
-    private int currentId = 0;
 
     [field: SerializeField] public List<Persona> availableWorkers { get; private set; } = new List<Persona>();
     [field: SerializeField] public List<Persona> hiredWorkers { get; private set; } = new List<Persona>();
@@ -35,20 +32,23 @@ public class RosterManager : MonoBehaviour
 
     private Persona Worker()
     {
-        currentId++;
-        return new Persona(currentId);
+        return new Persona(false);
     }
 
     public void HireWorker(Persona persona)
     {
+        if (hiredWorkers.Count >= Constans.maxWorkers) return;
         hiredWorkers.Add(persona);
         availableWorkers.Remove(persona);
+        MailManager.instance.NewMail(new WorkerHiredMail(persona.personaName, persona));
     }
 
     public void FireWorker(Persona persona)
     {
-        persona.table.DeAssignedWorker();
+        if (persona.startWorker) return;
+        if (persona.table != null) persona.table.DeAssignedWorker();
         hiredWorkers.Remove(persona);
+        MailManager.instance.NewMail(new WorkerFiredMail(persona.personaName, persona));
     }
 
     public void AssignWorker(Persona persona)
