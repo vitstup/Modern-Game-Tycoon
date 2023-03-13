@@ -1,15 +1,20 @@
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Events;
+
 public static class Localization
 {
+    public static UnityEvent LanguageChangedEvent = new UnityEvent();
+
     private static Dictionary<string, string[]> dictionary = new Dictionary<string, string[]>();
 
     public static string Localize(string key)
     {
         if(dictionary.Count == 0) Read();
         if (!dictionary.ContainsKey(key)) Debug.LogError("There is no such key " + key);
-        return dictionary[key][0]; // change zero to language id
+        int localizationId = PlayerPrefs.GetInt("Language");
+        return dictionary[key][localizationId];
     }
 
     private static void Read()
@@ -48,5 +53,10 @@ public static class Localization
         }
         values.Add(value.ToString());
         return values;
+    }
+
+    public static void LanguageChanged()
+    {
+        LanguageChangedEvent?.Invoke();
     }
 }

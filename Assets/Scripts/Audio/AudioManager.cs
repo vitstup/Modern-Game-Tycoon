@@ -45,9 +45,13 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void SetSound(float volume)
+    public void SetMusic(float volume)
     {
         musicSource.volume = volume;
+    }
+
+    public void SetSfx(float volume)
+    {
         buttonSource.volume = volume;
         signingSource.volume = volume;
         typingSource.volume = volume;

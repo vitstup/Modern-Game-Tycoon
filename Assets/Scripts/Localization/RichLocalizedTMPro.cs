@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(TextMeshProUGUI))]
 public class RichLocalizedTMPro : LocalizedTMPro
 {
     private enum State

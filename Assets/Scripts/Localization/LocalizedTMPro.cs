@@ -6,9 +6,13 @@ using TMPro;
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class LocalizedTMPro : MonoBehaviour
 {
-    // add listening to language change event
     protected TextMeshProUGUI text;
     [SerializeField] protected string Key;
+
+    private void Awake()
+    {
+        Localization.LanguageChangedEvent.AddListener(Localize);
+    }
 
     private void Start()
     {

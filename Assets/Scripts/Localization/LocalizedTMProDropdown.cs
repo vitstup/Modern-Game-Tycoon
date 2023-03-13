@@ -12,6 +12,7 @@ public class LocalizedTMProDropdown : MonoBehaviour
     private void Awake()
     {
         dropdown = GetComponent<TMP_Dropdown>();
+        Localization.LanguageChangedEvent.AddListener(Localize);
     }
 
     private void Start()
