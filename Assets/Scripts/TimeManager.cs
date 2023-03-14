@@ -97,4 +97,9 @@ public class TimeManager : MonoBehaviour
     {
         return (Constans.EndYear - 2000) * 12;
     }
+
+    public void SetYear(int year)
+    {
+        this.year = year;
+    }
 }

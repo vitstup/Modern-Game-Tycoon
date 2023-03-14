@@ -26,6 +26,7 @@ public class Persona
 
     public Persona(string personaName, Skills skills, int salary, int modelId)
     {
+        startWorker = true;
         this.personaName = personaName;
         this.skills = skills;
         this.salary = salary;

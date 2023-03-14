@@ -9,7 +9,7 @@ public class LocalizedTMPro : MonoBehaviour
     protected TextMeshProUGUI text;
     [SerializeField] protected string Key;
 
-    private void Awake()
+    protected void Awake()
     {
         Localization.LanguageChangedEvent.AddListener(Localize);
     }

@@ -43,4 +43,9 @@ public class Main : MonoBehaviour
         monthInocme = 0;
         monthExpenses = 0;
     }
+
+    public void SetSumm(long summ)
+    {
+        money = summ;
+    }
 }

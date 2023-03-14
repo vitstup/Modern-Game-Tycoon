@@ -16,8 +16,9 @@ public class RichLocalizedTMPro : LocalizedTMPro
 
     [SerializeField]private State state;
 
-    protected override void Localize()
+    protected override async void Localize()
     {
+        if (text == null) Awake();  
         StringBuilder sb = new StringBuilder();
         if (state == State.Light) sb.Append("<font-weight=\"300\">");
         else if(state == State.Normal) sb.Append("<font-weight=\"400\">");

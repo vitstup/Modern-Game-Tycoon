@@ -31,6 +31,10 @@ public class WinLoseUI : MonoBehaviour
         eventsCanvas.SetActive(true);
         TimeManager.instance.NecessaryPause(true);
 
+        if (state == State.warning) SetWarningInfo();
+        else if (state == State.lose) SetLoseInfo();
+        else if (state == State.win) SetWinInfo();
+
         this.state = state;
     }
 

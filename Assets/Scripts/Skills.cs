@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 [System.Serializable]
@@ -37,6 +38,24 @@ public class Skills
     public Skills(int minSkill)
     {
         RandomSkills(minSkill);
+        setMainSkill();
+    }
+
+    public Skills(int mainSkill, int minSkill)
+    {
+        programming = minSkill;
+        gameDesign = minSkill;
+        artDesign = minSkill;
+        soundDesign = minSkill;
+        screenwriting = minSkill;
+        switch (mainSkill)
+        {
+            case 0: programming = 60; break;
+            case 1: gameDesign = 60; break;
+            case 2: artDesign = 60; break;
+            case 3: soundDesign = 60; break;
+            case 4: screenwriting = 60; break;
+        }
         setMainSkill();
     }
 

@@ -1,10 +1,14 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SettingsScript : MonoBehaviour
 {
-    [SerializeField] private GameObject settingsCanvas;
+    public static SettingsScript instance;
+
+
+    [field: SerializeField] public Canvas settingsCanvas { get; private set; }
     private Camera mainCamera;
     private Resolution[] resolutions;
     private string[] textlanguageNames = new string[] { "English", "Русский", "Fran?ais", "Deutsch", "Espa?ol", "Italiano" };
@@ -17,6 +21,8 @@ public class SettingsScript : MonoBehaviour
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
 
+    [field: SerializeField] public Button clsBtn { get; private set; }
+
     private int baseBg;
     private int baseLang;
     private int baseRes;
@@ -25,6 +31,9 @@ public class SettingsScript : MonoBehaviour
 
     private void Awake()
     {
+        if (instance == null) { instance = this; DontDestroyOnLoad(gameObject); }
+        else Destroy(gameObject);
+
         mainCamera = Camera.main;
         resolutions = Screen.resolutions;
         if (!PlayerPrefs.HasKey("Background")) PlayerPrefs.SetInt("Background", 0);
@@ -32,6 +41,8 @@ public class SettingsScript : MonoBehaviour
         if (!PlayerPrefs.HasKey("Resolutuion")) PlayerPrefs.SetInt("Resolutuion", resolutions.Length - 1);
         if (!PlayerPrefs.HasKey("MusicVolume")) PlayerPrefs.SetFloat("MusicVolume", 0.5f);
         if (!PlayerPrefs.HasKey("SfxVolume")) PlayerPrefs.SetFloat("SfxVolume", 0.5f);
+
+        SetRenderCamera();
     }
 
     private void Start()
@@ -132,7 +143,7 @@ public class SettingsScript : MonoBehaviour
 
     public void OpenSettings()
     {
-        settingsCanvas.SetActive(true);
+        settingsCanvas.gameObject.SetActive(true);
         ChangeTexts();
         baseBg = PlayerPrefs.GetInt("Background");
         baseLang = PlayerPrefs.GetInt("Language");
@@ -143,6 +154,7 @@ public class SettingsScript : MonoBehaviour
 
     public void Revert()
     {
+        settingsCanvas.gameObject.SetActive(false);
         PlayerPrefs.SetInt("Background", baseBg);
         PlayerPrefs.SetInt("Language", baseLang);
         PlayerPrefs.SetInt("Resolutuion", baseRes);
@@ -159,14 +171,21 @@ public class SettingsScript : MonoBehaviour
     public void Apply()
     {
         ApplyResolution();
-        settingsCanvas.SetActive(false);
+        settingsCanvas.gameObject.SetActive(false);
     }
 
     private void OnLevelWasLoaded(int level)
     {
         Debug.Log("Level loaded");
+        mainCamera = Camera.main;
+        SetRenderCamera();
         ApplyBackground();
-        settingsCanvas.SetActive(false);
     }
 
+    private void SetRenderCamera()
+    {
+        int level = SceneManager.GetActiveScene().buildIndex;
+        if (level != 2) settingsCanvas.worldCamera = mainCamera;
+        else settingsCanvas.worldCamera = mainCamera.transform.GetChild(0).GetComponent<Camera>();
+    }
 }

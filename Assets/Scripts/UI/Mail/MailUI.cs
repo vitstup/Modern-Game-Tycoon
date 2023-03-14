@@ -50,10 +50,10 @@ public class MailUI : MonoBehaviour
     {
         mailPanel.SetActive(true);
         senderText.text = mail.sender;
-        companyText.text = ""; // change to companyName
+        companyText.text = CompanyStats.instance.companyName; 
         themeText.text = mail.GetTheme();
         dateText.text = mail.GetDate();
-        mailText.text = mail.GetMessage(0); // change "0" to current language
+        mailText.text = mail.GetMessage(PlayerPrefs.GetInt("Language"));
 
         adressText.text = GetMailAdress(mail);
     }
@@ -80,7 +80,7 @@ public class MailUI : MonoBehaviour
 
     private string GetBaseAdress()
     {
-        return "https://<color=#FFFFFF>mail.com<color=#98A2A1>/"; // add company name
+        return "https://<color=#FFFFFF>mail.com<color=#98A2A1>/" + CompanyStats.instance.companyName;
     }
 
     private string GetMailAdress(Mail mail)

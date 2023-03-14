@@ -16,6 +16,7 @@ public class PersonaModel : MonoBehaviour
 
     private void Start()
     {
+        if (ProjectManager.instance == null) { SetAnimation(true); Debug.Log("Model not in main scene"); return; }
         if (ProjectManager.instance.project != null) SetAnimation(true);
     }
 
