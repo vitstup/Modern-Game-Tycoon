@@ -587,17 +587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5efb4bb1234a6874b942654b9c62c128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &128819168 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7886034542719111856, guid: 6de1789a1caffd24f8b9ee762eb97676, type: 3}
-  m_PrefabInstance: {fileID: 1556835826}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52ad27fe0e1609048916d28164874e2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &227266602
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,9 +2688,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 128819168}
-        m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
-        m_MethodName: OpenSettings
+      - m_Target: {fileID: 1812209262}
+        m_TargetAssemblyTypeName: MainMenuScript, Assembly-CSharp
+        m_MethodName: Settings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

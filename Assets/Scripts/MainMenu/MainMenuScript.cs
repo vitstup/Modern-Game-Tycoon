@@ -12,6 +12,11 @@ public class MainMenuScript : MonoBehaviour
         versionText.text = Application.version;
     }
     
+    public void Settings()
+    {
+        SettingsScript.instance.OpenSettings();
+    }
+
     public void Exit()
     {
         Application.Quit();

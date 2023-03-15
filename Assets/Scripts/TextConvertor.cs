@@ -17,8 +17,8 @@ public static class TextConvertor
         long module = Math.Abs(summ);
 
         int billiards = (int)(module / 1000000000);
-        int millions = (int)((module - billiards) / 1000000);
-        int thousands = (int)((module - billiards - millions) / 1000);
+        int millions = (int)(module / 1000000 % 1000);
+        int thousands = (int)(module / 1000 % 1000);
         int units = (int)(module % 1000);
 
         if (billiards > 0) return billiards + "." + GetFirstLetter(millions) + "B";

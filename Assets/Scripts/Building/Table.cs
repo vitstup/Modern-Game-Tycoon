@@ -26,6 +26,9 @@ public class Table : Building
         assignText = assignBtn.gameObject.GetComponentInChildren<TextMeshProUGUI>(true);
         model = GetComponentInChildren<PersonaModel>();
 
+        assignText.text = Localization.Localize("assign");
+        UpdatePcModel();
+
         if (pcModels.Length != ComputerManager.instance.computers.Length) Debug.LogError("Something wrong with pc models");
     }
 

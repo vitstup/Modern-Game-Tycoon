@@ -16,7 +16,7 @@ public class RichLocalizedTMPro : LocalizedTMPro
 
     [SerializeField]private State state;
 
-    protected override async void Localize()
+    protected override void Localize()
     {
         if (text == null) Awake();  
         StringBuilder sb = new StringBuilder();

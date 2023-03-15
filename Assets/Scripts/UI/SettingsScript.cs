@@ -11,7 +11,7 @@ public class SettingsScript : MonoBehaviour
     [field: SerializeField] public Canvas settingsCanvas { get; private set; }
     private Camera mainCamera;
     private Resolution[] resolutions;
-    private string[] textlanguageNames = new string[] { "English", "Русский", "Fran?ais", "Deutsch", "Espa?ol", "Italiano" };
+    private string[] textlanguageNames = new string[] { "English", "Русский", "Franqais", "Deutsch", "Espanol", "Italiano" };
     [SerializeField] private Color[] bgColors;
 
     [SerializeField] TextMeshProUGUI backgroundText;

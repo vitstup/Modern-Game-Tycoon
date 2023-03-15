@@ -59,6 +59,6 @@ public class AudioManager : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        // PlayTyping(false); if level not main
+        PlayTyping(false);
     }
 }

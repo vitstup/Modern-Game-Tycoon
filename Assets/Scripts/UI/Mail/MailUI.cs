@@ -80,7 +80,7 @@ public class MailUI : MonoBehaviour
 
     private string GetBaseAdress()
     {
-        return "https://<color=#FFFFFF>mail.com<color=#98A2A1>/" + CompanyStats.instance.companyName;
+        return "https://<color=#FFFFFF>mail.com<color=#98A2A1>/" + CompanyStats.instance.companyName + "/";
     }
 
     private string GetMailAdress(Mail mail)

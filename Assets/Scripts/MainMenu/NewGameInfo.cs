@@ -20,8 +20,8 @@ public class NewGameInfo : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
-        DontDestroyOnLoad(gameObject);
+        if (instance == null) { instance = this; DontDestroyOnLoad(gameObject); }
+        else Destroy(gameObject);
     }
 
     private void OnLevelWasLoaded(int level)
@@ -34,7 +34,6 @@ public class NewGameInfo : MonoBehaviour
     {
         CompanyStats.instance.SetCompanyName(companyName);
         TimeManager.instance.SetYear(year);
-        Main.instance.SetSumm(money);
 
         Skills skills = new Skills(personaType, Constans.minSkill);
 
@@ -45,9 +44,12 @@ public class NewGameInfo : MonoBehaviour
         BuildingManager.instance.AutoFurniture(false);
 
         var tables = FindObjectsOfType<Table>();
-        if (tables == null || tables.Length == 0 || tables.Length > 1) Debug.Log("something wrong with start table");
+        if (tables == null || tables.Length == 0 || tables.Length > 1) Debug.LogError("something wrong with start table");
+        tables[0].UpgradePc();
         RosterManager.instance.selectedTable = tables[0];
         RosterManager.instance.AssignWorker(persona);
+
+        Main.instance.SetSumm(money);
     }
 
     private void ResetInfo()

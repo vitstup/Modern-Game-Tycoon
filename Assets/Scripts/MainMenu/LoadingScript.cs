@@ -15,7 +15,7 @@ public class LoadingScript : MonoBehaviour
 
     public void LoadScene(int id)
     {
-        operation = SceneManager.LoadSceneAsync(id);
+        operation = SceneManager.LoadSceneAsync(id, LoadSceneMode.Single);
         loadingPanel.SetActive(true);
     }
 
