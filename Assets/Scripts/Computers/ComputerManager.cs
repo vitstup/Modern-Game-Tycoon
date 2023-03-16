@@ -24,7 +24,7 @@ public class ComputerManager : MonoBehaviour
         return 0;
     }
 
-    private void CheckForPcUpdates()
+    public void CheckForPcUpdates()
     {
         int modernPc = GetModernPcId();
         var buildings = BuildingManager.instance.buildings;

@@ -19,7 +19,9 @@ public class BuildingManager : MonoBehaviour
     [field: SerializeField] public Transform itemsParent { get; private set; }
 
     [HideInInspector] public float happiness = 1f;
-    [HideInInspector] public List<Building> buildings { get; private set; } = new List<Building>();
+    [HideInInspector] public List<Building> buildings = new List<Building>();
+
+    [HideInInspector] public int currentId; // use this to add id's to buildings
 
     private void Awake()
     {
@@ -107,4 +109,8 @@ public class BuildingManager : MonoBehaviour
         }
     }
 
+    public void InvokeBuilded() // this method only used after loading save file
+    {
+        buildingSomething.Invoke(false);
+    }
 }

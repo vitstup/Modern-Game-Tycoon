@@ -22569,6 +22569,8 @@ GameObject:
   - component: {fileID: 628616384}
   - component: {fileID: 628616386}
   - component: {fileID: 628616385}
+  - component: {fileID: 628616388}
+  - component: {fileID: 628616387}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -22637,6 +22639,8 @@ MonoBehaviour:
   interactedThisUpdate: 0
   <itemsParent>k__BackingField: {fileID: 1520104571}
   happiness: 0
+  buildings: []
+  currentId: 0
 --- !u!114 &628616373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23008,6 +23012,653 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09b2f523174b44643929335d11bca25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &628616387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628616368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FieldsEnable:
+    Version: 2
+    PathsEnabled:
+    - TimeManager/day
+    - TimeManager/month
+    - TimeManager/year
+    - Main/money
+    - Main/monthInocme
+    - Main/monthExpenses
+    - SaveAdapter/availableWorkers
+    - SaveAdapter/hiredWorkers
+    - BuildingManager/happiness
+    - BuildingManager/currentId
+    - CompanyStats/companyName
+    - GameEvents/warningInvoked
+    - GameEvents/loseInvoked
+    - GameEvents/winInvoked
+    - OfficeManager/currentOffice
+    - SaveAdapter/officeStates
+    - MailManager/mails
+    - PublishersManager/publishers
+    - SaveAdapter/platfromsBoughtStatuses
+    - SaveAdapter/enginesBoughtStatuses
+    - SaveAdapter/stage/workloadDone
+    - SaveAdapter/stage/workload
+    - SaveAdapter/stage
+    - SaveAdapter/rev/positive
+    - SaveAdapter/rev/negative
+    - SaveAdapter/rev
+    - SaveAdapter/games
+    ModificationVersion: 234
+    ComponentsEnabled: []
+    HashFieldsEnabled: []
+    ObjectsEnabled: 
+    HashSetFieldsEnabled:
+      m_buckets: 0000000011000000000000000000000000000000000000000000000000000000000000000900000000000000000000000000000000000000000000000b000000010000000f000000000000001b000000000000000000000000000000000000000000000004000000000000001400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017000000000000000000000000000000120000000000000000000000000000000d00000000000000190000001500000000000000000000000000000000000000000000000000000000000000000000000000000000000000030000000e00000000000000000000000000000000000000160000000000000000000000000000000700000000000000000000000c00000002000000000000001a00000013000000000000000000000010000000000000000000000000000000000000000000000000000000
+      m_slots:
+      - hashCode: 576204528
+        next: -1
+        value:
+          HashCodePath: -608664116
+          HashCodeMember: 858769264
+      - hashCode: 1834966476
+        next: -1
+        value:
+          HashCodePath: -608664116
+          HashCodeMember: 2117531212
+      - hashCode: 689578559
+        next: -1
+        value:
+          HashCodePath: -608664116
+          HashCodeMember: -1175340353
+      - hashCode: 1291229736
+        next: -1
+        value:
+          HashCodePath: -1262636637
+          HashCodeMember: 1506361928
+      - hashCode: 342215339
+        next: -1
+        value:
+          HashCodePath: -1262636637
+          HashCodeMember: 557347531
+      - hashCode: 912221037
+        next: -1
+        value:
+          HashCodePath: -1262636637
+          HashCodeMember: -1020130419
+      - hashCode: 2047097616
+        next: -1
+        value:
+          HashCodePath: 981292978
+          HashCodeMember: -132890672
+      - hashCode: 587643911
+        next: 5
+        value:
+          HashCodePath: 981292978
+          HashCodeMember: 555139271
+      - hashCode: 313784461
+        next: -1
+        value:
+          HashCodePath: -57309349
+          HashCodeMember: 1762311597
+      - hashCode: 1456314284
+        next: -1
+        value:
+          HashCodePath: -57309349
+          HashCodeMember: 757357772
+      - hashCode: 1249664
+        next: 4
+        value:
+          HashCodePath: 309562526
+          HashCodeMember: 1872919232
+      - hashCode: 666117460
+        next: 9
+        value:
+          HashCodePath: -1263631855
+          HashCodeMember: -528681804
+      - hashCode: 475697661
+        next: -1
+        value:
+          HashCodePath: -1263631855
+          HashCodeMember: -719101603
+      - hashCode: 1132309772
+        next: -1
+        value:
+          HashCodePath: -1263631855
+          HashCodeMember: -62489492
+      - hashCode: 1634932331
+        next: -1
+        value:
+          HashCodePath: 1310454535
+          HashCodeMember: -71399413
+      - hashCode: 1642295366
+        next: -1
+        value:
+          HashCodePath: 981292978
+          HashCodeMember: 1609790726
+      - hashCode: 35162032
+        next: -1
+        value:
+          HashCodePath: 1783488082
+          HashCodeMember: -256071568
+      - hashCode: 1039734089
+        next: -1
+        value:
+          HashCodePath: 1238717174
+          HashCodeMember: -1673365623
+      - hashCode: 387592231
+        next: -1
+        value:
+          HashCodePath: 981292978
+          HashCodeMember: 355087591
+      - hashCode: 2053000496
+        next: -1
+        value:
+          HashCodePath: 981292978
+          HashCodeMember: -126987792
+      - hashCode: 507749323
+        next: 7
+        value:
+          HashCodePath: -845141802
+          HashCodeMember: -1678501365
+      - hashCode: 826130197
+        next: -1
+        value:
+          HashCodePath: -845141802
+          HashCodeMember: 787363157
+      - hashCode: 1302341846
+        next: -1
+        value:
+          HashCodePath: 981292978
+          HashCodeMember: 1269837206
+      - hashCode: 1100192535
+        next: -1
+        value:
+          HashCodePath: 902408725
+          HashCodeMember: 1785548791
+      - hashCode: 584084355
+        next: -1
+        value:
+          HashCodePath: 902408725
+          HashCodeMember: 1269440611
+      - hashCode: 902408725
+        next: 23
+        value:
+          HashCodePath: 981292978
+          HashCodeMember: -1277579563
+      - hashCode: 359886827
+        next: -1
+        value:
+          HashCodePath: 981292978
+          HashCodeMember: 327382187
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      m_count: 27
+      m_lastIndex: 27
+      m_freeList: -1
+      m_version: 3376
+    HashSetObjectsEnabled:
+      m_buckets: 0100000000000000090000000b00000000000000000000000500000000000000000000000000000000000000080000000000000000000000000000000a00000006000000
+      m_slots:
+      - hashCode: 1538819532
+        next: -1
+        value: -608664116
+      - hashCode: 884847011
+        next: -1
+        value: -1262636637
+      - hashCode: 981292978
+        next: -1
+        value: 981292978
+      - hashCode: 2090174299
+        next: 2
+        value: -57309349
+      - hashCode: 309562526
+        next: 3
+        value: 309562526
+      - hashCode: 883851793
+        next: -1
+        value: -1263631855
+      - hashCode: 1310454535
+        next: -1
+        value: 1310454535
+      - hashCode: 1783488082
+        next: -1
+        value: 1783488082
+      - hashCode: 1238717174
+        next: -1
+        value: 1238717174
+      - hashCode: 1302341846
+        next: 6
+        value: -845141802
+      - hashCode: 902408725
+        next: 1
+        value: 902408725
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      m_count: 11
+      m_lastIndex: 11
+      m_freeList: -1
+      m_version: 1587
+    HashSetComponentsEnabled:
+      m_buckets: 0100000000000000090000000200000000000000030000000500000000000000000000000000000000000000080000000000000000000000000000000700000006000000
+      m_slots:
+      - hashCode: 1538819532
+        next: -1
+        value: TimeManager
+      - hashCode: 884847011
+        next: -1
+        value: Main
+      - hashCode: 1190122201
+        next: -1
+        value: SaveLoad.SaveAdapter
+      - hashCode: 2090174299
+        next: -1
+        value: BuildingManager
+      - hashCode: 309562526
+        next: 3
+        value: CompanyStats
+      - hashCode: 883851793
+        next: -1
+        value: GameEvents
+      - hashCode: 1310454535
+        next: -1
+        value: OfficeManager
+      - hashCode: 1783488082
+        next: -1
+        value: MailManager
+      - hashCode: 1238717174
+        next: -1
+        value: PublishersManager
+      - hashCode: 0
+        next: 0
+        value: 
+      - hashCode: 0
+        next: 0
+        value: 
+      - hashCode: 0
+        next: 0
+        value: 
+      - hashCode: 0
+        next: 0
+        value: 
+      - hashCode: 0
+        next: 0
+        value: 
+      - hashCode: 0
+        next: 0
+        value: 
+      - hashCode: 0
+        next: 0
+        value: 
+      - hashCode: 0
+        next: 0
+        value: 
+      m_count: 9
+      m_lastIndex: 9
+      m_freeList: -1
+      m_version: 1517
+    AreValidSavedHashs: 1
+  Position: 0
+  Rotation: 0
+  Scale: 0
+  Name: 0
+  Tag: 0
+  Active: 0
+  Static: 0
+  Layer: 0
+  GAMEOBJECT_STATIC_ID: 0
+  GAMEOBJECT_PATH: 
+  Private_prefabId: 717341699
+  PrefabSetTime: 1678901869
+  CreateInRuntime: 0
+  onLoad: 3
+--- !u!114 &628616388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628616368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 376066199802cc6498bd6462e9b62885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableWorkers: []
+  hiredWorkers: []
+  officeStates: 
+  platfromsBoughtStatuses: 
+  enginesBoughtStatuses: 
+  games: []
 --- !u!1 &639731615
 GameObject:
   m_ObjectHideFlags: 0
@@ -28011,6 +28662,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767022838}
   m_CullTransparentMesh: 1
+--- !u!1 &770699593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770699595}
+  - component: {fileID: 770699594}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &770699594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770699593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 562379847, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLoaded: 0
+  isSaved: 0
+  saveIsEasyConfig:
+    PasswordKey: 
+    PasswordKey16Bytes: 
+  Config:
+    FileName: DefaultLevelName
+    autoSaving: 0
+    autoLoadOnPlay: 0
+    onExitSave: 0
+    duplicateSaveFile: 0
+    exclusiveFiles: 0
+    encrypt: 0
+    autoSavingRunInThread: 0
+    autoSavingInterval: 300
+    currentTimeToSave: 0
+    encryptionConfig: 0
+  Load_Prefabs:
+  - {fileID: 114722586552158970, guid: c3e13744cd05ba44f804034e9cde30da, type: 3}
+  - {fileID: 114232354994320794, guid: 9d3e55a541d678e45932325c90a1a94b, type: 3}
+  - {fileID: -1992582386684936443, guid: 7b62af0123f470141b5ea525367bd3ca, type: 3}
+  - {fileID: 5785382097832299648, guid: 92bc6c9a74448e342acd3ccb948ad1a2, type: 3}
+  - {fileID: -332995236585131242, guid: 6e30123f80777bb40af1e2c9ccc507a8, type: 3}
+  - {fileID: -4137983131035196084, guid: 72a57d45a911692459e2e14574775c56, type: 3}
+  - {fileID: 2096989291989191575, guid: 37fa7e0987886404288033421b0c75c9, type: 3}
+  - {fileID: -511717821117709678, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
+  - {fileID: 6463477904166566066, guid: d3b29ae6974fb074fb7d08791f97087f, type: 3}
+  - {fileID: 3279103866437323549, guid: c83b3e017c336474cb6d8b9151acdc10, type: 3}
+  - {fileID: 6824808829932926483, guid: d899fa4c912e1094e83bd76e4b3786f9, type: 3}
+  - {fileID: -7960220558870249156, guid: 181a41b0e0d8e9e43b08e85cf5763970, type: 3}
+  - {fileID: 7227871736702083946, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
+  - {fileID: -3011551913056398453, guid: c8314523a27522d4798efed382da2dbd, type: 3}
+  - {fileID: -5653224845477502724, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
+  - {fileID: 753645115010507469, guid: e406fd7e1de738c45949892cabb4f84c, type: 3}
+  - {fileID: 3325792426805236056, guid: c39e4f2632e23b646b03511c5598851b, type: 3}
+  - {fileID: 7973714039770549676, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
+  - {fileID: -6600888688829709142, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
+  - {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+  - {fileID: 3487409547317153750, guid: f0034f09cb647f64eba378e691e00216, type: 3}
+  - {fileID: -1429707519652774957, guid: 08aef55f7a39d4b4bb660aec7422ddcd, type: 3}
+  - {fileID: 4094128973738170571, guid: 472110bd0884a4e4880ea3528e13d65d, type: 3}
+  - {fileID: 3585208286635727766, guid: 0c3965eafe2cf694fb6e8368c6b6efde, type: 3}
+  - {fileID: -3276247399528717236, guid: db6a2924379b2d544b96061e0cc299ac, type: 3}
+  - {fileID: 5089527923467038804, guid: b4ab655b49ed2334d800cca83d868983, type: 3}
+  - {fileID: -7752360987990788821, guid: c9d063934b8c46f4eb92cd7087522191, type: 3}
+  - {fileID: -5970038128104406757, guid: bfc178fe29e0a994e97e16dcc750cc27, type: 3}
+  - {fileID: 8726835582211378417, guid: 8121694bff5e0f14f910b14bf0977d24, type: 3}
+  - {fileID: 5770123114094172931, guid: 134930d6c660f8842b0068d8c25624cb, type: 3}
+  - {fileID: 4764983253460482431, guid: 5ffee795909feb04a90a767cb97fb30d, type: 3}
+--- !u!4 &770699595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770699593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &775377414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32534,6 +33278,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905332509}
   m_CullTransparentMesh: 1
+--- !u!1 &908703263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908703265}
+  - component: {fileID: 908703264}
+  m_Layer: 0
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &908703264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908703263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f854f3df502f9034ab5f1b3b9ef7bca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Open: 1
+--- !u!4 &908703265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908703263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913496273
 GameObject:
   m_ObjectHideFlags: 0
@@ -48712,6 +49501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1520104571}
+  - component: {fileID: 1520104572}
   m_Layer: 0
   m_Name: ShopItems
   m_TagString: Untagged
@@ -48734,6 +49524,620 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1520104572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520104570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FieldsEnable:
+    Version: 2
+    PathsEnabled:
+    - GameObject/layer
+    - GameObject/isStatic
+    - GameObject/tag
+    - GameObject/name
+    - GameObject/activeSelf
+    - GameObject
+    - Transform/position/x
+    - Transform/position/y
+    - Transform/position/z
+    - Transform/position
+    - Transform/localPosition/x
+    - Transform/localPosition/y
+    - Transform/localPosition/z
+    - Transform/localPosition
+    - Transform/eulerAngles/x
+    - Transform/eulerAngles/y
+    - Transform/eulerAngles/z
+    - Transform/eulerAngles
+    - Transform/localEulerAngles/x
+    - Transform/localEulerAngles/y
+    - Transform/localEulerAngles/z
+    - Transform/localEulerAngles
+    - Transform/right/x
+    - Transform/right/y
+    - Transform/right/z
+    - Transform/right
+    - Transform/up/x
+    - Transform/up/y
+    - Transform/up/z
+    - Transform/up
+    - Transform/forward/x
+    - Transform/forward/y
+    - Transform/forward/z
+    - Transform/forward
+    - Transform/rotation/x
+    - Transform/rotation/y
+    - Transform/rotation/z
+    - Transform/rotation/w
+    - Transform/rotation
+    - Transform/localRotation/x
+    - Transform/localRotation/y
+    - Transform/localRotation/z
+    - Transform/localRotation/w
+    - Transform/localRotation
+    - Transform/rotationOrder/value__
+    - Transform/rotationOrder
+    - Transform/localScale/x
+    - Transform/localScale/y
+    - Transform/localScale/z
+    - Transform/localScale
+    - Transform/parent
+    - Transform/hasChanged
+    - Transform/constrainProportionsScale
+    - Transform
+    ModificationVersion: 5
+    ComponentsEnabled: []
+    HashFieldsEnabled: []
+    ObjectsEnabled: 
+    HashSetFieldsEnabled:
+      m_buckets: 0000000026000000320000001b00000000000000000000001a0000002b00000034000000000000000000000021000000000000002e000000000000001c0000002c000000000000003300000028000000170000000000000007000000000000000000000024000000000000001d00000000000000000000002f0000002d0000001e000000000000000800000000000000000000002500000006000000000000000000000000000000300000002a0000001900000000000000090000000200000000000000000000000a000000000000000000000000000000310000000000000000000000000000000000000035000000000000000000000000000000000000000000000000000000000000000000000036000000000000000000000000000000030000001300000000000000220000001f000000000000000000000000000000000000000000000027000000000000000000000014000000000000000000000020000000
+      m_slots:
+      - hashCode: 1829995467
+        next: -1
+        value:
+          HashCodePath: 991929691
+          HashCodeMember: -1016887061
+      - hashCode: 96753816
+        next: -1
+        value:
+          HashCodePath: 991929691
+          HashCodeMember: 1544838584
+      - hashCode: 844100458
+        next: -1
+        value:
+          HashCodePath: 991929691
+          HashCodeMember: 144701578
+      - hashCode: 1741864205
+        next: -1
+        value:
+          HashCodePath: 991929691
+          HashCodeMember: 1042465325
+      - hashCode: 1189677078
+        next: -1
+        value:
+          HashCodePath: 991929691
+          HashCodeMember: -1657205450
+      - hashCode: 991929691
+        next: -1
+        value:
+          HashCodePath: 0
+          HashCodeMember: 991929691
+      - hashCode: 407537608
+        next: -1
+        value:
+          HashCodePath: -559544797
+          HashCodeMember: -2094178328
+      - hashCode: 407981819
+        next: -1
+        value:
+          HashCodePath: -559544797
+          HashCodeMember: -2093734117
+      - hashCode: 408426030
+        next: -1
+        value:
+          HashCodePath: -559544797
+          HashCodeMember: -2093289906
+      - hashCode: 1587938851
+        next: -1
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -789838941
+      - hashCode: 1411678312
+        next: -1
+        value:
+          HashCodePath: -1346007692
+          HashCodeMember: -2094178328
+      - hashCode: 1412122523
+        next: -1
+        value:
+          HashCodePath: -1346007692
+          HashCodeMember: -2093734117
+      - hashCode: 1412566734
+        next: -1
+        value:
+          HashCodePath: -1346007692
+          HashCodeMember: -2093289906
+      - hashCode: 801475956
+        next: 0
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -1576301836
+      - hashCode: 1920823368
+        next: -1
+        value:
+          HashCodePath: -784908073
+          HashCodeMember: -2094178328
+      - hashCode: 1921267579
+        next: -1
+        value:
+          HashCodePath: -784908073
+          HashCodeMember: -2093734117
+      - hashCode: 1921711790
+        next: -1
+        value:
+          HashCodePath: -784908073
+          HashCodeMember: -2093289906
+      - hashCode: 1362575575
+        next: 3
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -1015202217
+      - hashCode: 875041576
+        next: 13
+        value:
+          HashCodePath: -781611406
+          HashCodeMember: -2094178328
+      - hashCode: 875485787
+        next: -1
+        value:
+          HashCodePath: -781611406
+          HashCodeMember: -2093734117
+      - hashCode: 875929998
+        next: -1
+        value:
+          HashCodePath: -781611406
+          HashCodeMember: -2093289906
+      - hashCode: 1365872242
+        next: -1
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -1011905550
+      - hashCode: 1114592232
+        next: -1
+        value:
+          HashCodePath: -1690467040
+          HashCodeMember: -2094178328
+      - hashCode: 1115036443
+        next: -1
+        value:
+          HashCodePath: -1690467040
+          HashCodeMember: -2093734117
+      - hashCode: 1115480654
+        next: -1
+        value:
+          HashCodePath: -1690467040
+          HashCodeMember: -2093289906
+      - hashCode: 457016608
+        next: 10
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -1920761184
+      - hashCode: 1870784008
+        next: 14
+        value:
+          HashCodePath: -477388915
+          HashCodeMember: -2094178328
+      - hashCode: 1871228219
+        next: 15
+        value:
+          HashCodePath: -477388915
+          HashCodeMember: -2093734117
+      - hashCode: 1871672430
+        next: 16
+        value:
+          HashCodePath: -477388915
+          HashCodeMember: -2093289906
+      - hashCode: 1670094733
+        next: 23
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -707683059
+      - hashCode: 66879304
+        next: -1
+        value:
+          HashCodePath: -1451870609
+          HashCodeMember: -2094178328
+      - hashCode: 67323515
+        next: -1
+        value:
+          HashCodePath: -1451870609
+          HashCodeMember: -2093734117
+      - hashCode: 67767726
+        next: 21
+        value:
+          HashCodePath: -1451870609
+          HashCodeMember: -2093289906
+      - hashCode: 695613039
+        next: -1
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -1682164753
+      - hashCode: 1958172584
+        next: -1
+        value:
+          HashCodePath: -533480314
+          HashCodeMember: -2094178328
+      - hashCode: 1958616795
+        next: -1
+        value:
+          HashCodePath: -533480314
+          HashCodeMember: -2093734117
+      - hashCode: 1959061006
+        next: -1
+        value:
+          HashCodePath: -533480314
+          HashCodeMember: -2093289906
+      - hashCode: 1957728373
+        next: -1
+        value:
+          HashCodePath: -533480314
+          HashCodeMember: -2094622539
+      - hashCode: 1614003334
+        next: 17
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -763774458
+      - hashCode: 814829640
+        next: -1
+        value:
+          HashCodePath: -1319943209
+          HashCodeMember: -2094178328
+      - hashCode: 815273851
+        next: -1
+        value:
+          HashCodePath: -1319943209
+          HashCodeMember: -2093734117
+      - hashCode: 815718062
+        next: -1
+        value:
+          HashCodePath: -1319943209
+          HashCodeMember: -2093289906
+      - hashCode: 814385429
+        next: -1
+        value:
+          HashCodePath: -1319943209
+          HashCodeMember: -2094622539
+      - hashCode: 827540439
+        next: 4
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -1550237353
+      - hashCode: 1279186351
+        next: 40
+        value:
+          HashCodePath: -702128352
+          HashCodeMember: -10968657
+      - hashCode: 1445355296
+        next: 34
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -932422496
+      - hashCode: 1695698696
+        next: 12
+        value:
+          HashCodePath: -1843319115
+          HashCodeMember: -2094178328
+      - hashCode: 1696142907
+        next: -1
+        value:
+          HashCodePath: -1843319115
+          HashCodeMember: -2093734117
+      - hashCode: 1696587118
+        next: -1
+        value:
+          HashCodePath: -1843319115
+          HashCodeMember: -2093289906
+      - hashCode: 304164533
+        next: -1
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -2073613259
+      - hashCode: 1399490486
+        next: 11
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -978287306
+      - hashCode: 1667908958
+        next: 20
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -709868834
+      - hashCode: 805255416
+        next: -1
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -1572522376
+      - hashCode: 289311300
+        next: -1
+        value:
+          HashCodePath: 0
+          HashCodeMember: 289311300
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      m_count: 54
+      m_lastIndex: 54
+      m_freeList: -1
+      m_version: 221
+    HashSetObjectsEnabled:
+      m_buckets: 0600000009000000000000000000000000000000000000000d0000000500000004000000000000000a00000008000000030000000c000000000000000700000000000000
+      m_slots:
+      - hashCode: 991929691
+        next: -1
+        value: 991929691
+      - hashCode: 289311300
+        next: -1
+        value: 289311300
+      - hashCode: 1587938851
+        next: -1
+        value: -559544797
+      - hashCode: 801475956
+        next: -1
+        value: -1346007692
+      - hashCode: 1362575575
+        next: -1
+        value: -784908073
+      - hashCode: 1365872242
+        next: -1
+        value: -781611406
+      - hashCode: 457016608
+        next: -1
+        value: -1690467040
+      - hashCode: 1670094733
+        next: -1
+        value: -477388915
+      - hashCode: 695613039
+        next: -1
+        value: -1451870609
+      - hashCode: 1614003334
+        next: -1
+        value: -533480314
+      - hashCode: 827540439
+        next: 0
+        value: -1319943209
+      - hashCode: 1445355296
+        next: 1
+        value: -702128352
+      - hashCode: 304164533
+        next: 10
+        value: -1843319115
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      m_count: 13
+      m_lastIndex: 13
+      m_freeList: -1
+      m_version: 57
+    HashSetComponentsEnabled:
+      m_buckets: 010000000000000000000000
+      m_slots:
+      - hashCode: 1321165359
+        next: -1
+        value: UnityEngine.Transform
+      - hashCode: 0
+        next: 0
+        value: 
+      - hashCode: 0
+        next: 0
+        value: 
+      m_count: 1
+      m_lastIndex: 1
+      m_freeList: -1
+      m_version: 9
+    AreValidSavedHashs: 1
+  Position: 0
+  Rotation: 0
+  Scale: 0
+  Name: 0
+  Tag: 0
+  Active: 0
+  Static: 0
+  Layer: 0
+  GAMEOBJECT_STATIC_ID: 0
+  GAMEOBJECT_PATH: 
+  Private_prefabId: 1616192196
+  PrefabSetTime: 1678903103
+  CreateInRuntime: 0
+  onLoad: 0
 --- !u!1 &1523295073
 GameObject:
   m_ObjectHideFlags: 0

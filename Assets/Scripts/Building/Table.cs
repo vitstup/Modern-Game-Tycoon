@@ -1,10 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
 public class Table : Building
 {
     private Canvas canvas;
@@ -27,7 +25,6 @@ public class Table : Building
         model = GetComponentInChildren<PersonaModel>();
 
         assignText.text = Localization.Localize("assign");
-        UpdatePcModel();
 
         if (pcModels.Length != ComputerManager.instance.computers.Length) Debug.LogError("Something wrong with pc models");
     }
@@ -109,5 +106,11 @@ public class Table : Building
     public void SetPcBtn(bool show)
     {
         pcBtn.gameObject.SetActive(show);
+    }
+
+    public void AfterLoading() // this method used after save loading 
+    {
+        canvas.transform.rotation = Quaternion.Euler(30f, 45f - transform.rotation.y, 0f);
+        UpdatePcModel();
     }
 }

@@ -52,4 +52,12 @@ public class Statistics : MonoBehaviour
         return gamesWithoutSequel.ToArray();
     }
 
+    public int GetGameId(Game game)
+    {
+        for (int i = 0; i < games.Count; i++)
+        {
+            if (game == games[i]) return i;
+        }
+        throw new System.Exception("There is no such game");
+    }
 }

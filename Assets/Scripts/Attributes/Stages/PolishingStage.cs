@@ -29,4 +29,9 @@ public class PolishingStage : Stage
     {
         throw new System.NotImplementedException();
     }
+    public override StageSlider GetSliders()
+    {
+        throw new System.NotImplementedException();
+    }
+
 }

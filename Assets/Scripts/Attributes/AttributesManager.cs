@@ -60,4 +60,61 @@ public class AttributesManager : MonoBehaviour
         return avaialable.ToArray();
     }
 
+
+    // id methods
+
+    public int GetEngineId(Engine engine)
+    {
+        for (int i = 0; i < engines.Length; i++)
+        {
+            if (engine == engines[i]) return i;
+        }
+        return -1;
+    }
+
+    public int GetGenreId(GenreInfo genre)
+    {
+        for (int i = 0; i < genres.Length; i++)
+        {
+            if (genre == genres[i]) return i;
+        }
+        return -1;
+    }
+
+    public int GetThemeId(ThemeInfo theme)
+    {
+        for (int i = 0; i < themes.Length; i++)
+        {
+            if (theme == themes[i]) return i;
+        }
+        return -1;
+    }
+
+    public int GetFeatureId(FeatureInfo feature)
+    {
+        int othFeatures = 0;
+        for (int i = 0; i < features.Length; i++)
+        {
+            for (int f = 0; f < features[i].features.Length; f++)
+            {
+                if (feature == features[i].features[f]) return othFeatures + f;
+            }
+            othFeatures += features[i].features.Length;
+        }
+        return -1;
+    }
+
+    public FeatureInfo GetFeatureById(int id)
+    {
+        int othFeatures = 0;
+        for (int i = 0; i < features.Length; i++)
+        {
+            if (id < othFeatures + features[i].features.Length)
+            {
+                return features[i].features[id - othFeatures];
+            }
+            othFeatures += features[i].features.Length;
+        }
+        throw new System.Exception("There is no such id");
+    }
 }

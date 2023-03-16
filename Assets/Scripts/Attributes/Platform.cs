@@ -41,4 +41,9 @@ public class Platform
     {
         return Date.Enabled(info.release, info.end);
     }
+
+    public void SetBoughted(bool boughted) // use this method only after file loading
+    {
+        this.boughted = boughted;
+    }
 }

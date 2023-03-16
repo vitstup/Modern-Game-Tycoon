@@ -33,6 +33,15 @@ public class Persona
         this.modelId = modelId;
     }
 
+    public Persona(SaveLoad.PersonaSaver saver)
+    {
+        personaName = saver.name;
+        skills = saver.skills;
+        salary = saver.salary;
+        modelId = saver.modelId;
+        startWorker = saver.startWorker;
+    }
+
     private void RandomPersona(int minSkill, int minSalary)
     {
         bool isMale = Random.Range(0, 2) == 1;

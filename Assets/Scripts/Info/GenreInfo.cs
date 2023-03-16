@@ -69,4 +69,13 @@ public class GenreInfo : ScriptableObject
         }
         return bonus;
     }
+
+    public int GetSpriteId(Sprite sprite)
+    {
+        for (int i = 0; i < sprites.Length; i++)
+        {
+            if (sprite == sprites[i]) return i;
+        }
+        return -1;
+    }
 }

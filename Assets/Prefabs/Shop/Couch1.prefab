@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2450311467842605227}
   - component: {fileID: 6221762178622577529}
   - component: {fileID: 6323903211131577697}
+  - component: {fileID: 2096989291989191575}
   m_Layer: 0
   m_Name: Couch1
   m_TagString: Building
@@ -49,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 300
   <happiness>k__BackingField: 0.03
+  <buildingId>k__BackingField: 0
 --- !u!65 &6221762178622577529
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78,6 +80,61 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2096989291989191575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7343627155628070743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FieldsEnable:
+    Version: 2
+    PathsEnabled: []
+    ModificationVersion: 0
+    ComponentsEnabled: []
+    HashFieldsEnabled: []
+    ObjectsEnabled: 
+    HashSetFieldsEnabled:
+      m_buckets: 
+      m_slots: []
+      m_count: 0
+      m_lastIndex: 0
+      m_freeList: -1
+      m_version: 0
+    HashSetObjectsEnabled:
+      m_buckets: 
+      m_slots: []
+      m_count: 0
+      m_lastIndex: 0
+      m_freeList: -1
+      m_version: 0
+    HashSetComponentsEnabled:
+      m_buckets: 
+      m_slots: []
+      m_count: 0
+      m_lastIndex: 0
+      m_freeList: -1
+      m_version: 0
+    AreValidSavedHashs: 0
+  Position: 0
+  Rotation: 0
+  Scale: 0
+  Name: 0
+  Tag: 0
+  Active: 0
+  Static: 0
+  Layer: 0
+  GAMEOBJECT_STATIC_ID: 0
+  GAMEOBJECT_PATH: 
+  Private_prefabId: 1086716496
+  PrefabSetTime: 1678977416
+  CreateInRuntime: 1
+  onLoad: 0
 --- !u!1001 &196928343591124087
 PrefabInstance:
   m_ObjectHideFlags: 0

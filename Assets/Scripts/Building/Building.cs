@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Building : MonoBehaviour
 {
     private MeshRenderer[] renderers;
@@ -15,9 +16,13 @@ public class Building : MonoBehaviour
 
     [field: SerializeField] public float happiness { get; private set; }
 
+    [field: SerializeField] public int buildingId { get; private set; }
+
     protected virtual void Awake()
     {
         renderers = GetComponentsInChildren<MeshRenderer>();
+        buildingId = BuildingManager.instance.currentId;
+        BuildingManager.instance.currentId++;
     }
 
     public void Colorize(Color color)

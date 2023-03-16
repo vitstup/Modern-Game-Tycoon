@@ -24,14 +24,14 @@ public class OfficeManager : MonoBehaviour
         return offices[currentOffice];
     }
 
-    private void SetOfficeObj()
+    public void SetOfficeObj(bool deleteItems = true)
     {
         for (int i = 0; i < offices.Length; i++)
         {
             if (i == currentOffice) { offices[i].officeObj.SetActive(true); continue; }
             offices[i].officeObj.SetActive(false);
         }
-        Helpers.DeleteChilds(BuildingManager.instance.itemsParent);
+        if (deleteItems) Helpers.DeleteChilds(BuildingManager.instance.itemsParent);
     }
 
     public void ChangeCurrentOffice(Office office)
@@ -52,4 +52,5 @@ public class OfficeManager : MonoBehaviour
             if (offices[i].state == OfficeState.rented) Main.instance.MinusMoney(offices[i].rentPrice);
         }
     }
+
 }

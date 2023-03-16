@@ -58,4 +58,13 @@ public class PlatformsManager : MonoBehaviour
         }
         return avaialable.ToArray();
     }
+
+    public int GetPlatformId(Platform platform)
+    {
+        for (int i = 0; i < platforms.Length; i++)
+        {
+            if (platform == platforms[i]) return i;
+        }
+        return -1;
+    }
 }

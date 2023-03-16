@@ -25,4 +25,8 @@ public class Engine
         else Debug.LogWarning("Trying to buy already boughted engine");
     }
 
+    public void SetBoughted(bool boughted) // use this method only after file loading
+    {
+        this.boughted = boughted;
+    }
 }

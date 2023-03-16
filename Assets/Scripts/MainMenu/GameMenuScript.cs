@@ -1,3 +1,4 @@
+using SaveIsEasy;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,5 +28,10 @@ public class GameMenuScript : MonoBehaviour
     public void Exit()
     {
         LoadingScript.instance.LoadScene(1);
+    }
+
+    public void Load()
+    {
+        //var saves = SaveIsEasyAPI.ListOfValidSaves();
     }
 }

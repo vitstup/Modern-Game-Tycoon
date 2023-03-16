@@ -73,6 +73,8 @@ public abstract class Stage
 
     public abstract FeaturesGroup.Stage StageType();
 
+    public abstract StageSlider GetSliders();
+
     public string[,] GetGroupsLocalization()
     {
         int currentGroup = 0;
@@ -90,4 +92,22 @@ public abstract class Stage
         return localizations;
     }
 
+    public Stage() { }
+
+    public Stage(SaveLoad.GameProjectSaver.StageSaver saver)
+    {
+        workload = saver.workload;
+        workloadDone = saver.workloadDone;
+
+        for (int i = 0; i < saver.features.Length; i++)
+        {
+            features.Add(AttributesManager.instance.GetFeatureById(saver.features[i]));
+        }
+
+        var sliders = GetSliders();
+        for (int i = 0; i < saver.sliders.Length; i++)
+        {
+            sliders.SetSlider(i, saver.sliders[i]);
+        }
+    }
 }

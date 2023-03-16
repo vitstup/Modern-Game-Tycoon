@@ -81,4 +81,22 @@ public class Game : GameProject
             if (platforms[i] != null) this.platforms[i] = platforms[i];
         }
     }
+
+    public Game() { }
+
+    public Game(SaveLoad.GameSaver saver) : base(saver)
+    {
+        if (saver.publisher >= 0) publisher = PublishersManager.instance.publishers[saver.publisher];
+        // sequel
+        price = saver.price;
+        todaySales = saver.todaySales;
+        todayProfit = saver.todayProfit;
+        recentProfits = saver.recentProfits;
+        sales = saver.sales;
+        firstDayProfit = saver.firstDayProfit;
+        hype = saver.hype;
+        daysTillMarketingCampaign = saver.daysTillMarketingCampaign;
+        interest = saver.interest;
+        bugMailSended = saver.bugMailSended;
+    }
 }

@@ -32,4 +32,12 @@ public class PrototypingStage : Stage
     {
         return FeaturesGroup.Stage.prototyping;
     }
+
+    public override StageSlider GetSliders()
+    {
+        return sliders;
+    }
+
+    public PrototypingStage() { }
+    public PrototypingStage(SaveLoad.GameProjectSaver.StageSaver saver) : base(saver) { }
 }

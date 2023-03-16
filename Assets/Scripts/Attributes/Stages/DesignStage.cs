@@ -31,4 +31,10 @@ public class DesignStage : Stage
     {
         return FeaturesGroup.Stage.design;
     }
+    public override StageSlider GetSliders()
+    {
+        return sliders;
+    }
+    public DesignStage() { }
+    public DesignStage(SaveLoad.GameProjectSaver.StageSaver saver) : base(saver) { }
 }

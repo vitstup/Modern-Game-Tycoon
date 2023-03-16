@@ -31,4 +31,11 @@ public class DevelopingStage : Stage
     {
         return FeaturesGroup.Stage.developing;
     }
+    public override StageSlider GetSliders()
+    {
+        return sliders;
+    }
+
+    public DevelopingStage() { }
+    public DevelopingStage(SaveLoad.GameProjectSaver.StageSaver saver) : base(saver) { }
 }

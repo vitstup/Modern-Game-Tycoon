@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+[System.Serializable]
 public abstract class GameProject : Project
 {
     public int size;
@@ -105,6 +106,20 @@ public abstract class GameProject : Project
     public string[,] GetDevelopingFeaturesInfo() { return developing.GetGroupsLocalization(); }
     public string[,] GetDesignFeaturesInfo() { return design.GetGroupsLocalization(); }
 
+    public Stage[] GetStages()
+    {
+        return new Stage[] { prototyping , developing, design, polishing};
+    }
+
+    public int GetCurrentStageId()
+    {
+        if (currentStage is PrototypingStage) return 0;
+        else if (currentStage is DevelopingStage) return 1;
+        else if (currentStage is DesignStage) return 2;
+        else if (currentStage is PolishingStage) return 3;
+        return -1;
+    }
+
     private float DevelopmentEfficiency() // can use this method instead "currentEfficiency", but it will be less optimized
     {
         if (currentStage is PolishingStage) return 0.2f;
@@ -130,5 +145,33 @@ public abstract class GameProject : Project
     protected void UpdateBugs(float bugs)
     {
         this.bugs = bugs;
+    }
+
+    public GameProject() { }
+
+    public GameProject(SaveLoad.GameProjectSaver saver) : base(saver)
+    {
+        size = saver.size;
+        engine = AttributesManager.instance.engines[saver.engine];
+        genre = AttributesManager.instance.genres[saver.genre];
+        theme = AttributesManager.instance.themes[saver.theme];
+        platforms = new Platform[saver.platforms.Length];
+        for (int i = 0; i < platforms.Length; i++)
+        {
+            if (saver.platforms[i] >= 0) platforms[i] = PlatformsManager.instance.platforms[saver.platforms[i]];
+        }
+        bugs = saver.bugs;
+        prototyping = new PrototypingStage(saver.prototyping);
+        developing = new DevelopingStage(saver.developing);
+        design = new DesignStage(saver.design);
+
+        if (saver.currentStageId == 0) currentStage = polishing;
+        else if (saver.currentStageId == 1) currentStage = developing;
+        else if (saver.currentStageId == 2) currentStage = design;
+        else if (saver.currentStageId == 3) currentStage = polishing;
+
+        expenses = saver.expenses;
+        reviews = saver.reviews;
+        sprite = genre.sprites[saver.spriteId];
     }
 }

@@ -37,4 +37,13 @@ public class PublishersManager : MonoBehaviour
             publishers[i] = new Publisher(rndCompanies[i]);
         }
     }
+
+    public int GetPublisherId(Publisher publisher)
+    {
+        for (int i = 0; i < publishers.Length; i++)
+        {
+            if (publisher == publishers[i]) return i;
+        }
+        return -1;
+    }
 }

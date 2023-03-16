@@ -51,4 +51,16 @@ public abstract class Project
     {
 
     }
+
+    public Project() { }
+
+    public Project(SaveLoad.ProjectSaver saver)
+    {
+        projectName = saver.name;
+        plot = saver.plot;
+        gameDesign = saver.gameDesign;
+        gameplay = saver.gameplay;
+        graphics = saver.graphics;
+        sound = saver.sound;
+    } 
 }
