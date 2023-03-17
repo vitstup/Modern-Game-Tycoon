@@ -36062,6 +36062,8 @@ MonoBehaviour:
   zoomSpeed: 5
   wasdSpeed: 0.05
   mouseSpeed: 0.03
+  cameraPositionMinValues: {x: -15, y: -7.5}
+  cameraPositionMaxValues: {x: 15, y: 7.5}
 --- !u!1 &964012681 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9046124740833567376, guid: 1558cd29d0bd38e4397ecc9d5fc0d09e, type: 3}

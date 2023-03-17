@@ -48,4 +48,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 267fdfc5927f10e4aaf13ec8d7e894ed, type: 2}
   - {fileID: 11400000, guid: b2509a9c34c05d548897e6642b54cc33, type: 2}
   - {fileID: 11400000, guid: 7e4f3672d1523d340bdd5f51e75af8bd, type: 2}
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: d983a144d417e3844971385b9f1125bc, type: 3}

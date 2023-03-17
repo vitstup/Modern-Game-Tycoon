@@ -51,9 +51,11 @@ public class NewGameInfo : MonoBehaviour
 
         var tables = FindObjectsOfType<Table>();
         if (tables == null || tables.Length == 0 || tables.Length > 1) Debug.LogError("something wrong with start table");
-        tables[0].UpgradePc();
         RosterManager.instance.selectedTable = tables[0];
         RosterManager.instance.AssignWorker(persona);
+
+        ComputerManager.instance.CheckForPcUpdates();
+        ComputerManager.instance.UpgradeAllPcs();
 
         Main.instance.SetSumm(money);
     }

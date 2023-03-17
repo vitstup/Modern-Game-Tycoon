@@ -128,6 +128,7 @@ public abstract class GameProject : Project
             float efficiency = 1;
             efficiency += genre.GetThemeBonus(theme);
             efficiency += currentStage.StageEfficiency(this);
+            if (engine.info.genre == genre) efficiency += 0.25f;
             return efficiency;
         }
     }

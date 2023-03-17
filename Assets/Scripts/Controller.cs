@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class Controller : MonoBehaviour
 {
@@ -21,6 +18,9 @@ public class Controller : MonoBehaviour
 
     private double PreviosUpdatesTime;
     private float ThisUpdateRealTime;
+
+    [SerializeField] Vector2 cameraPositionMinValues;
+    [SerializeField] Vector2 cameraPositionMaxValues;
 
     private void Awake()
     {
@@ -52,6 +52,8 @@ public class Controller : MonoBehaviour
         MouseHandler();
 
         Move();
+
+        
     }
 
     private void Zoom(float increment)
@@ -63,6 +65,9 @@ public class Controller : MonoBehaviour
     private void Move()
     {
         transform.localPosition = Vector3.Lerp(transform.localPosition, newPosition, ThisUpdateRealTime * 5);
+        var x = Mathf.Clamp(transform.localPosition.x, cameraPositionMinValues.x, cameraPositionMaxValues.x);
+        var y = Mathf.Clamp(transform.localPosition.y, cameraPositionMinValues.y, cameraPositionMaxValues.y);
+        transform.localPosition = new Vector3(x, y, transform.localPosition.z);
     }
 
     private void MouseHandler()
