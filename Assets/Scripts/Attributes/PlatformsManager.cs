@@ -33,7 +33,7 @@ public class PlatformsManager : MonoBehaviour
         }
     }
 
-    private void UpdateMarketShare()
+    public void UpdateMarketShare()
     {
         float availableSumm = 0;
         float unavailableSumm = 0;

@@ -23,6 +23,8 @@ public class MarketingManager : MonoBehaviour
         game.hype += campaign.GetAvailableBonus(game);
         game.daysTillMarketingCampaign = 90;
         Main.instance.MinusMoney(campaign.GetPrice(game));
+
+        AchievementsManager.instance.SetAchievment(8);
     }
 
     public void HypeDecrease(Game game)

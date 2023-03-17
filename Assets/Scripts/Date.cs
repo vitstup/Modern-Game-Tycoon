@@ -16,4 +16,9 @@ public struct Date
         if (endDate.year == 0 && endDate.month == 0) ended = false;
         return (released && !ended)? true: false;
     }
+
+    public int GetTotalMonths()
+    {
+        return (2000 - year) * 12 + month;
+    }
 }

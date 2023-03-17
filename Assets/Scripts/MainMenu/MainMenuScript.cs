@@ -10,6 +10,7 @@ public class MainMenuScript : MonoBehaviour
     private void Start()
     {
         versionText.text = Application.version;
+        SaveLoad.SaveLoadManager.instance.CheckSaves();
     }
     
     public void Settings()

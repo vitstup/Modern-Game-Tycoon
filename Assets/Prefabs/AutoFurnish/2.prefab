@@ -92,6 +92,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7460961296971962873}
     m_Modifications:
+    - target: {fileID: -5653224845477502724, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5653224845477502724, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -5653224845477502724, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -5653224845477502724, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5605304609992864434, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -224,6 +240,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7460961296971962873}
     m_Modifications:
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5216795091945787402, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -290,6 +322,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cupboard2
       objectReference: {fileID: 0}
+    - target: {fileID: 7227871736702083946, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7227871736702083946, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7227871736702083946, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7227871736702083946, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7695040033415138993, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -348,6 +396,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7460961296971962873}
     m_Modifications:
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5216795091945787402, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -410,6 +474,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7460961296971962873}
     m_Modifications:
+    - target: {fileID: -4137983131035196084, guid: 72a57d45a911692459e2e14574775c56, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4137983131035196084, guid: 72a57d45a911692459e2e14574775c56, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -4137983131035196084, guid: 72a57d45a911692459e2e14574775c56, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4137983131035196084, guid: 72a57d45a911692459e2e14574775c56, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 262951108556219272, guid: 72a57d45a911692459e2e14574775c56, type: 3}
       propertyPath: m_Name
       value: Bin
@@ -472,6 +552,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7460961296971962873}
     m_Modifications:
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5216795091945787402, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -534,6 +630,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7460961296971962873}
     m_Modifications:
+    - target: {fileID: -6600888688829709142, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6600888688829709142, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -6600888688829709142, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -6600888688829709142, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6738073694561788891, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
       propertyPath: m_Name
       value: Plant 3
@@ -666,6 +778,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7460961296971962873}
     m_Modifications:
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5216795091945787402, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -728,6 +856,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7460961296971962873}
     m_Modifications:
+    - target: {fileID: -511717821117709678, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -511717821117709678, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -511717821117709678, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -511717821117709678, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6838397957809943757, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -37,13 +37,11 @@ public class ProjectManager : MonoBehaviour
         this.project = project;
         project.DevelopmentStarted();
         DevelopmentEvent?.Invoke(true);
-        // typing sound if have assign workers
     }
 
     public void DevelopmentStoped()
     {
         DevelopmentEvent?.Invoke(false);
-        // no typing sound if have assign workers
     }
 
     public void CancelProject()
@@ -58,5 +56,17 @@ public class ProjectManager : MonoBehaviour
         project.Done();
         project = null;
         DevelopmentStoped();
+    }
+
+    public void LoadProject(SaveLoad.ProjectSaver saver) // use this method only for setting current project after save loading
+    {
+        if (saver == null) return;
+
+        if (saver is SaveLoad.GameSaver) project = new Game(saver as SaveLoad.GameSaver);
+        else if (saver is SaveLoad.ContractSaver) project = new Contract(saver as SaveLoad.ContractSaver);
+        else if (saver is SaveLoad.FreelanceSaver) project = new Freelance(saver as SaveLoad.FreelanceSaver);
+        else if (saver is SaveLoad.GameUpdateSaver) project = new GameUpdate(saver as SaveLoad.GameUpdateSaver);
+
+        DevelopmentEvent?.Invoke(true);
     }
 }

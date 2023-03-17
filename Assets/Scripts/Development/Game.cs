@@ -38,6 +38,10 @@ public class Game : GameProject
         Statistics.instance.games.Add(this);
         if (ProjectManager.instance.maxSizeGameCreated < size) ProjectManager.instance.maxSizeGameCreated = size;
         SalesUI.instance.OpenSalesCanvas(true);
+
+        AchievementsManager.instance.SetAchievment(1);
+        if (Statistics.instance.games.Count >= 5) AchievementsManager.instance.SetAchievment(4);
+        if (bugs >= 500) AchievementsManager.instance.SetAchievment(7);
     }
 
     public void AddRecentProfit()

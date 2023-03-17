@@ -14,7 +14,10 @@ public class Table : Building
 
     [SerializeField] private GameObject[] pcModels;
 
-    [HideInInspector] public int currentPc { get; private set; }
+    [field: SerializeField] public int currentPc { get; private set; }
+
+    [field: SerializeField] public int buildingId { get; private set; }
+
 
     protected override void Awake()
     {
@@ -27,6 +30,8 @@ public class Table : Building
         assignText.text = Localization.Localize("assign");
 
         if (pcModels.Length != ComputerManager.instance.computers.Length) Debug.LogError("Something wrong with pc models");
+
+        SetId();
     }
 
     public override void Rotate(bool Right)
@@ -112,5 +117,11 @@ public class Table : Building
     {
         canvas.transform.rotation = Quaternion.Euler(30f, 45f - transform.rotation.y, 0f);
         UpdatePcModel();
+    }
+
+    private void SetId()
+    {
+        buildingId = BuildingManager.instance.currentId;
+        BuildingManager.instance.currentId++;
     }
 }

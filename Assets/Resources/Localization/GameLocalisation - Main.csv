@@ -53,7 +53,7 @@ shp.14,Small plant,Небольшое растение,Petite plante,Kleine Pfla
 shp.15,Big plant,Большое растение,Grande plante,Große Pflanze,Gran planta,Grande pianta
 shp.16,Mini garden,Мини посадки,Mini jardin,Mini -Garten,Mini jardín,Mini giardino
 shp.17,Green pouf,Зеленый пуфик,Pouf vert,Grüner Pouf,Pouf verde,Pouf verde
-shp.18,Blue pouf,Синий пуфик,Pouf bleu,Blue Pouf,Pouf,Blue Pouf
+shp.18,Blue pouf,Синий пуфик,Pouf bleu,Blauer Pouf,Pouf,Blue Pouf
 shp.19,Big yellow pouf,Желтый пуфик,Big Pouf jaune,Big Yellow Pouf,Pouf amarillo grande,Grande pouf giallo
 shp.20,Big red pouf,Красный пуфик,Big Pouf rouge,Big Red Pouf,Big Red Pouf,Big Red Pouf
 shp.21,Vending machine,Торговый автомат,Distributeur automatique,Verkaufsautomat,Máquina expendedora,Distributore automatico
@@ -75,7 +75,7 @@ autofurnish,Auto furnish,Авто мебель,Fourniture automatique,Autoeinric
 upgradeallpcs,Upgrade all pc's,Обновить все пк,Mettre à niveau tous les PC,Aktualisieren Sie alle PCs,Actualizar todas las PC,Aggiorna tutti i PC
 soldfurniture,All your furniture will be sold.,Вся ваша мебель будет продана.,Tous vos meubles seront vendus.,Alle Ihre Möbel werden verkauft.,Todos sus muebles se venderán.,Tutti i tuoi mobili saranno venduti.
 expenses,Expenses,Затраты,Dépenses,Kosten,Gastos,Spese
-square,Square,Квадрат,Carré,Quadrat,Cuadrado,Piazza
+square,Square,Площадь,Carré,Quadrat,Cuadrado,Piazza
 purchprice,Purchase price,Цена,Prix ​​d'achat,Kaufpreis,Precio de compra,Prezzo d'acquisto
 rentprice,Rent price,Цена аренды,Prix ​​de loyer,Mietpreis,Precio de alquiler,Prezzo di affitto
 office.0,Small room,Маленькая комната,Petite chambre,Kleiner Raum,Habitación pequeña,Stanza piccola
@@ -89,7 +89,7 @@ office.7,City office,Городской офис,Bureau de la ville,Stadtbüro,O
 office.8,Modern office,Современный офис,Bureau moderne,Modernes Büro,Oficina moderna,Ufficio moderno
 hire,Hire,Нанять,Louer,Mieten,Contratar,Assumere
 fire,Fire,Уволить,Feu,Feuer,Fuego,Fuoco
-assign,Assign,Назначать,Attribuer,Zuordnen,Asignar,Assegnare
+assign,Assign,Назначить,Attribuer,Zuordnen,Asignar,Assegnare
 assigned,Assigned,Назначен,Attribué,Zugewiesen,Asignado,Assegnato
 happiness,Happiness,Счастье,Bonheur,Glück,Felicidad,Felicità
 name,Name,Имя,Nom,Name,Nombre,Nome
@@ -120,7 +120,7 @@ developmentspeed,Development speed,Скорость разработки,Vitesse
 findanother,Find another,Найти другой,Trouve un autre,Einen anderern finden,Encontrar otro,Trova un altro
 payment,Payment,Оплата,Paiement,Zahlung,Pago,Pagamento
 bonus,Bonus,Бонус,Prime,Bonus,Prima,Bonus
-minuserscore,Min user rating,Миней пользовательский рейтинг,Note de l'utilisateur Min,Min Benutzerbewertung,Min calificación de usuario,Valutazione dell'utente min
+minuserscore,Min user rating,Мин пользовательский рейтинг,Note de l'utilisateur Min,Min Benutzerbewertung,Min calificación de usuario,Valutazione dell'utente min
 term,Term,Срок,Terme,Begriff,Término,Termine
 points,Points,Точки,Points,Punkte,Puntos,Punti
 lpoints,points,точки,points,Punkte,puntos,punti
@@ -320,7 +320,7 @@ mailTheme.1,Engine license bought,Лицензия на двигатель ку�
 mailTheme.2,Platform license bought,Лицензия на платформу куплена,Licence de plate-forme achetée,Plattformlizenz gekauft,Licencia de plataforma comprada,Licenza della piattaforma acquistata
 mailTheme.3,Employee hired,Сотрудник нанят,Employé embauché,Mitarbeiter eingestellt,Empleado contratado,Dipendente assunto
 mailTheme.4,Employee fired,Сотрудник уволен,Employé licencié,Mitarbeiter entlassen,Empleado despedido,Dipendente licenziato
-mailTheme.5,Monthly budget report,Ежемесячный бюджетный отчет,Rapport de budget mensuel,Monatlicher Budgetbericht,Informe de presupuesto mensual,Rapporto di budget mensile
+mailTheme.5,Monthly budget report,Ежемесячный бюджетный отчет,Rapport de budget mensuel,Monatlicher Haushaltsbericht,Informe de presupuesto mensual,Rapporto mensile di bilancio
 wl.0,"You have a negative balance, if the account drops to minus $250,000 you will be bankrupt and lose, so be careful.","У вас отрицательный баланс, если счет упадет до минус 250 000 долларов, вы обанкротитесь и проиграете, так что будьте осторожны.","Vous avez un solde négatif, si le compte tombe à moins de 250 000 $, vous ferez en faillite et perdez, alors soyez prudent.","Sie haben einen negativen Restbetrag. Wenn das Konto auf minus 250.000 US -Dollar fällt, sind Sie bankrott und verlieren. Seien Sie also vorsichtig.","Tiene un saldo negativo, si la cuenta cae a menos $ 250,000, estará en bancarrota y perderá, así que tenga cuidado.","Hai un saldo negativo, se il conto scende a meno di $ 250.000 sarai fallito e perde, quindi fai attenzione."
 wl.1,"You are head over heels in debt and cannot pay off. The bank confiscates your property.Who knows how your story would have developed if you had a little more money, but unfortunately you lost. Now you are forced to work as a janitor or delivery man. Perhaps you will be accepted as a developer in another company.","Вы по уши в долгах и не можете расплатиться. Банк конфискует ваше имущество. Кто знает, как бы сложилась ваша история, если бы у вас было немного больше денег, но, к сожалению, вы проиграли. Теперь вы вынуждены работать дворником или курьером. Возможно, вас возьмут разработчиком в другую компанию.","Vous êtes endetté et vous ne pouvez pas porter ses fruits. La banque confisque votre propriété. Qui sait comment votre histoire se serait développée si vous aviez un peu plus d'argent, mais malheureusement vous avez perdu. Vous êtes maintenant obligé de travailler comme concierge ou livreur. Vous serez peut-être accepté en tant que développeur dans une autre entreprise.","Sie sind Schulleiter und können sich nicht auszahlen. Die Bank beschlagnahmt Ihr Eigentum. Wer weiß, wie sich Ihre Geschichte entwickelt hätte, wenn Sie ein bisschen mehr Geld hätten, aber leider haben Sie verloren. Jetzt sind Sie gezwungen, als Hausmeister oder Liefermann zu arbeiten. Vielleicht werden Sie als Entwickler in einem anderen Unternehmen akzeptiert.","Usted está en la deuda y no puede dar sus frutos. El banco confisca su propiedad. Quién sabe cómo se habría desarrollado su historia si tuviera un poco más de dinero, pero desafortunadamente perdió. Ahora se ve obligado a trabajar como conserje o repartidor. Quizás sea aceptado como desarrollador en otra empresa.","Sei a testa in debito e non puoi ripagare. La banca confisca la tua proprietà. Che sa come si sarebbe sviluppata la tua storia se avessi un po 'più di soldi, ma sfortunatamente hai perso. Ora sei costretto a lavorare come bidello o mandato. Forse sarai accettato come sviluppatore in un'altra azienda."
 wl.2,"You have reached to the end of the game. You held out and were able to realize your dreams and write your name in the gamedev industry. You may not have been the number one company in the world, but there are still many others who could not reach such heights as you. Congratulations !","Вы дошли до конца игры. Вы выстояли и смогли реализовать свои мечты и написать свое имя в индустрии разработки игр. Возможно, вы не были компанией номер один в мире, но есть еще много других, которые не смогли достичь таких высот, как вы. Поздравляем!","Vous avez atteint la fin du jeu. Vous avez résisté et avez pu réaliser vos rêves et écrire votre nom dans l'industrie de Gamedv. Vous n'êtes peut-être pas l'entreprise numéro un dans le monde, mais il y en a encore beaucoup qui ne pourraient pas atteindre des sommets que vous. Toutes nos félicitations !","Sie haben bis zum Ende des Spiels angegriffen. Sie haben Ihre Träume verwirklicht und Ihren Namen in der Spielbranche schreiben. Sie waren vielleicht nicht das Unternehmen Nummer eins der Welt, aber es gibt immer noch viele andere, die wie Sie nicht solche Höhen erreichen konnten. Glückwunsch !","Has llegado al final del juego. Te mantuviste fuera y pudiste realizar tus sueños y escribir tu nombre en la industria de Gamedev. Es posible que no haya sido la compañía número uno en el mundo, pero todavía hay muchos otros que no podrían alcanzar las alturas como usted. Felicidades !","Hai raggiunto la fine del gioco. Hai resistito e sei stato in grado di realizzare i tuoi sogni e scrivere il tuo nome nel settore di Gamedev. Potresti non essere stata la società numero uno al mondo, ma ce ne sono ancora molti che non sono riusciti a raggiungere altezze come te. Congratulazioni!"
@@ -347,3 +347,4 @@ startmoney,Start money,Начальные деньги,Démarrer de l'argent,Gel
 save,Save,Сохранить,Sauvegarder,Speichern,Ahorrar,Salva
 load,Load,Загрузить,Charger,Belastung,Carga,Carico
 mainmenu,Main menu,Главное меню,Menu principal,Hauptmenü,Menú principal,Menu principale
+rating,Rating,Рейтинг,Notation,Bewertung,Clasificación,Valutazione

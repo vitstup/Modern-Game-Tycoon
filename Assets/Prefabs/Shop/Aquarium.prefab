@@ -48,7 +48,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76096409903466961}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -217,7 +217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 1500
   <happiness>k__BackingField: 0.08
-  <buildingId>k__BackingField: 0
 --- !u!65 &458629387412870030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -299,7 +298,7 @@ MonoBehaviour:
     - Building/price
     - Building/happiness
     - Building/buildingId
-    ModificationVersion: 32
+    ModificationVersion: 43
     ComponentsEnabled: []
     HashFieldsEnabled: []
     ObjectsEnabled: 
@@ -494,7 +493,7 @@ MonoBehaviour:
       m_count: 37
       m_lastIndex: 37
       m_freeList: -1
-      m_version: 849
+      m_version: 1267
     HashSetObjectsEnabled:
       m_buckets: 050000000a000000000000000000000000000000000000000900000004000000030000000000000006000000000000000200000008000000000000000000000000000000
       m_slots:
@@ -552,7 +551,7 @@ MonoBehaviour:
       m_count: 10
       m_lastIndex: 10
       m_freeList: -1
-      m_version: 264
+      m_version: 385
     HashSetComponentsEnabled:
       m_buckets: 010000000000000002000000
       m_slots:
@@ -568,7 +567,7 @@ MonoBehaviour:
       m_count: 2
       m_lastIndex: 2
       m_freeList: -1
-      m_version: 73
+      m_version: 106
     AreValidSavedHashs: 1
   Position: 0
   Rotation: 0
@@ -580,7 +579,7 @@ MonoBehaviour:
   Layer: 0
   GAMEOBJECT_STATIC_ID: 0
   GAMEOBJECT_PATH: 
-  Private_prefabId: 547652574
-  PrefabSetTime: 1678977418
+  Private_prefabId: 907767763
+  PrefabSetTime: 1679061551
   CreateInRuntime: 1
-  onLoad: 0
+  onLoad: 3

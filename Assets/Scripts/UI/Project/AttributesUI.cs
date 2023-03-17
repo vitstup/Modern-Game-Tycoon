@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 public class AttributesUI : MonoBehaviour
 {
@@ -69,6 +70,7 @@ public class AttributesUI : MonoBehaviour
     private void UpdateEngines(Engine selected)
     {
         var available = AttributesManager.instance.availableEngines();
+        available = available.OrderBy(i => i.info.release.GetTotalMonths()).ToArray();
         if (available.Length > engines.Length) Debug.LogError("Small amout of engine panels");
         for (int i = 0; i < engines.Length; i++)
         {
@@ -81,6 +83,7 @@ public class AttributesUI : MonoBehaviour
     private void UpdatePlatforms(Platform[] selected)
     {
         var available = PlatformsManager.instance.availablePlatforms();
+        available = available.OrderBy(i => i.info.release.GetTotalMonths()).ToArray();
         if (available.Length > platforms.Length) Debug.LogError("Small amout of platform panels");
         for (int i = 0; i < platforms.Length; i++)
         {

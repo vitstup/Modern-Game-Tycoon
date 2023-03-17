@@ -81,6 +81,9 @@ public static class Sales
         Main.instance.AddMoney(game.todayProfit);
 
         if (!game.bugMailSended) TryToSendBugsMail(game);
+
+        if (game.reviews.UserScore() >= 0.95f) AchievementsManager.instance.SetAchievment(10);
+        if (game.reviews.UserScore() <= 0.05f) AchievementsManager.instance.SetAchievment(11);
     }
 
     private static void TryToSendBugsMail(Game game)

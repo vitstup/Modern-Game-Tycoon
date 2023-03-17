@@ -89,6 +89,8 @@ public class OfficePanel : MonoBehaviour
         Main.instance.MinusMoney(office.price);
         office.state = OfficeState.bought;
         OfficesUI.instance.UpdatePanels();
+
+        if (OfficeManager.instance.OwnAllOffices()) AchievementsManager.instance.SetAchievment(16);
     }
 
     public void Sell()

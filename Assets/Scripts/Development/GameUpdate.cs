@@ -11,8 +11,8 @@ public class GameUpdate : Project
 
     [field: SerializeField] public float bugs { get; private set; }
 
-    private int workload;
-    private float workloadDone;
+    [field: SerializeField] public int workload { get; private set; }
+    [field: SerializeField] public float workloadDone { get; private set; }
 
     public Platform[] platformsAdded = new Platform[4];
 
@@ -80,4 +80,20 @@ public class GameUpdate : Project
         return workloadDone / workload;
     }
 
+    public GameUpdate() { }
+
+    public GameUpdate(SaveLoad.GameUpdateSaver saver) : base(saver)
+    {
+        updateGame = Statistics.instance.games[saver.updateGame];
+        updateSize = saver.updateSize;
+        bugs = saver.bugs;
+        workload = saver.workload;
+        workloadDone = saver.workloadDone;
+        platformsAdded = new Platform[saver.platformsAdded.Length];
+        for (int i = 0; i < platformsAdded.Length; i++)
+        {
+            if (saver.platformsAdded[i] >= 0) platformsAdded[i] = PlatformsManager.instance.platforms[saver.platformsAdded[i]];
+        }
+        isPolishing = saver.isPolishing;
+    }
 }

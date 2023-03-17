@@ -165,7 +165,7 @@ public abstract class GameProject : Project
         developing = new DevelopingStage(saver.developing);
         design = new DesignStage(saver.design);
 
-        if (saver.currentStageId == 0) currentStage = polishing;
+        if (saver.currentStageId == 0) currentStage = prototyping;
         else if (saver.currentStageId == 1) currentStage = developing;
         else if (saver.currentStageId == 2) currentStage = design;
         else if (saver.currentStageId == 3) currentStage = polishing;
@@ -173,5 +173,7 @@ public abstract class GameProject : Project
         expenses = saver.expenses;
         reviews = saver.reviews;
         sprite = genre.sprites[saver.spriteId];
+
+        SetEfficiency();
     }
 }

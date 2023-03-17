@@ -1,4 +1,3 @@
-using SaveIsEasy;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +17,7 @@ public class GameMenuScript : MonoBehaviour
     {
         menuCanvas.gameObject.SetActive(open);
         TimeManager.instance.NecessaryPause(open);
+        SaveLoad.SaveLoadManager.instance.CheckSaves();
     }
 
     public void Settings()
@@ -30,8 +30,4 @@ public class GameMenuScript : MonoBehaviour
         LoadingScript.instance.LoadScene(1);
     }
 
-    public void Load()
-    {
-        //var saves = SaveIsEasyAPI.ListOfValidSaves();
-    }
 }

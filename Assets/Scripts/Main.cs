@@ -27,6 +27,11 @@ public class Main : MonoBehaviour
         this.money += money;
         monthInocme += money;
         MainUI.instance.ChangeMoneyText();
+
+        if (money >= 100000) AchievementsManager.instance.SetAchievment(6);
+        if (money >= 1000000) AchievementsManager.instance.SetAchievment(9);
+        if (money >= 100000000) AchievementsManager.instance.SetAchievment(12);
+        if (money >= 1000000000) AchievementsManager.instance.SetAchievment(13);
     }
 
     public void MinusMoney(int money)

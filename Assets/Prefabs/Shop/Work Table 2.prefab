@@ -321,7 +321,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 600
   <happiness>k__BackingField: -0.09
-  <buildingId>k__BackingField: 0
   assignBtn: {fileID: 3729283318400274531}
   pcBtn: {fileID: 3954588155135669969}
   pcModels:
@@ -331,6 +330,8 @@ MonoBehaviour:
   - {fileID: 7542108979079978643}
   - {fileID: 3952203670157386416}
   - {fileID: 8848213434626813061}
+  <currentPc>k__BackingField: 0
+  <buildingId>k__BackingField: 0
 --- !u!65 &4044208669921412679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -411,12 +412,13 @@ MonoBehaviour:
     - Transform/localScale/z
     - Transform/localScale
     - Transform/parent
-    ModificationVersion: 16
+    - Table/buildingId
+    ModificationVersion: 20
     ComponentsEnabled: []
     HashFieldsEnabled: []
     ObjectsEnabled: 
     HashSetFieldsEnabled:
-      m_buckets: 1c00000011000000230000001e0000001b0000000000000003000000240000000100000007000000000000000a0000001000000014000000000000001a00000000000000000000002000000000000000000000000200000009000000000000001f000000000000001900000018000000160000000d0000001d000000000000000000000022000000000000000400000000000000
+      m_buckets: 1c00000011000000230000001e0000001b0000002500000003000000240000000100000007000000000000000a0000001000000014000000000000001a00000000000000000000002000000000000000000000000200000009000000000000001f000000000000001900000018000000160000000d0000001d000000000000000000000022000000000000000400000000000000
       m_slots:
       - hashCode: 406823999
         next: -1
@@ -598,15 +600,15 @@ MonoBehaviour:
         value:
           HashCodePath: 289311300
           HashCodeMember: -978287306
-      - hashCode: 0
-        next: 0
+      - hashCode: 266540901
+        next: -1
         value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      m_count: 36
-      m_lastIndex: 36
+          HashCodePath: 1165181518
+          HashCodeMember: 282514085
+      m_count: 37
+      m_lastIndex: 37
       m_freeList: -1
-      m_version: 271
+      m_version: 421
     HashSetObjectsEnabled:
       m_buckets: 0600000000000000000000000000000000000000010000000a00000005000000040000000000000007000000000000000300000009000000000000000000000000000000
       m_slots:
@@ -664,7 +666,7 @@ MonoBehaviour:
       m_count: 10
       m_lastIndex: 10
       m_freeList: -1
-      m_version: 93
+      m_version: 137
     HashSetComponentsEnabled:
       m_buckets: 020000000100000000000000
       m_slots:
@@ -680,7 +682,7 @@ MonoBehaviour:
       m_count: 2
       m_lastIndex: 2
       m_freeList: -1
-      m_version: 41
+      m_version: 53
     AreValidSavedHashs: 1
   Position: 0
   Rotation: 0
@@ -695,7 +697,7 @@ MonoBehaviour:
   Private_prefabId: 1593244901
   PrefabSetTime: 1678980009
   CreateInRuntime: 1
-  onLoad: 0
+  onLoad: 3
 --- !u!1 &2331758937683091064
 GameObject:
   m_ObjectHideFlags: 0

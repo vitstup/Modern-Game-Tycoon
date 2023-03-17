@@ -200,6 +200,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: -332995236585131242, guid: 6e30123f80777bb40af1e2c9ccc507a8, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -332995236585131242, guid: 6e30123f80777bb40af1e2c9ccc507a8, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -332995236585131242, guid: 6e30123f80777bb40af1e2c9ccc507a8, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -332995236585131242, guid: 6e30123f80777bb40af1e2c9ccc507a8, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 419121723501869302, guid: 6e30123f80777bb40af1e2c9ccc507a8, type: 3}
       propertyPath: m_Name
       value: Billiards
@@ -310,6 +326,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7973714039770549676, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973714039770549676, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973714039770549676, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973714039770549676, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
 --- !u!4 &5027821596239724610 stripped
@@ -394,6 +426,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710072835571230039, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5216795091945787402, guid: bc2465699f546524f8d557e2a76b00d1, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -503,6 +551,22 @@ PrefabInstance:
     - target: {fileID: 2392752835206640631, guid: f0034f09cb647f64eba378e691e00216, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487409547317153750, guid: f0034f09cb647f64eba378e691e00216, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487409547317153750, guid: f0034f09cb647f64eba378e691e00216, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487409547317153750, guid: f0034f09cb647f64eba378e691e00216, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487409547317153750, guid: f0034f09cb647f64eba378e691e00216, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0034f09cb647f64eba378e691e00216, type: 3}
@@ -1070,6 +1134,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: -6600888688829709142, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6600888688829709142, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -6600888688829709142, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -6600888688829709142, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6738073694561788891, guid: cbb6b87d0df9d3c46ac7a775bee555cd, type: 3}
       propertyPath: m_Name
       value: Plant 3
@@ -1544,6 +1624,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: -4137983131035196084, guid: 72a57d45a911692459e2e14574775c56, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4137983131035196084, guid: 72a57d45a911692459e2e14574775c56, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -4137983131035196084, guid: 72a57d45a911692459e2e14574775c56, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4137983131035196084, guid: 72a57d45a911692459e2e14574775c56, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 262951108556219272, guid: 72a57d45a911692459e2e14574775c56, type: 3}
       propertyPath: m_Name
       value: Bin
@@ -1724,6 +1820,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7973714039770549676, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973714039770549676, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973714039770549676, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973714039770549676, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54fed8d394908464c90d470ede76ad8c, type: 3}
 --- !u!4 &8979667603131122959 stripped
@@ -1808,6 +1920,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: 5785382097832299648, guid: 92bc6c9a74448e342acd3ccb948ad1a2, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785382097832299648, guid: 92bc6c9a74448e342acd3ccb948ad1a2, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785382097832299648, guid: 92bc6c9a74448e342acd3ccb948ad1a2, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785382097832299648, guid: 92bc6c9a74448e342acd3ccb948ad1a2, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6268615271785020769, guid: 92bc6c9a74448e342acd3ccb948ad1a2, type: 3}
       propertyPath: m_Name
       value: ArcadeMachine
@@ -2072,6 +2200,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: -7960220558870249156, guid: 181a41b0e0d8e9e43b08e85cf5763970, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7960220558870249156, guid: 181a41b0e0d8e9e43b08e85cf5763970, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -7960220558870249156, guid: 181a41b0e0d8e9e43b08e85cf5763970, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -7960220558870249156, guid: 181a41b0e0d8e9e43b08e85cf5763970, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6440376337586423306, guid: 181a41b0e0d8e9e43b08e85cf5763970, type: 3}
       propertyPath: m_Name
       value: Cupboard1
@@ -2252,6 +2396,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Couch5
       objectReference: {fileID: 0}
+    - target: {fileID: 6824808829932926483, guid: d899fa4c912e1094e83bd76e4b3786f9, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824808829932926483, guid: d899fa4c912e1094e83bd76e4b3786f9, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824808829932926483, guid: d899fa4c912e1094e83bd76e4b3786f9, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824808829932926483, guid: d899fa4c912e1094e83bd76e4b3786f9, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d899fa4c912e1094e83bd76e4b3786f9, type: 3}
 --- !u!4 &6824456967432719834 stripped
@@ -2269,6 +2429,22 @@ PrefabInstance:
     - target: {fileID: 4771150906633417303, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
       propertyPath: m_Name
       value: Cupboard2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7227871736702083946, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7227871736702083946, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7227871736702083946, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7227871736702083946, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7695040033415138993, guid: bf97a65873263a94dadf3d45449a2e64, type: 3}
       propertyPath: m_RootOrder
@@ -2600,6 +2776,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: -1429707519652774957, guid: 08aef55f7a39d4b4bb660aec7422ddcd, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1429707519652774957, guid: 08aef55f7a39d4b4bb660aec7422ddcd, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -1429707519652774957, guid: 08aef55f7a39d4b4bb660aec7422ddcd, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -1429707519652774957, guid: 08aef55f7a39d4b4bb660aec7422ddcd, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1841189685004823858, guid: 08aef55f7a39d4b4bb660aec7422ddcd, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -2662,6 +2854,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: -3011551913056398453, guid: c8314523a27522d4798efed382da2dbd, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3011551913056398453, guid: c8314523a27522d4798efed382da2dbd, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -3011551913056398453, guid: c8314523a27522d4798efed382da2dbd, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -3011551913056398453, guid: c8314523a27522d4798efed382da2dbd, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4363026658885221021, guid: c8314523a27522d4798efed382da2dbd, type: 3}
       propertyPath: m_Name
       value: Football apparatus
@@ -2934,6 +3142,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: 4094128973738170571, guid: 472110bd0884a4e4880ea3528e13d65d, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1679061545
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094128973738170571, guid: 472110bd0884a4e4880ea3528e13d65d, type: 3}
+      propertyPath: Private_prefabId
+      value: 268483482
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094128973738170571, guid: 472110bd0884a4e4880ea3528e13d65d, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094128973738170571, guid: 472110bd0884a4e4880ea3528e13d65d, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094128973738170571, guid: 472110bd0884a4e4880ea3528e13d65d, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094128973738170571, guid: 472110bd0884a4e4880ea3528e13d65d, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4654077168788789521, guid: 472110bd0884a4e4880ea3528e13d65d, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -3136,6 +3368,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: 753645115010507469, guid: e406fd7e1de738c45949892cabb4f84c, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 753645115010507469, guid: e406fd7e1de738c45949892cabb4f84c, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 753645115010507469, guid: e406fd7e1de738c45949892cabb4f84c, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 753645115010507469, guid: e406fd7e1de738c45949892cabb4f84c, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1331129504848707588, guid: e406fd7e1de738c45949892cabb4f84c, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3268,6 +3516,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: -511717821117709678, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -511717821117709678, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -511717821117709678, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -511717821117709678, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6838397957809943757, guid: 78fcb5028e193e9488a6d45c6550d93c, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -3330,6 +3594,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6259488296201219735}
     m_Modifications:
+    - target: {fileID: -5653224845477502724, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5653224845477502724, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: -5653224845477502724, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -5653224845477502724, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5605304609992864434, guid: aa8482e4353ba2a418c1fb105c7a46e9, type: 3}
       propertyPath: m_RootOrder
       value: 3

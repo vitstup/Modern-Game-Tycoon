@@ -53,4 +53,13 @@ public class OfficeManager : MonoBehaviour
         }
     }
 
+    public bool OwnAllOffices()
+    {
+        bool own = true;
+        for (int i = 0; i < offices.Length; i++)
+        {
+            if (offices[i].state != OfficeState.bought) { own = false; break; }
+        }
+        return own;
+    }
 }

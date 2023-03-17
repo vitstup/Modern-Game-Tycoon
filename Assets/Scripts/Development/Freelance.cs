@@ -63,6 +63,8 @@ public class Freelance : Project
     public override void Done()
     {
         FreelanceDoneUI.instance.OpenFreelanceDone(this);
+
+        AchievementsManager.instance.SetAchievment(3);
     }
 
     private int GetOtherPoint(int mainValue, int maxScale)
@@ -157,5 +159,19 @@ public class Freelance : Project
         if (minCoeff > 2f) return 0;
         else if (minCoeff > 1.05f) return 1;
         else return 2;
+    }
+
+    public Freelance(SaveLoad.FreelanceSaver saver) : base(saver)
+    {
+        plotNeeded = saver.plotNeeded;
+        gameDesignNeeded = saver.gameDesignNeeded;
+        gameplayNeeded = saver.gameplayNeeded;
+        graphicsNeeded = saver.graphicsNeeded;
+        soundNeeded = saver.soundNeeded;
+
+        payment = saver.payment;
+        term = saver.term;
+        penalty = saver.penalty;
+        developmentDuration = saver.developmentDuration;
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using UnityEngine;
 
 [System.Serializable]
@@ -68,6 +69,8 @@ public class Contract : GameProject
     {
         base.Done();
         ContractDoneUI.instance.OpenContractDoneUI(this);
+
+        AchievementsManager.instance.SetAchievment(2);
     }
 
     public override void Cancel()
@@ -84,5 +87,16 @@ public class Contract : GameProject
             if (timeDebaf > 1) timeDebaf = 1f;
             return (int)(bonus * timeDebaf);
         }
+    }
+
+    public Contract() { }
+
+    public Contract(SaveLoad.ContractSaver saver) : base(saver)
+    {
+        payment = saver.payment;
+        bonus = saver.bonus;
+        minScore = saver.minScore;
+        term = saver.term;
+        developmentDuration = saver.developmentDuration;
     }
 }

@@ -41,6 +41,9 @@ public class RosterManager : MonoBehaviour
         hiredWorkers.Add(persona);
         availableWorkers.Remove(persona);
         MailManager.instance.NewMail(new WorkerHiredMail(persona.personaName, persona));
+
+        AchievementsManager.instance.SetAchievment(0);
+        if (hiredWorkers.Count >= 20) AchievementsManager.instance.SetAchievment(5);
     }
 
     public void FireWorker(Persona persona)

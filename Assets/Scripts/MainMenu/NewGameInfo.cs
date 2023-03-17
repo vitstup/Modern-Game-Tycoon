@@ -6,6 +6,8 @@ public class NewGameInfo : MonoBehaviour
 {
     public static NewGameInfo instance;
 
+    [HideInInspector] public bool loadingSave;
+
     public string companyName;
 
     public string personaName;
@@ -26,7 +28,11 @@ public class NewGameInfo : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        if (level == 2) SetInfo();
+        if (level == 2)
+        {
+            if (loadingSave) SaveLoad.SaveLoadManager.instance.Load();
+            else SetInfo();
+        }
         else ResetInfo();
     }
 

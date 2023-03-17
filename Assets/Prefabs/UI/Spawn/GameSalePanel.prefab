@@ -3649,4 +3649,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c1780e8c33ee64a849a1c6db0ffb85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Key: userrating
+  Key: rating

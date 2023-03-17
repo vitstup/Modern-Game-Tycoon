@@ -16,6 +16,9 @@ namespace SaveLoad
 
         [SerializeField] private GameSaver[] games;
 
+        // current project
+        private ProjectSaver[] projectSaver;
+
         public void OnLoad()
         {
             DoLoad();
@@ -65,11 +68,74 @@ namespace SaveLoad
             {
                 games[i] = new GameSaver(Statistics.instance.games[i]);
             }
+
+            // currentProject
+            projectSaver = new ProjectSaver[1];
+            if (ProjectManager.instance.project != null)
+            {
+                if (ProjectManager.instance.project is Game) projectSaver[0] = new GameSaver(ProjectManager.instance.project as Game);
+                else if (ProjectManager.instance.project is Contract) projectSaver[0] = new ContractSaver(ProjectManager.instance.project as Contract);
+                else if (ProjectManager.instance.project is Freelance) projectSaver[0] = new FreelanceSaver(ProjectManager.instance.project as Freelance);
+                else if (ProjectManager.instance.project is GameUpdate) projectSaver[0] = new GameUpdateSaver(ProjectManager.instance.project as GameUpdate);
+            }
         }
 
         private void DoLoad()
         {
             // roster and buildings
+            StartCoroutine(RosterAndBuildingActions());
+
+            // offices 
+            for (int i = 0; i < officeStates.Length; i++)
+            {
+                OfficeManager.instance.offices[i].state = officeStates[i];
+            }
+            OfficeManager.instance.SetOfficeObj(false);
+
+            // platforms and engines
+            for (int i = 0; i < platfromsBoughtStatuses.Length; i++)
+            {
+                PlatformsManager.instance.platforms[i].SetBoughted(platfromsBoughtStatuses[i]);
+            }
+            for (int i = 0; i < enginesBoughtStatuses.Length; i++)
+            {
+                AttributesManager.instance.engines[i].SetBoughted(enginesBoughtStatuses[i]);
+            }
+            PlatformsManager.instance.UpdateMarketShare();
+
+            // games
+            Statistics.instance.games.Clear();  
+            for (int i = 0; i < games.Length; i++)
+            {
+                Statistics.instance.games.Add(new Game(games[i]));
+            }
+            for (int i = 0; i < games.Length; i++)
+            {
+                if (games[i].sequelOf >= 0) Statistics.instance.games[i].sequelOf = Statistics.instance.games[games[i].sequelOf];
+            }
+
+            // current project
+            if (projectSaver[0] != null) ProjectManager.instance.LoadProject(projectSaver[0]);
+
+            // oth
+            MainUI.instance.ChangeMoneyText();
+            if (games.Length > 0) SalesUI.instance.OpenSalesCanvas(true);
+            Test();
+        }
+
+        private Table GetPersonaTable(int tableId, Building[] buildings)
+        {
+            for (int i = 0; i < buildings.Length; i++)
+            {
+                if (buildings[i] is Table && (buildings[i] as Table).buildingId == tableId) return buildings[i] as Table;
+            }
+            Debug.LogError("There is no such table id in current buildings");
+            return null;
+        }
+
+        private IEnumerator RosterAndBuildingActions()
+        {
+            yield return new WaitForEndOfFrame();
             var buildings = FindObjectsOfType<Building>();
             BuildingManager.instance.buildings = new List<Building>(buildings);
 
@@ -89,50 +155,6 @@ namespace SaveLoad
                 }
             }
             BuildingManager.instance.InvokeBuilded();
-            StartCoroutine(TableActions());
-
-            // offices 
-            for (int i = 0; i < officeStates.Length; i++)
-            {
-                OfficeManager.instance.offices[i].state = officeStates[i];
-            }
-            OfficeManager.instance.SetOfficeObj(false);
-
-            // platforms and engines
-            for (int i = 0; i < platfromsBoughtStatuses.Length; i++)
-            {
-                PlatformsManager.instance.platforms[i].SetBoughted(platfromsBoughtStatuses[i]);
-            }
-            for (int i = 0; i < enginesBoughtStatuses.Length; i++)
-            {
-                AttributesManager.instance.engines[i].SetBoughted(enginesBoughtStatuses[i]);
-            }
-
-            // games
-            Statistics.instance.games.Clear();  
-            for (int i = 0; i < games.Length; i++)
-            {
-                Statistics.instance.games.Add(new Game(games[i]));
-            }
-
-            // oth
-            MainUI.instance.ChangeMoneyText();
-            Test();
-        }
-
-        private Table GetPersonaTable(int tableId, Building[] buildings)
-        {
-            for (int i = 0; i < buildings.Length; i++)
-            {
-                if (buildings[i].buildingId == tableId) return buildings[i] as Table;
-            }
-            Debug.LogError("There is no such table id in current buildings");
-            return null;
-        }
-
-        private IEnumerator TableActions()
-        {
-            yield return new WaitForEndOfFrame();
             ComputerManager.instance.CheckForPcUpdates();
             var tables = FindObjectsOfType<Table>();
             for (int i = 0; i < tables.Length; i++)
