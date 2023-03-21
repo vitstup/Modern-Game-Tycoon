@@ -11,7 +11,7 @@ public class AchievementsManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else Destroy(gameObject);
+        Destroy(gameObject); 
     }
 
     public void SetAchievment(int id)

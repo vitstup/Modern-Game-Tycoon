@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EscScript : MonoBehaviour
 {
     [System.Serializable]
-    private class EscValue
+    public class EscValue
     {
         [field: SerializeField] public GameObject panel { get; private set; }
         [field: SerializeField] public Button button { get; private set; }

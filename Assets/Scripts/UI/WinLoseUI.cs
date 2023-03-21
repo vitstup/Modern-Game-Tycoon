@@ -68,7 +68,7 @@ public class WinLoseUI : MonoBehaviour
         }
         else
         {
-            // to main menu
+            GameMenuScript.instance.Exit();
         }
     }
 }

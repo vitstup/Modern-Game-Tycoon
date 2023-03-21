@@ -432,9 +432,9 @@ RectTransform:
   m_Father: {fileID: 807697737}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 821, y: -410}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -139, y: 130}
   m_SizeDelta: {x: 164, y: 164}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1963938984
@@ -448,6 +448,7 @@ GameObject:
   - component: {fileID: 1963938986}
   - component: {fileID: 1963938985}
   - component: {fileID: 1963938987}
+  - component: {fileID: 1963938988}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -496,6 +497,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingPanel: {fileID: 807697736}
   loadingProgress: {fileID: 1723379045}
+--- !u!114 &1963938988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963938984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ca066ac1d7fa242a2c9cd57cdb844c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2093079351
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,9 +626,9 @@ RectTransform:
   m_Father: {fileID: 807697737}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 821, y: -410}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -139, y: 130}
   m_SizeDelta: {x: 164, y: 164}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101680527
