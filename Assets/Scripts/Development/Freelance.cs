@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -58,6 +57,11 @@ public class Freelance : Project
         payment = (int)(GetPointsNeeded() * Constans.contractPaymentPerPoint * Random.Range(0.75f, 1.25f));
         term = (int)(GetPointsNeeded() / maxScale / Random.Range(1.5f, 3f));
         penalty = (int)((term / 500f) * payment);
+    }
+
+    public override void DevelopmentStarted()
+    {
+        Debug.Log("Freelance started");
     }
 
     public override void Done()

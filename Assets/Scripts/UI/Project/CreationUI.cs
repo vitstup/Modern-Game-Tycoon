@@ -31,7 +31,7 @@ public class CreationUI : MonoBehaviour
         ProjectManager.DevelopmentEvent.AddListener(SetPanel);
     }
 
-    public void UpdateInfo(GameProject game)
+    private void UpdateInfo(GameProject game)
     {
         projectName.text = game.projectName;
         bugsText.text = TextConvertor.BugsText(game.bugs);
@@ -52,14 +52,14 @@ public class CreationUI : MonoBehaviour
         }
     }
 
-    public void UpdateInfo(Freelance freelance)
+    private void UpdateInfo(Freelance freelance)
     {
         projectName.text = freelance.projectName;
         fillAmount.fillAmount = freelance.GetDevDonePercent();
         fillStageText.text = Localization.Localize("developing");
     }
 
-    public void UpdateInfo(GameUpdate update)
+    private void UpdateInfo(GameUpdate update)
     {
         projectName.text = update.updateGame.projectName;
         bugsText.text = TextConvertor.BugsText(update.bugs);
@@ -77,6 +77,13 @@ public class CreationUI : MonoBehaviour
             realisePanel.SetActive(false);
             fillPanel.SetActive(true);
         }
+    }
+
+    public void UpdateInfo(Project project)
+    {
+        if (project is GameProject) UpdateInfo(project as GameProject);
+        else if (project is Freelance) UpdateInfo(project as Freelance);
+        else if (project is GameUpdate) UpdateInfo(project as GameUpdate);
     }
 
     private void SetPanel(bool show)

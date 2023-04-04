@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -32,25 +30,16 @@ public abstract class Project
         return 1f;
     }
 
-    public virtual void Develop() 
+    public abstract void Develop();
+
+    public virtual void Cancel()
     {
-        
+        Debug.Log("Canceled");
     }
 
-    public virtual void Cancel() // do it abstact
-    {
+    public abstract void Done();
 
-    }
-
-    public virtual void Done()
-    {
-        
-    }
-
-    public virtual void DevelopmentStarted()
-    {
-
-    }
+    public abstract void DevelopmentStarted();
 
     public Project() { }
 

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,7 +10,7 @@ public class ProjectManager : MonoBehaviour
 
     [field: SerializeField] public Project project { get; private set; }
 
-    public int maxSizeGameCreated; // use this to generate contracts 
+    public int maxSizeGameCreated; // use this to generate contracts and freelance
 
     private void Awake()
     {
@@ -26,9 +24,7 @@ public class ProjectManager : MonoBehaviour
         {
             project.Develop();
             
-            if (project is GameProject) CreationUI.instance.UpdateInfo(project as GameProject);
-            else if (project is Freelance) CreationUI.instance.UpdateInfo(project as Freelance);
-            else if (project is GameUpdate) CreationUI.instance.UpdateInfo(project as GameUpdate);
+            if (project is GameProject) CreationUI.instance.UpdateInfo(project);
         }
     }
 

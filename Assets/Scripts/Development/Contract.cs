@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
 using UnityEngine;
 
 [System.Serializable]
@@ -75,6 +72,7 @@ public class Contract : GameProject
 
     public override void Cancel()
     {
+        base.Cancel();
         Main.instance.MinusMoney(GetForefit());
     }
 
